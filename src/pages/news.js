@@ -10,8 +10,7 @@ const NewsPage = ({ data }) => (
                     <h3>{node.frontmatter.title}</h3>
                 </Link>
                 <h6>{node.frontmatter.date}</h6>
-                <p>{node.excerpt}</p>
-                
+                <div dangerouslySetInnerHTML={{ __html: node.html}} />
             </div>
         )}
     </div>
@@ -31,10 +30,10 @@ export const query = graphql`
                     frontmatter {
                         title
                         contentType
-                        date(formatString: "HH:mm D MMMM YYYY")
+                        date(formatString: "D MMMM YYYY, HH:mm")
                         path
                     }
-                    excerpt
+                    html
                 }
             }
         }
