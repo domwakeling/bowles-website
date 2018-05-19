@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Bowles Ski Racing Slub',
+        title: 'Bowles Ski Racing Club',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
