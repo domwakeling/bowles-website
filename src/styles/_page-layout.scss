@@ -14,6 +14,7 @@
 }
 
 #content {
+    margin-top: 10px;
     @include for-phone-only {
         width: 100%;
     }
@@ -27,7 +28,8 @@
 }
 
 #right-column {
-        display: none;
+    margin-top: 10px;
+    display: none;
     @include for-desktop-only {
         display: inline;
         float: right;

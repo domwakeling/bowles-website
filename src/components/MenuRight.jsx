@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import menuData from '../layouts/menu-data';
+import menuData from '../data/menu-data';
 
 const MenuRight = () => (
     <div id="right-nav">

@@ -3,13 +3,13 @@ import Link from 'gatsby-link';
 
 const NewsPage = ({ data }) => (
     <div>
-        <h1>News</h1>
+        <h2>News</h2>
         {data.allMarkdownRemark.edges.map(({ node }, index) =>
             <div key={index}>
                 <Link to={node.frontmatter.path}>
                     <h3>{node.frontmatter.title}</h3>
                 </Link>
-                <h6>{node.frontmatter.date}</h6>
+                <h5>{node.frontmatter.date}</h5>
                 <div dangerouslySetInnerHTML={{ __html: node.html}} />
             </div>
         )}

@@ -1,0 +1,40 @@
+@import '_colours.scss';
+
+.about-blob {
+    clear: both;
+    margin-bottom: 1.0em;
+
+    .image-wrapper {
+        display: inline-block;
+        width: 22%;
+        margin-right: 3%;
+    }
+
+    .blurb-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 75%;
+
+        h4 {
+            margin-bottom: 0.5em;
+        }
+
+        .contact {
+            margin-bottom: 0.5em;
+
+            .contact-label {
+                display: inline;
+            }
+
+            .contact-link {
+                display: inline;
+            }
+        }
+
+        .blurb {
+            font-style: italic;
+            color: $color__blurb-text;
+        }
+    }
+
+}  
