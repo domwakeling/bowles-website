@@ -63,7 +63,11 @@
 // right-nav (only shows on wide screens) contained in RightMenu.jsx
 #right-nav {
     a {
+        transition: 0.25s;
         text-decoration: none;
         display: block;
+        &:hover {
+            padding-left: 10px;
+        }
     }
 }
