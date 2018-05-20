@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
+import Header from '../components/Header.jsx'
+import MenuRight from '../components/MenuRight.jsx';
 import '../styles/Layout.scss';
 
 const Layout = ({ children, data }) => (
@@ -21,11 +22,11 @@ const Layout = ({ children, data }) => (
                 {children()}
             </div>
             <div id="right-column">
-                Some content in the right column still to be written
+                <MenuRight />
             </div>
         </div>
     </div>
-)
+)   
 
 Layout.propTypes = {
   children: PropTypes.func,
