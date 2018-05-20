@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-import responsive from '../../src/utils/responsive';
+import '../styles/Layout.scss';
 
 const Layout = ({ children, data }) => (
     <div>
@@ -14,16 +14,15 @@ const Layout = ({ children, data }) => (
                 { name: 'keywords', content: 'bowles, ski, skiing, racing' },
             ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-            style={{
-                margin: '0 auto',
-                maxWidth: 960,
-                padding: '0px 1.0875rem 1.45rem',
-                paddingTop: 0,
-            }}
-        >
-            {children()}
+        <Header
+            siteTitle={data.site.siteMetadata.title} />
+        <div className="container">
+            <div id="content">
+                {children()}
+            </div>
+            <div id="right-column">
+                Some content in the right column still to be written
+            </div>
         </div>
     </div>
 )
