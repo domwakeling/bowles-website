@@ -4,7 +4,11 @@ const { createFilePath } = require('gatsby-source-filesystem');
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const { createNodeField } = boundActionCreators;
     if (node.internal.type === 'MarkdownRemark') {
-        const slug = createFilePath({ node, getNode, basePath: `pages` });
+        let slug = createFilePath({ node, getNode, basePath: `pages` });
+        const regexp = new RegExp("src/news");
+        if (regexp.test(node.fileAbsolutePath)) {
+            slug = "/news" + slug;
+        }
         createNodeField({
             node,
             name: `slug`,
@@ -51,7 +55,9 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
             createPage({
                 path: node.fields.slug,
                 component: templateType,
-                context: {}
+                context: {
+                    slug: node.fields.slug
+                }
             });
         });
     });

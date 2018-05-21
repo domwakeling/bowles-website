@@ -1,5 +1,4 @@
 ---
-path: "/news/2018/05/test2"
 title: "Another Test"
 contentType: news
 date: "2018-05-19T13:57"

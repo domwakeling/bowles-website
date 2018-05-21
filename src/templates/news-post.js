@@ -17,11 +17,10 @@ export default function Template ({ data }) {
 
 export const newsQuery = graphql`
     query newsPostByPath($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
+        markdownRemark(fields: { slug: { eq: $path } }) {
             html
             frontmatter {
                 date(formatString: "D MMMM YYYY, HH:mm")
-                path
                 title
             }
         }
