@@ -49,7 +49,7 @@ const adboutData = [
         email: 'cwo@bowlesskiracingclub.org.uk',
         image: '../images/000_about_us/placeholder.jpg',
         blurb: `I started skiing in my mid-30s and have two children at the club who are much better
-                than me! THe club is very welcoming to new members, whether they want to go on to
+                than me! The club is very welcoming to new members, whether they want to go on to
                 race or not. Please contact me if you have any concerns over welfare or safeguarding
                 issues.`
     },

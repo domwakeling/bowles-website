@@ -8,6 +8,7 @@ export default function Template ({ data }) {
             <Helmet title={`Bowles Ski Racing Club - ${post.frontmatter.title}`} />
             <div>
                 <h2>{post.frontmatter.title}</h2>
+                <h5>{post.frontmatter.date}</h5>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
         </div>
@@ -19,7 +20,7 @@ export const newsQuery = graphql`
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
             frontmatter {
-                date(formatString: "HH:mm D MMMM YYYY")
+                date(formatString: "D MMMM YYYY, HH:mm")
                 path
                 title
             }

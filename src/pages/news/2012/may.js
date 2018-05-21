@@ -1,12 +1,11 @@
 import React from 'react';
-import NewsItem from '../components/NewsItem.jsx';
+import NewsItem from '../../../components/NewsItem.jsx';
 
-const NewsPage = ({ data }) => (
+const MonthPage = ({ data }) => (
     <div>
-        <h2>News</h2>
+        <h2>May 2012</h2>
         {data.allMarkdownRemark.edges.map(({ node }, index) =>
-            <NewsItem
-                key={index}
+            <NewsItem key={index}
                 path={node.frontmatter.path}
                 title={node.frontmatter.title}
                 date={node.frontmatter.date}
@@ -16,12 +15,12 @@ const NewsPage = ({ data }) => (
     </div>
 )
 
-export default NewsPage;
+export default MonthPage;
 
 export const query = graphql`
-    query NewsPageQuery {
+    query NewsMay2018 {
         allMarkdownRemark (
-            filter: { frontmatter:  { contentType: { eq:"news"}}}
+            filter: { frontmatter: { path: { regex: "^/news/2012/05/"} } }
             sort: { order: DESC, fields: [frontmatter___date] }
             limit: 10
         ) {

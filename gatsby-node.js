@@ -36,7 +36,7 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
                     templateType = racePageTemplate;
                     break;
                 default:
-                    templateType= newsPostTemplate;
+                    templateType = newsPostTemplate;
             }
             createPage({
                 path: node.frontmatter.path,
