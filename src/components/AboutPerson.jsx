@@ -18,7 +18,6 @@ export default class AboutPerson extends React.Component {
                         <div className="contact-label">Contact: </div>
                         <a className="contact-link" href={link}>{email}</a>
                     </div>
-                    {/* <p className="blurb">&ldquo;{blurb}&rdquo;</p> */}
                     <p className="blurb">{blurbText}</p>
                 </div>
             </div>

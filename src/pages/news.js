@@ -7,7 +7,7 @@ const NewsPage = ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node }, index) =>
             <NewsItem
                 key={index}
-                path={node.frontmatter.path}
+                path={node.fields.slug}
                 title={node.frontmatter.title}
                 date={node.frontmatter.date}
                 html={node.html}
@@ -27,11 +27,13 @@ export const query = graphql`
         ) {
             edges {
                 node {
+                    fields {
+                        slug
+                    }
                     frontmatter {
                         title
                         contentType
                         date(formatString: "D MMMM YYYY, HH:mm")
-                        path
                     }
                     html
                 }

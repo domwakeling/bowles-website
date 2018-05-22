@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/05/handicap"
 title: "Club Fun Race - May '12"
 contentType: news
 date: "2012-05-13T00:57"

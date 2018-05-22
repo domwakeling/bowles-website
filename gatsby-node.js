@@ -1,4 +1,21 @@
 const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
+
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+    const { createNodeField } = boundActionCreators;
+    if (node.internal.type === 'MarkdownRemark') {
+        let slug = createFilePath({ node, getNode, basePath: `pages` });
+        const regexp = new RegExp("src/news");
+        if (regexp.test(node.fileAbsolutePath)) {
+            slug = "/news" + slug;
+        }
+        createNodeField({
+            node,
+            name: `slug`,
+            value: slug
+        });
+    }
+};
 
 exports.createPages = ({ boundActionCreators, graphql}) => {
     const { createPage } = boundActionCreators;
@@ -13,13 +30,10 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
         ) {
             edges {
                 node {
-                    excerpt(pruneLength: 250)
-                    html
-                    id
+                    fields {
+                        slug
+                    }
                     frontmatter {
-                        date
-                        path
-                        title
                         contentType
                     }
                 }
@@ -39,9 +53,11 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
                     templateType = newsPostTemplate;
             }
             createPage({
-                path: node.frontmatter.path,
+                path: node.fields.slug,
                 component: templateType,
-                context: {}
+                context: {
+                    slug: node.fields.slug
+                }
             });
         });
     });
