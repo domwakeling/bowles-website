@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../styles/about-blob.scss';
 
@@ -24,3 +25,10 @@ export default class AboutPerson extends React.Component {
         )
     }
 }
+
+AboutPerson.propTypes = {
+    name: PropTypes.string,
+    email: PropTypes.string,
+    image: PropTypes.string,
+    blurb: PropTypes.string
+};

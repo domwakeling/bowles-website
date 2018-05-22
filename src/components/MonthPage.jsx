@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NewsItem from './NewsItem.jsx';
 
 const MonthPage = (props) => {
@@ -17,5 +18,10 @@ const MonthPage = (props) => {
         </div>
     )
 };
+
+MonthPage.propTypes= {
+    data: PropTypes.shape,
+    title: PropTypes.string
+}
 
 export default MonthPage;

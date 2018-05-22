@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 import menuData from '../data/menu-data';
@@ -12,5 +13,9 @@ const MenuRight = (props) => {
         ))}
     </div>
 )}
+
+MenuRight.propTypes = {
+    location: PropTypes.object
+}
 
 export default MenuRight;

@@ -4,13 +4,14 @@ import Link from 'gatsby-link';
 const IndexPage = () => (
     <div>
         <h2>Membership Information</h2>
-        <p>We hold training sessions at <a href="http://www.bowles.ac/" target="_blank">Bowles
-            Outdoor Centre</a> every Friday evening (except for Christmas Day and New Year!) from
-            5:30 to 7:30.</p>
+        <p>We hold training sessions at <a href="http://www.bowles.ac/" rel="noopener noreferrer" 
+            target="_blank" >Bowles Outdoor Centre</a> every Friday evening (except for Christmas
+            Day and New Year!) from 5:30 to 7:30.</p>
         <p>A typical session starts with a short period of warm-up exercises, and for this reason we
             ask everyone to arrive as early as possible. This is followed by progressive isntruction
             and we normally end with evening with informal slalom or dual slalom. We also hold timed
-            training sessions approximately once a month, and hold two club "fun races" a year.</p>
+            training sessions approximately once a month, and hold two club &quot;fun races&quot;
+            a year.</p>
         <p>Bowles ski team is represented by its members at as many regional and club races as
             possible, and we encourage new and current members to participate regularly (although
             this is <strong>not</strong> a requirement of membership). Our team has seen some

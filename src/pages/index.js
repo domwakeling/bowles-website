@@ -13,8 +13,8 @@ const IndexPage = () => (
             />
         </div>
         <br />
-        <p>Welcome to Bowles Ski Racing Club's website, the home of Bowles Ski Team. Please look at
-            the <Link to='/news'>News page</Link> to see what's going on.</p>
+        <p>Welcome to Bowles Ski Racing Club&apos;s website, the home of Bowles Ski Team. Please
+            look at the <Link to='/news'>News page</Link> to see what&apos;s going on.</p>
         <h2>Bowles Ski Racing Club</h2>
         <p>The club is based at Bowles Residential Outdoor Centre in Eridge Green, Kent, and meets
             every Friday evening for two hours of slalom ski race training starting at 5:30pm.</p>

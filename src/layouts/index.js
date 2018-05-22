@@ -32,6 +32,8 @@ const Layout = (props) => {
 
 Layout.propTypes = {
   children: PropTypes.func,
+  data: PropTypes.object,
+  location: PropTypes.object
 };
 
 export default Layout

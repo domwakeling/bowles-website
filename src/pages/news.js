@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NewsItem from '../components/NewsItem.jsx';
 
 const NewsPage = ({ data }) => (
@@ -15,6 +16,10 @@ const NewsPage = ({ data }) => (
         )}
     </div>
 )
+
+NewsPage.propTypes = {
+    data: PropTypes.object
+}
 
 export default NewsPage;
 

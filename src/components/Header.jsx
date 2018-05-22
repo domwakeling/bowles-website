@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
 
 import menuData from '../data/menu-data';
 
@@ -21,7 +22,6 @@ export default class Header extends React.Component {
         const { siteTitle } = this.props;
         this.burgerClickHandler = this.burgerClickHandler.bind(this);
         const menuClass = this.state.menuOpen ? "menu-show" : "";
-        console.log(menuClass);
         return (
             <div id="navbar">
                 <div className="container">
@@ -45,4 +45,8 @@ export default class Header extends React.Component {
             </div>
         )
     }
-};
+}
+
+Header.propTypes = {
+    siteTitle: PropTypes.string
+}

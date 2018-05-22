@@ -4,7 +4,7 @@
  *  @months is an array (reverse order) of the months which have news pages
  */
 
-export default newsData = [
+const newsData = [
     [
         {
             year: '2012',
@@ -12,3 +12,5 @@ export default newsData = [
         }
     ]
 ];
+
+export default newsData;
