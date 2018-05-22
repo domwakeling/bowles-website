@@ -1,4 +1,5 @@
 ---
+path: "/news/2012/05/LSERSA_1"
 title: "LSERSA Summer Series Race 1 - Bowles"
 contentType: news
 date: "2012-05-12T14:44"
