@@ -73,3 +73,6 @@ code:
 * change the name of the graphql query to reflect the month & year (in the above example this is
 `query NewsMay2018`)
 * change the regex filter to reflect the month & year (in the above example this is `/^/news/2018/may/`)
+
+Additionally the relevant entry needs to added in `src/data/news-data.js` (see the API information at
+top of that file for more information).
