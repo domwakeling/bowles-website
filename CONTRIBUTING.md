@@ -1,4 +1,4 @@
-## Contibuting
+## Contributing
 
 ### Adding News Articles
 
