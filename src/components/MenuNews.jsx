@@ -7,20 +7,19 @@ import newsData from '../data/news-data';
 export default class MenuNews extends React.Component {
     yearClickHandler(e) {
         e.preventDefault();
-        const yearMatch = />(\d{4})<\/a/;
-        console.log(String(e.target));
-        // const match = e.target.match(yearMatch);
-        
-        // if (match.length > 1) {
-        //     const divs = document.getElementsByClassName("year");
-        //     console.log(divs);
-        //     console.log(match[1]);
-        //     console.log(document.getElementById(match[1]));
-        //     for (let i = 0; i < divs.length; i++) {
-        //         divs[i].className = "year"
-        //     }
-        //     document.getElementById(match[1]).className="year open";
-        // }
+        const yearMatch = /\/(\d{4})/;
+        const match = e.target.toString().match(yearMatch);
+        if (match && match.length > 1) {
+            const openDivId = match[1];
+            const divs = document.getElementsByClassName("year");
+            for (let i = 0; i < divs.length; i++) {
+                if (divs[i].id === openDivId) {
+                    divs[i].classList.add('open');
+                } else {
+                    divs[i].classList.remove('open');
+                }
+            }
+        }
     }
 
     render() {
@@ -30,13 +29,14 @@ export default class MenuNews extends React.Component {
         this.yearClickHandler = this.yearClickHandler.bind(this);
         return (
             <div>
+                <h4>News Archive</h4>
                 {newsData.map(year => {
                     const classes = (year.year === pathYear) ? "year open" : "year";
                     return (
                         <div key={year.year} ref={year.year}>
                             <Link
                                 className="bold-link"
-                                to='#'
+                                to={`/news/${year.year}`}
                                 onClick={this.yearClickHandler}
                                 ref={year.year}
                             >

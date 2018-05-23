@@ -1,10 +1,16 @@
 import React from 'react';
-import NewsItem from '../../../components/NewsItem.jsx';
+import PropTypes from 'prop-types';
 import MonthPage from '../../../components/MonthPage.jsx';
 
-export default ({ data }) => (
+const Page = ({ data }) => (
     <MonthPage data={data} title="September 2012" />
 );
+
+Page.propTypes = {
+    data: PropTypes.func
+}
+
+export default Page;
 
 export const query = graphql`
     query NewsSeptember2012 {

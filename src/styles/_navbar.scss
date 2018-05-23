@@ -71,10 +71,23 @@
         }
     }
 
+    a.bold-link {
+        transition: none;
+        font-weight: bold;
+        &:hover {
+            padding-left: 0px;
+        }
+    }
+
+    // make year hide/show using concepts from
+    // https://gomakethings.com/how-to-add-transition-animations-to-vanilla-javascript-show-and-hide-methods/
     .year {
         display: none;
+        height: 0;
+        transition: height 350ms ease-in-out;
         &.open {
             display: block;
+            height: auto;
         }
     }
 }

@@ -7,11 +7,11 @@
 const newsData = [
     {
         year: '2013',
-        months: ['december', 'may', 'january']
+        months: ['october', 'september', 'july', 'june', 'may', 'april', 'march', 'february']
     },
     {
         year: '2012',
-        months: ['september', 'july', 'june', 'may']
+        months: ['november', 'september', 'july', 'june', 'may']
     }
 ];
 
