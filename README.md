@@ -44,3 +44,7 @@ npm run develop
 ```
 
 to start the Gatsby development server and get a copy of the site running in your browser.
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/domwakeling/bowles-website/blob/dom-working/CONTRIBUTING.md) for a guide to making contributions to the project.
