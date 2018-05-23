@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/05/kent-schools-2012"
 title: "Kent Schools Ski Championship 2012 - 2012"
 contentType: news
 date: "2012-05-21T00:57"

@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/06/bowles-srsa-reminder"
 title: "Reminder: Bowles SRSA 10th June"
 contentType: news
 date: "2012-06-05T15:12"

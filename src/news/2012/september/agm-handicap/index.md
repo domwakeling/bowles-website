@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/06/agm-handicap"
 title: "AGM and Fun Race - 28th September"
 contentType: news
 date: "2012-09-09T14:56"

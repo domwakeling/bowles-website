@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/06/SRSA_2"
 title: "SRSA Summer Series - Race 2"
 contentType: news
 date: "2012-06-05T14:56"

@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/06/LSERSA_2"
 title: "LSERSA Summer Race Series - Race 2"
 contentType: news
 date: "2012-06-14T14:56"
