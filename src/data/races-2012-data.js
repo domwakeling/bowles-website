@@ -37,7 +37,8 @@ const raceData2012 = {
                     'Tim Owens - 1st in group 9M',
                     'Christopher Owens - 3rd in group 4M',
                     'Charlotte Hilliard - 3rd in group 4F'
-                ]
+                ],
+                link: 'http://www.lsersa.org/races12/we12ovr.pdf'
             }
         ]
     },
@@ -74,12 +75,12 @@ const raceData2012 = {
     Kent: {
         descriptor: 'Kent School Ski Championship - Bromley - 20th May 2012',
         primary_teams: [
-            `Beechwood A(Poppy Toynes - Bridges / Madeleine Hood) - 1st in "Mini Girls", 2nd
+            `Beechwood A (Poppy Toynes-Bridges / Madeleine Hood) - 1st in "Mini Girls", 2nd
                 in "Primary Girls"`,
-            'Beechwood B(Nicholas Hood / Giacomo Carmen - Wright) - 2nd in "B&G Mixed"'
+            'Beechwood B( Nicholas Hood / Giacomo Carmen-Wright) - 2nd in "B&G Mixed"'
         ],
         secondary_teams: [
-            `Hilden Grange(Alfie Leek / Jamie Oliver / Lindsay Russell) - 2nd in "MID - Mixed"`
+            `Hilden Grange (Alfie Leek / Jamie Oliver / Lindsay Russell) - 2nd in "MID - Mixed"`
         ],
         link: 'http://www.lsersa.org/races12/raks/index.html'
     }

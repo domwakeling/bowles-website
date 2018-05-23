@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import RacesLSERSA from './RacesLSERSA.jsx';
 import RacesSRSA from './RacesSRSA.jsx';
+import Race from './Race.jsx';
 
 const RacePage = (props) => {
     const { data, title } = props;
@@ -17,6 +18,11 @@ const RacePage = (props) => {
             {
                 data.SRSA ? (
                     <RacesSRSA data={data.SRSA} />
+                ) : ''
+            }
+            {
+                data.Kent ? (
+                    <Race data={data.Kent} />
                 ) : ''
             }
         </div>

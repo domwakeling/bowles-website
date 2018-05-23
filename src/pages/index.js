@@ -7,7 +7,7 @@ const IndexPage = () => (
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/BAFUPHU5Rnw?rel=0"
+                src="https://www.youtube.com/embed/fApQcD9yu4w"
                 frameBorder="0"
                 allowFullScreen
             />
