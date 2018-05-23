@@ -1,4 +1,9 @@
-## Contributing
+# Contributing
+
+## Index
+* News Items
+  * [Adding News Articles](#adding-news-articles)
+  * [Adding Monthly News Summaries](#adding-monthly-news-summaries)
 
 ### Adding News Articles
 
