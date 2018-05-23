@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 const NewsItem = (props) => {
@@ -14,5 +15,12 @@ const NewsItem = (props) => {
         </div>
     );
 };
+
+NewsItem.propTypes = {
+    path: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    html: PropTypes.string
+}
 
 export default NewsItem;

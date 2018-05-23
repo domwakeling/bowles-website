@@ -5,8 +5,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const { createNodeField } = boundActionCreators;
     if (node.internal.type === 'MarkdownRemark') {
         let slug = createFilePath({ node, getNode, basePath: `pages` });
-        const regexp = new RegExp("src/news");
-        if (regexp.test(node.fileAbsolutePath)) {
+        if (/src\/news/.test(node.fileAbsolutePath)) {
             slug = "/news" + slug;
         }
         createNodeField({
@@ -21,7 +20,6 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
     const { createPage } = boundActionCreators;
 
     const newsPostTemplate = path.resolve('src/templates/news-post.js');
-    const racePageTemplate = path.resolve('src/templates/race-template.js');
 
     return graphql(`{
         allMarkdownRemark(
@@ -46,9 +44,6 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
             let templateType;
             switch (node.frontmatter.contentType) {
-                case 'race':
-                    templateType = racePageTemplate;
-                    break;
                 default:
                     templateType = newsPostTemplate;
             }

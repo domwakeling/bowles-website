@@ -1,7 +1,19 @@
 {
     "parser": "babel-eslint",
     "rules": {
-        "strict": 0
+        "strict": 0,
+        "react/display-name": 0
+    },
+    "globals": {
+        "react": true,
+        "graphql": true,
+        "module": true,
+        "__dirname": true,
+        "require": true,
+        "exports": true,
+        "Promise": true,
+        "document": true,
+        "window": true
     },
     "extends": [
         "eslint:recommended",

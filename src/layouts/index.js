@@ -1,12 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Header from '../components/Header.jsx'
+import Header from '../components/Header.jsx';
 import MenuRight from '../components/MenuRight.jsx';
 import '../styles/Layout.scss';
 
-const Layout = ({ children, data }) => (
+const Layout = (props) => {
+    const { children, data, location } = props;
+    return (
     <div>
         <Helmet
             title={data.site.siteMetadata.title}
@@ -22,15 +24,17 @@ const Layout = ({ children, data }) => (
                 {children()}
             </div>
             <div id="right-column">
-                <MenuRight />
+                <MenuRight location={location} />
             </div>
         </div>
     </div>
-)   
+)};
 
 Layout.propTypes = {
   children: PropTypes.func,
-}
+  data: PropTypes.shape(),
+  location: PropTypes.object
+};
 
 export default Layout
 

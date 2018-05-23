@@ -1,5 +1,4 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
 
 import AboutPerson from '../components/AboutPerson.jsx';
 import aboutData from '../data/about-data';
@@ -14,7 +13,7 @@ import img6 from '../images/000_about_us/placeholder.jpg';
 
 const images = [img0, img1, img2, img3, img4, img5, img6];
 
-const IndexPage = () => (
+const AboutPage = () => (
     <div>
         <h2>About Us</h2>
         <p>Please feel free to contact any of the club members below if you have any questions.</p>
@@ -28,6 +27,6 @@ const IndexPage = () => (
             />
         ))}
     </div>
-)
+);
 
-export default IndexPage
+export default AboutPage;

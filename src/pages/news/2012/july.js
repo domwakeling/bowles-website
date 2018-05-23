@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MonthPage from '../../../components/MonthPage.jsx';
 
 const Page = ({ data }) => (
-    <MonthPage data={data} title="May 2012" />
+    <MonthPage data={data} title="July 2012" />
 );
 
 Page.propTypes = {
@@ -13,9 +13,9 @@ Page.propTypes = {
 export default Page;
 
 export const query = graphql`
-    query NewsMay2012 {
+    query NewsJuly2012 {
         allMarkdownRemark (
-            filter: { fields: { slug: { regex: "^/news/2012/may/"} } }
+            filter: { fields: { slug: { regex: "^/news/2012/july/"} } }
             sort: { order: DESC, fields: [frontmatter___date] }
         ) {
             edges {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 export default function Template ({ data }) {
@@ -13,6 +14,10 @@ export default function Template ({ data }) {
             </div>
         </div>
     );
+}
+
+Template.propTypes = {
+    data: PropTypes.shape()
 }
 
 export const newsQuery = graphql`
