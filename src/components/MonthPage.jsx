@@ -20,7 +20,7 @@ const MonthPage = (props) => {
 };
 
 MonthPage.propTypes= {
-    data: PropTypes.shape,
+    data: PropTypes.shape(),
     title: PropTypes.string
 }
 

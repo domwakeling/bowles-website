@@ -32,7 +32,7 @@ const Layout = (props) => {
 
 Layout.propTypes = {
   children: PropTypes.func,
-  data: PropTypes.object,
+  data: PropTypes.shape(),
   location: PropTypes.object
 };
 

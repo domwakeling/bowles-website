@@ -18,7 +18,7 @@ const NewsPage = ({ data }) => (
 )
 
 NewsPage.propTypes = {
-    data: PropTypes.object
+    data: PropTypes.shape()
 }
 
 export default NewsPage;

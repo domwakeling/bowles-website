@@ -5,12 +5,14 @@
  */
 
 const newsData = [
-    [
-        {
-            year: '2012',
-            months: ['september', 'july', 'june', 'may']
-        }
-    ]
+    {
+        year: '2013',
+        months: ['december', 'may', 'january']
+    },
+    {
+        year: '2012',
+        months: ['september', 'july', 'june', 'may']
+    }
 ];
 
 export default newsData;

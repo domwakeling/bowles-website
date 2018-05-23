@@ -17,7 +17,7 @@ export default function Template ({ data }) {
 }
 
 Template.propTypes = {
-    data: PropTypes.object
+    data: PropTypes.shape()
 }
 
 export const newsQuery = graphql`

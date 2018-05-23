@@ -70,4 +70,11 @@
             padding-left: 10px;
         }
     }
+
+    .year {
+        display: none;
+        &.open {
+            display: block;
+        }
+    }
 }
