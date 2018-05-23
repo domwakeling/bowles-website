@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/06/club-clothing"
 title: "Club Branded Clothing"
 contentType: news
 date: "2012-06-23T14:56"

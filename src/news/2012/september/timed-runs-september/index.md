@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/06/agm-handicap"
 title: "Timed Runs - 21st September 2012"
 contentType: news
 date: "2012-09-09T14:56"

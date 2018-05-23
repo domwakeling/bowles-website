@@ -1,5 +1,4 @@
 ---
-path: "/news/2012/05/timed-runs-may-2012"
 title: "Timed Runs - 25th May 2012"
 contentType: news
 date: "2012-05-27T19:40"
