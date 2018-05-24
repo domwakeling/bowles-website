@@ -1,11 +1,11 @@
 # Contributing
 
 ## Index
-* [News Items](#news-items)
+* #### [News Items](#news-items)
   * [Adding News Articles](#adding-news-articles)
   * [Adding Monthly News Summaries](#adding-monthly-news-summaries)
   * [Updating the News Archive list](#updating-the-news-archive-list)
-* [Race Results](#race-results)
+* #### [Race Results](#race-results)
   * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
   * [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)                                             
   * [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
