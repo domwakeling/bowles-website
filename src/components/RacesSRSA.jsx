@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import logoSRSA from '../images/001_logos/SRSA_logo.jpg';
+import logoSRSA from '../images/logos/SRSA_logo.jpg';
 import Races from './Races.jsx';
 
 const RacesLSERSA = (props) => {

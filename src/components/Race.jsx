@@ -39,6 +39,11 @@ const Race = (props) => {
                 ) : ''
             }
             {
+                data.tri_teams ? (
+                    <RaceEvent title="" data={data.tri_teams} />
+                ) : ''
+            }
+            {
                 data.link ? (
                     <p><a href={data.link} target="_blank">Full results</a>.</p>
                 ) : ''

@@ -1,3 +1,5 @@
+import season2012image from '../images/races/season_2012.jpg';
+
 const raceData2012 = {
     LSERSA: {
         title: 'LSERSA 2012 Summer Race Series',
@@ -40,7 +42,7 @@ const raceData2012 = {
                 ],
                 link: 'http://www.lsersa.org/races12/we12ovr.pdf'
             }
-        ]
+        ],
     },
     SRSA: {
         title: 'SRSA 2012 Solomon Summer Race Series',
@@ -82,7 +84,23 @@ const raceData2012 = {
         secondary_teams: [
             `Hilden Grange (Alfie Leek / Jamie Oliver / Lindsay Russell) - 2nd in "MID - Mixed"`
         ],
+        fun_teams: [
+            'Ellie Burcome was part of the third-placed team'
+        ],
         link: 'http://www.lsersa.org/races12/raks/index.html'
+    },
+    TriRegion: {
+        descriptor: 'Tri-Regional - Bromley - 13th October 2012',
+        tri_teams: [
+            `Andrew Owens, Charlotte Hilliard and Nigel Hilliard were members of the London team
+                which finished 3rd in the Gavin Willows trophy.`
+        ]
+    },
+    Season: {
+        image: {
+            url: season2012image,
+            alt: "2012 Season Overall Results"
+        }
     }
 };
 

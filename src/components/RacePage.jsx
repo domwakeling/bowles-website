@@ -22,7 +22,30 @@ const RacePage = (props) => {
             }
             {
                 data.Kent ? (
-                    <Race data={data.Kent} />
+                    <div>
+                        <Race data={data.Kent} />
+                        <hr />
+                    </div>
+                ) : ''
+            }
+            {
+                data.TriRegion ? (
+                    <div>
+                        <Race data={data.TriRegion} />
+                        <hr />
+                    </div>
+                ) : ''
+            }
+            {
+                data.Season ? (
+                    <div>
+                        <h3>Season Results</h3>
+                        {
+                            data.Season.image ? (
+                                <img src={data.Season.image.url} alt={data.Season.image.alt} />
+                            ) : ''
+                        }
+                    </div>
                 ) : ''
             }
         </div>

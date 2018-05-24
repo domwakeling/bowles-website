@@ -17,7 +17,7 @@ const raceData2013 = {
                 ],
                 fun_teams: [
                     'Jack Hilliard was a member of the winning "Team E"',
-                    'Nigel Hilliard and Matt Mitchell were members of the 3rd placed "Team F"'
+                    'Nigel Hilliard and Matt Mitchell were members of the 3rd-placed "Team F"'
                 ],
                 link: 'http://www.lsersa.org/races13/bo13ovr.pdf'
             },
@@ -41,7 +41,7 @@ const raceData2013 = {
                 ],
                 fun_teams: [
                     'Kian Blewett was a member of the winning Team D',
-                    'Jamie Oliver and Mark Oliver were members of the third - placed Team F'
+                    'Jamie Oliver and Mark Oliver were members of the third-placed Team F'
                 ],
                 link: 'http://www.lsersa.org/races13/index.html#results'
             },
@@ -59,8 +59,8 @@ const raceData2013 = {
                 fun_teams: [
                     'Peter Bullivant and Nigel Hilliard were members of the winning Team C',
                     `Harris Mitchell, Charlotte Hilliard and Matt Mitchell were members of the
-                        second - placed Team A`,
-                    'Morgan Mitchell and Jack Hilliard were members of the third - placed Team F'
+                        second-placed Team A`,
+                    'Morgan Mitchell and Jack Hilliard were members of the third-placed Team F'
                 ],
                 honorable: [
                     'Jamie Oliver - 4th in the 3M category'
@@ -77,8 +77,8 @@ const raceData2013 = {
                 ],
                 fun_teams: [
                     'Sebastian Turner-Moore was a member of the winning Team D',
-                    'Nigel Hilliard and Christopher Owens were members of the second - placed Team C',
-                    'Matt Mitchell was a member of the third - placed Team E'
+                    'Nigel Hilliard and Christopher Owens were members of the second-placed Team C',
+                    'Matt Mitchell was a member of the third-placed Team E'
                 ],
                 honorable: [
                     'Harris Mitchell - 4th in the 1M category',
