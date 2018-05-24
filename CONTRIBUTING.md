@@ -9,7 +9,7 @@
   * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
   * [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)                                             
   * [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
-  * [Updating the Race Results Archive list](#updating-the-race-results-archive-list)
+  * [Updating the Race Results dropdown list](#updating-the-race-results-dropdown-list)
   
 ## News Items
 
@@ -174,26 +174,37 @@ year will necessitate changing those paths - in this specific case, `../componen
 The data for each year is contained in a file in `src/data` - for instance, the 2012 race-season
 data is in `/src/data/races-2012-data.js`.
 
-Each data file exports an object with the naming convention `raceData{year}`, which has keys for
-each standard race series (`LSERSA`, `SRSA`, `Kent`, `TriRegion`) and for the overall season
-(`Season`). Keys do not need to be created until such time as there is data to populate.
+Each data file exports an object with the naming convention `raceData{year}`, which has typically
+will have keys for `LSERSA`, `SRSA`, `ClubNational`, `Kent`, and `TriRegion`. The earlier
+entries also have an overall record for the season (`Season`) whereas more recent years record
+the overall season result for multi-race series within the relevant object.
 
-If there are any other race series to enter (eg ESSKIA or club nationals) ***TODO***.
+*If a key is not relevant to a particular year, it should be omitted (not inserted and left empty)*
 
-The `LSERSA` and `SRSA` objects - which represent multiple races - each have a key `title` for the
-name of the race series, and then a key `races` for an array of race objects. The `Kent` and
-`TriRegion` objects are individual races.
+The multi-race series (`LSERSA`, `SRSA` and `ClubNational`) each have keys as follows:
+* `title` containing the name of the series, including the year
+* 'races' which is an array of the indiviual race objects (see below) in chronoloical order
+* optionally a `season` key which contains end-of-season results
 
-A `race` object has a `descriptor`, used to describe the race location/date, a series of keys for
-results (see the example) which are each arrays of strings, and a `link` for the full race results.
+Race objects may contain the following keys:
+* `descriptor` with a string 'title'
+* for SRSA and LSERSA races, `indiviual`, `club_teams`, `fun_teams` and `honorable` each being an
+array of strings, one for each person/team that is mentioned; omit any keys not relevant to the race
+* for Club National races, only the `individual` and `honorable` keys are used
+* for Kent Schools, `individual`, `primary_teams`, `secondary_teams`, `fun_teams` and `honorable`
+can be used
+* for TriRegion, `tri_teams` and `honorable` can be used
+* additionally any race may have a `link` key containing a URL for full race results
 
-*The keys used need to be maintained, they are specifically looked for in the React components that
-render these pages.*
+The `season` object within a race series can contain `individual`, `special` (for non-race cups
+such as best newcomer) and `link`.
+
+The `Season` object (where used) should contain a key `image` which contains `url` and `alt` keys -
+see `/src/data/races-2012-data.js` for an example of how this works.
+
+**An example:**
 
 ```javascript
-import season{year}image from '../images/races/season_{year}.jpg';
-// if any images are being passed, import them at the head of the file
-
 const raceData{year} = {
     LSERSA: {
         title: 'LSERSA {year} Summer Race Series',
@@ -201,8 +212,6 @@ const raceData{year} = {
             {
                 descriptor: 'Race 1 - {Location} - {Date}',
                 individual: [
-                    'Jack Hilliard - 2nd in group 5M',
-                    'Mark Oliver - 2nd in group 9M'
                     // strings in an array representing each individual result
                 ],
                 club_teams: [
@@ -218,47 +227,36 @@ const raceData{year} = {
             },
                 // ... add another object in the races array for each race
         ],
+        season: [
+                // keys are relevant - individual, special, link
+        ]
     },
     SRSA: {
         title: 'SRSA {year] Summer Race Series',
         races: [
-            // all as for LSERSA
+                // all as for LSERSA
+        ],
+        season: [
+
         ]
     },
+    ClubNational: {
+                // title, races with {individual, honorable, link
+    }
     Kent: {
-        descriptor: 'Kent School Ski Championship - {locateion} - {date}',
-        individual: [
-            // any individiual medals
-        ]
-        primary_teams: [
-            // any primary team medals
-        ],
-        secondary_teams: [
-            // any secondary team medals
-        ],
-        fun_teams: [
-            // any fun team medals
-        ],
-        link: 'http://www.xyz.com'
+        descriptor: 'Kent Schools Ski Championship - {Location} - {Date}',
+                // individual, primary_teams, secondary_teams, fun_teams, honorable, link
     },
     TriRegion: {
         descriptor: 'Tri-Regional - {Location} - {Date}',
-        tri_teams: [
-            // any resulsts -  individuals, place and which competition
-        ]
-    },
-    Season: {
-            // this is the only place at present where images may be required
-        image: {
-            url: season{year}image,
-            alt: "{year} Season Overall Results"
-        }
+                // tri_teams, link
     }
 };
 
 export default raceData{year};
 ```
 
-### Updating the Race Results Archive list
+### Updating the Race Results dropdown list
 
-***TODO***
+The dropdown menu's data-source is in `src/data/race-data`. This is an array of objects, each of
+which has a `title` (the year as a string) and a `link` (path of the race page).
