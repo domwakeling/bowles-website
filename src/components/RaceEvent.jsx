@@ -14,7 +14,7 @@ const RaceEvent = (props) => {
 };
 
 RaceEvent.propTypes = {
-    data: PropTypes.shape(),
+    data: PropTypes.array,
     title: PropTypes.string
 }
 

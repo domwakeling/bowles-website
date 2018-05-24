@@ -86,49 +86,128 @@ const raceData2013 = {
                 ],
                 link: 'http://www.lsersa.org/races13/index.html#results'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Harris Mitchell - 3rd overall in the 1M category',
+                'Morgan Mitchell - 3rd overall in the 2M category',
+                'Jack Hilliard - 2nd overall in the 6M category',
+                'Matt Mitchell - 1st overall in the 8M category',
+                'Tim Owens - 2nd overall in the 9M category'
+            ],
+            special: [
+                'Harris Mitchell - UK Resource Cup (awarded for best new skier)',
+                'Charlotte Hilliard'
+            ],
+            honorable: [
+                'Charlotte Hilliard - 4th overall in the 4F category'
+            ]
+        }
     },
     SRSA: {
-        title: 'SRSA 2012 Solomon Summer Race Series',
+        title: 'SRSA 2013 Solomon Summer Race Series',
         races: [
             {
-                descriptor: 'Race 2 - Bromley - 2nd June 2012',
+                descriptor: 'Race 1 - Aldershot - 12th May 2013',
                 individual: [
-                    'Nigel Hilliard - 3rd in Male 50+ class',
-                    'Jamie Oliver - 4th in Male 9-10 class'
+                    'Mark Oliver = 2nd in Male 50+'
                 ],
-                link: 'http://www.srsa.org.uk/races/32'
+                link: 'http://www.srsa.org.uk/races/37'
             },
             {
-
-                descriptor: 'Race 3 - Bowles - 10th June 2012',
+                descriptor: 'Race 2 - Bowles - 25th May 2013',
                 individual: [
-                    'Nigel Hilliard - 1st in the Male 50 + class',
-                    'Charlotte Hilliard - 2nd in the Female 11 - 12 class',
-                    'Mark Oliver - 3rd in the Male 31 - 49 class'
+                    'Joshua Wakeling - 3rd in Male 9-10',
+                    'Jamie Oliver - 3rd in Male 11-12',
+                    'Charlotte Hilliard - 1st in Female 13-14',
+                    'Jack Hilliard - 3rd in Male 15-16',
+                    'Tim Owens - 3rd in Male 31-49',
+                    'Mark Oliver - 2nd in Male 50+'
                 ],
-                link: 'http://www.srsa.org.uk/races/33'
+                club_teams: [
+                    `Michael Roberts, Sebastian Turner-Moore and Joshua Wakeling were 2nd in the
+                        11-and-Under Club Teams`
+                ],
+                fun_teams: [
+                    `Kian Blewett, Michael Roberts and Andrew Owens were part of the 2nd-placed
+                        fun team`
+                ],
+                link: 'http://www.srsa.org.uk/races/38'
             },
             {
-                descriptor: 'Race 5 - Southampton - 21st July 2012',
+                descriptor: 'Race 3 - Aldershot - 16th June 2013',
                 individual: [
-                    'Nigel Hilliard - 3rd in the Male 50 + class'
+                    'Mark Oliver - 2nd in Male 50+'
                 ],
-                link: 'http://www.srsa.org.uk/races/35'
+                link: 'http://www.srsa.org.uk/races/39'
+            },
+            {
+                descriptor: 'Race 4 - Bromley - 13th July 2013',
+                individual: [
+                    'Mark Oliver - 2nd in Male 50+'
+                ],
+                link: 'http://www.srsa.org.uk/races/40'
+            },
+            {
+                descriptor: 'Race 6 - Snowtrax - 18th September 2013',
+                individual: [
+                    'Mark Oliver - 2nd in Male 50+'
+                ],
+                link: 'http://www.srsa.org.uk/races/42'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Charlotte Hilliard - 3rd in Female 13-14',
+                'Mark Oliver - 2nd in Male 50+'
+            ],
+            link: 'http://www.srsa.org.uk/seasons/7/individual'
+        }
     },
     Kent: {
-        descriptor: 'Kent School Ski Championship - Bromley - 20th May 2012',
+        descriptor: 'Kent School Ski Championship 2013',
+        individual: [
+            'Christopher Owens - 3rd in MID-Boys'
+        ],
         primary_teams: [
-            `Beechwood A (Poppy Toynes-Bridges / Madeleine Hood) - 1st in "Mini Girls", 2nd
-                in "Primary Girls"`,
-            'Beechwood B( Nicholas Hood / Giacomo Carmen-Wright) - 2nd in "B&G Mixed"'
+            `Beechwood Sacred Heart(Dominic Vian, Tilly Vian, Ellie Burcombe & Poppy Toyne-Bridges)
+                - 3rd in B&G-Mixed and Primary-Mixed`
         ],
         secondary_teams: [
-            `Hilden Grange (Alfie Leek / Jamie Oliver / Lindsay Russell) - 2nd in "MID - Mixed"`
+            `Skinners(Toby Cornwell, Sebastian Collins, Jack Hilliard & Jack Burcombe) - 2nd in
+                SEN-Boys`
         ],
-        link: 'http://www.lsersa.org/races12/raks/index.html'
+        link: 'http://www.lsersa.org/races13/raks/index.html'
+    },
+    SPS: {
+        descriptor: 'SPS Championship 2013',
+        individual: [
+            'Lily Scott - 3rd, U9 Girls'
+        ],
+        primary_teams: [
+            `Lamberhurst St Marys (Sebastian Turner-Moore, Oliver Turner-Moore, Lily Scott and
+                Harrison Scott) - 2nd, U11 Boys`
+        ],
+        link: 'http://www.srsa.org.uk/articles/racing#227'
+    },
+    ClubNational: {
+        title: 'SSE Club National Series 2013',
+        races: [
+            {
+                descriptor: 'Welwyn - 18th May 2013',
+                individual: [
+                    'Mark Oliver - 3rd in Male Masters'
+                ],
+                link: 'http://www.britski.org/13welwyncnres.pdf'
+            },
+            {
+                descriptor: 'Hemel - 23rd June 2013',
+                honorable: [
+                    'Mark Oliver - 4th in Male Masters'
+                ],
+                link: 'Mark Oliver - 4th in Male Masters'
+            }
+        ]
     }
 };
 

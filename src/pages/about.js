@@ -16,7 +16,8 @@ const images = [img0, img1, img2, img3, img4, img5, img6];
 const AboutPage = () => (
     <div>
         <h2>About Us</h2>
-        <p>Please feel free to contact any of the club members below if you have any questions.</p>
+        <p>Please feel free to contact any of the committee members below if you have any
+            questions.</p>
         {aboutData.map(person => (
             <AboutPerson
                 key={person.idx}

@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 
 import RacesLSERSA from './RacesLSERSA.jsx';
 import RacesSRSA from './RacesSRSA.jsx';
+import RacesClubNational from './RacesClubNational';
 import Race from './Race.jsx';
+import RaceYearPicker from './RaceYearPicker.jsx';
 
 const RacePage = (props) => {
     const { data, title } = props;
     return (
         <div>
+            <RaceYearPicker title={title.substr(0, 4)} />
             <h2>{title}</h2>
             {
                 data.LSERSA ? (
@@ -21,9 +24,22 @@ const RacePage = (props) => {
                 ) : ''
             }
             {
+                data.ClubNational ? (
+                    <RacesClubNational data={data.ClubNational} />
+                ) : ''
+            }
+            {
                 data.Kent ? (
                     <div>
                         <Race data={data.Kent} />
+                        <hr />
+                    </div>
+                ) : ''
+            }
+            {
+                data.SPS ? (
+                    <div>
+                        <Race data={data.SPS} />
                         <hr />
                     </div>
                 ) : ''

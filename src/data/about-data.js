@@ -30,9 +30,8 @@ const adboutData = [
         name: 'Nigel Hilliard - Treasurer',
         email: 'treasurer@bowlesskiracingclub.org.uk',
         blurb: `I am the club treasurer and a qualified alpine ski instructor and ski performance
-                coach. I have been skiing for about 28 years and have raced for about 7 years. I
-                have two children who are also in the Bowles race squad and who both ski better
-                than me - that's life!`
+                coach. I have been skiing for about 30 years and have raced for about 9 years. I
+                have two children who race for Bowles and who both ski better than me - that's life!`
     },
     {
         idx: 4,
