@@ -7,9 +7,9 @@
   * [Updating the News Archive list](#updating-the-news-archive-list)
 * [Race Results](#race-results)
   * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
-  * [Moving a Race Results javascript page](#moving_a_race_results_javascript_page)
-  * [Adding a new Race Results data file](#adding_a_new_race_results_data_file)
-  * [Updating the Race Results Archive list](#updating_the_race_results_archive_list)
+  * [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)                                             
+  * [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
+  * [Updating the Race Results Archive list](#updating-the-race-results-archive-list)
   
 ## News Items
 
@@ -152,7 +152,7 @@ export default () => (
 );
 ``` 
 To make a new year's results page, use this code and change the references to the appropriate year.
-You will also need to make sure that the equivalent [data file](#adding_a_new_race_results_data_file)
+You will also need to make sure that the equivalent [data file](#adding-a-new-race-results-data-file)
 is created.
 
 ### Moving a Race Results javascript page
