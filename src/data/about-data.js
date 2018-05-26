@@ -30,9 +30,8 @@ const adboutData = [
         name: 'Nigel Hilliard - Treasurer',
         email: 'treasurer@bowlesskiracingclub.org.uk',
         blurb: `I am the club treasurer and a qualified alpine ski instructor and ski performance
-                coach. I have been skiing for about 28 years and have raced for about 7 years. I
-                have two children who are also in the Bowles race squad and who both ski better
-                than me - that's life!`
+                coach. I have been skiing for about 30 years and have raced for about 9 years. I
+                have two children who race for Bowles and who both ski better than me - that's life!`
     },
     {
         idx: 4,
@@ -47,7 +46,6 @@ const adboutData = [
         idx: 5,
         name: 'Marna Wakeling - Club Welfare Officer',
         email: 'cwo@bowlesskiracingclub.org.uk',
-        image: '../images/000_about_us/placeholder.jpg',
         blurb: `I started skiing in my mid-30s and have two children at the club who are much better
                 than me! The club is very welcoming to new members, whether they want to go on to
                 race or not. Please contact me if you have any concerns over welfare or safeguarding
