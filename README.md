@@ -47,4 +47,5 @@ to start the Gatsby development server and get a copy of the site running in you
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/domwakeling/bowles-website/blob/dom-working/CONTRIBUTING.md) for a guide to making contributions to the project.
+See [CONTRIBUTING.md](https://github.com/domwakeling/bowles-website/blob/master/CONTRIBUTING.md)
+for a guide to making contributions to the project.

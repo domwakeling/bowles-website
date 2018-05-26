@@ -10,6 +10,9 @@
   * [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)                                             
   * [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
   * [Updating the Race Results dropdown list](#updating-the-race-results-dropdown-list)
+* **[Galleries](#galleries)**
+  * [Adding images for a gallery page](#adding-images-for-a-gallery-page)
+  * [Adding a new Gallery javascript page](#adding-a-new-gallery-javascript-page)
   
 ## News Items
 
@@ -260,3 +263,74 @@ export default raceData{year};
 
 The dropdown menu's data-source is in `src/data/race-data`. This is an array of objects, each of
 which has a `title` (the year as a string) and a `link` (path of the race page).
+
+## Galleries
+
+### Adding images for a gallery page
+
+Images for galleries are stored in the `src/images/gallery` folder. Inside this file there are
+individual folders for each year, and within **that** folder you should add a new folder named to
+reflect the content of the gallery. Recommended format is `yymmdd_brief_description` although this
+is not required.
+
+For example, the images for the September 2012 handicap race are stored in
+`src/images/gallery/2012/120928_handicap`.
+
+Image naming convention is optional, but should be consistent - either provide a short description
+(eg `under-14.jpg`) or use a numbering system.
+
+*NB: There should be **no** spaces in file paths at any point - use either a dash or an underscore
+to aid legibility instead if required.*
+
+Images should ideally be landscape and should ideally all be the same size/proportion/orientation in
+an individual gallery - however this is not a strict requirement.
+
+Images to this point have been saved as JPG at resolution 600x350; ***this may change***.
+
+### Adding a new Gallery javascript page
+
+Gallery javascript pages are stored in the `src/pages/gallery` folder; again there will be a
+sub-folder for years, in which the individual javascript pages are stored. It is recommended that
+the name of the javascript file matches the name of the folder where images are stored - so the
+file for the September 2012 handicap is at `src/pages/gallery/2012/120928_handicap.js`.
+
+An example of a gallery page is:
+
+```javascript
+import React from "react";
+import GalleryPage from '../../components/GalleryPage.jsx'
+
+import img01 from '../../images/gallery/2012/120928_handicap/Under_10_Sept12.jpg';
+import img02 from '../../images/gallery/2012/120928_handicap/Under_14_Sept12.jpg';
+// add an import statement for each image in the individual gallery
+
+const images = [img01, img02];
+// add references in this array so that every imported image is included
+const alts = [
+    'Under-10s',
+    'Under-14s',
+    // add text to describe each photo - this will be used to generate alt tags
+    // NOTE: you need to ensure there are the same number of alt tags as images, and that they
+    // are in the correct order
+]
+const title = 'Pictures from the medal ceremony for the Handicap Fun Race on 11th May 2012';
+// the title will be rendered at the head of the page
+const link = '../../../news/2012/september/agm-race/';
+// a link to the news article that relates to the gallery; if not relevant, delete the line
+
+export default class Fade extends React.Component {
+    render() {
+        const data = {
+            images,
+            alts,
+            title,
+            link
+        }
+        return (
+            <div>
+                <GalleryPage data={data}/>
+            </div>
+        );
+    }
+}
+```
