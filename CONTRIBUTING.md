@@ -2,17 +2,18 @@
 
 ## Index
 * **[News Items](#news-items)**
-  * [Adding News Articles](#adding-news-articles)
-  * [Adding Monthly News Summaries](#adding-monthly-news-summaries)
-  * [Updating the News Archive list](#updating-the-news-archive-list)
+* [Adding News Articles](#adding-news-articles)
+* [Adding Monthly News Summaries](#adding-monthly-news-summaries)
+* [Updating the News Archive list](#updating-the-news-archive-list)
 * **[Race Results](#race-results)**
-  * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
-  * [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)                                             
-  * [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
-  * [Updating the Race Results dropdown list](#updating-the-race-results-dropdown-list)
+* [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
+* [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)               
+* [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
+* [Updating the Race Results dropdown list](#updating-the-race-results-dropdown-list)
 * **[Galleries](#galleries)**
-  * [Adding images for a gallery page](#adding-images-for-a-gallery-page)
-  * [Adding a new Gallery javascript page](#adding-a-new-gallery-javascript-page)
+* [Adding images for a gallery page](#adding-images-for-a-gallery-page)
+* [Adding a new Gallery javascript page](#adding-a-new-gallery-javascript-page)
+* [Updating the Galleries Page](#updating-the-galleries-page)
   
 ## News Items
 
@@ -231,7 +232,7 @@ const raceData{year} = {
                 // ... add another object in the races array for each race
         ],
         season: [
-                // keys are relevant - individual, special, link
+                // available key are: individual, special, link
         ]
     },
     SRSA: {
@@ -244,7 +245,7 @@ const raceData{year} = {
         ]
     },
     ClubNational: {
-                // title, races with {individual, honorable, link
+                // title, races with {descriptor, individual, honorable, link }
     }
     Kent: {
         descriptor: 'Kent Schools Ski Championship - {Location} - {Date}',
@@ -334,3 +335,17 @@ export default class Fade extends React.Component {
     }
 }
 ```
+
+### Updating the Galleries Page
+The 'galleries' page (served at `/gallery` and stored at `src/pages/gallery.js`) is driven by data
+held in `src/data/gallery-data`.
+
+Every time a new gallery is added, you will need to add a new entry in the data-set. This requires
+* adding an image import at the top of the file
+* adding an object in the exported array, with `img`, `title`, `date` and `link` keys
+
+Note that the array is in reverse chronological order (newest entries at the top) and the date is
+**only** used for display purposes - if you add an entry out of date order, it will also appear out
+of data order when the page is rendered.
+
+*Also note that the date is entered with the full, 4-digit, year*

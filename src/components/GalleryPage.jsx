@@ -8,12 +8,13 @@ import '../styles/slick-theme.scss';
 export default class GalleryPage extends React.Component {
     render() {
         const settings = {
+            centerMode: true,
             dots: true,
             fade: true,
             infinite: true,
             speed: 500,
             autoplay: true,
-            autoplaySpeed: 2500,
+            autoplaySpeed: 3500,
             slidesToShow: 1,
             slidesToScroll: 1
         };
@@ -31,11 +32,15 @@ export default class GalleryPage extends React.Component {
                     <Slider {...settings}>
                         { 
                             imageData.map((image, idx) => (
-                                <img key={idx} src={image.url} alt={image.alt} />
+                                <div key={idx}>
+                                    <img  style={{margin: 'auto'}} src={image.url} alt={image.alt} />
+                                    <div className='slider-label'>{image.alt}</div>
+                                </div>
                             ))
                         }
                     </Slider>
                 </div>
+                <br />
                 <br />
                 <p>See <Link to={link}>the news</Link> for full details.</p>
             </div>
