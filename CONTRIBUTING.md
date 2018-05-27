@@ -1,16 +1,16 @@
 # Contributing
 
 ## Index
-* **[News Items](#news-items)**
+**[News Items](#news-items)**
 * [Adding News Articles](#adding-news-articles)
 * [Adding Monthly News Summaries](#adding-monthly-news-summaries)
 * [Updating the News Archive list](#updating-the-news-archive-list)
-* **[Race Results](#race-results)**
+**[Race Results](#race-results)**
 * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
 * [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)               
 * [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
 * [Updating the Race Results dropdown list](#updating-the-race-results-dropdown-list)
-* **[Galleries](#galleries)**
+**[Galleries](#galleries)**
 * [Adding images for a gallery page](#adding-images-for-a-gallery-page)
 * [Adding a new Gallery javascript page](#adding-a-new-gallery-javascript-page)
 * [Updating the Galleries Page](#updating-the-galleries-page)
@@ -132,6 +132,8 @@ news summary pages)
 All entries should be in reverse chronological order - that is, the most recent year should be the
 first object in the exported array, and the most recent month should be the first item in that
 year's `months` array.
+
+:arrow-heading-up: [back to index](#index)
 
 ## Race Results
 
