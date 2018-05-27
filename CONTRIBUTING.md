@@ -5,11 +5,13 @@
 * [Adding News Articles](#adding-news-articles)
 * [Adding Monthly News Summaries](#adding-monthly-news-summaries)
 * [Updating the News Archive list](#updating-the-news-archive-list)
+
 **[Race Results](#race-results)**
 * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
 * [Moving a Race Results javascript page](#moving-a-race-results-javascript-page)               
 * [Adding a new Race Results data file](#adding-a-new-race-results-data-file)
 * [Updating the Race Results dropdown list](#updating-the-race-results-dropdown-list)
+
 **[Galleries](#galleries)**
 * [Adding images for a gallery page](#adding-images-for-a-gallery-page)
 * [Adding a new Gallery javascript page](#adding-a-new-gallery-javascript-page)
@@ -133,7 +135,7 @@ All entries should be in reverse chronological order - that is, the most recent 
 first object in the exported array, and the most recent month should be the first item in that
 year's `months` array.
 
-:arrow-heading-up: [back to index](#index)
+⥣ [back to index](#index)
 
 ## Race Results
 
@@ -267,6 +269,8 @@ export default raceData{year};
 The dropdown menu's data-source is in `src/data/race-data`. This is an array of objects, each of
 which has a `title` (the year as a string) and a `link` (path of the race page).
 
+⥣ [back to index](#index)
+
 ## Galleries
 
 ### Adding images for a gallery page
@@ -351,3 +355,5 @@ Note that the array is in reverse chronological order (newest entries at the top
 of data order when the page is rendered.
 
 *Also note that the date is entered with the full, 4-digit, year*
+
+⥣ [back to index](#index)
