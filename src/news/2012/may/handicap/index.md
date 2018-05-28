@@ -10,7 +10,7 @@ The results table is as follows:
 
 ![Handicap Race Results, May 2012](Bowles_Fun_Race_Results_May_2012.jpg)
 
-(Also available as a hi-resolution [PDF](./Bowles_Fun_Race_Results_May_2012.pdf))
+(Also available as a hi-resolution [PDF](./Bowles_Fun_Race_Results_May_2012.pdf)) ***TODO***
 
-Picture from the medals ceremony are in the gallery. ***TODO***
+Picture from the medals ceremony are in the [gallery](/gallery/2012/120511_handicap).
 

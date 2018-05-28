@@ -9,7 +9,7 @@ export default class GalleryPage extends React.Component {
     render() {
         const settings = {
             centerMode: true,
-            dots: true,
+            dots: false,
             fade: true,
             infinite: true,
             speed: 500,
