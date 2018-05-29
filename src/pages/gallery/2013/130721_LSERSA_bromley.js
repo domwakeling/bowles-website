@@ -30,7 +30,7 @@ const alts = [
     'Good Effort Cup',
     'UK Resource Cup'
 ]
-const title = 'Medallists from LSERSA 5 at Bronley on 21st June 2013';
+const title = 'Medallists from LSERSA 5 at Bromley on 21st June 2013';
 const link = '../../../../news/2013/july/LSERSA_5/';
 
 export default class Fade extends React.Component {

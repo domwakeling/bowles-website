@@ -11,8 +11,42 @@ import img10 from '../images/gallery/2013/130706_SPS/Lamberhurst_SPS_2013.jpg';
 import img11 from '../images/gallery/2013/130707_LSERSA_welwyn/LSERSA_Welwyn_13_Fun_1st.jpg';
 import img12 from '../images/gallery/2013/130721_LSERSA_bromley/LSERSA_Bromley_Fun_1st.jpg';
 import img13 from '../images/gallery/2013/130920_handicap/handicap1309.jpg';
+import img14 from '../images/gallery/2014/140516_handicap/handicap1405.jpg';
+import img15 from '../images/gallery/2014/140615_SRSA_southampton/Male_50.jpg';
+import img16 from '../images/gallery/2014/141003_handicap/handicap.jpg';
+import img17 from '../images/gallery/2014/141019_LSERSA_welwyn/Fun_Welwyn_1.jpg';
+
 
 const galleryData = [
+    {
+        year: '2014',
+        galleries: [
+            {
+                img: img17,
+                title: 'LSERSA 5, Welwyn',
+                date: '19 October 2014',
+                link: '/gallery/2014/141019_LSERSA_welwyn'
+            },
+            {
+                img: img16,
+                title: 'Handicap Fun Race',
+                date: '3 October 2014',
+                link: '/gallery/2014/141003_handicap'
+            },
+            {
+                img: img15,
+                title: 'SRSA 3, Southampton',
+                date: '15 June 2014',
+                link: '/gallery/2014/140615_SRSA_southampton'
+            },
+            {
+                img: img14,
+                title: 'Handicap Fun Race',
+                date: '16 May 2014',
+                link: '/gallery/2014/140516_handicap'
+            }
+        ]
+    },
     {
         year: '2013',
         galleries: [
