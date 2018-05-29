@@ -10,4 +10,4 @@ The results table is as follows:
 
 ![Results](Bowles-Fun-Race-Results-19-04-2013.jpg) ***TODO***
 
-Pictures from the medal ceremony are in the gallery ***TODO***
+Pictures from the medal ceremony are in the [gallery](/gallery/2013/130419_medals).

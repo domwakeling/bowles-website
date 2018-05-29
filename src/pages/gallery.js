@@ -9,7 +9,7 @@ export default class GalleryPage extends React.Component {
                 <h3>Galleries</h3>
                 {
                     galleryData.map(year => (
-                        <div  key={year}>
+                        <div  key={year.year}>
                             <h3>{year.year}</h3>
                             <div className="gallery-container">
                                 {

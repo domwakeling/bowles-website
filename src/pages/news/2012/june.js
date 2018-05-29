@@ -7,9 +7,11 @@ const Page = ({ data }) => (
 );
 
 Page.propTypes = {
-    data: PropTypes.func
+    data: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.object
+    ])
 }
-
 export default Page;
 
 export const query = graphql`
