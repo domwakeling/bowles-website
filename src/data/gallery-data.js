@@ -22,9 +22,49 @@ import img21 from '../images/gallery/2015/150605_SRSA_4_southampton/fun_teams.jp
 import img22 from '../images/gallery/2015/150628_LSERSA_3_welwyn/fun_teams_1.jpg';
 import img23 from '../images/gallery/2015/150705_SRSA_5_bowles/fun_teams_1.jpg';
 import img24 from '../images/gallery/2015/151010_LSERSA_5_brentwood/fun_teams.jpg';
+import img25 from '../images/gallery/2016/160429_handicap/handicap.jpg';
+import img26 from '../images/gallery/2016/160508_LSERSA_1_brentwood/club_teams.jpg';
+import img27 from '../images/gallery/2016/160528_SRSA_2_snowtrax/Team.jpg';
+import img28 from '../images/gallery/2016/160619_LSERSA_2_brentwood/cover.jpg';
+import img29 from '../images/gallery/2016/160923_handicap/handicap.jpg';
 
 
 const galleryData = [
+    {
+        year: '2016',
+        galleries: [
+            {
+                img: img29,
+                title: 'Handicap Fun Race',
+                date: '23 September 2016',
+                link: '/gallery/2016/160923_handicap'
+            },
+            {
+                img: img28,
+                title: 'LSERSA 2, Brentwood',
+                date: '19 June 2016',
+                link: '/gallery/2016/160619_LSERSA_2_brentwood'
+            },
+            {
+                img: img27,
+                title: 'SRSA 2, Snowtrax',
+                date: '28 May 2016',
+                link: '/gallery/2016/160528_SRSA_2_snowtrax'
+            },
+            {
+                img: img26,
+                title: 'LSERSA 1, Brentwood',
+                date: '8 May 2016',
+                link: '/gallery/2016/160508_LSERSA_1_brentwood'
+            },
+            {
+                img:img25,
+                title: 'Handicap Fun Race',
+                date: '29 April 2016',
+                link: '/gallery/2016/160429_handicap'
+            }
+        ]
+    },
     {
         year: '2015',
         galleries: [
