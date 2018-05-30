@@ -15,9 +15,63 @@ import img14 from '../images/gallery/2014/140516_handicap/handicap1405.jpg';
 import img15 from '../images/gallery/2014/140615_SRSA_southampton/Male_50.jpg';
 import img16 from '../images/gallery/2014/141003_handicap/handicap.jpg';
 import img17 from '../images/gallery/2014/141019_LSERSA_welwyn/Fun_Welwyn_1.jpg';
+import img18 from '../images/gallery/2015/150417_handicap/handicap.jpg';
+import img19 from '../images/gallery/2015/150425_SRSA_1_snowtrax/F_15-16.jpg';
+import img20 from '../images/gallery/2015/150516_LSERSA_2_brentwood/fun_teams_2.jpg';
+import img21 from '../images/gallery/2015/150605_SRSA_4_southampton/fun_teams.jpg';
+import img22 from '../images/gallery/2015/150628_LSERSA_3_welwyn/fun_teams_1.jpg';
+import img23 from '../images/gallery/2015/150705_SRSA_5_bowles/fun_teams_1.jpg';
+import img24 from '../images/gallery/2015/151010_LSERSA_5_brentwood/fun_teams.jpg';
 
 
 const galleryData = [
+    {
+        year: '2015',
+        galleries: [
+            {
+                img: img24,
+                title: 'LSERSA 5, Brentwood',
+                date: '10 October 2015',
+                link: '/gallery/2015/151010_LSERSA_5_brentwood'
+            },
+            {
+                img: img23,
+                title: 'SRSA 5, Bowles',
+                date: '5 July 2015',
+                link: '/gallery/2015/150705_SRSA_5_bowles'
+            },
+            {
+                img: img22,
+                title: 'LSERSA 3, Welwyn',
+                date: '28 June 2015',
+                link: '/gallery/2015/150628_LSERSA_3_welwyn'
+            },
+            {
+                img: img21,
+                title: 'SRSA 4, Southampton',
+                date: '5 June 2015',
+                link: '/gallery/2015/150605_SRSA_4_southampton'
+            },
+            {
+                img: img20,
+                title: 'LSERSA 2, Brentwood',
+                date: '16 May 2015',
+                link: '/gallery/2015/150516_LSERSA_2_brentwood'
+            },
+            {
+                img: img19,
+                title: 'SRSA 1, Snowtrax',
+                date: '25 April 2015',
+                link: '/gallery/2015/150425_SRSA_1_snowtrax'
+            },
+            {
+                img: img18,
+                title: 'Handicap Fun Race',
+                date: '17 April 2015',
+                link: '/gallery/2015/150417_handicap'
+            }
+        ]
+    },
     {
         year: '2014',
         galleries: [
