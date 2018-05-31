@@ -12,11 +12,12 @@ export default class GalleryPage extends React.Component {
             dots: false,
             fade: true,
             infinite: true,
-            speed: 500,
+            speed: 750,
             autoplay: true,
-            autoplaySpeed: 3500,
+            autoplaySpeed: 4000,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            adaptiveHeight: true
         };
         const { images, alts, title, link } = this.props.data;
         const imageData = images.map((url, idx) => {
