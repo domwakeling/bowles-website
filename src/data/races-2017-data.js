@@ -280,6 +280,25 @@ const raceData2017 = {
             }
         ]
     },
+    ClubNational: {
+        title: 'SSE Club National Series 2017',
+        races: [
+            {
+                descriptor: 'Snowsport South - Southampton - 4 June 2017',
+                individual: [
+                    'Claudette Povey - 1st in Ladies Seniors'
+                ],
+                link: 'https://gbski.com/racedocs/2017/C326/9243/RES9243%20Results%20-%20Female.pdf'
+            },
+            {
+                descriptor: 'Gloucester - 9 July 2017',
+                individual: [
+                    'Claudette Povey - 2nd in Ladies Seniors
+                ],
+                link: 'https://gbski.com/racedocs/2017/C337/9265/RES9265%20Ladies%20Results.pdf'
+            }
+        ]
+    },
     Kent: {
         descriptor: 'Kent Schools Ski Championships 2017',
         individual: [
