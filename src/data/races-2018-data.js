@@ -53,6 +53,10 @@ const raceData2018 = {
                     'Mark Oliver - 1st in Male Masters 2',
                     'Bill Dunnet - 2nd in Male Masters 2'
                 ],
+                fun_teams: [
+                    'Bill Dunnet was a member of the 2nd-placed Team Bravo',
+                    'Toby Everest was a member of the 3rd-placedTeam Foxtrot'
+                ],
                 honorable: [
                     'Toby Dunnet - 4th in Male U14'
                 ]
