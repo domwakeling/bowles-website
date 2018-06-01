@@ -4,7 +4,7 @@ contentType: news
 date: "2017-07-08T14:18"
 ---
 
-The third round of the LSERSA 2017 Summer Series was held on Sunday 2nd July at Aldershot. Full results are available on the Ski Results website.
+The fourth round of the LSERSA 2017 Summer Series was held on Sunday 2nd July at Aldershot. Full results are available on the [Ski Results website](https://skiresults.co.uk/events/825).
 
 **Individual Event**\
 Rufus Wontner - 2nd in Mens U8\
