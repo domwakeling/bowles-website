@@ -293,7 +293,7 @@ const raceData2017 = {
             {
                 descriptor: 'Gloucester - 9 July 2017',
                 individual: [
-                    'Claudette Povey - 2nd in Ladies Seniors
+                    'Claudette Povey - 2nd in Ladies Seniors'
                 ],
                 link: 'https://gbski.com/racedocs/2017/C337/9265/RES9265%20Ladies%20Results.pdf'
             }
