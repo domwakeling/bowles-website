@@ -33,11 +33,60 @@ import img32 from '../images/gallery/2017/170506_kent/MID_G_T.jpg';
 import img33 from '../images/gallery/2017/170507_LSERSA_2_brentwood/cover.jpg';
 import img34 from '../images/gallery/2017/170617_LSERSA_3_brentwood/funs.jpg';
 import img35 from '../images/gallery/2017/170618_SRSA_3_aldershot/funs.jpg';
+import img36 from '../images/gallery/2017/170702_LSERSA_4_aldershot/medallists.jpg';
+import img37 from '../images/gallery/2017/170715_SRSA_4_aldershot/m_masters2.jpg';
+import img38 from '../images/gallery/2017/170826_SRSA_5_bowles/club_teams.jpg';
+import img39 from '../images/gallery/2017/170922_handicap/handicap.jpg';
+import img40 from '../images/gallery/2017/171001_ERSA/b_u8.jpg';
+import img41 from '../images/gallery/2017/171008_LSERSA_5_welwyn/medallists.jpg';
+import img42 from '../images/gallery/2017/171014_triregional/shield_3.jpg';
 
 const galleryData = [
     {
         year: '2017',
         galleries: [
+            {
+                img: img42,
+                title: 'Tri-Regional',
+                date: '14 October 2017',
+                link: '/gallery/2017/171014_triregional'
+            },
+            {
+                img: img41,
+                title: 'LSERSA 5, Welwyn',
+                date: '8 October 2017',
+                link: '/gallery/2017/171008_LSERSA_5_welwyn'
+            },
+            {
+                img: img40,
+                title: 'ERSA Champs 2017',
+                date: '1 October 2017',
+                link: '/gallery/2017/171001_ERSA'
+            },
+            {
+                img: img39,
+                title: 'Handicap Fun Race',
+                date: '22 September 2017',
+                link: '/gallery/2017/170922_handicap'
+            },
+            {
+                img: img38,
+                title: 'SRSA 5, Bowles',
+                date: '26 August 2017',
+                link: '/gallery/2017/170826_SRSA_5_bowles'
+            },
+            {
+                img: img37,
+                title: 'SRSA 4, Aldershot',
+                date: '15 July 2017',
+                link: '/gallery/2017/170715_SRSA_4_aldershot'
+            },
+            {
+                img: img36,
+                title: 'LSERSA 4, Aldershot',
+                date: '2 July 2017',
+                link: '/gallery/2017/170702_LSERSA_4_aldershot'
+            },
             {
                 img: img35,
                 title: 'SRSA 3, Aldershot',

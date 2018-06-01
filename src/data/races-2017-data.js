@@ -113,6 +113,9 @@ const raceData2017 = {
                 'Joshua Goodsell - 1st in Mens Senior',
                 'Nigel Hilliard - 1st in Masters 2'
             ],
+            special: [
+                'Stella Pople - Best Female Newcomer'
+            ],
             honorable: [
                 'Elle Ayton - 4th in Ladies U18'
             ]
