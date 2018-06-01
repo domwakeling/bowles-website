@@ -40,8 +40,34 @@ import img39 from '../images/gallery/2017/170922_handicap/handicap.jpg';
 import img40 from '../images/gallery/2017/171001_ERSA/b_u8.jpg';
 import img41 from '../images/gallery/2017/171008_LSERSA_5_welwyn/medallists.jpg';
 import img42 from '../images/gallery/2017/171014_triregional/shield_3.jpg';
+import img43 from '../images/gallery/2018/180420_handicap/handicap.jpg';
+import img44 from '../images/gallery/2018/180506_kent/rose_hill.jpg';
+import img45 from '../images/gallery/2018/180526_SRSA_2_chatham/medallists.jpg';
 
 const galleryData = [
+    {
+        year: '2018',
+        galleries: [
+            {
+                img: img45,
+                title: 'SRSA 2, Chatham',
+                date: '26 May 2018',
+                link: '/gallery/2018/180526_SRSA_2_chatham'
+            },
+            {
+                img: img44,
+                title: 'Kent Schools',
+                date: '6 May 2018',
+                link: '/gallery/2018/180506_kent'
+            },
+            {
+                img: img43,
+                title: 'Handicap Fun Race',
+                date: '20 April 2018',
+                link: '/gallery/2018/180420_handicap'
+            }
+        ]
+    },
     {
         year: '2017',
         galleries: [
