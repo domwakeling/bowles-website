@@ -59,7 +59,8 @@ const raceData2018 = {
                 ],
                 honorable: [
                     'Toby Dunnet - 4th in Male U14'
-                ]
+                ],
+                link: 'https://skiresults.co.uk/events/890'
             }
         ]
     },
@@ -80,7 +81,7 @@ const raceData2018 = {
         individual: [
             'Stella Pople - 1st in Primary Junior Girls',
             'Rufus Wontner - 1st in Primary Junior Boys',
-            'Joshua Wakeling = 3rd in Secondary Senior Boys'
+            'Joshua Wakeling - 3rd in Secondary Senior Boys'
         ],
         primary_teams: [
             `Bishops Down 2 (Eva Rigby, Dylan Bowers, Barnaby Weston, Tommie Pryor) were 1st in the

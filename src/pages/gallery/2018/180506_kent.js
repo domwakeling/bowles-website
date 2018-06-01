@@ -16,7 +16,7 @@ const alts = [
     `Skinners'`
 ]
 const title = 'Medallists from the Kent School Championships on 6th May 2018';
-const link = '../../../../news/2018/TODO';
+const link = '../../../../news/2018/may/kent';
 
 export default class Fade extends React.Component {
     render() {
