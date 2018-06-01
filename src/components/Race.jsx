@@ -29,6 +29,11 @@ const Race = (props) => {
                 ) : ''
             }
             {
+                data.esskia_teams ? (
+                    <RaceEvent title="Team Event" data={data.esskia_teams} />
+                ) : ''
+            }
+            {
                 data.fun_teams ? (
                     <RaceEvent title="Fun Team Event" data={data.fun_teams} />
                 ) : ''

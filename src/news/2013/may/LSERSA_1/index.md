@@ -26,3 +26,5 @@ The Bowles team of Charlotte Hilliard, Jack Hilliard, Christopher Owens, Tim Owe
 * Nigel Hilliard and Matt Mitchell were members of the 3rd placed "Team F".
 
 [Full results](http://www.lsersa.org/races13/bo13ovr.pdf).
+
+Photos from the day are in the [gallery](/gallery/2013/130505_LSERSA_bowles).

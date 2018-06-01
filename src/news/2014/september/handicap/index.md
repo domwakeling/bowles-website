@@ -8,4 +8,4 @@ A quick reminder that we will be holding the Bowles “Fun Race” this Friday (
 
 Final handicaps:
 
-![handicaps](Bowles_Handicap_for_3rd_October.jpg)
+![handicaps](./Bowles_Handicap_for_3rd_October.jpg)

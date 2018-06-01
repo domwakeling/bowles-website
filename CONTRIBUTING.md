@@ -76,7 +76,10 @@ const Page = ({ data }) => (
 );
 
 Page.propTypes = {
-    data: PropTypes.func
+    data: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.object
+    ])
 }
 
 export default Page;
@@ -113,8 +116,8 @@ code:
 * change the regex filter to reflect the month & year (in the above example this
 is `/^/news/2018/may/`)
 
-Finally, having added a new month you will need to [update the news archive list]
-(#updating-the-news-archive-list).
+Finally, having added a new month you will need to [update the news archive
+list](#updating-the-news-archive-list).
 
 ### Updating the News Archive list
 
@@ -352,7 +355,7 @@ Every time a new gallery is added, you will need to add a new entry in the data-
 
 Note that the array is in reverse chronological order (newest entries at the top) and the date is
 **only** used for display purposes - if you add an entry out of date order, it will also appear out
-of data order when the page is rendered.
+of date order when the page is rendered.
 
 *Also note that the date is entered with the full, 4-digit, year*
 

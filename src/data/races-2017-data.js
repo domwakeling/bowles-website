@@ -83,8 +83,43 @@ const raceData2017 = {
                         Oliver) were 3rd in the club teams.`
                 ],
                 link: 'https://skiresults.co.uk/events/836'
+            },
+            {
+                descriptor: 'Race 5 - Welwyn - 8th October 2017',
+                individual: [
+                    'Rufus Wontner - 3rd in Mens U8',
+                    'Ollie Turner-Moore - 3rd in Mens U14',
+                    'Evie Ayton - 1st in Ladies U16',
+                    'Joshua Wakeling - 1st in Mens U16',
+                    'Claudette Povey - 1st in Ladies Senior',
+                    'Joshua Goodsell - 3rd in Mens Senior',
+                    'Nigel Hilliard - 2nd in Masters 2'
+                ],
+                fun_teams: [
+                    'Stella Pople and Rufus Wontner were members of the 2nd-placed Team F',
+                    'Phoebe Everest was a member of the 3rd-placed Team G'
+                ],
+                link: 'https://skiresults.co.uk/events/858'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Rufus Wontner - 2nd in Mens U8',
+                'Ben Wontner - 3rd in Mens U10',
+                'Ollie Turner-Moore - 3rd in Mens U14',
+                'Evie Ayton - 1st in Ladies U16',
+                'Joshua Wakeling - 3rd in Mens U16',
+                'Claudette Povey - 1st in Ladies Senior',
+                'Joshua Goodsell - 1st in Mens Senior',
+                'Nigel Hilliard - 1st in Masters 2'
+            ],
+            special: [
+                'Stella Pople - Best Female Newcomer'
+            ],
+            honorable: [
+                'Elle Ayton - 4th in Ladies U18'
+            ]
+        }
     },
     SRSA: {
         title: 'SRSA 2017 Summer Race Series',
@@ -199,6 +234,73 @@ const raceData2017 = {
                 'Nigel Hilliard - 2nd in Male Masters 2'
             ]
         }
+    },
+    ERSA: {
+        title: 'ERSA 2017',
+        races: [
+            {
+                descriptor: 'Race 4 - Norfolk - 25th June 2017',
+                individual: [
+                    'Claudette Povey - 2nd in Ladies Masters 1'
+                ],
+                link: 'http://www.ersa.co.uk/sites/default/files/racing/results/2017/2017_209_indresults.pdf'
+            },
+            {
+                descriptor: 'ERSA Outdoor Championships 2017 - Welwyn - 9th September 2017',
+                individual: [
+                    'Rufus Wontner - 1st in Boys U8',
+                    'Ben Wontner - 2nd in Boys U10'
+                ],
+                link: 'http://www.ersa.co.uk/sites/default/files/racing/results/2017/2017_221_indresults.pdf'
+            }
+        ]
+    },
+    ESSKIA: {
+        title: 'ESSKIA Dry Slope Championships 2017',
+        races: [
+            {
+                descriptor: 'Brentwood Qualifier - 16 September 2017',
+                individual: [
+                    'Lila Ayton - 1st in U12 Girls',
+                    'Evie Ayton - 1st in U16 Girls',
+                    'Elle Ayton - 2nd in U19 Girls'
+                ],
+                esskia_teams: [
+                    `Tunbridge Wells Girls Grammar II (Isobel Aves, Harriet Duncan, Mia Devey,
+                        Amelia Aves) were 3rd in the U14 Girls`,
+                    `Skinners' (Sebastian Rice, Joseph Panell, Ethan Gillespie, Joshua Wakeling)
+                        were 1st in the U16 Boys`,
+                    `Tunbridge Wells Girls Grammar IV (Evie Ayton, Beth Colley, Rebecca Forte,
+                        Elle Ayton) were 2nd in the U19 Girls`
+                ]
+            },
+            {
+                descriptor: 'Finals - Norfolk - 7 October 2017',
+                honorable: [
+                    `Skinners' (Sebastian Rice, Joseph Panell, Ethan Gillespie, Joshua Wakeling)
+                        were 4th in the U16 Boys`
+                ]
+            }
+        ]
+    },
+    ClubNational: {
+        title: 'SSE Club National Series 2017',
+        races: [
+            {
+                descriptor: 'Snowsport South - Southampton - 4 June 2017',
+                individual: [
+                    'Claudette Povey - 1st in Ladies Seniors'
+                ],
+                link: 'https://gbski.com/racedocs/2017/C326/9243/RES9243%20Results%20-%20Female.pdf'
+            },
+            {
+                descriptor: 'Gloucester - 9 July 2017',
+                individual: [
+                    'Claudette Povey - 2nd in Ladies Seniors'
+                ],
+                link: 'https://gbski.com/racedocs/2017/C337/9265/RES9265%20Ladies%20Results.pdf'
+            }
+        ]
     },
     Kent: {
         descriptor: 'Kent Schools Ski Championships 2017',
