@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
 import img from "../images/start-racing/ben_w-racing.jpg"
 
