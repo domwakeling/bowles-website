@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 
 import RacesLSERSA from './RacesLSERSA.jsx';
 import RacesSRSA from './RacesSRSA.jsx';
+import RacesERSA from './RacesERSA.jsx';
 import RacesClubNational from './RacesClubNational';
 import Race from './Race.jsx';
+import Races from './Races.jsx';
 import RaceYearPicker from './RaceYearPicker.jsx';
 
 const RacePage = (props) => {
@@ -24,6 +26,11 @@ const RacePage = (props) => {
                 ) : ''
             }
             {
+                data.ERSA ? (
+                    <RacesERSA data={data.ERSA} />
+                ) : ''
+            }
+            {
                 data.ClubNational ? (
                     <RacesClubNational data={data.ClubNational} />
                 ) : ''
@@ -34,6 +41,11 @@ const RacePage = (props) => {
                         <Race data={data.Kent} />
                         <hr />
                     </div>
+                ) : ''
+            }
+            {
+                data.ESSKIA ? (
+                    <Races data={data.ESSKIA} />
                 ) : ''
             }
             {
