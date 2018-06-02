@@ -9,8 +9,8 @@ const alts = [
     'Boys Under-8s',
     'Boys Under-10s',
 ]
-const title = 'Medallists from ERSA Championships on 1st October 2017';
-const link = '../../../../news/2017/TODO';
+const title = 'Medallists from ERSA Championships on 30th September 2017';
+const link = '../../../../news/2017/september/ERSA_champs';
 
 export default class Fade extends React.Component {
     render() {

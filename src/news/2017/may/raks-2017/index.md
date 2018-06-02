@@ -30,4 +30,4 @@ Evie Ayton was 4th in the Secondary - Girls
 St Mary’s Platt A (Christopher Garrett, Thomas Hewitt, Thomas Marshall and Erin Vallance) were 4th in the B&G - Mixed
 Skinners C (Harvey Galloway, Joshua Mansley and Oliver Wynne) were 4th in the MID - Boys
 
-Pictures of the medallists are in the [gallery](/gallery/2017).
+Pictures of the medallists are in the [gallery](/gallery/2017/170506_kent).

@@ -14,7 +14,7 @@ Joshua Wakeling - 3rd in Secondary Senior Boys
 **Primary Teams**\
 Bishops Down 2 (Eva Rigby, Dylan Bowers, Barnaby Weston, Tommie Pryor) were 1st in the Primary Junior Mixed\
 Rose Hill (Cerys Wakeling, Ben Wontner, Rufus Wontner, Mattie Davidson were 2nd in the Primary Senior Mixed\
-Bishps Down 1 (Georgina Pryor, Nate Weston, Jack Bowers, Lila Ayton) were 3rd in the Primary Senior Mixed
+Bishops Down 1 (Georgina Pryor, Nate Weston, Jack Bowers, Lila Ayton) were 3rd in the Primary Senior Mixed
 
 **Secondary Team Event**\
 Tunbridge Wells Girls Grammar 2 (Mia Devey, Alice Lewis, Harriet Dunkin, Millie James) were 1st in the Secondary Junior Female\
@@ -27,7 +27,7 @@ Skinners 3 (Johnny Aguss, Matthew Bentham, Joe Taylor, Jago Parcell-Jones) were 
 **Fun Team Event**\
 Chris Garrat and Ethan Gillespie were members of the wining team in Secondary\
 Johnny Aguss and Evie Ayton were members of the 2nd-placed team in Secondary\
-Ameila Aves and Toby Pople were members of the 3rd-placed team in Secondary
+Amelia Aves and Toby Pople were members of the 3rd-placed team in Secondary
 
 **Honorable Mention**\
 Ben Wontner - 4th in Primary Senior Male

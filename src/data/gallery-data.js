@@ -87,7 +87,7 @@ const galleryData = [
                 img: img40,
                 title: 'ERSA Champs 2017',
                 date: '1 October 2017',
-                link: '/gallery/2017/171001_ERSA'
+                link: '/gallery/2017/170930_ERSA'
             },
             {
                 img: img39,

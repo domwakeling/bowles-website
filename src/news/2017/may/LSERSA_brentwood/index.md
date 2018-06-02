@@ -4,7 +4,7 @@ contentType: news
 date: "2017-05-07T21:44"
 ---
 
-The second round of the LSERSA 2017 Summer Series was held on Sunday 7th May at Brentwood. Full results are available on the [Ski Results website](https://skiresults.co.uk/events/825).
+The second round of the LSERSA 2017 Summer Series was held on Sunday 7th May at Brentwood. Full results are available on the [Ski Results website](https://skiresults.co.uk/events/811).
 
 **Individual Event**\
 Rufus Wontner - 3rd in Mens U8\
@@ -26,4 +26,4 @@ Bowles placed 2nd in ‘Club Performance’ (combined times of five racers chose
 **Honorable Mention**\
 Joshua Wakeling - 4th in Mens U16
 
-Pictures of the medallists are in the [gallery](/gallery/2017).
+Pictures of the medallists are in the [gallery](/gallery/2017/170507_LSERSA_2_brentwood).

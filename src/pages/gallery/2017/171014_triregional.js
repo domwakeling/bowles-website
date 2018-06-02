@@ -10,7 +10,7 @@ const alts = [
     '3rd place in Shield',
 ]
 const title = 'Medallists from Tri-Regional at Welwyn on 14 October 2017';
-const link = '../../../../news/2017/TODO';
+const link = '../../../../news/2017/october/tri-region';
 
 export default class Fade extends React.Component {
     render() {

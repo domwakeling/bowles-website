@@ -11,7 +11,7 @@ const newsData = [
     },
     {
         year: '2017',
-        months: ['october', 'july', 'may', 'april']
+        months: ['october', 'september', 'august', 'july', 'june', 'may', 'april']
     },
     {   year: '2016',
         months: ['october', 'september', 'august', 'july', 'june', 'may', 'april', 'march',

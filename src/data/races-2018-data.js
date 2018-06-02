@@ -88,7 +88,7 @@ const raceData2018 = {
                 Primary Junior Mixed`,
             `Rose Hill (Cerys Wakeling, Ben Wontner, Rufus Wontner, Mattie Davidson were 2nd in the
                 Primary Senior Mixed`,
-            `Bishps Down 1 (Georgina Pryor, Nate Weston, Jack Bowers, Lila Ayton) were 3rd in the
+            `Bishops Down 1 (Georgina Pryor, Nate Weston, Jack Bowers, Lila Ayton) were 3rd in the
                 Primary Senior Mixed`,
         ],
         secondary_teams: [  
@@ -108,7 +108,7 @@ const raceData2018 = {
         fun_teams: [
             'Chris Garrat and Ethan Gillespie were members of the wining team in Secondary',
             'Johnny Aguss and Evie Ayton were members of the 2nd-placed team in Secondary',
-            'Ameila Aves and Toby Pople were members of the 3rd-placed team in Secondary'
+            'Amelia Aves and Toby Pople were members of the 3rd-placed team in Secondary'
         ],
         honorable: [
             'Ben Wontner - 4th in Primary Senior Male'

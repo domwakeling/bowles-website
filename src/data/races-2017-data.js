@@ -39,7 +39,7 @@ const raceData2017 = {
                 honorable: [ 
                     'Joshua Wakeling - 4th in Mens U16'
                 ],
-                links: 'https://skiresults.co.uk/events/811'
+                link: 'https://skiresults.co.uk/events/811'
             },
             {
                 descriptor: 'Race 3 - Brentwood - 17th June 2017',
@@ -172,7 +172,7 @@ const raceData2017 = {
                 individual: [
                     'Evie Ayton - 1st in Female U16',
                     'Elle Ayton - 3rd in Female U18',
-                    'Claudette Povey - 2nd in Famale Seniors',
+                    'Claudette Povey - 2nd in Female Seniors',
                     'Jack Hilliard - 3rd in Male Seniors',
                     'Nigel Hilliard - 2nd in Male Masters 2'
                 ],
@@ -246,7 +246,7 @@ const raceData2017 = {
                 link: 'http://www.ersa.co.uk/sites/default/files/racing/results/2017/2017_209_indresults.pdf'
             },
             {
-                descriptor: 'ERSA Outdoor Championships 2017 - Welwyn - 9th September 2017',
+                descriptor: 'ERSA Outdoor Championships 2017 - Welwyn - 30th September 2017',
                 individual: [
                     'Rufus Wontner - 1st in Boys U8',
                     'Ben Wontner - 2nd in Boys U10'
@@ -344,7 +344,8 @@ const raceData2017 = {
             'Evie Ayton was a mamber of LSERSA B, placing 3rd in the Plate competition',    
             `Phoebe Everest, Cerys Wakeling and Toby Pople were members of LSERSA H, placing 3rd in
                 the Shield competition`
-        ]
+        ],
+        link: 'http://www.ersa.co.uk/sites/default/files/racing/results/2017/2017_223_15.pdf'
     }
 }
 

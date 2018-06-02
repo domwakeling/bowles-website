@@ -26,7 +26,7 @@ const alts = [
     'Bowles Medallists'
 ]
 const title = 'Medallists from LSERSA 4 at Aldershot on 2nd July 2017';
-const link = '../../../../news/2017/TODO';
+const link = '../../../../news/2017/july/LSERSA_aldershot';
 
 export default class Fade extends React.Component {
     render() {

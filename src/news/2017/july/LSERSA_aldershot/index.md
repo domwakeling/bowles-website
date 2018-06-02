@@ -1,10 +1,10 @@
 ---
 title: "LSERSA Summer Race Series - Aldershot"
 contentType: news
-date: "2017-07-08T14:18"
+date: "2017-07-02T23:00"
 ---
 
-The fourth round of the LSERSA 2017 Summer Series was held on Sunday 2nd July at Aldershot. Full results are available on the [Ski Results website](https://skiresults.co.uk/events/825).
+The fourth round of the LSERSA 2017 Summer Series was held on Sunday 2nd July at Aldershot. Full results are available on the [Ski Results website](https://skiresults.co.uk/events/836).
 
 **Individual Event**\
 Rufus Wontner - 2nd in Mens U8\
@@ -26,3 +26,5 @@ Bowles (Evie Ayton, Joshua Wakeling, Elle Ayton, Joshua Goodsell and Mark Oliver
 
 **Club**\
 Bowles were 1st in ‘Club Performance’ (combined times of five racers chosen by age group)
+
+Photos in the [gallery](/gallery/2017/170702_LSERSA_4_aldershot).

@@ -8,4 +8,4 @@ The club Fun Race was held on Friday 28th April; full results below:
 
 ![handicap race results](Bowles_Handicap_2017_April_Results.jpg)
 
-Pictures of the medallists are in the [gallery](/gallery/2017).
+Pictures of the medallists are in the [gallery](/gallery/2017/170428_handicap).
