@@ -7,9 +7,9 @@ const NewsItem = (props) => {
     return (
         <div>
             <Link to={path}>
-                <h3>{title}</h3>
+                <h3 className="news-headline">{title}</h3>
             </Link>
-            <h5>{date}</h5>
+            <h4 className="news-date">{date}</h4>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <br />
         </div>
