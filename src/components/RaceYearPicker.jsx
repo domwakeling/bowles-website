@@ -11,7 +11,30 @@ export default class RaceYearPicker extends React.Component {
             open: false
         }
         this.buttonHandler = this.buttonHandler.bind(this);
+        this.setPickerWrapperRef = this.setPickerWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
     }
+
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+    }
+
+    handleClickOutside(e) {
+        if (this.wrapperRef && !this.wrapperRef.contains(e.target) && this.state.open) {
+            this.setState({
+                open: !this.state.open
+            });
+        }
+    }
+
+    setPickerWrapperRef(node) {
+        this.wrapperRef = node;
+    }
+
 
     buttonHandler(e) {
         e.preventDefault();
@@ -23,7 +46,7 @@ export default class RaceYearPicker extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="yearPickerWrapper" ref={this.setPickerWrapperRef}>
                 <button
                     className="dropdown"
                     onClick={this.buttonHandler}

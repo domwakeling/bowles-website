@@ -27,6 +27,7 @@ const AboutPage = () => (
                 blurb={person.blurb}
             />
         ))}
+        <hr />
     </div>
 );
 

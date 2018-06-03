@@ -13,9 +13,10 @@ const RacePage = (props) => {
     const { data, title } = props;
     return (
         <div>
-            <RaceYearPicker title={title.substr(0, 4)} />
-            <h2 className="raceYearDisplay">{title}</h2>
-            <hr />
+            <div>
+                <h2 className="raceYearDisplay">{title}</h2>
+                <RaceYearPicker className="pickerWrapper" title={title.substr(0, 4)} />
+            </div>
             {
                 data.LSERSA ? (
                     <RacesLSERSA data={data.LSERSA} />

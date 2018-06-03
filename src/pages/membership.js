@@ -26,6 +26,7 @@ const IndexPage = () => (
         <p>Annual membership charges are &pound;35 for an individual, with a reduced charge of
             &pound;16 for extra family members. There is also a charge of &pound;8 per person for
             each Friday night training session.</p>
+        <hr />
     </div>
 );
 

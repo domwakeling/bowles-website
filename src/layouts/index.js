@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/Header.jsx';
+import Copyright from '../components/Copyright.jsx';
 import MenuRight from '../components/MenuRight.jsx';
 import '../styles/Layout.scss';
 
@@ -17,11 +18,11 @@ const Layout = (props) => {
                 { name: 'keywords', content: 'bowles, ski, skiing, racing' },
             ]}
         />
-        <Header
-            siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} />
         <div className="container">
             <div id="content">
                 {children()}
+                <Copyright who="Bowles Ski Racing Club" />
             </div>
             <div id="right-column">
                 <MenuRight location={location} />

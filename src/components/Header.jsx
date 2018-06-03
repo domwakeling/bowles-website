@@ -26,7 +26,6 @@ export default class Header extends React.Component {
     handleClickOutside(e) {
         if (this.wrapperRef && !this.wrapperRef.contains(e.target) && this.state.menuOpen) {
             this.toggleMenuHandler();
-            // console.log('click');
         }
     }
 
@@ -50,7 +49,7 @@ export default class Header extends React.Component {
         return (
             <div id="navbar">
                 <div className="container" ref={this.setWrapperRef}>
-                    <Link className="brand" to="/" >{siteTitle}</Link>
+                    <Link className="brand" to="/" ><h3>{siteTitle}</h3></Link>
                     <button
                         className="icon"
                         onClick={this.burgerClickHandler}

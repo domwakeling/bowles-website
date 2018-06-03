@@ -26,6 +26,7 @@ const IndexPage = () => (
         <p>If you can ski confidently and use the lift unaided, you are welcome to join us - please
             look at the <Link to='/membership'>membership page</Link> for more details, or <Link
             to="/about">get in touch</Link> if you have any questions.</p>
+        <hr />
     </div>
 );
 

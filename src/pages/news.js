@@ -7,13 +7,13 @@ const NewsPage = ({ data }) => (
         <h2>News</h2>
         {data.allMarkdownRemark.edges.map(({ node }, index) =>
             <div key={index}>
-                <hr />
                 <NewsItem
                     path={node.fields.slug}
                     title={node.frontmatter.title}
                     date={node.frontmatter.date}
                     html={node.html}
                 />
+                <hr />
             </div>
         )}
     </div>

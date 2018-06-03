@@ -38,6 +38,8 @@
         .blurb {
             font-style: italic;
             color: $color__blurb-text;
+            border-left: 4px solid rgba($color__project-complementary, 0.7);
+            padding-left: 0.5em;
         }
     }
 

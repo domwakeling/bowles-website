@@ -44,6 +44,7 @@ export default class GalleryPage extends React.Component {
                 <br />
                 <br />
                 <p>See <Link to={link}>the news</Link> for full details.</p>
+                <hr />
             </div>
         );
     }

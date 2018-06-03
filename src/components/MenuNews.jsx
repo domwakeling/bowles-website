@@ -14,7 +14,11 @@ export default class MenuNews extends React.Component {
             const divs = document.getElementsByClassName("year");
             for (let i = 0; i < divs.length; i++) {
                 if (divs[i].id === openDivId) {
-                    divs[i].classList.add('open');
+                    if(divs[i].classList.contains('open')) {
+                        divs[i].classList.remove('open');
+                    } else {
+                        divs[i].classList.add('open');
+                    }
                 } else {
                     divs[i].classList.remove('open');
                 }

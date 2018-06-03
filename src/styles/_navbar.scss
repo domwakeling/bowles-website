@@ -10,7 +10,14 @@
         text-decoration: none;
     
         &.brand {
-        font-size: 1.3rem;
+            h3 {
+                color: $color__project-inverse;
+                font-size: 1.5em;
+                line-height: 100%;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                display: inline-block;
+            }
         }
     }
 
@@ -67,7 +74,7 @@
         text-decoration: none;
         display: block;
         &:hover {
-            padding-left: 10px;
+            padding-left: 6px;
         }
     }
 

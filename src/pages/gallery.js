@@ -24,6 +24,7 @@ export default class GalleryPage extends React.Component {
                                     ))
                                 }
                             </div>
+                            <hr />
                         </div>
                     ))
                 }
