@@ -10,7 +10,7 @@ const alts = [
     'Male 50+'
 ]
 const title = 'Medallists from SRSA 1 at Snowtrax on 25th April 2015';
-const link = '../../../../news/2015/TODO/';
+const link = '../../../../news/2015/may/SRSA_Snowtrax/';
 
 export default class Fade extends React.Component {
     render() {

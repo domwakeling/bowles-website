@@ -4,9 +4,11 @@ contentType: news
 date: "2015-03-27T13:15"
 ---
 
-We will be holding the Bowles “Fun Race” on Friday 17th April, with pizzas and medals presented after the race.
+We will be holding the Bowles “Fun Race” on Friday 17th April, with pizzas and medals presented
+after the race.
 
-Times will be based on the fastest of 3 runs, with a course inspection (snowplough) allowed in advance. The awards are as follows:
+Times will be based on the fastest of 3 runs, with a course inspection (snowplough) allowed in
+advance. The awards are as follows:
 
 * Handicap - Winner, Silver and Bronze
 * Fastest Overall - Gold, Silver & Bronze

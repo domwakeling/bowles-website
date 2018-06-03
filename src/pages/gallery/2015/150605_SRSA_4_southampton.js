@@ -12,7 +12,7 @@ const alts = [
     'Fun Teams'
 ]
 const title = 'Medallists from SRSA 4 at Southampton on 5th June 2015';
-const link = '../../../../news/2015/TODO/';
+const link = '../../../../news/2015/june/SRSA_4/';
 
 export default class Fade extends React.Component {
     render() {
