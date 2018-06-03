@@ -9,7 +9,7 @@ const Races = (props) => {
     const { data } = props;
     return (
         <div>
-            <h3>{data.title}</h3>
+            <h3 className="series-title">{data.title}</h3>
             {
                 data.races.map(race => <Race key={race.descriptor} data={race} />)
             }

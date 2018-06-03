@@ -7,7 +7,7 @@ const Race = (props) => {
     const { data } = props;
     return (
         <div className="race">
-            <h4>{data.descriptor}</h4>
+            <h4 className="race-title">{data.descriptor}</h4>
             {
                 data.individual ? (
                     <RaceEvent title="Individual Event" data={data.individual} />

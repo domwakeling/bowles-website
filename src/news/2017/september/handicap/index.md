@@ -1,7 +1,7 @@
 ---
 title: Fun Race - 22nd September
 contentType: news
-date: "2017-09-2T22:00"
+date: "2017-09-22T22:00"
 ---
 
 The club Fun Race was held on Friday 22nd September; full results below:

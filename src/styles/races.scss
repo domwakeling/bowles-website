@@ -1,3 +1,22 @@
+@import '_colours.scss';
+
 .race {
     padding-bottom: 1.0em;
+}
+
+.series-title {
+
+}
+
+.race-title {
+    color: $color__project-theme;
+}
+
+.event-title {
+    color: $color__project-complementary;
+    padding-top: 0.5em;
+}
+
+.event-result {
+    margin-bottom: 0.5em;
 }
