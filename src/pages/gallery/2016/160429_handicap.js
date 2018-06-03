@@ -18,7 +18,7 @@ const alts = [
     'Coaches'
 ]
 const title = 'Medallists from the Handicap Fun Race on 29th April 2016';
-const link = '../../../../news/2016/TODO';
+const link = '../../../../news/2016/may/fun-race';
 
 export default class Fade extends React.Component {
     render() {

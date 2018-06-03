@@ -18,7 +18,7 @@ const alts = [
     'Fun Teams'
 ]
 const title = 'Medallists from SRSA 2 at Snowtrax on 28th May 2016';
-const link = '../../../../news/2016/TODO';
+const link = '../../../../news/2016/may/SRSA_Snowtrax';
 
 export default class Fade extends React.Component {
     render() {

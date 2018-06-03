@@ -8,4 +8,4 @@ The club Fun Race was held on Friday 23rd September; full results below:
 
 ![results](Bowles_Sept_2016_handicap_results.jpg)
 
-Pictures of the medallists are in the [gallery](/gallery/2016).
+Pictures of the medallists are in the [gallery](/gallery/2016/160923_handicap).
