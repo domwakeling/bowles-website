@@ -43,11 +43,18 @@ import img42 from '../images/gallery/2017/171014_triregional/shield_3.jpg';
 import img43 from '../images/gallery/2018/180420_handicap/handicap.jpg';
 import img44 from '../images/gallery/2018/180506_kent/rose_hill.jpg';
 import img45 from '../images/gallery/2018/180526_SRSA_2_chatham/medallists.jpg';
+import img46 from '../images/gallery/2018/180602_LSERSA_2_brentwood/medallists.jpg';
 
 const galleryData = [
     {
         year: '2018',
         galleries: [
+            {
+                img: img46,
+                title: 'LSERSA 2, Brentwood',
+                date: '2 June 2018',
+                link: '/gallery/2018/180602_LSERSA_2_brentwood'
+            },
             {
                 img: img45,
                 title: 'SRSA 2, Chatham',

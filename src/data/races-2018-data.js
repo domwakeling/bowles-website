@@ -3,14 +3,14 @@ const raceData2018 = {
         title: 'LSERSA 2018 Summer Race Series',
         races: [
             {
-                descriptor: 'Race 1 - Chatham - 29th April 2017',
+                descriptor: 'Race 1 - Chatham - 29th April 2018',
                 individual: [
-                    'Stella Pople - 1st in Female U10',
-                    'Phoebe Everest - 2nd in Female U10',
-                    'Rufus Wontner - 2nd in Male U10',
-                    'Ollie Turner-Moore - 3rd in Male U16',
-                    'Claudette Povey - 1st in Female Senior',
-                    'Mark Oliver - 1st in Male Masters 2'
+                    'Stella Pople - 1st in Ladies U10',
+                    'Phoebe Everest - 2nd in Ladies U10',
+                    'Rufus Wontner - 2nd in Mens U10',
+                    'Ollie Turner-Moore - 3rd in Mens U16',
+                    'Claudette Povey - 1st in Ladies Senior',
+                    'Mark Oliver - 1st in Mens Masters 2'
                 ],
                 fun_teams: [
                     'Toby Everest and Claudette Povey were members of the 2nd-placed team',
@@ -21,6 +21,28 @@ const raceData2018 = {
                     'Nigel Hilliard - 4th in Male Masters 2'
                 ],
                 link: 'https://skiresults.co.uk/events/895'
+            },
+            {
+                descriptor: 'Race 2 - Brentwood - 2nd June 2018',
+                individual: [
+                    'Stella Pople - 1st in Ladies U10',
+                    'Rufus Wontner - 1st in Mens U10',
+                    'Ollie Turner-Moore - 2nd in Mens U16',
+                    'Joshua Wakeling - 3rd in Mens U18',
+                    'Charlotte Hilliard - 2nd in Ladies U21',
+                    'Claudette Povey - 1st in Ladies Seniors',
+                    'Nigel Hilliard - 3rd in Mens Masters 2'
+                ],
+                fun_teams: [
+                    'Toby Dunnet and Toby Everest were members of the winning team',
+                    `Phoebe Everest, Rufus Wontner and Bill Dunnet were members of the 2nd-placed
+                        team`
+                ],
+                honorable: [
+                    'Phoebe Everest - 4th in Ladies U10',
+                    'Bill Dunnet - 4th in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/896'
             }
         ]
     },
