@@ -6,7 +6,7 @@ date: "2017-07-02T23:00"
 
 The fourth round of the LSERSA 2017 Summer Series was held on Sunday 2nd July at Aldershot. Full results are available on the [Ski Results website](https://skiresults.co.uk/events/836).
 
-**Individual Event**\
+##### Individual Event
 Rufus Wontner - 2nd in Mens U8\
 Benjamin Wontner - 3rd in Mens U10\
 Evie Ayton - 2nd in Ladies U16\
@@ -17,11 +17,11 @@ Joshua Goodsell - 1st in Mens Senior\
 Mark Oliver - 1st in Masters 2\
 Nigel Hilliard - 3rd in Masters 2
 
-**Fun Teams**\
+##### Fun Teams
 Claudette Povey and Nigel Hilliard were members of the 2nd placed team\
 Toby Everest was a member of the 3rd placed team
 
-**Club Teams**\
+##### Club Teams
 Bowles (Evie Ayton, Joshua Wakeling, Elle Ayton, Joshua Goodsell and Mark Oliver) were 3rd in the club teams.
 
 **Club**\

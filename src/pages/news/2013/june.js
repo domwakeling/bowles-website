@@ -29,7 +29,7 @@ export const query = graphql`
                     frontmatter {
                         title
                         contentType
-                        date(formatString: "D MMMM YYYY, HH:mm")
+                        date(formatString: "D MMMM YYYY")
                     }
                     html
                 }

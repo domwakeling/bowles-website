@@ -6,7 +6,7 @@ date: "2016-09-18T19:37"
 
 The fifth round of the Snowsport South (SRSA) 2016 race series was held at Southampton on Saturday 17th September. Full results are available on their website.
 
-**Individual Event**\
+##### Individual Event
 Claudette Povey - 2nd in Female Seniors\
 Joshua Goodsell - 3rd in Male Seniors\
 Lindsay Ayton - 2nd in Female Masters\

@@ -6,7 +6,7 @@ date: "2017-05-07T21:43"
 
 The Kent Schools Ski Championship was held on Saturday 6th May at Brentwood. Full results are available on the LSERSA website.
 
-**Individuals**\
+##### Individual Event
 Stella Pople was 2nd in the MINI - Girls\
 Lila Ayton was 3rd in the B&G - Girls\
 Evie Ayton was 1st in the MID - Girls\

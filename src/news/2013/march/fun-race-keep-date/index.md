@@ -4,7 +4,9 @@ contentType: news
 date: "2013-03-17T19:40"
 ---
 
-The Spring Bowles Ski Racing Club fun race will be held on Friday 19th April 2013 starting at 5:30pm. Following the racing there will be a medal ceremony - with food and drink provided - at 7:30pm.
+The Spring Bowles Ski Racing Club fun race will be held on Friday 19th April 2013 starting at
+5:30pm. Following the racing there will be a medal ceremony - with food and drink provided - at
+7:30pm.
 
 Racing categories will be:
 * Handicap (trophy for 1st place, silver & bronze medals)

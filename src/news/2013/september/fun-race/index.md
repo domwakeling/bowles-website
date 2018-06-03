@@ -6,3 +6,5 @@ date: "2013-09-21T23:32"
 
 The club AGM and Fun Race were held on Friday 20th September; full results below
 ![Results](fun_race_20130920_results.jpg)
+
+Photos of medallists are in the [gallery](/gallery/2013/130920_handicap).

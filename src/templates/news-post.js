@@ -25,7 +25,7 @@ export const newsQuery = graphql`
         markdownRemark(fields: { slug: { eq: $path } }) {
             html
             frontmatter {
-                date(formatString: "D MMMM YYYY, HH:mm")
+                date(formatString: "D MMMM YYYY")
                 title
             }
         }
