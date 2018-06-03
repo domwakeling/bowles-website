@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import img01 from '../images/gallery/2018/180602_LSERSA_2_brentwood/medallists.jpg';
+
 const IndexPage = () => (
     <div>
         <h2>Membership Information</h2>
@@ -12,6 +14,7 @@ const IndexPage = () => (
             and we normally end with evening with informal slalom or dual slalom. We also hold timed
             training sessions approximately once a month, and hold two club &quot;fun races&quot;
             a year.</p>
+        <img src={img01} />
         <p>Bowles ski team is represented by its members at as many regional and club races as
             possible, and we encourage new and current members to participate regularly (although
             this is <strong>not</strong> a requirement of membership). Our team has seen some

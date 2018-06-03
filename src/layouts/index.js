@@ -6,6 +6,7 @@ import Header from '../components/Header.jsx';
 import Copyright from '../components/Copyright.jsx';
 import MenuRight from '../components/MenuRight.jsx';
 import '../styles/Layout.scss';
+import fav from '../favicon.png';
 
 const Layout = (props) => {
     const { children, data, location } = props;
@@ -17,7 +18,9 @@ const Layout = (props) => {
                 { name: 'description', content: 'Bowles ski racing club' },
                 { name: 'keywords', content: 'bowles, ski, skiing, racing' },
             ]}
-        />
+        >
+            <link rel="icon" href={fav} sizes="32x32" type="image/png" />
+        </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="container">
             <div id="content">
