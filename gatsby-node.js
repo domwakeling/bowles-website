@@ -1,4 +1,5 @@
 const path = require('path');
+const createPaginatedPages = require('gatsby-paginate');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
@@ -24,15 +25,17 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
     return graphql(`{
         allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
-            limit: 1000
         ) {
             edges {
                 node {
                     fields {
                         slug
                     }
+                    html
                     frontmatter {
                         contentType
+                        title
+                        date(formatString: "D MMMM YYYY")
                     }
                 }
             }
@@ -41,6 +44,13 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
         if (result.errors) {
             return Promise.reject(result.errors);
         }
+        createPaginatedPages({
+            edges: result.data.allMarkdownRemark.edges,
+            createPage: createPage,
+            pageTemplate: "src/templates/news-page.js",
+            pageLength: 5, // This is optional and defaults to 10 if not used
+            pathPrefix: "news", // This is optional and defaults to an empty string if not used
+        });
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
             let templateType;
             switch (node.frontmatter.contentType) {

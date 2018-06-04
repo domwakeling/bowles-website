@@ -29,6 +29,7 @@ const IndexPage = ({ data }) => (
             look at the <Link to='/membership'>membership page</Link> for more details, or <Link
             to="/about">get in touch</Link> if you have any questions.</p>
         <hr />
+        <p><em>Latest news (see the <Link to='/news'>News page</Link> for more)</em></p>
         {data.allMarkdownRemark.edges.map(({ node }, index) =>
             <div key={index}>
                 <NewsItem
