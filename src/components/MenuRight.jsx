@@ -7,11 +7,25 @@ import MenuNews from './MenuNews.jsx';
 
 const MenuRight = (props) => {
     const { location } = props;
+    const classForMenuPath = path => {
+        if (path === '/') {
+            return location.pathname === path ? 'highlighted' : 'not-highlighted';
+        }
+        const regEx = new RegExp(path);
+        return regEx.test(location.pathname) ? 'highlighted' : 'not-highlighted';
+    }
     return (
         <div id="right-nav">
             {
                 menuData.map(item => (
-                    <Link key={item.idx} to={item.path} className={item.classes}>{item.text}</Link>
+                    <div key={item.idx} className='a-wrapper'>
+                        <Link
+                            to={item.path}
+                            className={classForMenuPath(item.path)}           
+                        >
+                            {item.text}
+                        </Link>
+                    </div>
                 ))
             }
             {

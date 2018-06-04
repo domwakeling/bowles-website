@@ -69,20 +69,44 @@
 
 // right-nav (only shows on wide screens) contained in RightMenu.jsx
 #right-nav {
+    
+
+    // style the 'year links'
+    h3.year-header {
+        margin-bottom: 0.2em;
+        font-size: 1.3rem;
+    }
     a {
-        transition: 0.25s;
-        text-decoration: none;
         display: block;
-        &:hover {
-            padding-left: 6px;
+
+        &.bold-link {
+            transition: none;
+            font-weight: bold;
+            &:hover {
+                padding-left: 0px;
+            }
         }
     }
+    // wrap the top items in a block so they can then have inline-block so border is short
+    .a-wrapper {
+        display: block;
 
-    a.bold-link {
-        transition: none;
-        font-weight: bold;
-        &:hover {
-            padding-left: 0px;
+        a {
+            transition: 0.25s;
+            text-decoration: none;
+            display: block;
+            &:hover {
+                padding-left: 6px;
+            }
+            &.highlighted {
+                border-bottom: 1px solid $color__project-complementary;
+                margin-bottom: -1px;
+                display: inline-block;
+            }
+            &.not-highlighted {
+                margin-bottom: 0px;
+                display: inline-block;
+            }
         }
     }
 

@@ -38,14 +38,16 @@ export default class MenuNews extends React.Component {
                     const classes = (year.year === pathYear) ? "year open" : "year";
                     return (
                         <div key={year.year} ref={year.year}>
-                            <Link
-                                className="bold-link"
-                                to={`/news/${year.year}`}
-                                onClick={this.yearClickHandler}
-                                ref={year.year}
-                            >
-                                {year.year}
-                            </Link>
+                            <h3 className="year-header">
+                                <Link
+                                    className="bold-link"
+                                    to={`/news/${year.year}`}
+                                    onClick={this.yearClickHandler}
+                                    ref={year.year}
+                                >
+                                    {year.year}
+                                </Link>
+                            </h3>
                             <div className={classes} id={year.year}>
                                 {year.months.map(month => {
                                     const path = `/news/${year.year}/${month}`;
