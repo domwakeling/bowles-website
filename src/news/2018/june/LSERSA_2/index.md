@@ -7,6 +7,8 @@ date: "2018-06-03T15:00"
 The second round of the LSERSA 2018 Summer Series was held on Saturday 2nd June at Brentwood. Full
 results are available on [Ski Results](https://skiresults.co.uk/events/896).
 
+![bowles racers](medallists.jpg)
+
 ##### Individual Event
 * Stella Pople - 1st in Ladies U10
 * Rufus Wontner - 1st in Mens U10

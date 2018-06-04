@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import NewsItem from '../components/NewsItem.jsx';
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
     <div>
         <div className="videoWrapper">
             <iframe
@@ -27,7 +29,46 @@ const IndexPage = () => (
             look at the <Link to='/membership'>membership page</Link> for more details, or <Link
             to="/about">get in touch</Link> if you have any questions.</p>
         <hr />
+        {data.allMarkdownRemark.edges.map(({ node }, index) =>
+            <div key={index}>
+                <NewsItem
+                    path={node.fields.slug}
+                    title={node.frontmatter.title}
+                    date={node.frontmatter.date}
+                    html={node.html}
+                />
+                <hr />
+            </div>
+        )}
     </div>
 );
 
+IndexPage.propTypes = {
+    data: PropTypes.shape()
+}
+
 export default IndexPage;
+
+export const query = graphql`
+    query IndexPageQuery {
+        allMarkdownRemark (
+            filter: { frontmatter:  { contentType: { eq:"news"}}}
+            sort: { order: DESC, fields: [frontmatter___date] }
+            limit: 1
+        ) {
+            edges {
+                node {
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                        contentType
+                        date(formatString: "D MMMM YYYY")
+                    }
+                    html
+                }
+            }
+        }
+    }
+`;

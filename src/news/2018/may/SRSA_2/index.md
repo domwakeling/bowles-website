@@ -7,6 +7,8 @@ date: "2018-05-26T23:00"
 The second round of the SRSA 2018 Summer Series was held on Saturday 26th May at Chatham. Full
 results are available on [Ski Results](https://skiresults.co.uk/events/890).
 
+![Bowles racers](medallists.jpg)
+
 ##### Individual Event
 * Phoebe Everest - 1st in Female U10
 * Rufus Wontner - 2nd in Male U10
