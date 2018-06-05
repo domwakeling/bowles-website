@@ -70,42 +70,43 @@
 // right-nav (only shows on wide screens) contained in RightMenu.jsx
 #right-nav {
     
-
-    // style the 'year links'
+    // style the 'year links'to remove gaps after headers
     h3.year-header {
         margin-bottom: 0.2em;
         font-size: 1.3rem;
     }
+
+    // style the 'standard' links to be block
     a {
         display: block;
-
+        // and bold (which are the years) to  not move when hovered over
         &.bold-link {
             transition: none;
             font-weight: bold;
             &:hover {
-                padding-left: 0px;
+                margin-left: 0px;
             }
         }
     }
-    // wrap the top items in a block so they can then have inline-block so border is short
+
+    // current link will have a line underneath, generated as a border, so the link needs to be
+    // inline-block but needs to be wrapped in a block div so that they're on different lines
     .a-wrapper {
         display: block;
 
         a {
             transition: 0.25s;
             text-decoration: none;
-            display: block;
+            display: inline-block;
             &:hover {
-                padding-left: 6px;
+                margin-left: 6px;
             }
             &.highlighted {
                 border-bottom: 1px solid $color__project-complementary;
                 margin-bottom: -1px;
-                display: inline-block;
             }
             &.not-highlighted {
                 margin-bottom: 0px;
-                display: inline-block;
             }
         }
     }

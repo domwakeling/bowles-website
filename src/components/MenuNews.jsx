@@ -26,11 +26,20 @@ export default class MenuNews extends React.Component {
         }
     }
 
+    classForMenuPath(path, location)  {
+        if (path === '/') {
+            return location.pathname === path ? 'highlighted' : 'not-highlighted';
+        }
+        const regEx = new RegExp(path);
+        return regEx.test(location.pathname) ? 'highlighted' : 'not-highlighted';
+    }
+
     render() {
         const { location } = this.props;
         const splitLocation = location.pathname.split('/');
         const pathYear = splitLocation.length > 2 ? splitLocation[2] : '';
         this.yearClickHandler = this.yearClickHandler.bind(this);
+        this.classForMenuPath = this.classForMenuPath.bind(this);
         return (
             <div>
                 <h4>News Archive</h4>
@@ -52,7 +61,14 @@ export default class MenuNews extends React.Component {
                                 {year.months.map(month => {
                                     const path = `/news/${year.year}/${month}`;
                                     return (
-                                        <Link key={month} to={path}>{month}</Link>
+                                        <div key={month} className="a-wrapper">
+                                            <Link
+                                                to={path}
+                                                className={this.classForMenuPath(path, location)}
+                                            >
+                                                {month}
+                                            </Link>
+                                        </div>
                                     )}
                                 )}
                             </div>
