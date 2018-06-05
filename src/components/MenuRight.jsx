@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 
 import menuData from '../data/menu-data';
 import MenuNews from './MenuNews.jsx';
+import Calendar from './Calendar.jsx';
 
 const MenuRight = (props) => {
     const { location } = props;
@@ -17,8 +18,8 @@ const MenuRight = (props) => {
     return (
         <div id="right-nav">
             {
-                menuData.map(item => (
-                    <div key={item.idx} className='a-wrapper'>
+                menuData.map((item, idx) => (
+                    <div key={idx} className='a-wrapper'>
                         <Link
                             to={item.path}
                             className={classForMenuPath(item.path)}           
@@ -28,11 +29,12 @@ const MenuRight = (props) => {
                     </div>
                 ))
             }
+            <br />
+            <Calendar date={new Date()} />
             {
                 /^\/news/.test(location.pathname) ? (
                     <div>
                         <br />
-                        <hr />
                         <MenuNews location={location} />
                     </div>
                 ) : ''

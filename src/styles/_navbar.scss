@@ -70,10 +70,19 @@
 // right-nav (only shows on wide screens) contained in RightMenu.jsx
 #right-nav {
     
+    h3.archive-header {
+        display: inline-block;
+        padding-bottom: 0.1em;
+        border-bottom: 2px solid $color__project-complementary;
+        color: $color__project-theme;
+        margin-bottom: 0.5em;
+        font-size: 1.25rem;
+    }
+
     // style the 'year links'to remove gaps after headers
     h3.year-header {
         margin-bottom: 0.2em;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     // style the 'standard' links to be block
@@ -120,6 +129,102 @@
         &.open {
             display: block;
             height: auto;
+        }
+    }
+}
+
+#calendar {
+    .date {
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
+    }
+    .back-button {
+        float: left;
+        &::after {
+            content: "\276e";
+            margin-left: -2px;
+        }
+    }
+    .fwd-button {
+        float: right;
+        &::after {
+            content: "\276f";
+            margin-left: -1px;
+        }
+    }
+    .back-button, .fwd-button {
+        margin-top: 2px;
+        border-radius: 50%;
+        background-color: $color__project-complementary;
+        color: $color__project-inverse;
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .calendar-days {
+        width: 14%;
+        text-align: center;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    .calendar-row {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        height: 32px;
+
+        .cell-wrapper {
+            width: 14%;
+            display: inline-block;
+            line-height: 0px;
+
+               .cell {
+                    height: 32px;
+                    border: 1px solid white;
+                    font-size: 10px;
+                    padding-top: 8px;
+                    padding-left: 2px;
+
+                    .circle {
+                        position: relative;
+                        left: 11px;
+                        bottom: 1px;
+                        color: white;
+                        border-radius: 50%;
+                        height: 20px;
+                        width: 20px;
+                        padding: 0px;
+                        margin: 0px;
+                        display: inherit;
+
+                        .circle-text {
+                            position: relative;
+                            left: 6px;
+                            top: 10px;
+                            font-size: 12px;
+                            line-height: 0px;
+                            padding: 0;
+                            margin: 0;
+                            display: inline-block;
+                        }
+                    }
+                    
+                    .training{
+                        background-color: $color__project-theme; 
+                    }
+                }
+
+                .blank-cell {
+                    background-color: rgba($color__project-complementary, 0.1);
+                }
+
+                .date-cell {
+                    background-color: rgba($color__project-complementary, 0.3);
+                }
         }
     }
 }

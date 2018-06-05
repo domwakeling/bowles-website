@@ -60,9 +60,9 @@ export default class Header extends React.Component {
                     </button>
                     <div id="menu-responsive" className={menuClass}>
                         {
-                            menuData.map(item => (
+                            menuData.map((item, idx) => (
                                 <Link
-                                    key={item.idx}
+                                    key={idx}
                                     to={item.path}
                                     onClick={this.toggleMenuHandler}
                                 >

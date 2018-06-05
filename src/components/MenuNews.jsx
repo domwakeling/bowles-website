@@ -42,7 +42,7 @@ export default class MenuNews extends React.Component {
         this.classForMenuPath = this.classForMenuPath.bind(this);
         return (
             <div>
-                <h4>News Archive</h4>
+                <h3 className="archive-header">News Archive</h3>
                 {newsData.map(year => {
                     const classes = (year.year === pathYear) ? "year open" : "year";
                     return (
