@@ -155,13 +155,18 @@
     }
     .back-button, .fwd-button {
         margin-top: 2px;
+        border: 0px;
         border-radius: 50%;
         background-color: $color__project-complementary;
         color: $color__project-inverse;
         width: 20px;
         height: 20px;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 600;
+        // deliberately back-to-front so only affects Safari
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, -2px);
     }
 
     .calendar-days {
@@ -219,10 +224,14 @@
                 }
 
                 .blank-cell {
-                    background-color: rgba($color__project-complementary, 0.1);
+                    background-color: white;
                 }
 
                 .date-cell {
+                    background-color: rgba($color__project-complementary, 0.15);
+                }
+
+                .weekend {
                     background-color: rgba($color__project-complementary, 0.3);
                 }
         }

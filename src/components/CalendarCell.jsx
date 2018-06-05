@@ -23,6 +23,9 @@ export default class CalendarCell extends React.Component {
         const cellDate = this.dayOfMonth();
         let classNames = "cell ";
         classNames = classNames + (cellDate > 0 ? " date-cell" : "blank-cell");
+        if (cellDate > 0 && this.props.col >=5 && this.props.col <= 6) {
+            classNames = classNames + " weekend";
+        }
         return (
             <div className="cell-wrapper">
                 {
