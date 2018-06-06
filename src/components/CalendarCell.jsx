@@ -1,7 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import calendarData from '../data/calendar-data';
 
 export default class CalendarCell extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            popupDisplay: 'none'
+        }
+    }
     dayOfMonth() {
         const { row, col, firstDay, lastDate} = this.props;
         const cellNum = row * 7 + col + 1;
@@ -18,29 +25,96 @@ export default class CalendarCell extends React.Component {
         return true;
     }
 
-    render() {
-        this.fridayTraining = this.fridayTraining.bind(this);
-        const cellDate = this.dayOfMonth();
-        let classNames = "cell ";
-        classNames = classNames + (cellDate > 0 ? " date-cell" : "blank-cell");
-        if (cellDate > 0 && this.props.col >=5 && this.props.col <= 6) {
+    mouseEnterHandler() {
+        this.setState({popupDisplay: 'inline'});
+    }
+
+    mouseLeaveHandler() {
+        this.setState({popupDisplay: 'none'});
+    }
+
+    cellStylingClass(date) {
+        let classNames = "cell";
+        classNames = classNames + (date > 0 ? " date-cell" : "blank-cell");
+        if (date > 0 && this.props.col >= 5 && this.props.col <= 6) {
             classNames = classNames + " weekend";
         }
+        return classNames;
+    }
+
+    cellInfoHandler(date) {
+        const { month, year } = this.props;
+        let info = { labels: "", details: [], class: "circle" };
+
+        const races = calendarData.filter(e => (
+            e.year === year && e.month === month && e.date === date && e.type === 'race'
+        ));
+        if(races.length > 0) {
+            info.labels = info.labels + "R";
+            info.class = info.class + " race";
+            races.forEach(race => {
+                info.details.push(race.label);
+            })
+        }
+
+        const training = calendarData.filter(e => (
+            e.year === year && e.month === month && e.date === date && e.type === 'training'
+        ));
+
+        if(training.length > 0) {
+            info.labels = info.labels + "T";
+            info.class = /race/.test(info.class) ? "circle race-training" : "circle training";
+            training.forEach(session => {
+                info.details.push(session.label);
+            })
+        }
+        if (this.fridayTraining()) {
+            if (!/T/.test(info.labels)) info.labels = info.labels + "T";
+            if (!/training/.test(info.class)) info.class = info.class + " training";
+            if(/R/.test(info.labels)) {
+                info.class = "circle race-training";
+            }
+            info.details.push("Club training");
+        }
+        return info;
+    }
+
+    render() {
+        this.fridayTraining = this.fridayTraining.bind(this);
+        this.mouseEnterHandler = this.mouseEnterHandler.bind(this);
+        this.mouseLeaveHandler = this.mouseLeaveHandler.bind(this);
+        const cellDate = this.dayOfMonth();
+        const cellClassName = this.cellStylingClass(cellDate);
+        const info = this.cellInfoHandler(cellDate);
         return (
             <div className="cell-wrapper">
                 {
                     cellDate === 0 ? (
-                        <div className={classNames}>&nbsp;</div>
+                        <div className={cellClassName}>&nbsp;</div>
                     ) : ''
                 }
                 {
                     cellDate > 0 ?(
-                        <div className={classNames}>
+                        <div className={cellClassName}>
                             {cellDate}
                             {
-                                this.fridayTraining() ? (
-                                    <div className="circle training">
-                                        <div className="circle-text">T</div>
+                                info.labels ? (
+                                    <div>
+                                        <div
+                                            className={info.class}
+                                            onMouseEnter={this.mouseEnterHandler}
+                                            onMouseLeave={this.mouseLeaveHandler}
+                                        >
+                                            <div className="circle-text">{info.labels}</div>
+                                        </div>
+                                        <div
+                                            style={{ display: this.state.popupDisplay }}
+                                            className="popup"
+                                        >
+                                            {info.details.map((detail, idx) => (
+                                                <p key={idx}>{`${detail}`}</p>
+                                            ))}
+                                        </div>
                                     </div>
                                 ) : ''
                             }
