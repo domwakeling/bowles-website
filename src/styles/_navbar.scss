@@ -21,6 +21,11 @@
         }
     }
 
+    img {
+        margin-bottom: 0px;
+        float: left;
+    }
+
     #menu-responsive {
         // display off in all cases to start with
         display: none;
@@ -28,6 +33,7 @@
         &.menu-show {
             // restrict to tablet-down in case we resize with the menu open
             @include for-tablet-down {
+                clear: both;
                 position: relative;
                 display: block;
                 a {

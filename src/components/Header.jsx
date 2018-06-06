@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import menuData from '../data/menu-data';
+import img01 from '../images/logos/bowles_logo_mini.png';
 
 export default class Header extends React.Component {
     constructor (props) {
@@ -49,7 +50,8 @@ export default class Header extends React.Component {
         return (
             <div id="navbar">
                 <div className="container" ref={this.setWrapperRef}>
-                    <Link className="brand" to="/" ><h3>{siteTitle}</h3></Link>
+                    <Link className="brand" to="/" >
+                        <img src={img01}/>&nbsp;<h3>{siteTitle}</h3></Link>
                     <button
                         className="icon"
                         onClick={this.burgerClickHandler}
