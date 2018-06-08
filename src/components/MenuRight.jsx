@@ -6,6 +6,8 @@ import menuData from '../data/menu-data';
 import MenuNews from './MenuNews.jsx';
 import Calendar from './Calendar.jsx';
 
+import img01 from '../images/logos/bowles_colour_120.png';
+
 const MenuRight = (props) => {
     const { location } = props;
     const classForMenuPath = path => {
@@ -17,6 +19,7 @@ const MenuRight = (props) => {
     }
     return (
         <div id="right-nav">
+            <img src={img01} style={{float: 'right', width: '120px'}} />
             {
                 menuData.map((item, idx) => (
                     <div key={idx} className='a-wrapper'>

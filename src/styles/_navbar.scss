@@ -152,32 +152,35 @@
     }
     .back-button {
         float: left;
-        &::after {
-            content: "\276e";
-            margin-left: -2px;
-        }
+        // &::after {
+            // content: "\276e";
+            // margin-left: -2px;
+        // }
     }
     .fwd-button {
         float: right;
-        &::after {
-            content: "\276f";
-            margin-left: -1px;
-        }
+        transform: rotate(180deg);
+        // &::after {
+        //     content: "\276f";
+        //     margin-left: -1px;
+        // }
     }
     .back-button, .fwd-button {
+        background-image: url('../images/ui/chevron_40.png');
+        background-size: 20px 20px;
         margin-top: 2px;
         border: 0px;
-        border-radius: 50%;
-        background-color: $color__project-complementary;
-        color: $color__project-inverse;
+        // border-radius: 50%;
+        // background-color: $color__project-complementary;
+        // color: $color__project-inverse;
         width: 20px;
         height: 20px;
-        font-size: 18px;
-        line-height: 1;
-        font-weight: 600;
+        // font-size: 18px;
+        // line-height: 1;
+        // font-weight: 600;
         // deliberately back-to-front so only affects Safari
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, -2px);
+        // transform: translate(0, 0);
+        // -webkit-transform: translate(0, -2px);
     }
 
     .calendar-days {
