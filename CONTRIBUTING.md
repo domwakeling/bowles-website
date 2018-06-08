@@ -3,6 +3,7 @@
 ## Index
 **[What you need to know](#what-you-need-to-know)**
 * [I just want to add an article](#i-just-want-to-add-an-article)
+* [Starting a new year](#starting-a-new-year)
 
 **[News Items](#news-items)**
 * [Adding News Articles](#adding-news-articles)
@@ -38,6 +39,25 @@ If this is a new month but there are already articles in the year, you'll need t
 * add a new monthly news summary in `/src/pages/news/{year}/` for that month [as set out here](#adding-monthly-news-summaries)
 * add a new entry to the `src/data/race-data.js` file [as set out here](#updating-the-news-archive-list)
 
+### Starting A New Year
+
+At the start of every year the following need to happen:
+
+**News**
+* [ ] set up a folder for the new {year} as `src/news/{year}`
+* [ ] set up a folder for new monthly news articles as `src/pages/news/{year}`
+* [ ] set up a news entry in the [news archive](#updating-the-news-archive-list)
+
+**Races**
+* [ ] copy the contents of `src/pages/race.js` into a new file `src/pages/races/{year}.js`; don't
+forget to [change the relative links](#moving-a-race-results-javascript-page)
+* [ ] make a new [race data file](#adding-a-new-race-results-data-file) at `src/data/races-{year}-data.js`
+* [ ] edit `src/pages/race.js` to link to the new data file and show the correct year
+
+**Galleries**
+* [ ] set up a new folder for photos as `src/images/gallery/{year}
+* [ ] set up a new folder for gallery pages as `src/pages/gallery/{year}
+
 ⥣ [back to index](#index)
 
 ## The Calendar
@@ -52,11 +72,12 @@ Other training sessions (for instance school training on Sundays) and races are 
 typical format of each entry is:
 
 ```javascript
-    { year: 2018, month: 9, date: 13, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2018, month: 10, date: 13, label: 'LSERSA 5, Chatham', type: 'race' },
 ```
 
-This is for a race on the **13**th of ***October*** **2018** - please note that **the month uses
-a
+This is for a race on the **13**th of **October** **2018** - the month is entered by number using
+normal convention (January = 1, December = 12). The `label` should be relatively short, and `type`
+can be either `race` or `training`.
 
 
 ⥣ [back to index](#index)
