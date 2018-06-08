@@ -1,10 +1,15 @@
 # Contributing
 
 ## Index
+**[What you need to know](#what-you-need-to-know)**
+* [I just want to add an article](#i-just-want-to-add-an-article)
+
 **[News Items](#news-items)**
 * [Adding News Articles](#adding-news-articles)
 * [Adding Monthly News Summaries](#adding-monthly-news-summaries)
 * [Updating the News Archive list](#updating-the-news-archive-list)
+
+**[The calendar](#the-calendar)**
 
 **[Race Results](#race-results)**
 * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
@@ -16,7 +21,46 @@
 * [Adding images for a gallery page](#adding-images-for-a-gallery-page)
 * [Adding a new Gallery javascript page](#adding-a-new-gallery-javascript-page)
 * [Updating the Galleries Page](#updating-the-galleries-page)
-  
+
+## What You Need To Know
+
+There's a lot of detail and complexity in the guides below - but don't be put off! Here's what
+you need to know ...
+
+### I Just Want To Add An Article
+
+If there's already an article in the same year/month as the one you want to add, then it's as
+simple as writing a text file in what's known as 'markdown' format. The [full guide is here](#adding-news-articles).
+
+If this is a new month but there are already articles in the year, you'll need to:
+* make a new folder under `src/news/{year}/` for the month (use the full month name in lower case)
+* add [your article](#adding-news-articles) to that new folder
+* add a new monthly news summary in `/src/pages/news/{year}/` for that month [as set out here](#adding-monthly-news-summaries)
+* add a new entry to the `src/data/race-data.js` file [as set out here](#updating-the-news-archive-list)
+
+⥣ [back to index](#index)
+
+## The Calendar
+
+The calendar is entirely generated in code - it's no longer linked to a Google calendar.
+
+Friday training sessions are automatically added unless they fall on Christmas Day or Boxing Day.
+At the moment there's no ability to **remove** a Friday session ...
+
+Other training sessions (for instance school training on Sundays) and races are added using the
+`src/data/calendar-data.js` file. This is one large array containing an object for each entry. The
+typical format of each entry is:
+
+```javascript
+    { year: 2018, month: 9, date: 13, label: 'LSERSA 5, Chatham', type: 'race' },
+```
+
+This is for a race on the **13**th of ***October*** **2018** - please note that **the month uses
+a
+
+
+⥣ [back to index](#index)
+
 ## News Items
 
 News articles are added as markdown files. Every month (for which articles exist) should have a
