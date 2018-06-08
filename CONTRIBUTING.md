@@ -2,6 +2,7 @@
 
 ## Index
 **[What you need to know](#what-you-need-to-know)**
+* [Make a change](#make-a-change)
 * [I just want to add an article](#i-just-want-to-add-an-article)
 * [Starting a new year](#starting-a-new-year)
 
@@ -27,6 +28,24 @@
 
 There's a lot of detail and complexity in the guides below - but don't be put off! Here's what
 you need to know ...
+
+### Make A Change
+
+The guide below tells you how to make changes to **your local copy** of the site. If you're in
+development mode (run `npm run develop` or `gatsby develop`) you'll be able to see those change on
+your local development copy of the site.
+
+If this is all you do, the published site **will not change**!
+
+We're using [Gatsby](http://www.gatsbyjs.org), a static site generator, to build the site. Once
+you have made your changes, you need to run `npm run build` or `gatsby build` which will generate
+a completely static version of the site in the `public` folder.
+
+You can check that this has worked by running `gatsby serve`, which will set up a temporary server
+on your computer and network (the links will show up in your terminal when you run the command).
+
+Once you're happy that the changes work, **then** you need to sync up the files in your `public`
+folder with our web-host ... at that point, the website is actually updated!
 
 ### I Just Want To Add An Article
 
