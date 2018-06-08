@@ -50,8 +50,6 @@ export default class Header extends React.Component {
         return (
             <div id="navbar">
                 <div className="container" ref={this.setWrapperRef}>
-                    <Link className="brand" to="/" >
-                        <img src={img01}/>&nbsp;<h3>{siteTitle}</h3></Link>
                     <button
                         className="icon"
                         onClick={this.burgerClickHandler}
@@ -60,6 +58,9 @@ export default class Header extends React.Component {
                         <div className="icon-bar" />
                         <div className="icon-bar" />
                     </button>
+                    <Link className="brand" to="/" >
+                        <img src={img01} />&nbsp;<h3>{siteTitle}</h3>
+                    </Link>
                     <div id="menu-responsive" className={menuClass}>
                         {
                             menuData.map((item, idx) => (
