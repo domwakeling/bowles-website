@@ -13,7 +13,6 @@ export default class Calendar extends React.Component {
     }
 
     monthDown(e) {
-        console.log('Down click received with event\n', e)
         e.preventDefault();
         e.target.blur();
         const newMonth = this.state.month - 1;
@@ -26,7 +25,6 @@ export default class Calendar extends React.Component {
     }
 
     monthUp(e) {
-        console.log('Up click received with event\n', e)
         e.preventDefault();
         e.target.blur();
         const newMonth = this.state.month + 1;

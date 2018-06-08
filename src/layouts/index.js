@@ -20,6 +20,8 @@ const Layout = (props) => {
             ]}
         >
             <link rel="icon" href={fav} sizes="32x32" type="image/png" />
+            <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Object.assign"></script>
+
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="container">
