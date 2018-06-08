@@ -47,7 +47,7 @@ export default class CalendarCell extends React.Component {
         let info = { labels: "", details: [], class: "circle" };
 
         const races = calendarData.filter(e => (
-            e.year === year && e.month === month && e.date === date && e.type === 'race'
+            e.year === year && e.month === (month + 1) && e.date === date && e.type === 'race'
         ));
         if(races.length > 0) {
             info.labels = info.labels + "R";
@@ -58,7 +58,7 @@ export default class CalendarCell extends React.Component {
         }
 
         const training = calendarData.filter(e => (
-            e.year === year && e.month === month && e.date === date && e.type === 'training'
+            e.year === year && e.month === (month + 1) && e.date === date && e.type === 'training'
         ));
 
         if(training.length > 0) {
