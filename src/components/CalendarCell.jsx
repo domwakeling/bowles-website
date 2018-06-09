@@ -84,8 +84,11 @@ export default class CalendarCell extends React.Component {
         this.mouseEnterHandler = this.mouseEnterHandler.bind(this);
         this.mouseLeaveHandler = this.mouseLeaveHandler.bind(this);
         const cellDate = this.dayOfMonth();
-        const cellClassName = this.cellStylingClass(cellDate);
+        let cellClassName = this.cellStylingClass(cellDate);
         const info = this.cellInfoHandler(cellDate);
+        if (cellDate === this.props.todayDate && this.props.thisMonth) {
+            cellClassName = cellClassName + " today";
+        }
         return (
             <div className="cell-wrapper">
                 {
@@ -134,4 +137,6 @@ CalendarCell.propTypes = {
     lastDate: PropTypes.number,
     month: PropTypes.number,
     year: PropTypes.number,
+    todayDate: PropTypes.number,
+    thisMonth: PropTypes.bool
 }

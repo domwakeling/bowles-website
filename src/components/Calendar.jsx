@@ -52,6 +52,10 @@ export default class Calendar extends React.Component {
         this.monthUp = this.monthUp.bind(this);
         this.monthInfo = this.monthInfo.bind(this);
         const { firstDayIndex, lastDate } = this.monthInfo(this.state.year, this.state.month);
+        const todayDate = this.props.date.getDate();
+        const todayMonth = this.props.date.getMonth();
+        const todayYear = this.props.date.getFullYear();
+        const thisMonth = (todayMonth === this.state.month && todayYear === this.state.year);
         return (
             <div id="calendar">
                 <div>
@@ -83,6 +87,8 @@ export default class Calendar extends React.Component {
                                         year={this.state.year}
                                         firstDay={firstDayIndex}
                                         lastDate={lastDate}
+                                        todayDate={todayDate}
+                                        thisMonth={thisMonth}
                                         key={`${row}_${col}`}
                                     />
                                 ))
