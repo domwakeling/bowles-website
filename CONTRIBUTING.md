@@ -31,21 +31,20 @@ you need to know ...
 
 ### Make A Change
 
-The guide below tells you how to make changes to **your local copy** of the site. If you're in
-development mode (run `npm run develop` or `gatsby develop`) you'll be able to see those change on
-your local development copy of the site.
+The guide below tells you how to make changes to the various files that make up the site. You can
+do this either **on GitHub** by forking the project and editing using their web interface, or on a
+**local copy** of the site.
 
-If this is all you do, the published site **will not change**!
+Whenever a change is made on the `master` branch of the GitHub repo it is **automatically** deployed
+to the live site (we're using [Netlify](https://www.netlify.com) to make this work).
 
-We're using [Gatsby](http://www.gatsbyjs.org), a static site generator, to build the site. Once
-you have made your changes, you need to run `npm run build` or `gatsby build` which will generate
-a completely static version of the site in the `public` folder.
+If you have been 'invited' to the repo you will have the ability to make **breaking changes** by
+working on the `master` branch, so **beware**!
 
-You can check that this has worked by running `gatsby serve`, which will set up a temporary server
-on your computer and network (the links will show up in your terminal when you run the command).
-
-Once you're happy that the changes work, **then** you need to sync up the files in your `public`
-folder with our web-host ... at that point, the website is actually updated!
+For safety, or if you are working on a fork, it is best to
+* start a new branch
+* make your changes
+* send a Pull Request for your changes to be reviewed and merged to `master`
 
 ### I Just Want To Add An Article
 
