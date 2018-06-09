@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import Header from '../components/Header.jsx';
 import Copyright from '../components/Copyright.jsx';
 import MenuRight from '../components/MenuRight.jsx';
-import '../styles/Layout.scss';
+import '../styles/layout.scss';
 import fav from '../favicon.png';
 
 const Layout = (props) => {
