@@ -43,6 +43,28 @@ const raceData2018 = {
                     'Bill Dunnet - 4th in Mens Masters 2'
                 ],
                 link: 'https://skiresults.co.uk/events/896'
+            }, 
+            {
+                descriptor: 'Race 3 - Welwyn - 10th June 2018',
+                individual: [
+                    'Stella Pople - 1st in Ladies U10',
+                    'Phoebe Everest - 2nd in Ladies U10',
+                    'Rufus Wontner - 1st in Mens U10',
+                    'Ben Wontner - 3rd in Mens U12',
+                    'Ollie Turner-Moore - 2nd in Mens U16',
+                    'Joshua Wakeling - 1st in Mens U18',
+                    'Charlotte Hilliard - 1st in Ladies U21',
+                    'Mark Oliver - 1st in Masters 2',
+                    'Nigel Hilliard - 2nd in Masters 2'
+                ],
+                fun_teams: [
+                    'Cerys Wakeling and Toby Pople were members of the winning team'
+                ],
+                club_teams: [
+                    `Bowles (Ben Wontner, Ollie Turner-Moore, Joshua Wakeling, Charlotte Hilliard
+                        and Nigel Hilliard) were third in the club teams competition`
+                ],
+                link: 'https://skiresults.co.uk/events/897'
             }
         ]
     },

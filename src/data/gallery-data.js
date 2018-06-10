@@ -44,11 +44,18 @@ import img43 from '../images/gallery/2018/180420_handicap/handicap.jpg';
 import img44 from '../images/gallery/2018/180506_kent/rose_hill.jpg';
 import img45 from '../images/gallery/2018/180526_SRSA_2_chatham/medallists.jpg';
 import img46 from '../images/gallery/2018/180602_LSERSA_2_brentwood/medallists.jpg';
+import img47 from '../images/gallery/2018/180610_LSERSA_3_welwyn/medallists.jpg';
 
 const galleryData = [
     {
         year: '2018',
         galleries: [
+            {
+                img: img47,
+                title: 'LSERSA 3, Welwyn',
+                date: '10 June 2018',
+                link: '/gallery/2018/180610_LSERSA_3_welwyn'
+            },
             {
                 img: img46,
                 title: 'LSERSA 2, Brentwood',
