@@ -27,4 +27,4 @@ results are available on [Ski Results](https://skiresults.co.uk/events/897).
 * Bowles (Ben Wontner, Ollie Turner-Moore, Joshua Wakeling, Charlotte Hilliard and Nigel Hilliard)
 were third in the club teams competition
 
-Photos in the [gallery](/gallery/2018/180602_LSERSA_3_welwyn).
+Photos in the [gallery](/gallery/2018/180610_LSERSA_3_welwyn).
