@@ -5,6 +5,7 @@ const calendarData = [
 
     { year: 2018, month: 7, date: 8, label: 'GBR, Chatham', type: 'race' },
     { year: 2018, month: 7, date: 7, label: 'Club National, Chatham', type: 'race'},
+    { year: 2018, month: 6, date: 9, label: 'Club National, Hemel', type: 'race'},
     
     { year: 2018, month: 10, date: 13, label: 'LSERSA 5, Chatham', type: 'race' },
     { year: 2018, month: 9, date: 2, label: 'LSERSA 4, Aldershot', type: 'race' },

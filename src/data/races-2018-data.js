@@ -96,6 +96,13 @@ const raceData2018 = {
                 ],
                 link: 'https://gbski.com/competition.php?ID=443'
             },
+            {
+                descriptor: 'Hemel - 9th June 2018',
+                individual: [
+                    'Stella Pople - 2nd in Girls U10',
+                    'Rufus Wontner - 2nd in Boys U10'
+                ]
+            }
         ]
     },
     Kent: {
