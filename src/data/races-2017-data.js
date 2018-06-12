@@ -294,6 +294,13 @@ const raceData2017 = {
                 link: 'https://gbski.com/racedocs/2017/C326/9243/RES9243%20Results%20-%20Female.pdf'
             },
             {
+                descriptor: 'ERSA - Welwyn - 11 June 2017',
+                individual: [
+                    'Rufus Wontner - 3rd in Boys U10'
+                ],
+                link: 'https://gbski.com/racedocs/2017/C328/C328RES%20ERSA%20CN%20Results.pdf'
+            },
+            {
                 descriptor: 'Gloucester - 9 July 2017',
                 individual: [
                     'Claudette Povey - 2nd in Ladies Seniors'
