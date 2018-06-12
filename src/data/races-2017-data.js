@@ -296,7 +296,7 @@ const raceData2017 = {
             {
                 descriptor: 'ERSA - Welwyn - 11 June 2017',
                 individual: [
-                    'Rufus Wontner - 3rd in Boys U10'
+                    'Ben Wontner - 3rd in Boys U10'
                 ],
                 link: 'https://gbski.com/racedocs/2017/C328/C328RES%20ERSA%20CN%20Results.pdf'
             },
