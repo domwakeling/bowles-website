@@ -105,6 +105,23 @@ const raceData2018 = {
                     'Toby Dunnet - 4th in Male U14'
                 ],
                 link: 'https://skiresults.co.uk/events/890'
+            },
+            {
+                descriptor: 'Race 3 - Aldershot - 16th June 2018',
+                individual: [
+                    'Phoebe Everest - 1st in Ladies U10',
+                    'Rufus Wontner - 2nd in Mens U10',
+                    'Nigel Hilliard - 3rd in Masters 2'
+                ],
+                fun_teams: [
+                    'Ben Wontner was a member of the 2nd-placed team Hotel',
+                    'Amelia Siwicka and Rufus Wontner were members of the 3rd-placed team Juliet'
+                ],
+                honorable: [
+                    'Ben Wontner - 4th in Mens U12',
+                    'Charlotte Hilliard - 4th in Ladies U21'
+                ],
+                link: 'https://skiresults.co.uk/events/891'
             }
         ]
     },

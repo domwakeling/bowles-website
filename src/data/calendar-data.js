@@ -3,6 +3,9 @@
 const calendarData = [
     { year: 2018, month: 10, date: 14, label: 'Tri-regional, Chatham', type: 'race'},
 
+    { year: 2018, month: 9, date: 16, label: 'Esskia Qualifier, Chatham', type: 'race'},
+    { year: 2018, month: 6, date: 30, label: 'Esskia Training, Chatham', type: 'training'},
+
     { year: 2018, month: 7, date: 8, label: 'GBR, Chatham', type: 'race' },
     { year: 2018, month: 7, date: 7, label: 'Club National, Chatham', type: 'race'},
     { year: 2018, month: 6, date: 9, label: 'Club National, Hemel', type: 'race'},
