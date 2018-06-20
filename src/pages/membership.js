@@ -10,7 +10,7 @@ const IndexPage = () => (
             target="_blank" >Bowles Outdoor Centre</a> every Friday evening (except for Christmas
             Day and New Year!) from 5:30 to 7:30.</p>
         <p>A typical session starts with a short period of warm-up exercises, and for this reason we
-            ask everyone to arrive as early as possible. This is followed by progressive isntruction
+            ask everyone to arrive as early as possible. This is followed by progressive instruction
             and we normally end with evening with informal slalom or dual slalom. We also hold timed
             training sessions approximately once a month, and hold two club &quot;fun races&quot;
             a year.</p>

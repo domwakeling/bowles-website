@@ -1,6 +1,9 @@
 // NOTE: MONTHS ARE INDEX-1, SO JANUARY = 1
 
 const calendarData = [
+
+    { year: 2018, month: 6, date: 27, label: 'ESSKIA training @ Bowles, 5-7', type: 'training'},
+
     { year: 2018, month: 10, date: 14, label: 'Tri-regional, Chatham', type: 'race'},
 
     { year: 2018, month: 9, date: 16, label: 'Esskia Qualifier, Chatham', type: 'race'},
