@@ -149,6 +149,17 @@ const raceData2018 = {
                     'Stella Pople - 2nd in Girls U10'
                 ],
                 link: 'https://gbski.com/competition.php?ID=461'
+            },
+            {
+                descriptor: 'Chatham - 7th June 2018',
+                individual: [
+                    'Claudette Povey - 2nd in Female Seniors',
+                    'Mark Oliver - 1st in Male Masters'
+                ],
+                honorable: [
+                    'Nigel Hilliard - 4th in Male Masters'
+                ],
+                link: 'https://gbski.com/competition.php?ID=466'
             }
         ]
     },
