@@ -3,7 +3,7 @@
 ## Index
 **[What you need to know](#what-you-need-to-know)**
 * [Make a change](#make-a-change)
-* [I just want to add an article](#i-just-want-to-add-an-article)
+* [I just want to add a news article](#i-just-want-to-add-a-news-article)
 * [Starting a new year](#starting-a-new-year)
 
 **[News Items](#news-items)**
@@ -46,10 +46,12 @@ For safety, or if you are working on a fork, it is best to
 * make your changes
 * send a Pull Request for your changes to be reviewed and merged to `master`
 
-### I Just Want To Add An Article
+### I Just Want To Add A News Article
 
-If there's already an article in the same year/month as the one you want to add, then it's as
-simple as writing a text file in what's known as 'markdown' format. The [full guide is here](#adding-news-articles).
+If there's already a news article in the same year/month as the one you want to add, then it's as
+simple as writing a text file in what's known as 'markdown' format. The [full guide is here](#adding-news-articles),
+and here's an [introduction to markdown basics](https://daringfireball.net/projects/markdown/basics) from John Gruber,
+who originally invented the format.
 
 If this is a new month but there are already articles in the year, you'll need to:
 * make a new folder under `src/news/{year}/` for the month (use the full month name in lower case)
@@ -80,7 +82,8 @@ forget to [change the relative links](#moving-a-race-results-javascript-page)
 
 ## The Calendar
 
-The calendar is entirely generated in code - it's no longer linked to a Google calendar.
+The calendar in the sidebar is entirely generated in code - it's no longer linked to a Google
+calendar.
 
 Friday training sessions are automatically added unless they fall on Christmas Day or Boxing Day.
 At the moment there's no ability to **remove** a Friday session ...
@@ -97,10 +100,14 @@ This is for a race on the **13**th of **October** **2018** - the month is entere
 normal convention (January = 1, December = 12). The `label` should be relatively short, and `type`
 can be either `race` or `training`.
 
-
 ⥣ [back to index](#index)
 
 ## News Items
+
+To add a news article:
+* [ ] add a new `index.md` file in the appropriate filepath - `src/news/{year}/{month}/{article-name}/index.md`
+* [ ] if it's a new month, make a new file `src/pages/news/{year}/{month}.js`; and
+* [ ] if it's a new month, add an entry to `src/data/news-data.js`
 
 News articles are added as markdown files. Every month (for which articles exist) should have a
 'monthly news summary' (added as javascript) and have an equivalent entry in the 'news archive
@@ -229,6 +236,15 @@ Race result pages are driven by two components:
 * a javascript file,  `src/pages/races/{year}.js` for past years or `src/pages/race/js` for the
 current year; and
 * a data file, `src/data/races-{year}-data.js` whcih contains all the data that is rendered
+
+At the start of each year:
+* [ ] move the content of `src/pages/races.js` to a new page in `src/pages/races/{last-year}.js`
+* [ ] change links in the copied content so that they reflect revised filepath
+* [ ] add a new data file in `src/data/races-{year}-data.js` and use base structure
+* [ ] update entries in `src/data/race-data`
+
+To add results for a new race:
+* [ ] add information to the relevant `src/data/races-{year}-data.js` file
 
 ### Adding a new Race Results javascript page
 
@@ -359,6 +375,11 @@ which has a `title` (the year as a string) and a `link` (path of the race page).
 
 ## Galleries
 
+To make a new gallery you need to:
+* [ ] process images and add them to the site
+* [ ] add a new gallery page (written in Javascript)
+* [ ] update the 'galleries' page (by adding information to a JSON data file)
+
 ### Adding images for a gallery page
 
 Images for galleries are stored in the `src/images/gallery` folder. Inside this file there are
@@ -369,14 +390,15 @@ is not required.
 For example, the images for the September 2012 handicap race are stored in
 `src/images/gallery/2012/120928_handicap`.
 
-Image naming convention is optional, but should be consistent - either provide a short description
-(eg `under-14.jpg`) or use a numbering system.
+Image naming convention is optional, but should at least be consistent in each individual gallery -
+either provide a short description (eg `under-14.jpg`) or use a numbering system.
 
 *NB: There should be **no** spaces in file paths at any point - use either a dash or an underscore
 to aid legibility instead if required.*
 
 Images should ideally be landscape and should ideally all be the same size/proportion/orientation in
-an individual gallery - however this is not a strict requirement.
+an individual gallery - however this is not a strict requirement and there are examples on the site
+already where a mixture of landscape and portrait images are used in the same gallery.
 
 Images to this point have been saved as JPG at resolution 600x350; ***this may change***.
 
