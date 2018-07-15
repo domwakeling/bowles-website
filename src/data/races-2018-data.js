@@ -122,6 +122,27 @@ const raceData2018 = {
                     'Charlotte Hilliard - 4th in Ladies U21'
                 ],
                 link: 'https://skiresults.co.uk/events/891'
+            },
+            {
+                descriptor: 'Race 4 - Southampton - 14th July 2018',
+                individual: [
+                    'Charlotte Hilliard - 2nd in Ladies U21',
+                    'Claudette Povey - 1st in Ladies Seniors',
+                    'Jack Hilliard - 1st in Mens Seniors',
+                    'Mark Oliver - 1st in Masters 2',
+                    'Nigel Hilliard - 3rd in Masters 2'
+                ],
+                fun_teams: [
+                    'Claudette Povey was a member of the 3rd-placed team Bravo'
+                ],
+                club_teams: [
+                    `Bowles (Toby Everest, Charlotte Hilliard, Jack Hilliard and Nigel Hilliard)
+                        were third in the club teams competition`
+                ],
+                honorable: [
+                    'Toby Everest - 4th in Mens U14'
+                ],
+                link: 'https://skiresults.co.uk/events/892'
             }
         ]
     },
