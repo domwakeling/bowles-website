@@ -143,6 +143,34 @@ const raceData2018 = {
                     'Toby Everest - 4th in Mens U14'
                 ],
                 link: 'https://skiresults.co.uk/events/892'
+            },
+            {
+                descriptor: 'Race 5 - Bowles - 18th AUgust 2018',
+                individual: [
+                    'Phoebe Everest - 1st in Ladies U10',
+                    'Lydia Linaker - 2nd in Ladies U10',
+                    'Rufus Wontner - 3rd in Mens U10',
+                    'Toby Everest - 1st in Mens U14',
+                    'Sam Martin-Young - 3rd in Mens U14',
+                    'Joshua Wakeling - 2nd in Mens U18',
+                    'Charlotte Hilliard - 2nd in Ladies U21',
+                    'Claudette Povey - 1st in Ladies Seniors',
+                    'Jack Hilliard - 1st in Mens Seniors',
+                    'Mark Oliver - 2nd in Masters 2'
+                ],
+                fun_teams: [
+                    'Lydia Linaker and Nigel Hilliard were members of the 2nd-placed team Charlie',
+                    'Joseph Pannell was a member of the wining team Delta'
+                ],
+                club_teams: [
+                    `Bowles A (Ben Wontner, Charlotte Hilliard, Jack Hilliard and Mark Oliver) were
+                        second in the club teams competition`
+                ],
+                honorable: [
+                    'Joseph Pannell - 4th in Mens U16',
+                    'Nigel Hilliard - 4th in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/893'
             }
         ]
     },

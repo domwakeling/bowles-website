@@ -46,11 +46,18 @@ import img45 from '../images/gallery/2018/180526_SRSA_2_chatham/medallists.jpg';
 import img46 from '../images/gallery/2018/180602_LSERSA_2_brentwood/medallists.jpg';
 import img47 from '../images/gallery/2018/180610_LSERSA_3_welwyn/medallists.jpg';
 import img48 from '../images/gallery/2018/180714_SRSA_4_southampton/clubs.jpg';
+import img49 from '../images/gallery/2018/180818_SRSA_5_bowles/medallists.jpg';
 
 const galleryData = [
     {
         year: '2018',
         galleries: [
+            {
+                img: img49,
+                title: 'SRSA 5, Bowles',
+                date: '18 August 2018',
+                link: '/gallery/2018/180818_SRSA_5_bowles'
+            },
             {
                 img: img48,
                 title: 'SRSA 4, Southampton',

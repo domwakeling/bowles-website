@@ -15,7 +15,7 @@ const alts = [
     'Mens Seniors',
     'Mens Masters 2',
     'Fun Teams',
-    'Cub Teams'
+    'Club Teams'
 ]
 const title = 'Medallists from SRSA 4 at Southampton on 14th July 2018';
 const link = '../../../../news/2018/july/SRSA_4';
