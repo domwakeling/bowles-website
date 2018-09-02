@@ -2,6 +2,8 @@
 
 const calendarData = [
 
+    { year: 2018, month: 10, date: 5, label: 'Club Fun Race & AGM', type: 'race'},
+
     { year: 2018, month: 6, date: 27, label: 'ESSKIA training @ Bowles, 5-7', type: 'training'},
 
     { year: 2018, month: 10, date: 14, label: 'Tri-regional, Chatham', type: 'race'},
