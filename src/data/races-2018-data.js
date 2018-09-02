@@ -65,6 +65,25 @@ const raceData2018 = {
                         and Nigel Hilliard) were third in the club teams competition`
                 ],
                 link: 'https://skiresults.co.uk/events/897'
+            },
+            {
+                descriptor: 'Race 4 - Aldershot - 2nd September 2018',
+                individual: [
+                    'Stella Pople - 1st in Ladies U10',
+                    'Phoebe Everest - 2nd in Ladies U10',
+                    'Rufus Wontner - 1st in Mens U10',
+                    'Joshua Wakeling - 2nd in Mens U18',
+                    'Mark Oliver - 2nd in Masters 2'
+                ],
+                fun_teams: [
+                    'Joseph Pannell was a member of the winning team',
+                    'Cerys Wakeling and Toby Pople were members of the 2nd - placed team'
+                ],
+                honorable: [
+                    'Ollie Turner-Moore - 4th in Mens U16',
+                    'Nigel Hilliard - 4th in Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/898'
             }
         ]
     },
