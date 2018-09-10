@@ -193,6 +193,20 @@ const raceData2018 = {
             }
         ]
     },
+    ERSA: {
+        title: 'ERSA 2018',
+        races: [
+            {
+                descriptor: 'Race 6 - Brentwood - 9th September 2018',
+                individual: [
+                    'Phoebe Everest - 3rd in Girls U10',
+                    'Rufus Wontner - 2nd in Boys U10',
+                    'Ben Wontner - 3nd in Boys U12'
+                ],
+                link: 'http://www.ersa.co.uk/sites/default/files/racing/results/2018/2018_236_overallpdf.pdf'
+            }
+        ]
+    },
     ClubNational: {
         title: 'SSE Club National Series 2018',
         races: [
