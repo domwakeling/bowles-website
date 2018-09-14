@@ -77,7 +77,7 @@ const raceData2018 = {
                 ],
                 fun_teams: [
                     'Joseph Pannell was a member of the winning team',
-                    'Cerys Wakeling and Toby Pople were members of the 2nd - placed team'
+                    'Cerys Wakeling and Toby Pople were members of the 2nd-placed team'
                 ],
                 honorable: [
                     'Ollie Turner-Moore - 4th in Mens U16',

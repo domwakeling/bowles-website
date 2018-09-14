@@ -348,7 +348,7 @@ const raceData2017 = {
     TriRegion: {
         descriptor: 'Tri-Regional Competition 2017',
         tri_teams: [
-            'Evie Ayton was a mamber of LSERSA B, placing 3rd in the Plate competition',    
+            'Evie Ayton was a member of LSERSA B, placing 3rd in the Plate competition',    
             `Phoebe Everest, Cerys Wakeling and Toby Pople were members of LSERSA H, placing 3rd in
                 the Shield competition`
         ],
