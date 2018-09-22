@@ -1,3 +1,7 @@
+html {
+    padding: env(safe-area-inset);
+}
+
 .container {
     @include for-phone-only {
         width: 100%;

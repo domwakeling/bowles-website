@@ -17,6 +17,7 @@ const Layout = (props) => {
             meta={[
                 { name: 'description', content: 'Bowles ski racing club' },
                 { name: 'keywords', content: 'bowles, ski, skiing, racing' },
+                { name: 'viewport', content: 'width=device-width, intial-scale=1, viewport-fit=cover'}
             ]}
         >
             <link rel="icon" href={fav} sizes="32x32" type="image/png" />

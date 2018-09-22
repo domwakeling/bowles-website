@@ -4,6 +4,7 @@ const calendarData = [
 
     
     // 2018 schools training
+    { year: 2018, month: 9, date: 26, label: 'Kent Schools training, 5-7', type: 'training' },
     { year: 2018, month: 9, date: 9, label: 'ESSKIA training @ Bowles, 5-7', type: 'training' },
     { year: 2018, month: 8, date: 29, label: 'ESSKIA training @ Bowles, 5-7', type: 'training' },
     { year: 2018, month: 6, date: 27, label: 'ESSKIA training @ Bowles, 5-7', type: 'training'},
