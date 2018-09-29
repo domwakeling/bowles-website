@@ -164,7 +164,7 @@ const raceData2018 = {
                 link: 'https://skiresults.co.uk/events/892'
             },
             {
-                descriptor: 'Race 5 - Bowles - 18th AUgust 2018',
+                descriptor: 'Race 5 - Bowles - 18th August 2018',
                 individual: [
                     'Phoebe Everest - 1st in Ladies U10',
                     'Lydia Linaker - 2nd in Ladies U10',
@@ -190,8 +190,39 @@ const raceData2018 = {
                     'Nigel Hilliard - 4th in Mens Masters 2'
                 ],
                 link: 'https://skiresults.co.uk/events/893'
+            },
+            {
+                descriptor: 'Race 6 - Snowtrax - 29 September 2018',
+                individual: [
+                    'Phoebe Everest - 3rd in Ladies U10',
+                    'Rufus Wontner - 3rd in Mens U10',  
+                    'Joshua Wakeling - 2nd in Mens U18',
+                    'Mark Oliver - 1st in Masters 2'
+                ],
+                club_teams: [
+                    `Bowles (Toby Everest, Joshua Wakeling, Mark Oliver and Nigel Hilliard) were
+                        third in the club teams competition`
+                ],
+                honorable: [
+                    'Toby Everest - 4th in Mens U14',
+                    'Nigel Hilliard - 4th in Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/894'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Phoebe Everest - 1st in Ladies U10',
+                'Rufus Wontner - 3rd in Mens U10',
+                'Charlotte Hilliard - 3rd in Ladies U21',
+                'Joshua Wakeling - 2nd in Male U18',
+                'Mark Oliver - 1st in Male Masters 2',
+                'Nigel Hilliard - 3rd in Male Masters 2'
+            ],
+            honorable: [
+                'Ben Wontner - 4th in Mens U12'
+            ]
+        }
     },
     ERSA: {
         title: 'ERSA 2018',

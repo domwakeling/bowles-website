@@ -7,7 +7,7 @@ const RaceSeries = (props) => {
     const { data } = props;
     return (
         <div className="race">
-            <h4>Overall Season Results</h4>
+            <h4 className="race-title">Overall Season Results</h4>
             {
                 data.individual ? (
                     <RaceEvent
