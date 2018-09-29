@@ -199,6 +199,9 @@ const raceData2018 = {
                     'Joshua Wakeling - 2nd in Mens U18',
                     'Mark Oliver - 1st in Masters 2'
                 ],
+                fun_teams: [
+                    'Phoebe Everst was a member of the 2nd-placed Team Echo'
+                ],
                 club_teams: [
                     `Bowles (Toby Everest, Joshua Wakeling, Mark Oliver and Nigel Hilliard) were
                         third in the club teams competition`
@@ -214,8 +217,11 @@ const raceData2018 = {
             individual: [
                 'Phoebe Everest - 1st in Ladies U10',
                 'Rufus Wontner - 3rd in Mens U10',
-                'Charlotte Hilliard - 3rd in Ladies U21',
+                'Toby Everest - 3rd in Mens U14',
                 'Joshua Wakeling - 2nd in Male U18',
+                'Charlotte Hilliard - 3rd in Ladies U21',
+                'Claudette Povey - 1st in Ladies Seniors',
+                'Jack Hilliard - 1st in Mens Seniors',
                 'Mark Oliver - 1st in Male Masters 2',
                 'Nigel Hilliard - 3rd in Male Masters 2'
             ],
