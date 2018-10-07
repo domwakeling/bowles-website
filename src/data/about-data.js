@@ -8,7 +8,7 @@ const adboutData = [
     {
         idx: 1,
         name: 'Tom Wontner - Chairman',
-        email: 'chairman@bowlesskiracingclub.org.uk',
+        email: 'chair@bowlesskiracingclub.org.uk',
         blurb: `I'm club Chairman. I've skied regularly for the last 20 years, and head to the
                 Tarentaise in France as often as I can.  I first took my two boys to Bowles to help
                 them with their general skiing skills, and loved the club's unique and friendly
