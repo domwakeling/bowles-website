@@ -48,11 +48,18 @@ import img47 from '../images/gallery/2018/180610_LSERSA_3_welwyn/medallists.jpg'
 import img48 from '../images/gallery/2018/180714_SRSA_4_southampton/clubs.jpg';
 import img49 from '../images/gallery/2018/180818_SRSA_5_bowles/medallists.jpg';
 import img50 from '../images/gallery/2018/180902_LSERSA_4_aldershot/funs.jpg';
+import img51 from '../images/gallery/2018/181005_handicap/handicap.jpg';
 
 const galleryData = [
     {
         year: '2018',
         galleries: [
+            {
+                img: img51,
+                title: 'Handicap Fun Race',
+                date: '5 October 2018',
+                link: '/gallery/2018/181005_handicap'
+            },
             {
                 img: img50,
                 title: 'LSERSA 4, Aldershot',

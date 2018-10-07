@@ -28,12 +28,12 @@ const IndexPage = () => (
         <p>The last race is often a club team race made up of the fastest members
             from each club. Then at the end of the afternoon there is a prize giving -
             1st, 2nd &amp; 3rd for all the individual races, in age and gender categories,
-            and then medals for all winning members 1st, 2nd, &amp; 3rd, of the fun teams
-            and the club teams.</p>
+            and then medals for all members of the 1st, 2nd, &amp; 3rd-placed fun teams
+            and club teams.</p>
         <p>These race days generally move on fairly quickly and they are all self-contained,
             so you can do just one or two if the whole season is too much! The cost of entry
-            usually ranges from about &pound;14-&17 per race. You will need ski kit - most people
-            bring their own, but if you have none then all the race venues have rental kit
+            usually ranges from about &pound;14-&pound;17 per race. You will need ski kit - most
+            people bring their own, but if you have none then all the race venues have rental kit
             available.</p>
         <p>To book in LSERSA or Snowsports South races, go to skiresults.co.uk and create a
             membership via the tab at the top right, then select upcoming events. Once your
