@@ -45,6 +45,12 @@
                     float: none;
                     display: block;
                     text-align: left;
+                    padding-top: 0.4em;
+                    padding-bottom: 0.4em;
+                    border-bottom: 1px solid $color__project-inverse;
+                    &:last-child {
+                        border-bottom: none !important;
+                    }
                 }
             }
         }
