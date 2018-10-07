@@ -56,7 +56,7 @@ const adboutData = [
     {
         idx: 6,
         name: 'Joshua Wakeling - Athletes Rep',
-        email: 'athleterep@bowlesskiracingclub.org',
+        email: 'athleterep@bowlesskiracingclub.org.uk',
         blurb: `I started skiing at the age of 5 and have been racing at Bowles since I was 9. I
                 have trained with English Schools (ESSKiA) ski squad and raced in LSERSA, Snowsports
                 South and Club National races, and have also represented my schools at many school
