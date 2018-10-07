@@ -7,13 +7,14 @@ const adboutData = [
     },
     {
         idx: 1,
-        name: 'Paul Bailey - Chairman',
+        name: 'Tom Wontner - Chairman',
         email: 'chairman@bowlesskiracingclub.org.uk',
-        blurb: `I am the club Chairman, I have been involved with the race club now for about four
-                years. After my children’s second holiday I realised I would have to find something
-                to fill the skiing gap until next year and Bowles race club certainly does the
-                trick! Although I don’t race myself I am a keen skier and enjoy watching my children
-                improve and have fun every week.`
+        blurb: `I'm club Chairman. I've skied regularly for the last 20 years, and head to the
+                Tarentaise in France as often as I can.  I first took my two boys to Bowles to help
+                them with their general skiing skills, and loved the club's unique and friendly
+                atmosphere and wonderful natural setting. The competitive element of racing really
+                grabbed us all, and we now join as many dry ski races as possible during the summer,
+                and plan to do some races on snow over the winter.`
     },
     {
         idx: 2,
@@ -31,7 +32,8 @@ const adboutData = [
         email: 'treasurer@bowlesskiracingclub.org.uk',
         blurb: `I am the club treasurer and a qualified alpine ski instructor and ski performance
                 coach. I have been skiing for about 30 years and have raced for about 9 years. I
-                have two children who race for Bowles and who both ski better than me - that's life!`
+                have two children who race for Bowles and who both ski better than me - that's
+                life!`
     },
     {
         idx: 4,
@@ -53,9 +55,12 @@ const adboutData = [
     },
     {
         idx: 6,
-        name: 'Claudette Povey - Athletes Rep',
+        name: 'Joshua Wakeling - Athletes Rep',
         email: 'athleterep@bowlesskiracingclub.org',
-        blurb: ''
+        blurb: `I started skiing at the age of 5 and have been racing at Bowles since I was 9. I
+                have trained with English Schools (ESSKiA) ski squad and raced in LSERSA, Snowsports
+                South and Club National races, and have also represented my schools at many school
+                competitions.`
     }
 ];
 
