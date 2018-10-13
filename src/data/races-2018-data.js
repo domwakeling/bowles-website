@@ -84,8 +84,40 @@ const raceData2018 = {
                     'Nigel Hilliard - 4th in Masters 2'
                 ],
                 link: 'https://skiresults.co.uk/events/898'
+            },
+            {
+                descriptor: 'Race 5 - Chatham - 13 October 2018',
+                individual: [
+                    'Stella Pople - 2nd in Ladies U10',
+                    'Phoebe Everest - 3rd in Ladies U10',
+                    'Rufus Wontner - 2nd in Mens U10',
+                    'Toby Everest - 3rd in Mens U14',
+                    'Joshua Wakeling - 1st in Mens U18',
+                    'Claudette Povey - 1st in Ladies Seniors',
+                    'Mark Oliver - 2nd in Masters 2'
+                ],
+                fun_teams: [
+                    `Toby Pople, Joseph Pannell and Nigel Hilliard were members of the 3rd-placed
+                        team`
+                ],
+                link: 'https://skiresults.co.uk/events/899'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Stella Pople - 1st in Ladies U10',
+                'Phoebe Everest - 2nd in Ladies U10',
+                'Rufus Wontner - 1st in Mens U10',
+                'Ollie Turner - Moore - 2nd in Mens U16',
+                'Joshua Wakeling - 1st in Male U18',
+                'Claudette Povey - 1st in Ladies Seniors',
+                'Mark Oliver - 1st in Male Masters 2'
+            ],
+            honorable: [
+                'Ben Wontner - 4th in Mens U12',
+                'Nigel Hilliard - 4th in Male Masters 2'
+            ]
+        }
     },
     SRSA: {
         title: 'SRSA 2018 Summer Race Series',
