@@ -351,6 +351,15 @@ const raceData2018 = {
         honorable: [
             'Ben Wontner - 4th in Primary Senior Male'
         ]
+    },
+    TriRegion: {
+        descriptor: 'Tri-Regional Competition 2018',
+        tri_teams: [
+            `Joshua Wakeling was a member of LSERSA C, winners of the Plate competition`,
+            `Stella Pople and Seb Turner - Moore were members of LSERSA E, winners in the Shield
+                competition`
+        ],
+        link: 'https://skiresults.co.uk/events/900'
     }
 }
 

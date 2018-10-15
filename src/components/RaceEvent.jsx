@@ -5,7 +5,11 @@ const RaceEvent = (props) => {
     const { data, title } = props;
     return (
         <div>
-            <h5 className="event-title">{title}</h5>
+            {
+                data.title && data.title !== "" ? (
+                    <h5 className="event-title">{title}</h5>
+                ) : ''
+            }
             {
                 data.map((result, idx) => <p className="event-result" key={idx}>{result}</p>)
             }
