@@ -37,7 +37,7 @@ const raceData2014 = {
                 descriptor: 'Race 4 - Bowles - 7th September 2014',
                 individual: [
                     'Oliver Turner-Moore - 3rd in 2M',
-                    'Sebastian Turner - Moore - 2nd in 3M',
+                    'Sebastian Turner-Moore - 2nd in 3M',
                     'Nigel Hilliard - 3rd in 9M'
                 ],
                 fun_teams: [

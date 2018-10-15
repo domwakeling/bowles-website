@@ -231,7 +231,7 @@ const raceData2016 = {
         ],
         honorable: [
             'Rebecca Forte was 4th in the MID-Girls',
-            'Ollie Turner - Moore was 4th in the MID-Boys',
+            'Ollie Turner-Moore was 4th in the MID-Boys',
             'Elle Ayton was 4th in the SEN-Girls'
         ]
     },

@@ -108,7 +108,7 @@ const raceData2018 = {
                 'Stella Pople - 1st in Ladies U10',
                 'Phoebe Everest - 2nd in Ladies U10',
                 'Rufus Wontner - 1st in Mens U10',
-                'Ollie Turner - Moore - 2nd in Mens U16',
+                'Ollie Turner-Moore - 2nd in Mens U16',
                 'Joshua Wakeling - 1st in Male U18',
                 'Claudette Povey - 1st in Ladies Seniors',
                 'Mark Oliver - 1st in Male Masters 2'
@@ -356,7 +356,7 @@ const raceData2018 = {
         descriptor: 'Tri-Regional Competition 2018',
         tri_teams: [
             `Joshua Wakeling was a member of LSERSA C, winners of the Plate competition`,
-            `Stella Pople and Seb Turner - Moore were members of LSERSA E, winners in the Shield
+            `Stella Pople and Seb Turner-Moore were members of LSERSA E, winners in the Shield
                 competition`
         ],
         link: 'https://skiresults.co.uk/events/900'

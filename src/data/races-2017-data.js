@@ -318,9 +318,9 @@ const raceData2017 = {
             'Lydia Dunkin was 2nd in the MID-Girls',
             'Mia Devey was 3rd in the MID-Girls',
             'Joshua Wakeling was 1st in the MID-Boys and 2nd in the Secondary-Boys',
-            'Ollie Turner - Moore was 2nd in the MID-Boys',
+            'Ollie Turner-Moore was 2nd in the MID-Boys',
             'Elle Ayton was 1st in the SEN-Girls and 1st in the Secondary-Girls',
-            'Seb Turner - Moore was 3rd in the SEN-Boys'
+            'Seb Turner-Moore was 3rd in the SEN-Boys'
         ],
         primary_teams: [
             `Bishops Down A (Lila Ayton, Jack Bowers, Alex Ralph and Teddy Ralph) were 1st in the
