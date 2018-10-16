@@ -6,7 +6,7 @@ const RaceEvent = (props) => {
     return (
         <div>
             {
-                data.title && data.title !== "" ? (
+                title && title !== "" ? (
                     <h5 className="event-title">{title}</h5>
                 ) : ''
             }
