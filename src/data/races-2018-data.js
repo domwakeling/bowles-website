@@ -10,6 +10,7 @@ const raceData2018 = {
                     'Rufus Wontner - 2nd in Mens U10',
                     'Ollie Turner-Moore - 3rd in Mens U16',
                     'Claudette Povey - 1st in Ladies Senior',
+                    'Joshua Goodsell - 2nd in Mens Senior',
                     'Mark Oliver - 1st in Mens Masters 2'
                 ],
                 fun_teams: [

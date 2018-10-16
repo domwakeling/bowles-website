@@ -13,6 +13,7 @@ results are available on [Ski Results](https://skiresults.co.uk/events/895).
 * Rufus Wontner - 2nd in Male U10
 * Ollie Turner-Moore - 3rd in Male U16
 * Claudette Povey - 1st in Female Senior
+* Joshua Goodsell - 2nd in Mens Senior
 * Mark Oliver - 1st in Male Masters 2
 
 ##### Fun Team Event
