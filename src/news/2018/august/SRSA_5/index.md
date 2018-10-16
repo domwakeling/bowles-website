@@ -13,7 +13,7 @@ Bowles. Full results are available on [Ski Results](https://skiresults.co.uk/eve
 * Phoebe Everest - 1st in Ladies U10
 * Lydia Linaker - 2nd in Ladies U10
 * Rufus Wontner - 3rd in Mens U10
-* Toby Everest - 1st in Mens U14
+* Toby Everest - 2nd in Mens U14
 * Sam Martin-Young - 3rd in Mens U14
 * Joshua Wakeling - 2nd in Mens U18
 * Charlotte Hilliard - 2nd in Ladies U21

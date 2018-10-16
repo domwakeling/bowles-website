@@ -202,7 +202,7 @@ const raceData2018 = {
                     'Phoebe Everest - 1st in Ladies U10',
                     'Lydia Linaker - 2nd in Ladies U10',
                     'Rufus Wontner - 3rd in Mens U10',
-                    'Toby Everest - 1st in Mens U14',
+                    'Toby Everest - 2nd in Mens U14',
                     'Sam Martin-Young - 3rd in Mens U14',
                     'Joshua Wakeling - 2nd in Mens U18',
                     'Charlotte Hilliard - 2nd in Ladies U21',
@@ -298,7 +298,7 @@ const raceData2018 = {
             {
                 descriptor: 'Welwyn - 23rd June 2018',
                 individual: [
-                    'Stella Pople - 2nd in Girls U10'
+                    'Phoebe Everest - 2nd in Girls U10'
                 ],
                 link: 'https://gbski.com/competition.php?ID=461'
             },
