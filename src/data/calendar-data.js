@@ -2,7 +2,36 @@
 
 const calendarData = [
 
+    // 2019 tri-regional
+    { year: 2019, month: 10, date: 13, label: 'Tri-regional, Chatham', type: 'race' },
+
+    // 2019 school & ESSKIA races
+    { year: 2019, month: 5, date: 12, label: 'Kent Schools, Chatham', type: 'race' },
+
+    // 2019 CN & GBR races
+    { year: 2019, month: 10, date: 12, label: 'City Event, Chatham', type: 'race' },
+    { year: 2019, month: 6, date: 16, label: 'Club National, Chatham', type: 'race' },
+    { year: 2019, month: 6, date: 15, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
+
+    // 2019 LSERSA races
+    { year: 2019, month: 9, date: 29, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2019, month: 9, date: 7, label: 'LSERSA 4, Aldershot', type: 'race' },
+    { year: 2019, month: 7, date: 20, label: 'LSERSA 3, Brentwood', type: 'race' },
+    { year: 2019, month: 6, date: 8, label: 'LSERSA 2, Welwyn', type: 'race' },
+    { year: 2019, month: 4, date: 27, label: 'LSERSA 1, Chatham', type: 'race' },
+
+    // 2019 SRSA races
+    { year: 2019, month: 10, date: 5, label: 'SRSA 6, Snowtrax', type: 'race' },
+    { year: 2019, month: 9, date: 14, label: 'SRSA 5, Southampton', type: 'race' },
+    { year: 2019, month: 8, date: 17, label: 'SRSA 4, Bowles', type: 'race' },
+    { year: 2019, month: 6, date: 23, label: 'SRSA 3, Aldershot', type: 'race' },
+    { year: 2019, month: 5, date: 11, label: 'SRSA 2, Aldershot', type: 'race' },
+    { year: 2019, month: 4, date: 20, label: 'SRSA 1, Snowtrax', type: 'race' },
+
+    // 2019 club fun races
+    { year: 2019, month: 4, date: 26, label: 'Club Fun Race', type: 'race' },
     
+
     // 2018 schools training
     { year: 2018, month: 12, date: 16, label: 'Kent Schools training, 5-7', type: 'training'},
     { year: 2018, month: 12, date: 2, label: 'Kent Schools training, 5-7', type: 'training'},
