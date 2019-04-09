@@ -10,12 +10,16 @@ const calendarData = [
 
     // 2019 CN & GBR races
     { year: 2019, month: 10, date: 12, label: 'City Event, Chatham', type: 'race' },
+    { year: 2019, month: 6, date: 22, label: 'Club National, Welwyn', type: 'race' },
     { year: 2019, month: 6, date: 16, label: 'Club National, Chatham', type: 'race' },
     { year: 2019, month: 6, date: 15, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
+    { year: 2019, month: 6, date: 2, label: 'Club National, Vikings (@ Ipswich)', type: 'race' },
+    { year: 2019, month: 6, date: 1, label: 'Club National, Norfolk (@ Norwich)', type: 'race' },
+    { year: 2019, month: 5, date: 4, label: 'Club National, ERSA (@ Milton Keynes)', type: 'race' },
 
     // 2019 LSERSA races
     { year: 2019, month: 9, date: 29, label: 'LSERSA 5, Chatham', type: 'race' },
-    { year: 2019, month: 9, date: 7, label: 'LSERSA 4, Aldershot', type: 'race' },
+    { year: 2019, month: 9, date: 8, label: 'LSERSA 4, Aldershot', type: 'race' },
     { year: 2019, month: 7, date: 20, label: 'LSERSA 3, Brentwood', type: 'race' },
     { year: 2019, month: 6, date: 8, label: 'LSERSA 2, Welwyn', type: 'race' },
     { year: 2019, month: 4, date: 27, label: 'LSERSA 1, Chatham', type: 'race' },
@@ -28,9 +32,16 @@ const calendarData = [
     { year: 2019, month: 5, date: 11, label: 'SRSA 2, Aldershot', type: 'race' },
     { year: 2019, month: 4, date: 20, label: 'SRSA 1, Snowtrax', type: 'race' },
 
+    //2019 ERSA races
+    { year: 2019, month: 9, date: 7, label: 'ERSA 6, Brentwood', type: 'race' },
+    { year: 2019, month: 6, date: 30, label: 'ERSA 5, Hemel (2pm)', type: 'race' },
+    { year: 2019, month: 6, date: 30, label: 'ERSA 4, Ipswich', type: 'race' },
+    { year: 2019, month: 6, date: 16, label: 'ERSA 3, Brentwood', type: 'race' },
+    { year: 2019, month: 5, date: 19, label: 'ERSA 2, Norwich', type: 'race' },
+    { year: 2019, month: 4, date: 28, label: 'ERSA 1, Welwyn', type: 'race' },
+
     // 2019 club fun races
     { year: 2019, month: 4, date: 26, label: 'Club Fun Race', type: 'race' },
-    
 
     // 2018 schools training
     { year: 2018, month: 12, date: 16, label: 'Kent Schools training, 5-7', type: 'training'},
