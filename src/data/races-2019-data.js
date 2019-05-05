@@ -59,6 +59,18 @@ const raceData2019 = {
                 descriptor: 'Race 6 - Snowtrax - 5th October 2019'
             }
         ]
+    },
+    ClubNational: {
+        title: 'SSE Club National Series 2019',
+        races: [
+            {
+                descriptor: 'ERSA - 5th May 2019',
+                individual: [
+                    'Rufus Wontner - 1st in U10 Boys'
+                ],
+                link: 'https://gbski.com/competition.php?ID=560'
+            }
+        ]
     }
 }
 

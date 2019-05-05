@@ -49,11 +49,37 @@ import img48 from '../images/gallery/2018/180714_SRSA_4_southampton/clubs.jpg';
 import img49 from '../images/gallery/2018/180818_SRSA_5_bowles/medallists.jpg';
 import img50 from '../images/gallery/2018/180902_LSERSA_4_aldershot/funs.jpg';
 import img51 from '../images/gallery/2018/181005_handicap/handicap.jpg';
+import img52 from '../images/gallery/2018/181013_LSERSA_5_chatham/improved.jpg';
+import img53 from '../images/gallery/2019/190426_handicap/handicap.jpg';
+import img54 from '../images/gallery/2019/190427_LSERSA_1_chatham/m_u12.jpg';
 
 const galleryData = [
     {
+        year: '2019',
+        galleries: [
+            {
+                img: img54,
+                title: 'LSERSA 1, Chatham',
+                date: '27 April 2018',
+                link: '/gallery/2019/190427_LSERSA_1_chatham'
+            },
+            {
+                img: img53,
+                title: 'Handicap Fun Race',
+                date: '26 April 2019',
+                link: '/gallery/2019/190426_handicap'
+            }
+        ]
+    },
+    {
         year: '2018',
         galleries: [
+            {
+                img: img52,
+                title: 'LSERSA 5, Chatham',
+                date: '13 October 2018',
+                link: '/gallery/2018/181013_LSERSA_5_chatham'
+            },
             {
                 img: img51,
                 title: 'Handicap Fun Race',
