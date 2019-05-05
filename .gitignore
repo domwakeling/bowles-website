@@ -7,3 +7,6 @@ yarn-error.log
 /public
 .DS_Store
 *.DS_Store
+
+# Deliberately withheld
+not_for_git
