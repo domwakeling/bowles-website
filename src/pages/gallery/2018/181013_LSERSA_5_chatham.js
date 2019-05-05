@@ -29,7 +29,7 @@ const alts = [
     'Mens Masters-2 (Season)',
     'Most Improved (Season)'
 ]
-const title = 'Medallists from LSERSA 5 at Aldershot on 13th October 2018';
+const title = 'Medallists from LSERSA 5 at Chatham on 13th October 2018';
 const link = '../../../../news/2018/october/LSERSA_5';
 
 export default class Fade extends React.Component {
