@@ -7,6 +7,8 @@ date: "2018-10-13T21:00"
 The fifth and final race of the LSERSA 2018 Summer Series was held on Saturday 13th October at
 Chatham. Full results are available on [Ski Results](https://skiresults.co.uk/events/899).
 
+![Bowles medallists](medallists.jpg)
+
 ##### Individual Event
 * Stella Pople - 2nd in Ladies U10
 * Phoebe Everest - 3rd in Ladies U10
