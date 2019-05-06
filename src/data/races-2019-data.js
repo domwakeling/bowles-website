@@ -66,7 +66,8 @@ const raceData2019 = {
             {
                 descriptor: 'ERSA - 5th May 2019',
                 individual: [
-                    'Rufus Wontner - 1st in U10 Boys'
+                    'Rufus Wontner - 1st in U10 Boys',
+                    'Rufus Wontner - 1st in U10 Boys (Extended Slalom)'
                 ],
                 link: 'https://gbski.com/competition.php?ID=560'
             }
