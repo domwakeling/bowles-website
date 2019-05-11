@@ -34,7 +34,7 @@ const calendarData = [
 
     //2019 ERSA races
     { year: 2019, month: 9, date: 7, label: 'ERSA 6, Brentwood', type: 'race' },
-    { year: 2019, month: 6, date: 30, label: 'ERSA 5, Hemel (2pm)', type: 'race' },
+    { year: 2019, month: 7, date: 6, label: 'ERSA 5, Hemel (2pm)', type: 'race' },
     { year: 2019, month: 6, date: 30, label: 'ERSA 4, Ipswich', type: 'race' },
     { year: 2019, month: 6, date: 16, label: 'ERSA 3, Brentwood', type: 'race' },
     { year: 2019, month: 5, date: 19, label: 'ERSA 2, Norwich', type: 'race' },
