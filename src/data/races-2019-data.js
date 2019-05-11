@@ -44,7 +44,21 @@ const raceData2019 = {
                 link: 'https://skiresults.co.uk/events/998'
             },
             {
-                descriptor: 'Race 2 - Aldershot - 11th May 2019'
+                descriptor: 'Race 2 - Aldershot - 11th May 2019',
+                individual: [
+                    'Rufus Wontner - 3rd in Male U10',
+                    'Ben Wontner - 3rd in Male U12',
+                    'Claudette Povey - 1st in Ladies Senior',
+                    'Ben Easton - 3rd in Male Masters 1',
+                    'Nigel Hilliard - 3rd in Male Masters 2'
+                ],
+                fun_teams: [
+                    'Nigel Hilliard was a member of the 2nd-placed team'
+                ],
+                honorable: [
+                    'Bill Dunnet - 4th in Male Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/999'
             },
             {
                 descriptor: 'Race 3 - Aldershot - 23rd June 2019'

@@ -1,7 +1,7 @@
 ---
 title: "SRSA Summer Race Series - Snowtrax"
 contentType: news
-date: "2018-04-21T23:00"
+date: "2019-04-21T23:00"
 ---
 
 The first round of the SRSA 2019 Summer Series was held on Saturday 20th April at Snowtrax. Full
