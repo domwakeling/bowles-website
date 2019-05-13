@@ -93,6 +93,7 @@ const raceData2019 = {
             'Rufus Wontner - 1st in Primary Junior Male',
             'Stella Pople - 1st in Primary Senior Female and 1st Primary Overall Female',
             'Ben Wontner - 1st in Primary Senior Male and 1st Primary Overall Male',
+            'Boden Kelly - 2nd in Primary Senior Male',
             'Lila Ayton - 2nd in Secondary Junior Female',
             'Evie Ayton - 2nd in Secondary Senior Female'
         ],
