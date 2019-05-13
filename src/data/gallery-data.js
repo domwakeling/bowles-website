@@ -67,7 +67,7 @@ const galleryData = [
             {
                 img: img54,
                 title: 'LSERSA 1, Chatham',
-                date: '27 April 2018',
+                date: '27 April 2019',
                 link: '/gallery/2019/190427_LSERSA_1_chatham'
             },
             {
