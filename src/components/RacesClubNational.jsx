@@ -8,7 +8,7 @@ const RacesClubNational = (props) => {
     const { data } = props;
     return (
         <div style={{ clear: 'both' }}>
-            <img src={logoSSE} style={{ float: 'right' }} />
+            <img src={logoSSE} style={{ float: 'right' }} alt="Snowsport England logo" />
             <Races data={data} />
         </div>
     )

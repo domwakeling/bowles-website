@@ -59,8 +59,16 @@ export default class Calendar extends React.Component {
         return (
             <div id="calendar">
                 <div>
-                    <button className="back-button" onClick={this.monthDown} />
-                    <button className="fwd-button" onClick={this.monthUp} />
+                    <button
+                        className="back-button"
+                        aria-label="Previous Month"
+                        onClick={this.monthDown}
+                    />
+                    <button
+                        className="fwd-button" 
+                        aria-label="Next Month"
+                        onClick={this.monthUp}
+                    />
                     <div className="date">
                         {`${months[this.state.month]} ${this.state.year}`}
                     </div>

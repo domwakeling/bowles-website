@@ -12,7 +12,7 @@ const IndexPage = () => (
             South regions. It&apos;s easy to enter the races and there is no
             minimum skill requirement. If you can ski down a slalom run (even fairly slowly) you
             can take part!</p>
-        <img src={img2} />
+        <img src={img2} alt="Bowles racers" />
         <p>The race days generally involve a relatively early start, about 8am, and run until
             about 3-4pm.</p>
         <p>There&apos;ll be an open practice at the start, then 3 individual timed
@@ -45,7 +45,7 @@ const IndexPage = () => (
             go last minute, you&apos;re listed as DNS (did not start); you don&apos;t get
             your race entry refunded, but you wont have let anyone else down, so it&apos;s really
             not an issue.</p>
-        <img src={img1} />
+        <img src={img1} alt="A shy racer" />
         <p>There are lots of other ski races taking place throughout the summer which are listed on
             GBski.com, but the regional races with LSERSA and Snowsport South are an easy and gentle
             introduction and hopefully not too far to drive!</p>

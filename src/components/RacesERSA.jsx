@@ -8,7 +8,7 @@ const RacesERSA = (props) => {
     const { data } = props;
     return (
         <div style={{ clear: 'both' }}>
-            <img src={logoERSA} style={{ float: 'right' }} />
+            <img src={logoERSA} style={{ float: 'right' }} alt="ERSA logo" />
             <Races data={data} />
         </div>
     )

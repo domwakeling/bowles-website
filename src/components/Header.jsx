@@ -52,6 +52,7 @@ export default class Header extends React.Component {
                 <div className="container" ref={this.setWrapperRef}>
                     <button
                         className="icon"
+                        aria-label="Menu"
                         onClick={this.burgerClickHandler}
                     >
                         <div className="icon-bar" />
@@ -59,7 +60,7 @@ export default class Header extends React.Component {
                         <div className="icon-bar" />
                     </button>
                     <Link className="brand" to="/" >
-                        <img src={img01} />&nbsp;<h3>{siteTitle}</h3>
+                        <img alt="Bowles logo" src={img01} />&nbsp;<h3>{siteTitle}</h3>
                     </Link>
                     <div id="menu-responsive" className={menuClass}>
                         {

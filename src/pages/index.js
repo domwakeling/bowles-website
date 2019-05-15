@@ -7,6 +7,7 @@ const IndexPage = ({ data }) => (
     <div>
         <div className="videoWrapper">
             <iframe
+                title="Introductory video"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/fApQcD9yu4w"

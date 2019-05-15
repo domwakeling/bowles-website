@@ -8,7 +8,7 @@ const RacesLSERSA = (props) => {
     const { data } = props;
     return (
         <div style={{ clear: 'both' }}>
-            <img src={logoSRSA} style={{ float: 'right' }} />
+            <img src={logoSRSA} style={{ float: 'right' }} alt="Snowsport South logo" />
             <Races data={data} />
         </div>
     )
