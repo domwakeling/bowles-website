@@ -19,7 +19,7 @@ const MenuRight = (props) => {
     }
     return (
         <div id="right-nav">
-            <img src={img01} style={{float: 'right', width: '120px'}} />
+            <img src={img01} style={{float: 'right', width: '120px'}} alt="Bowles SRC logo" />
             {
                 menuData.map((item, idx) => (
                     <div key={idx} className='a-wrapper'>

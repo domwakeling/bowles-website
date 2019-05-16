@@ -28,7 +28,7 @@ const raceData2019 = {
                 descriptor: 'Race 4 - Aldershot - 8th September 2019'
             },
             {
-                descriptor: 'Race 5 - Chatham - 29th October 2019'
+                descriptor: 'Race 5 - Chatham - 29th September 2019'
             }
         ]
     },
