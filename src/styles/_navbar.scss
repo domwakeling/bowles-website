@@ -218,7 +218,8 @@
 
                     &.today {
                         background-color: $color__project-complementary;
-                        color: white;
+                        // color: white;
+                        font-weight: bold;
                     }
 
                     .circle {
