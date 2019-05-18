@@ -1,5 +1,8 @@
 # Contributing
 
+*The site was updated from Gatsby v1 to v2 in May 2019; please check instructions below, since
+some of them have changed to reflect this update.*
+
 ## Index
 **[What you need to know](#what-you-need-to-know)**
 * [Make a change](#make-a-change)
@@ -160,16 +163,18 @@ The code in each monthly summary should look like this:
 import React from 'react';
 import PropTypes from 'prop-types';
 import MonthPage from '../../../components/MonthPage.jsx';
+import { graphql } from 'gatsby';
 
-const Page = ({ data }) => (
-    <MonthPage data={data} title="May 2018" />
+const Page = ({ data, location }) => (
+    <MonthPage location={location} data={data} title="May 2018" />
 );
 
 Page.propTypes = {
     data: PropTypes.oneOfType([
         PropTypes.func,
         PropTypes.object
-    ])
+    ]),
+    location: PropTypes.object
 }
 
 export default Page;
@@ -253,13 +258,20 @@ component. The content of the file for 2013 is:
 
 ```javascript
 import React from 'react';
+import PropTypes from 'prop-types';
 import RacePage from '../../components/RacePage.jsx';
 
 import raceData2013 from '../../data/races-2013-data';
 
-export default () => (
-    <RacePage data={raceData2013} title="2013 Race Results" />
+const ThisPage = ({ location }) => (
+    <RacePage location={location} data={raceData2013} title="2013 Race Results" />
 );
+
+export default ThisPage;
+
+ThisPage.propTypes = {
+    location: PropTypes.object
+}
 ``` 
 To make a new year's results page, use this code and change the references to the appropriate year.
 You will also need to make sure that the equivalent [data file](#adding-a-new-race-results-data-file)
@@ -413,6 +425,7 @@ An example of a gallery page is:
 
 ```javascript
 import React from "react";
+import PropTypes from 'prop-types';
 import GalleryPage from '../../components/GalleryPage.jsx'
 
 import img01 from '../../images/gallery/2012/120928_handicap/Under_10_Sept12.jpg';
@@ -430,23 +443,27 @@ const alts = [
 ]
 const title = 'Pictures from the medal ceremony for the Handicap Fun Race on 11th May 2012';
 // the title will be rendered at the head of the page
-const link = '../../../news/2012/september/agm-race/';
+const link = '/news/2012/september/agm-race/';
 // a link to the news article that relates to the gallery; if not relevant, delete the line
 
-export default class Fade extends React.Component {
-    render() {
-        const data = {
-            images,
-            alts,
-            title,
-            link
-        }
-        return (
-            <div>
-                <GalleryPage data={data}/>
-            </div>
-        );
+const Fade = ({ location }) => {
+    const data = {
+        images,
+        alts,
+        title,
+        link
     }
+    return (
+        <div>
+            <GalleryPage location={location} data={data} />
+        </div>
+    );
+}
+
+export default Fade;
+
+Fade.propTypes = {
+    location: PropTypes.object
 }
 ```
 
