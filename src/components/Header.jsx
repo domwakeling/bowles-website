@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import menuData from '../data/menu-data';
 import img01 from '../images/logos/bowles_logo_mini.png';

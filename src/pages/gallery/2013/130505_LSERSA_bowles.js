@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import GalleryPage from '../../../components/GalleryPage.jsx';
 
 import img01 from '../../../images/gallery/2013/130505_LSERSA_bowles/racing_4F.jpg';
@@ -37,20 +38,24 @@ const alts = [
  'Bowles_medalists'
 ]
 const title = 'Photos from LSERSA 1 at Bowles on 5th May 2013';
-const link = '../../../../news/2013/may/LSERSA_1/';
+const link = '/news/2013/may/LSERSA_1/';
 
-export default class Fade extends React.Component {
-    render() {
-        const data = {
-            images,
-            alts,
-            title,
-            link
-        }
-        return (
-            <div>
-                <GalleryPage data={data} />
-            </div>
-        );
+const Fade = ({ location }) => {
+    const data = {
+        images,
+        alts,
+        title,
+        link
     }
+    return (
+        <div>
+            <GalleryPage location={location} data={data} />
+        </div>
+    );
+}
+
+export default Fade;
+
+Fade.propTypes = {
+    location: PropTypes.object
 }

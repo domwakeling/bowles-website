@@ -1,5 +1,5 @@
 ---
-title: "Sussex Private School Championships 2013"
+title: "Sussex Prep School Championships 2013"
 contentType: news
 date: "2013-07-03T22:20"
 ---

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Layout from '../components/Layout.jsx';
 
 import RacesLSERSA from './RacesLSERSA.jsx';
 import RacesSRSA from './RacesSRSA.jsx';
@@ -12,7 +13,7 @@ import RaceYearPicker from './RaceYearPicker.jsx';
 const RacePage = (props) => {
     const { data, title } = props;
     return (
-        <div>
+        <Layout location={props.location}>
             <div>
                 <h2 className="raceYearDisplay">{title}</h2>
                 <RaceYearPicker className="pickerWrapper" title={title.substr(0, 4)} />
@@ -78,13 +79,14 @@ const RacePage = (props) => {
                     </div>
                 ) : ''
             }
-        </div>
+        </Layout>
     )
 };
 
 RacePage.propTypes = {
     data: PropTypes.shape(),
-    title: PropTypes.string
+    title: PropTypes.string,
+    location: PropTypes.object
 }
 
 export default RacePage;

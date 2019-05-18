@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MonthPage from '../../../components/MonthPage.jsx';
+import { graphql } from 'gatsby';
 
-const Page = ({ data }) => (
-    <MonthPage data={data} title="July 2016" />
+const Page = ({ data, location }) => (
+    <MonthPage location={location} data={data} title="July 2016" />
 );
 
 Page.propTypes = {
     data: PropTypes.oneOfType([
         PropTypes.func,
         PropTypes.object
-    ])
+    ]),
+    location: PropTypes.object
 }
 
 export default Page;

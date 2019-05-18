@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Layout from '../components/Layout.jsx';
 
 import img1 from '../images/start-racing/ben_w-racing.jpg';
 import img2 from '../images/gallery/2017/171014_triregional/bowles.jpg';
 
-const IndexPage = () => (
-    <div>
+const IndexPage = ({location}) => (
+    <Layout location={location}>
         <h2>Introduction to Racing</h2>
         <p>Any new members training at Bowles wondering how to try a spot of racing?</p>
         <p>There are a number of regional races taking place at various dry ski slopes
@@ -51,7 +53,12 @@ const IndexPage = () => (
             introduction and hopefully not too far to drive!</p>
         <p><em>With thanks to Tom Wontner</em></p>
         <hr />
-    </div>
+    </Layout>
 );
+
+IndexPage.propTypes = {
+    location: PropTypes.object
+}
+
 
 export default IndexPage;

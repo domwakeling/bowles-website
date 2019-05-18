@@ -1,7 +1,8 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import NewsItem from '../components/NewsItem.jsx';
+import Layout from '../components/Layout.jsx';
 
 const NavLink = props => {
     if (!props.test) {
@@ -11,12 +12,12 @@ const NavLink = props => {
     }
 };
 
-const NewsPageTemplate = ({ pathContext }) => {
-    const { group, index, first, last } = pathContext;
+const NewsPageTemplate = ({ pageContext, location }) => {
+    const { group, index, first, last } = pageContext;
     const previousUrl = index - 1 === 1 ? "/news" : `/news/${(index - 1).toString()}`;
     const nextUrl = `/news/${(index + 1).toString()}`;
     return (
-        <div key={index}>
+        <Layout location={location} key={index}>
             <h2>News</h2>
             {group.map(({ node }, idx) => (
                 <div key={idx}>
@@ -46,12 +47,13 @@ const NewsPageTemplate = ({ pathContext }) => {
             <div style={{clear: "both"}} />
             <br />
             <hr />
-        </div>
+        </Layout>
     );
 };
 
 NewsPageTemplate.propTypes = {
-    pathContext: PropTypes.shape()
+    pageContext: PropTypes.shape(),
+    location: PropTypes.object
 }
 
 export default NewsPageTemplate;

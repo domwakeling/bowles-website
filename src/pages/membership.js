@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from 'gatsby-link';
-
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import Layout from '../components/Layout.jsx';
 import img01 from '../images/gallery/2018/180602_LSERSA_2_brentwood/medallists.jpg';
 
-const IndexPage = () => (
-    <div>
+const IndexPage = ({location}) => (
+    <Layout location={location}>
         <h2>Membership Information</h2>
         <p>We hold training sessions at <a href="http://www.bowles.ac/" rel="noopener noreferrer" 
             target="_blank" >Bowles Outdoor Centre</a> every Friday evening (except for Christmas
@@ -30,7 +31,11 @@ const IndexPage = () => (
             &pound;16 for extra family members. There is also a charge of &pound;8 per person for
             each Friday night training session.</p>
         <hr />
-    </div>
+    </Layout>
 );
 
 export default IndexPage;
+
+IndexPage.propTypes = {
+    location: PropTypes.object
+}

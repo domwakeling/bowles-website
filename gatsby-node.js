@@ -2,8 +2,8 @@ const path = require('path');
 const createPaginatedPages = require('gatsby-paginate');
 const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-    const { createNodeField } = boundActionCreators;
+exports.onCreateNode = ({ node, getNode, actions }) => {
+    const { createNodeField } = actions;
     if (node.internal.type === 'MarkdownRemark') {
         let slug = createFilePath({ node, getNode, basePath: `pages` });
         if (/src\/news/.test(node.fileAbsolutePath)) {
@@ -17,8 +17,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     }
 };
 
-exports.createPages = ({ boundActionCreators, graphql}) => {
-    const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql}) => {
+    const { createPage } = actions;
 
     const newsPostTemplate = path.resolve('src/templates/news-post.js');
 

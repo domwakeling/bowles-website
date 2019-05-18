@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import NewsItem from '../components/NewsItem.jsx';
+import Layout from '../components/Layout.jsx';
 
-const IndexPage = ({ data }) => (
-    <div>
+const IndexPage = ({data, location}) => (
+    <Layout location={location}>
         <div className="videoWrapper">
             <iframe
                 title="Introductory video"
@@ -42,11 +44,12 @@ const IndexPage = ({ data }) => (
                 <hr />
             </div>
         )}
-    </div>
+    </Layout>
 );
 
 IndexPage.propTypes = {
-    data: PropTypes.shape()
+    data: PropTypes.shape(),
+    location: PropTypes.object
 }
 
 export default IndexPage;
