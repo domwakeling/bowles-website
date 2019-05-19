@@ -1,26 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MonthPage from '../../../components/MonthPage.jsx';
-import { graphql } from 'gatsby';
+import MonthPage from '../components/MonthPage.jsx';
+import { graphql } from "gatsby";
 
-const Page = ({ data, location }) => (
-    <MonthPage location={location} data={data} title="June 2017" />
-);
+const Page = ({ location, pageContext, data }) => {
+    const { date } = pageContext;
+    // const { edges, totalCount } = data.allMarkdownRemark
+    // const tagHeader = `${totalCount} post${
+    //     totalCount === 1 ? "" : "s"
+    //     } tagged with "${tag}"`
+
+    return (
+        <MonthPage location={location} data={data} title={date} />
+    )
+}
 
 Page.propTypes = {
-    data: PropTypes.oneOfType([
-        PropTypes.func,
-        PropTypes.object
-    ]),
+    pageContext: PropTypes.shape({
+        date: PropTypes.string.isRequired,
+    }),
+    data: PropTypes.shape(),
     location: PropTypes.object
 }
 
 export default Page;
 
 export const query = graphql`
-    query NewsJune2017 {
+    query ($slug: String) {
         allMarkdownRemark (
-            filter: { fields: { slug: { regex: "^/news/2017/june/"} } }
+            filter: { fields: { slug: { regex: $slug} } }
             sort: { order: DESC, fields: [frontmatter___date] }
         ) {
             edges {

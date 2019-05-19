@@ -14,7 +14,7 @@ some of them have changed to reflect this update.*
 * [Adding Monthly News Summaries](#adding-monthly-news-summaries)
 * [Updating the News Archive list](#updating-the-news-archive-list)
 
-**[The calendar](#the-calendar)**
+**[The Calendar](#the-calendar)**
 
 **[Race Results](#race-results)**
 * [Adding a new Race Results javascript page](#adding-a-new-race-results-javascript-page)
@@ -51,15 +51,13 @@ For safety, or if you are working on a fork, it is best to
 
 ### I Just Want To Add A News Article
 
-If there's already a news article in the same year/month as the one you want to add, then it's as
-simple as writing a text file in what's known as 'markdown' format. The [full guide is here](#adding-news-articles),
-and here's an [introduction to markdown basics](https://daringfireball.net/projects/markdown/basics) from John Gruber,
-who originally invented the format.
+Adding a news article is as simple as writing a text file in what's known as 'markdown' format. The
+[full guide is here](#adding-news-articles), and here's an [introduction to markdown basics](https://daringfireball.net/projects/markdown/basics)
+from John Gruber, who originally invented the format.
 
 If this is a new month but there are already articles in the year, you'll need to:
 * make a new folder under `src/news/{year}/` for the month (use the full month name in lower case)
 * add [your article](#adding-news-articles) to that new folder
-* add a new monthly news summary in `/src/pages/news/{year}/` for that month [as set out here](#adding-monthly-news-summaries)
 * add a new entry to the `src/data/race-data.js` file [as set out here](#updating-the-news-archive-list)
 
 ### Starting A New Year
@@ -68,7 +66,6 @@ At the start of every year the following need to happen:
 
 **News**
 * [ ] set up a folder for the new {year} as `src/news/{year}`
-* [ ] set up a folder for new monthly news articles as `src/pages/news/{year}`
 * [ ] set up a news entry in the [news archive](#updating-the-news-archive-list)
 
 **Races**
@@ -109,11 +106,9 @@ can be either `race` or `training`.
 
 To add a news article:
 * [ ] add a new `index.md` file in the appropriate filepath - `src/news/{year}/{month}/{article-name}/index.md`
-* [ ] if it's a new month, make a new file `src/pages/news/{year}/{month}.js`; and
 * [ ] if it's a new month, add an entry to `src/data/news-data.js`
 
-News articles are added as markdown files. Every month (for which articles exist) should have a
-'monthly news summary' (added as javascript) and have an equivalent entry in the 'news archive
+News articles are added as markdown files. Every month should have an entry in the 'news archive
 list'.
 
 ### Adding News Articles
@@ -144,75 +139,8 @@ it in markdown with `![Alt text for the logo](logo.jpg)`.
 
 ### Adding Monthly News Summaries
 
-In addition to individual news articles, there are monthly summary pages that need to be generated.
-**At the moment** these need to be added individually (still looking for a way to fully or partly
-automate this process).
-
-Please ensure:
-* whenever you add a news article and start a new month, add the appropriate monthly news summary
-* **only** add a monthly summary for months where one or more articles have been added (otherwise
-errors will occur)
-
-Monthly summaries are added in the `src/pages/news/` folder, under an appropriate year folder, and
-should be named `whichever_month.js`. For the `my-news` article above, we would need to ensure there
-is a `src/pages/news/2018/may.js` file.
-
-The code in each monthly summary should look like this:
-
-```javascript
-import React from 'react';
-import PropTypes from 'prop-types';
-import MonthPage from '../../../components/MonthPage.jsx';
-import { graphql } from 'gatsby';
-
-const Page = ({ data, location }) => (
-    <MonthPage location={location} data={data} title="May 2018" />
-);
-
-Page.propTypes = {
-    data: PropTypes.oneOfType([
-        PropTypes.func,
-        PropTypes.object
-    ]),
-    location: PropTypes.object
-}
-
-export default Page;
-
-export const query = graphql`
-    query NewsMay2018 {
-        allMarkdownRemark (
-            filter: { fields: { slug: { regex: "^/news/2018/may/"} } }
-            sort: { order: DESC, fields: [frontmatter___date] }
-        ) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        title
-                        contentType
-                        date(formatString: "D MMMM YYYY")
-                    }
-                    html
-                }
-            }
-        }
-    }
-`;
-```
-
-Once the individual monthly page is built, the following changes need to be made in it's source
-code:
-* change the title prop in the `<MonthPage>` to match the month name & year
-* change the name of the graphql query to reflect the month & year (in the above example this is
-`query NewsMay2018`)
-* change the regex filter to reflect the month & year (in the above example this
-is `/^/news/2018/may/`)
-
-Finally, having added a new month you will need to [update the news archive
-list](#updating-the-news-archive-list).
+Since the update to Gatsby v2 we don't need to write these any more (they're automatically
+generated) - just make sure that you've [update the news archive list](#updating-the-news-archive-list).
 
 ### Updating the News Archive list
 
