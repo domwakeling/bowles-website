@@ -17,6 +17,7 @@ const MenuRight = (props) => {
         const regEx = new RegExp(path);
         return regEx.test(location.pathname) ? 'highlighted' : 'not-highlighted';
     }
+    const today = new Date();
     return (
         <div id="right-nav">
             <img src={img01} style={{float: 'right', width: '120px'}} alt="Bowles SRC logo" />
@@ -33,7 +34,7 @@ const MenuRight = (props) => {
                 ))
             }
             <br />
-            <Calendar date={new Date()} />
+            <Calendar date={today} />
             {
                 /^\/news/.test(location.pathname) ? (
                     <div>
