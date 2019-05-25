@@ -18,6 +18,7 @@ const MenuRight = (props) => {
         return regEx.test(location.pathname) ? 'highlighted' : 'not-highlighted';
     }
     const today = new Date();
+    console.log(`Passing date ${today} to Calendar element`);
     return (
         <div id="right-nav">
             <img src={img01} style={{float: 'right', width: '120px'}} alt="Bowles SRC logo" />
