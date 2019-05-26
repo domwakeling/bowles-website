@@ -83,6 +83,7 @@ export default class CalendarCell extends React.Component {
         this.fridayTraining = this.fridayTraining.bind(this);
         this.mouseEnterHandler = this.mouseEnterHandler.bind(this);
         this.mouseLeaveHandler = this.mouseLeaveHandler.bind(this);
+        this.dayOfMonth = this.dayOfMonth.bind(this);
         const cellDate = this.dayOfMonth();
         let cellClassName = this.cellStylingClass(cellDate);
         const info = this.cellInfoHandler(cellDate);
