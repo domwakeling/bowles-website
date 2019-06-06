@@ -84,6 +84,25 @@ const raceData2019 = {
                     'Rufus Wontner - 1st in U10 Boys (Extended Slalom)'
                 ],
                 link: 'https://gbski.com/competition.php?ID=560'
+            },
+            {
+                descriptor: 'Norfolk - 1st June 2019',
+                individual: [
+                    'Rufus Wontner - 1st in U10 Boys',
+                    'Ben Wontner - 2nd in U12 Boys'
+                ],
+                link: 'https://gbski.com/competition.php?ID=578'
+            },
+            {
+                descriptor: 'Vikings - 2nd June 2019',
+                individual: [
+                    'Rufus Wontner - 1st in U10 Boys',
+                    'Ben Wontner - 3rd in U12 Boys'
+                ],
+                honorable: [
+                    'Mark Oliver - 4th in Male Masters'
+                ]
+                link: 'https://gbski.com/competition.php?ID=581'
             }
         ]
     },
