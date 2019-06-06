@@ -101,7 +101,7 @@ const raceData2019 = {
                 ],
                 honorable: [
                     'Mark Oliver - 4th in Male Masters'
-                ]
+                ],
                 link: 'https://gbski.com/competition.php?ID=581'
             }
         ]
