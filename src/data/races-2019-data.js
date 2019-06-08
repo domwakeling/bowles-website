@@ -19,7 +19,26 @@ const raceData2019 = {
                 link: 'https://skiresults.co.uk/events/1006'
             },
             {
-                descriptor: 'Race 2 - Welwyn - 8th June 2019'
+                descriptor: 'Race 2 - Welwyn - 8th June 2019',
+                individual: [
+                    'Charlotte Currie - 2nd in Ladies U8',
+                    'Rufus Wontner - 1st in Mens U10',
+                    'Phoebe Everest - 1st in Ladies U12',
+                    'Ben Wontner - 1st in Male U12',
+                    'Seb Turner-Moore - 1st in Mens U18' 
+                ],
+                fun_teams: [
+                    'Joseph Pannell was a member of the 2nd-placed team',
+                    `Charlotte Currie and Stella Pople were members of the
+                        3rd-placed team`
+                ],
+                honorable: [
+                    'Toby Everest - 4th in Mens U14',
+                    'Ollie Turner-Moore - 4th in Mens U16',
+                    'Bill Dunnet - 4th in Male Masters 2',
+                    'Toby Pople was a member of the 4th-placed fun team'
+                ],
+                link: 'https://skiresults.co.uk/events/1007'
             }, 
             {
                 descriptor: 'Race 3 - Brentwood - 20th July 2019'

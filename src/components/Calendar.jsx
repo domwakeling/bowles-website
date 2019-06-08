@@ -56,7 +56,6 @@ export default class Calendar extends React.Component {
         const todayMonth = this.props.date.getMonth();
         const todayYear = this.props.date.getFullYear();
         const thisMonth = (todayMonth === this.state.month && todayYear === this.state.year);
-        console.log(`Today from props is ${this.props.date}`);
         return (
             <div id="calendar">
                 <div>
