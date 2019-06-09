@@ -122,6 +122,13 @@ const raceData2019 = {
                     'Mark Oliver - 4th in Male Masters'
                 ],
                 link: 'https://gbski.com/competition.php?ID=581'
+            },
+            {
+                descriptor: 'Hemel - 8th June 2019',
+                individual: [
+                    'Rufus Wontner - 1st in U10 Boys'
+                ],
+                link: 'https://gbski.com/competition.php?ID=583'
             }
         ]
     },
