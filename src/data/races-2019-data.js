@@ -129,6 +129,32 @@ const raceData2019 = {
                     'Rufus Wontner - 1st in U10 Boys'
                 ],
                 link: 'https://gbski.com/competition.php?ID=583'
+            },
+            {
+                descriptor: 'Chatham - 15th June 2019',
+                individual: [
+                    'Phoebe Everest - 3rd in U12 Girls',
+                    'Ben Wontner - 1st in U12 Boys',
+                    'Claudette Povey - 1st in Ladies Senior'
+                ],
+                honorable: [
+                    'Joshua Wakeling - 4th in U18 Men',
+                    'Nigel Hilliard - 4th in Mens Masters'
+                ],
+                link: 'https://gbski.com/competition.php?ID=587'
+            },
+            {
+                descriptor: 'Bromley - 16th June 2019',
+                individual: [
+                    'Rufus Wontner - 3rd in U10 Boys',
+                    'Ben Wontner - 2nd in U12 Boys',
+                    'Claudette Povey - 1st in Ladies Senior'
+                ],
+                honorable: [
+                    'Phoebe Everest - 4th in U12 Girls',
+                    'Joshua Wakeling - 4th in U18 Men'
+                ],
+                link: 'https://gbski.com/competition.php?ID=589'
             }
         ]
     },
