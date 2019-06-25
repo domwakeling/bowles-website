@@ -80,7 +80,23 @@ const raceData2019 = {
                 link: 'https://skiresults.co.uk/events/999'
             },
             {
-                descriptor: 'Race 3 - Aldershot - 23rd June 2019'
+                descriptor: 'Race 3 - Aldershot - 23rd June 2019',
+                individual: [
+                    'Charlotte Currie - 1st in Female U8',
+                    'Phoebe Everest - 2nd in Female U12',
+                    'Claudette Povey - 1st in Female Seniors',
+                    'Ben Easton - 1st in Male Masters 1',
+                    'Nigel Hilliard - 2nd in Male Masters 2'
+                ],
+                honorable: [
+                    'Marcus Pop - 4th in Male U8',
+                    'Toby Everest - 4th in Male U14'
+                ],
+                club_teams: [
+                    `Bowles (Phoebe Everest, Toby Everest, Ben Easton and
+                        Nigel Hilliard) were second in the club teams competition`
+                ],
+                link: 'https://www.skiresults.co.uk/events/1000'
             },
             {
                 descriptor: 'Race 4 - Bowles - 17th August 2019'
