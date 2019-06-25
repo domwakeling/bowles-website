@@ -171,6 +171,13 @@ const raceData2019 = {
                     'Joshua Wakeling - 4th in U18 Men'
                 ],
                 link: 'https://gbski.com/competition.php?ID=589'
+            },
+            {
+                descriptor: 'Welwyn - 22nd June 2019',
+                individual: [
+                    'Claudette Povey - 1st in Ladies Senior'
+                ],
+                link: 'https://gbski.com/competition.php?ID=590'
             }
         ]
     },
