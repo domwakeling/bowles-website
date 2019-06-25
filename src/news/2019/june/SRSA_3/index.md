@@ -1,7 +1,7 @@
 ---
 title: "SRSA Summer Race Series - Aldershot"
 contentType: news
-date: "2019-06-25T219:00"
+date: "2019-06-25T19:00"
 ---
 
 The third round of the SRSA 2019 Summer Series was held on Sunday 23rd June at Aldershot. Full
