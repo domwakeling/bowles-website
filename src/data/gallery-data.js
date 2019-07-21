@@ -53,11 +53,18 @@ import img52 from '../images/gallery/2018/181013_LSERSA_5_chatham/improved.jpg';
 import img53 from '../images/gallery/2019/190426_handicap/handicap.jpg';
 import img54 from '../images/gallery/2019/190427_LSERSA_1_chatham/m_u12.jpg';
 import img55 from '../images/gallery/2019/190512_kent/pri_o_ind.jpg';
+import img56 from '../images/gallery/2019/190720_LSERSA_3_brentwood/m_mas2.jpg';
 
 const galleryData = [
     {
         year: '2019',
         galleries: [
+            {
+                img: img56,
+                title: 'LSERSA 3, Brentwood',
+                date: '20 July 2019',
+                link: '/gallery/2019/190720_LSERSA_3_brentwood'
+            },
             {
                 img: img55,
                 title: 'Kent Schools',

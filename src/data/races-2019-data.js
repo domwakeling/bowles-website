@@ -41,7 +41,24 @@ const raceData2019 = {
                 link: 'https://skiresults.co.uk/events/1007'
             }, 
             {
-                descriptor: 'Race 3 - Brentwood - 20th July 2019'
+                descriptor: 'Race 3 - Brentwood - 20th July 2019',
+                individual: [
+                    'Charlotte Currie - 3rd in Ladies U8',
+                    'Marcus Pop - 2nd in Mens U8',
+                    'Phoebe Everest - 1st in Ladies U12',
+                    'Joshua Wakeling - 2nd in Mens U18',
+                    'Mark Oliver - 2nd in Male Masters 2',
+                    'Nigel Hilliard - 3rd in Male Masters 2'
+                ],
+                fun_teams: [
+                    'Joshua Wakeling was a member of the 3rd - placed team'
+                ],
+                honorable: [
+                    'Toby Everest - 4th in Mens U14',
+                    `Bowles A (Phoebe Everest, Toby Everest, Nigel Hilliard, Stella Pople, Joshua
+                        Wakeling) were fourth in the club teams competition`
+                ],
+                link: 'https://skiresults.co.uk/events/1008'
             },
             {
                 descriptor: 'Race 4 - Aldershot - 8th September 2019'

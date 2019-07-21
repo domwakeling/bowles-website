@@ -87,9 +87,9 @@ export default class CalendarCell extends React.Component {
         const cellDate = this.dayOfMonth();
         let cellClassName = this.cellStylingClass(cellDate);
         const info = this.cellInfoHandler(cellDate);
-        if (cellDate === this.props.todayDate && this.props.thisMonth) {
-            cellClassName = cellClassName + " today";
-        }
+        // if (cellDate === this.props.todayDate && this.props.thisMonth) {
+        //     cellClassName = cellClassName + " today";
+        // }
         return (
             <div className="cell-wrapper">
                 {
