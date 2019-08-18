@@ -7,7 +7,7 @@ import img02 from '../../../images/gallery/2019/190817_SRSA_4_bowles/M10.jpg';
 import img03 from '../../../images/gallery/2019/190817_SRSA_4_bowles/F12.jpg';
 import img04 from '../../../images/gallery/2019/190817_SRSA_4_bowles/M12.jpg';
 import img05 from '../../../images/gallery/2019/190817_SRSA_4_bowles/M18.jpg';
-import img06 from '../../../images/gallery/2019/190817_SRSA_4_bowles/Fsen.jpg';
+import img06 from '../../../images/gallery/2019/190817_SRSA_4_bowles/FSen.jpg';
 import img07 from '../../../images/gallery/2019/190817_SRSA_4_bowles/MM1.jpg';
 import img08 from '../../../images/gallery/2019/190817_SRSA_4_bowles/MM2.jpg';
 import img09 from '../../../images/gallery/2019/190817_SRSA_4_bowles/funs.jpg';
