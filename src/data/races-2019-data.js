@@ -116,7 +116,31 @@ const raceData2019 = {
                 link: 'https://www.skiresults.co.uk/events/1000'
             },
             {
-                descriptor: 'Race 4 - Bowles - 17th August 2019'
+                descriptor: 'Race 4 - Bowles - 17th August 2019',
+                individual: [
+                    'Charlotte Currie - 3rd in Female U8',
+                    'Marcus Pop - 3rd in Male U8',
+                    'Rufus Wontner - 2nd in Male U10',
+                    'Phoebe Everest - 3rd in Female U12',
+                    'Ben Wontner - 2nd in Male U12',
+                    'Joshua Wakeling - 3rd in Male U18',
+                    'Claudette Povey - 1st in Female Seniors',
+                    'Anthony Forte - 3rd in Male Masters 1',
+                    'Mark Oliver - 2nd in Male Masters 2',
+                    'Nigel Hilliard - 3rd in Male Masters 2'
+                ],
+                honorable: [
+                    'Stelle Pople - 4th in Female U12',
+                    'Cornelia Natzkoff was a member of the 4th - placed fun team Echo'
+                ],
+                club_teams: [
+                    'Bowles A (Nigel Hilliard, Mark Oliver, Joshua Wakeling, Ben Wontner) were 2nd' 
+                ],
+                fun_teams: [
+                    `Charlotte Currie, Luke Forte and Stella Pople were members of the winning
+                        team Alpha`
+                ],
+                link: 'https://www.skiresults.co.uk/events/1001'
             },
             {
                 descriptor: 'Race 5 - Southampton - 14th September 2019'
