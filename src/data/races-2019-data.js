@@ -80,9 +80,45 @@ const raceData2019 = {
                 link: 'https://skiresults.co.uk/events/1009'
             },
             {
-                descriptor: 'Race 5 - Chatham - 29th September 2019'
+                descriptor: 'Race 5 - Chatham - 29th September 2019',
+                individual: [
+                    'Marcus Pop - 2nd in Mens U8',
+                    'Phoebe Everest - 1st in Ladies U12',
+                    'Stella Pople - 3rd in Ladies U12'
+                ],
+                fun_teams: [
+                    'Marcus Pop was a member of the winning team',
+                    'Joseph Pannell and Toby Pople were members of the 2nd-placed team',
+                    'Charlotte Currie was a member of the 3rd-placed team'
+                ],
+                club_teams: [
+                    `Bowles (Phoebe Everest, Toby Everest, Nigel Hilliard, Ollie Turner-Moore and
+                        Seb Turner-Moore) were second in the club teams competition`
+                ],
+                honorable: [
+                    'Charlotte Currie - 4th in Ladies U8',
+                    'Toby Everest - 4th in Mens U14',
+                    'Seb Turner-Moore - 4th in Mens U18',
+                    'Anthony Forte - 4th in Male Masters 1',
+                    'Nigel Hilliard - 4th in Male Masters 2',
+                    'Bill Dunnet was a member of the 4th-placed fun team'
+                ],
+                link: 'https://skiresults.co.uk/events/1010'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Charlotte Currie - 2nd in Ladies U8',
+                'Marcus Pop - 2nd in Mens U8',
+                'Phoebe Everest - 1st in Ladies U12',
+                'Joshua Wakeling - 3rd in Mens U18'
+            ],
+            honorable: [
+                'Toby Everest - 4th in Mens U14',
+                'Seb Turner-Moore - 4th in Mens U18',
+                'Nigel Hilliard - 4th in Male Masters 2'
+            ]
+        }
     },
     SRSA: {
         title: 'SRSA 2019 Summer Race Series',
@@ -147,7 +183,7 @@ const raceData2019 = {
                 ],
                 honorable: [
                     'Stelle Pople - 4th in Female U12',
-                    'Cornelia Natzkoff was a member of the 4th - placed fun team Echo'
+                    'Cornelia Natzkoff was a member of the 4th-placed fun team Echo'
                 ],
                 club_teams: [
                     'Bowles A (Nigel Hilliard, Mark Oliver, Joshua Wakeling, Ben Wontner) were 2nd' 
@@ -159,12 +195,41 @@ const raceData2019 = {
                 link: 'https://www.skiresults.co.uk/events/1001'
             },
             {
-                descriptor: 'Race 5 - Southampton - 14th September 2019'
+                descriptor: 'Race 5 - Southampton - 14th September 2019',
+                individual: [
+                    'Phoebe Everst - 1st in Female U12',
+                    'Anthony Forte - 1st in Male Masters 1'
+                ],
+                honorable: [
+                    'Toby Everest - 4th in Male U14',
+                    'Anthony Forte was a member of the 4th-placed fun team Alpha'
+                ],
+                fun_teams: [
+                    'Toby Everest was a member of the 2nd-placed team Bravo',
+                    'Phoebe Everest was a member of the 3rd-placed team Charlie'
+                ],
+                link: 'https://skiresults.co.uk/events/1002'
             },
             {
-                descriptor: 'Race 6 - Snowtrax - 5th October 2019'
+                descriptor: 'Race 6 - Snowtrax - 5th October 2019',
+                individual: [
+                    'Phoebe Everst - 2nd in Female U12',
+                    'Claudette Povey - 1st in Female Seniors',
+                    'Nigel Hilliard - 3rd in Male Masters 2'
+                ],
+                honorable: [
+                    'Toby Everest - 4th in Male U14'
+                ],
+                link: 'https://skiresults.co.uk/events/1003'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Phoebe Everest - 2nd in Female U12',
+                'Claudette Povey - 1st in Female Seniors',
+                'Nigel Hilliard - 2nd in Male Masters 2'
+            ]
+        }
     },
     ERSA: {
         title: 'ERSA 2019',
@@ -298,7 +363,17 @@ const raceData2019 = {
             `Lila Ayton, Luke Forte and Joe Taylor were members of the 4th-placed secondary fun
                 team`
         ]
-    }
+    },
+    TriRegion: {
+        descriptor: 'Tri-Regional Competition 2019',
+        tri_teams: [
+            `Joseph Pannell and Stella Pople were members of LSERSA G, winning the Shield
+                competition`,
+            `Phoebe Everest, Toby Pople and Claudette Povey were members of LSERSA F, placing
+                2nd in the Shield competition`
+        ],
+        link: 'https://skiresults.co.uk/events/1005#race-7252'
+    },
 }
 
 export default raceData2019;
