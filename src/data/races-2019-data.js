@@ -51,7 +51,7 @@ const raceData2019 = {
                     'Nigel Hilliard - 3rd in Male Masters 2'
                 ],
                 fun_teams: [
-                    'Joshua Wakeling was a member of the 3rd - placed team'
+                    'Joshua Wakeling was a member of the 3rd-placed team'
                 ],
                 honorable: [
                     'Toby Everest - 4th in Mens U14',
@@ -61,7 +61,23 @@ const raceData2019 = {
                 link: 'https://skiresults.co.uk/events/1008'
             },
             {
-                descriptor: 'Race 4 - Aldershot - 8th September 2019'
+                descriptor: 'Race 4 - Aldershot - 8th September 2019',
+                individual: [
+                    'Charlotte Currie - 3rd in Ladies U8',
+                    'Marcus Pop - 2nd in Mens U8',
+                    'Phoebe Everest - 2nd in Ladies U12',
+                    'Joshua Wakeling - 2nd in Mens U18',
+                    'Claudette Povey - 1st in Ladies Seniors'
+                ],
+                fun_teams: [
+                    'Joshua Wakeling was a member of the 2nd-placed team',
+                    'Charlotte Currie, Darcey Caheny and Luke Forte were members of the 3rd-placed team'
+                ],
+                honorable: [
+                    'Seb Turner-Moore - 4th in Mens U18',
+                    'Anthony Forte - 4th in Male Masters 1'
+                ],
+                link: 'https://skiresults.co.uk/events/1009'
             },
             {
                 descriptor: 'Race 5 - Chatham - 29th September 2019'
@@ -147,6 +163,21 @@ const raceData2019 = {
             },
             {
                 descriptor: 'Race 6 - Snowtrax - 5th October 2019'
+            }
+        ]
+    },
+    ERSA: {
+        title: 'ERSA 2019',
+        races: [
+            {
+                descriptor: 'Race 7 - Brentwood - 7th September 2019',
+                individual: [
+                    'Marcus Pop - 2nd in Boys U8',
+                    'Rufus Wontner - 1st in Boys U10',
+                    'Ben Wontner - 2nd in Boys U12',
+                    'Claudette Povey - 2nd in Ladies Senior'
+                ],
+                link: 'https://gbski.com/competition.php?ID=604'
             }
         ]
     },
