@@ -93,7 +93,7 @@ const raceData2019 = {
                 ],
                 club_teams: [
                     `Bowles (Phoebe Everest, Toby Everest, Nigel Hilliard, Ollie Turner-Moore and
-                        Seb Turner-Moore) were second in the club teams competition`
+                        Seb Turner-Moore) were first in the club teams competition`
                 ],
                 honorable: [
                     'Charlotte Currie - 4th in Ladies U8',
@@ -213,7 +213,7 @@ const raceData2019 = {
             {
                 descriptor: 'Race 6 - Snowtrax - 5th October 2019',
                 individual: [
-                    'Phoebe Everst - 2nd in Female U12',
+                    'Phoebe Everest - 2nd in Female U12',
                     'Claudette Povey - 1st in Female Seniors',
                     'Nigel Hilliard - 3rd in Male Masters 2'
                 ],

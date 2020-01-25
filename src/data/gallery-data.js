@@ -55,11 +55,18 @@ import img54 from '../images/gallery/2019/190427_LSERSA_1_chatham/m_u12.jpg';
 import img55 from '../images/gallery/2019/190512_kent/pri_o_ind.jpg';
 import img56 from '../images/gallery/2019/190720_LSERSA_3_brentwood/m_mas2.jpg';
 import img57 from '../images/gallery/2019/190817_SRSA_4_bowles/Bowles.jpg';
+import img58 from '../images/gallery/2019/190920_handicap/handicap.jpg';
 
 const galleryData = [
     {
         year: '2019',
         galleries: [
+            {
+                img: img58,
+                title: 'Handicap Fun Race',
+                date: '20 September 2019',
+                link: '/gallery/2019/190920_handicap'
+            },
             {
                 img: img57,
                 title: 'SRSA 4, Bowles',
