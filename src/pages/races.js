@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RacePage from '../components/RacePage.jsx';
 
-import raceData2019 from '../data/races-2019-data';
+import raceData2020 from '../data/races-2020-data';
 
 const ThisPage = ({location}) => (
-    <RacePage location={location} data={raceData2019} title="2019 Race Results" />
+    <RacePage location={location} data={raceData2020} title="2020 Race Results" />
 );
 
 export default ThisPage;
