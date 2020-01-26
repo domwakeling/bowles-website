@@ -113,6 +113,9 @@ const raceData2019 = {
                 'Phoebe Everest - 1st in Ladies U12',
                 'Joshua Wakeling - 3rd in Mens U18'
             ],
+            special: [
+                'Nigel Hilliard - Matthew Owens Memorial'
+            ],
             honorable: [
                 'Toby Everest - 4th in Mens U14',
                 'Seb Turner-Moore - 4th in Mens U18',
