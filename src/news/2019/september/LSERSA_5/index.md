@@ -7,6 +7,8 @@ date: "2019-09-29T21:30"
 The fifth and final round of the LSERSA 2019 Summer Series was held on Sunday 29th September at
 Chatham. Full results are available on [Ski Results](https://skiresults.co.uk/events/1010).
 
+![Club teams](./club_teams.jpg)
+
 ##### Individual Event
 * Marcus Pop - 2nd in Mens U8
 * Phoebe Everest - 1st in Ladies U12
@@ -37,6 +39,9 @@ Trophies for the overall season were also decided
 * Marcus Pop - 2nd in Mens U8
 * Phoebe Everest - 1st in Ladies U12
 * Joshua Wakeling - 3rd in Mens U18
+
+##### Season - Special Cups
+* Nigel Hilliard - Matthew Owens Memorial
 
 ##### Season - Honorable Mentions
 * Toby Everest - 4th in Mens U14
