@@ -64,7 +64,7 @@ const raceData2020 = {
                 // tri_teams, link
     },
     SouthernChamps: {
-        descriptor: 'Southern England Championships - Chatham - 17th October 2020'
+        descriptor: 'Southern England Championships - Welwyn - 17th October 2020'
     }
 };
 
