@@ -3,7 +3,7 @@
 const calendarData = [
 
     // 2020 tri-regional
-    { year: 2020, month: 10, date: 18, label: 'Tri-regional, Chatham', type: 'race' },
+    { year: 2020, month: 10, date: 18, label: 'Tri-regional, Welwyn', type: 'race' },
 
     // 2020 'other'
     { year: 2020, month: 10, date: 17, label: 'Southern England Champs, Chatham', type: 'race' },
