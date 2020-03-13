@@ -6,6 +6,10 @@
 
 const newsData = [
     {
+        year: '2020',
+        months: ['march']
+    }
+    {
         year: '2019',
         months: ['october', 'september', 'august', 'july', 'june', 'may', 'april', 'february']
     },
