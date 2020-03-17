@@ -40,7 +40,7 @@ const calendarData = [
     { year: 2020, month: 4, date: 26, label: 'ERSA 1, Welwyn', type: 'race' },
     
     // 2020 club fun races
-    { year: 2020, month: 3, date: 20, label: 'Club Fun Race', type: 'race' },
+    //{ year: 2020, month: 3, date: 20, label: 'Club Fun Race', type: 'race' },
 
     // 2019 'other'
     { year: 2019, month: 10, date: 12, label: 'Southern England Champs, Chatham', typoe: 'race' },

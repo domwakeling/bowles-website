@@ -26,10 +26,10 @@ https://www.bbc.co.uk/news/uk-51917562
 
 The health and welfare of all club members is our number one priority.
 
-Tom Wontner - chairman
-Nigel Hilliard - treasurer
-Ben Turner-Moore - secretary
-Marna Wakeling - child welfare officer
+* Tom Wontner - chairman
+* Nigel Hilliard - treasurer
+* Ben Turner-Moore - secretary
+* Marna Wakeling - child welfare officer
 
 <hr />
 

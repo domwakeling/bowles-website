@@ -18,10 +18,16 @@ export default class CalendarCell extends React.Component {
     }
 
     fridayTraining() {
-        const dayOfMonth = this.dayOfMonth();        
+        const dayOfMonth = this.dayOfMonth();
+        // only Fridays
         if(this.props.col !== 4 || dayOfMonth <= 0) return false;
+        // not 25th December or 1st January
         if(this.props.month === 11 && dayOfMonth === 25) return false;
         if(this.props.month === 0 && dayOfMonth === 1) return false;
+        // coronavirus periods - after 17.03.20 ...
+        if(this.props.month === 2 && this.props.year == 2000 && dayOfMonth >17) return false;
+        // ... and all of April '20
+        if(this.props.month == 3 && this.props.year == 2000) return false;
         return true;
     }
 
