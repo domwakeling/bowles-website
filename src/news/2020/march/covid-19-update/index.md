@@ -4,7 +4,7 @@ contentType: news
 date: "2020-03-17T11:50"
 ---
 
-## Message from the Committee
+### Message from the Committee
 
 Dear Bowles race club members
 
@@ -26,14 +26,9 @@ https://www.bbc.co.uk/news/uk-51917562
 
 The health and welfare of all club members is our number one priority.
 
-* Tom Wontner - chairman
-* Nigel Hilliard - treasurer
-* Ben Turner-Moore - secretary
-* Marna Wakeling - child welfare officer
-
 <hr />
 
-## GB Snowsport Statement
+### GB Snowsport Statement
 Mar 17, 2020
 
 Due to the escalating cases of COVID-19, GB Snowsport along with the Home

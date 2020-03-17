@@ -25,9 +25,9 @@ export default class CalendarCell extends React.Component {
         if(this.props.month === 11 && dayOfMonth === 25) return false;
         if(this.props.month === 0 && dayOfMonth === 1) return false;
         // coronavirus periods - after 17.03.20 ...
-        if(this.props.month === 2 && this.props.year == 2000 && dayOfMonth >17) return false;
+        if(this.props.month === 2 && this.props.year == 2020 && dayOfMonth >17) return false;
         // ... and all of April '20
-        if(this.props.month == 3 && this.props.year == 2000) return false;
+        if(this.props.month == 3 && this.props.year == 2020) return false;
         return true;
     }
 
