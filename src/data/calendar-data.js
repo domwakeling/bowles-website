@@ -3,41 +3,41 @@
 const calendarData = [
 
     // 2020 tri-regional
-    { year: 2020, month: 10, date: 18, label: 'Tri-regional, Welwyn', type: 'race' },
+    { year: 2020, month: 10, date: 25, label: 'Tri-regional, Welwyn', type: 'race' },
 
     // 2020 'other'
     { year: 2020, month: 10, date: 17, label: 'Southern England Champs, Chatham', type: 'race' },
 
     // 2020 school & ESSKIA races
-    { year: 2020, month: 5, date: 3, label: 'Kent Schools, Chatham', type: 'race' },
+    { year: 2020, month: 5, date: 3, label: 'Kent Schools CANCELLED', type: 'race' },
 
     // 2020 CN & GBR races
-    { year: 2020, month: 7, date: 4, label: 'Club National, Chatham', type: 'race' },
-    { year: 2020, month: 7, date: 5, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
+    { year: 2020, month: 7, date: 4, label: 'Club National, Chatham\nCANCELLED', type: 'race' },
+    { year: 2020, month: 7, date: 5, label: 'Club National, Bromley (@ Chatham)\nCANCELLED', type: 'race' },
 
     // 2020 LSERSA races
     { year: 2020, month: 10, date: 11, label: 'LSERSA 5, Chatham', type: 'race' },
     { year: 2020, month: 9, date: 26, label: 'LSERSA 4, Welwyn', type: 'race' },
-    { year: 2020, month: 9, date: 6, label: 'LSERSA 3, Aldershot', type: 'race' },
-    { year: 2020, month: 7, date: 18, label: 'LSERSA 2, Chatham', type: 'race' },
-    { year: 2020, month: 5, date: 10, label: 'LSERSA 1, Brentwood', type: 'race' },
+    { year: 2020, month: 9, date: 6, label: 'LSERSA 3 CANCELLED', type: 'race' },
+    { year: 2020, month: 7, date: 18, label: 'LSERSA 2 CANCELLED', type: 'race' },
+    { year: 2020, month: 5, date: 10, label: 'LSERSA 1 CANCELLED', type: 'race' },
 
     // 2020 SRSA races
-    { year: 2020, month: 9, date: 19, label: 'SRSA 6, Snowtrax', type: 'race' },
-    { year: 2020, month: 9, date: 5, label: 'SRSA 5, Aldershot', type: 'race' },
-    { year: 2020, month: 8, date: 22, label: 'SRSA 4, Bowles', type: 'race' },
-    { year: 2020, month: 7, date: 19, label: 'SRSA 3, Chatham', type: 'race' },
-    { year: 2020, month: 5, date: 30, label: 'SRSA 2, Southampton', type: 'race' },
-    { year: 2020, month: 5, date: 9, label: 'SRSA 1, Snowtrax', type: 'race' },
+    { year: 2020, month: 9, date: 19, label: 'SRSA 6 CANCELLED', type: 'race' },
+    { year: 2020, month: 9, date: 5, label: 'SRSA 5 CANCELLED', type: 'race' },
+    { year: 2020, month: 8, date: 22, label: 'SRSA 4 CANCELLED', type: 'race' },
+    { year: 2020, month: 7, date: 19, label: 'SRSA 3 CANCELLED', type: 'race' },
+    { year: 2020, month: 5, date: 30, label: 'SRSA 2 CANCELLED', type: 'race' },
+    { year: 2020, month: 5, date: 9, label: 'SRSA 1 CANCELLED', type: 'race' },
 
     // 2020 ERSA races
-    { year: 2020, month: 9, date: 20, label: 'ERSA Champs, Snozone', type: 'race' },
-    { year: 2020, month: 9, date: 5, label: 'ERSA 6, Brentwood', type: 'race' },
-    { year: 2020, month: 7, date: 19, label: 'ERSA 5, Norwich', type: 'race' },
-    { year: 2020, month: 6, date: 27, label: 'ERSA 4, Snozone', type: 'race' },
-    { year: 2020, month: 6, date: 13, label: 'ERSA 3, Hemel (2pm)', type: 'race' },
-    { year: 2020, month: 5, date: 10, label: 'ERSA 2, Vikings @ Ipswich', type: 'race' },
-    { year: 2020, month: 4, date: 26, label: 'ERSA 1, Welwyn', type: 'race' },
+    { year: 2020, month: 9, date: 20, label: 'ERSA Champs CANCELLED', type: 'race' },
+    { year: 2020, month: 9, date: 5, label: 'ERSA 6 CANCELLED', type: 'race' },
+    { year: 2020, month: 7, date: 19, label: 'ERSA 5 CANCELLED', type: 'race' },
+    { year: 2020, month: 6, date: 27, label: 'ERSA 4 CANCELLED', type: 'race' },
+    { year: 2020, month: 6, date: 13, label: 'ERSA 3 CANCELLED', type: 'race' },
+    { year: 2020, month: 5, date: 10, label: 'ERSA 2 CANCELLED', type: 'race' },
+    { year: 2020, month: 4, date: 26, label: 'ERSA 1 CANCELLED', type: 'race' },
     
     // 2020 club fun races
     //{ year: 2020, month: 3, date: 20, label: 'Club Fun Race', type: 'race' },

@@ -9,6 +9,10 @@ const Race = (props) => {
         <div className="race">
             <h4 className="race-title">{data.descriptor}</h4>
             {
+                data.note ? (
+                    <p>{data.note}</p>
+                 ) : ''}
+            {
                 data.individual ? (
                     <RaceEvent title="Individual Event" data={data.individual} />
                 ) : ''
@@ -50,7 +54,12 @@ const Race = (props) => {
             }
             {
                 data.link ? (
-                    <p><a href={data.link} target="_blank">Full results</a>.</p>
+                    <p>
+                        <a href={data.link} target="_blank" rel="noopener noreferrer">
+                            Full results
+                            </a>
+                        .
+                    </p>
                 ) : ''
             }
         </div>
