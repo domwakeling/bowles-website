@@ -1,4 +1,7 @@
 # Home of the new Bowles Ski Racing Club website
+
+![Netlify](https://img.shields.io/netlify/f72cbbdc-dcf9-4836-b2db-6752210644df)
+
 This is the 'home' of the [Bowles Ski Racing Club website](http://www.bowlesskiracingclub.org.uk/index.html).
 
 We have transitioned from a [RapidWeaver](https://www.realmacsoftware.com/rapidweaver/) site
