@@ -4,7 +4,7 @@ contentType: news
 date: "2020-08-30T20:00"
 ---
 
-Club training at Bowles is now open again, although (inevtiably) there are Covid restrictions. 
+Club training at Bowles is now open again, although (inevitably) there are Covid restrictions. 
 
 ### Friday Nights
 The normal 2-hour session, 5:30-7:30, has returned. Numbers are limited to 15 maximum. Cost for the
