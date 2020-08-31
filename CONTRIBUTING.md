@@ -51,14 +51,19 @@ For safety, or if you are working on a fork, it is best to
 
 ### I Just Want To Add A News Article
 
-Adding a news article is as simple as writing a text file in what's known as 'markdown' format. The
-[full guide is here](#adding-news-articles), and here's an [introduction to markdown basics](https://daringfireball.net/projects/markdown/basics)
-from John Gruber, who originally invented the format.
+Adding a news article is as simple as creating a folder and writing a text file in what's known as
+'markdown' format. The full guide is [further down the page](#adding-news-articles), and here's 
+an [introduction to markdown basics](https://daringfireball.net/projects/markdown/basics)
+from John Gruber, who originally invented the format. _(Don't be put off, it's really easy!)_
 
-If this is a new month but there are already articles in the year, you'll need to:
+If there isn't already an article published this month but there **are** already articles in the
+year, you'll need to do a couple more things:
 * make a new folder under `src/news/{year}/` for the month (use the full month name in lower case)
-* add [your article](#adding-news-articles) to that new folder
-* add a new entry to the `src/data/race-data.js` file [as set out here](#updating-the-news-archive-list)
+* add [your article](#adding-news-articles) (named folder and `index.md` file to that new folder
+* add a new entry to the `src/data/race-data.js` file [as these instructions](#updating-the-news-archive-list)
+
+If this is the first article to be published **in the year**, then you'll also need to do a little
+more work; which brings us to ...
 
 ### Starting A New Year
 
@@ -86,30 +91,40 @@ The calendar in the sidebar is entirely generated in code - it's no longer linke
 calendar.
 
 Friday training sessions are automatically added unless they fall on Christmas Day or Boxing Day.
-At the moment there's no ability to **remove** a Friday session ...
+Taking out other sessions (for instance if none of the coaches are available) **is** possible, but
+at the moment it involves writing some custom logic in the `src/components/CalendarCell.jsx` file,
+specifically in the `const fridayTraining = (cellDate) => { ... }` function; add any logic in just
+above the final `return true` statement. You'll see some examples related to the Covid-19 closures ...
+
+Tuesday training sessions are also now automatically added on the same basis and with a similar
+logic handler (`const tuesdayTraining` rather than `const fridayTraining`!) This may change ...
 
 Other training sessions (for instance school training on Sundays) and races are added using the
 `src/data/calendar-data.js` file. This is one large array containing an object for each entry. The
 typical format of each entry is:
 
 ```javascript
+    { year: <yearNum>, month: <monthNum>, date: <dayofMonth>, label: '<text>', type: '<"race" or "training">' },
     { year: 2018, month: 10, date: 13, label: 'LSERSA 5, Chatham', type: 'race' },
 ```
 
-This is for a race on the **13**th of **October** **2018** - the month is entered by number using
-normal convention (January = 1, December = 12). The `label` should be relatively short, and `type`
-can be either `race` or `training`.
+The example is for a race on the **13**th of **October** **2018** - the month is entered by number
+using normal convention (January = 1, December = 12). The `label` should be relatively short, and
+`type` can be either `race` or `training`.
 
 ⥣ [back to index](#index)
 
 ## News Items
 
 To add a news article:
-* [ ] add a new `index.md` file in the appropriate filepath - `src/news/{year}/{month}/{article-name}/index.md`
+* [ ] add a **folder** to the appropriate path with whatever `article-name` you want (no spaces!), so
+    `src/news/{year}/{month}/{article-name}/`
+* [ ] add a new `index.md` file to that folder - `src/news/{year}/{month}/{article-name}/index.md`
 * [ ] if it's a new month, add an entry to `src/data/news-data.js`
 
-News articles are added as markdown files. Every month should have an entry in the 'news archive
-list'.
+Every month should have an entry in the 'news archive list'.
+
+News articles are added as markdown files ...
 
 ### Adding News Articles
 
@@ -148,8 +163,8 @@ When on any page in the `/news` path of the website, an archive list of news art
 month is shown in the right-hand menu (this is only visible on larger screens). This list is
 generated from data in `src/data/news-data.js`.
 
-Whenever a [monthly news summary](#adding-monthly-news-summaries) is added, it is important that a
-new entry is added to this data source to match.
+Whenever an article is published in a "new" month, it is important that a new entry is added to
+this data source to match.
 
 There is a summary of the API at the top of the file, but essentially it exports an array of
 objects, one for each year, which contain two keys:
