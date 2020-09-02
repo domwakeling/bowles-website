@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Header from './Header.jsx';
 import Copyright from './Copyright.jsx';
 import MenuRight from './MenuRight.jsx';
+import { ToastContainer } from './booking/Toast.jsx';
 import '../styles/layout.scss';
 import fav from '../favicon.png';
 
@@ -39,6 +40,7 @@ const Layout = ({children, location}) => (
                 <Header
                     siteTitle={`${data.site.siteMetadata.title}`}
                 />
+                <ToastContainer align="right" position="top" />
                 <div className="container">
                     <div id="content">
                         {children}

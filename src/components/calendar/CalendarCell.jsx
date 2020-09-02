@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import calendarData from '../data/calendar-data';
+import calendarData from '../../data/calendar-data';
 
 const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, thisMonth}) => {
     const [popupDisplay, setPopupDisplay] = useState('none')

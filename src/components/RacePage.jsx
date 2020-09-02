@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout.jsx';
 
-import RacesLSERSA from './RacesLSERSA.jsx';
-import RacesSRSA from './RacesSRSA.jsx';
-import RacesERSA from './RacesERSA.jsx';
-import RacesClubNational from './RacesClubNational';
-import Race from './Race.jsx';
-import Races from './Races.jsx';
-import RaceYearPicker from './RaceYearPicker.jsx';
+import RacesLSERSA from './races/RacesLSERSA.jsx';
+import RacesSRSA from './races/RacesSRSA.jsx';
+import RacesERSA from './races/RacesERSA.jsx';
+import RacesClubNational from './races/RacesClubNational';
+import Race from './races/Race.jsx';
+import Races from './races/Races.jsx';
+import RaceYearPicker from './races/RaceYearPicker.jsx';
 
 const RacePage = (props) => {
     const { data, title } = props;

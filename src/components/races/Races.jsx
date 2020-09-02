@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Race from './Race.jsx';
 import RaceSeries from './RaceSeries.jsx';
 
-import '../styles/races.scss';
+import '../../styles/races.scss';
 
 const Races = (props) => {
     const { data } = props;

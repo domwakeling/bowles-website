@@ -1,3 +1,5 @@
+const { createProxyMiddleware } = require("http-proxy-middleware")
+
 module.exports = {
     siteMetadata: {
         title: 'Bowles Ski Racing Club',
@@ -44,4 +46,15 @@ module.exports = {
             }
         }
     ],
+    developMiddleware: app => {
+        app.use(
+            "/.netlify/functions/",
+            createProxyMiddleware({
+                target: "http://localhost:9000",
+                pathRewrite: {
+                    "/.netlify/functions/": "",
+                },
+            })
+        )
+    },
 }

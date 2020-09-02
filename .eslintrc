@@ -13,7 +13,12 @@
         "exports": true,
         "Promise": true,
         "document": true,
-        "window": true
+        "window": true,
+        "fetch": true,
+        "process": true,
+        "console": true,
+        "setTimeout": true,
+        "clearTimeout": true
     },
     "extends": [
         "eslint:recommended",

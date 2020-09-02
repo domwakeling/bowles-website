@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 import menuData from '../data/menu-data';
 import MenuNews from './MenuNews.jsx';
-import Calendar from './Calendar.jsx';
+import Calendar from './calendar/Calendar.jsx';
 
 import img01 from '../images/logos/bowles_colour_120.png';
 

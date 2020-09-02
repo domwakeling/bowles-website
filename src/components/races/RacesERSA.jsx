@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import logoLSERSA from '../images/logos/lsersa_logo.jpg';
+import logoERSA from '../../images/logos/ERSA_logo.jpg';
 import Races from './Races.jsx';
 
-const RacesLSERSA = (props) => {
+const RacesERSA = (props) => {
     const { data } = props;
     return (
         <div style={{ clear: 'both' }}>
-            <img src={logoLSERSA} style={{ float: 'right' }} alt="LSERSA logo" />
+            <img src={logoERSA} style={{ float: 'right' }} alt="ERSA logo" />
             <Races data={data} />
         </div>
     )
 };
 
-RacesLSERSA.propTypes = {
+RacesERSA.propTypes = {
     data: PropTypes.shape()
 }
 
-export default RacesLSERSA;
+export default RacesERSA;
