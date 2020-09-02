@@ -67,21 +67,28 @@ const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
           />
         ))}
       </div>
-      <p>
-        Do you want to{" "}
-        <a href="#" onClick={changeToAddRacer}>
-          add another racer
-        </a>
-        ?
-      </p>
       {mode == modes.TUESDAY || mode == modes.FRIDAY ? (
+        <p className="form-text">
+          Do you want to{" "}
+          <a href="#" onClick={changeToAddRacer}>
+            add another racer
+          </a>
+          ?
+        </p>
+      ) : (
+        <>
+          <br />
+          <p className="form-text">Enter your new racer&apos;s name</p>
+        </>
+      )}
+      {/* {mode == modes.TUESDAY || mode == modes.FRIDAY ? (
         <p>
           Tap/click on a racer&apos;s name above to add or remove them from the
           training list.
         </p>
       ) : (
         ""
-      )}
+      )} */}
     </div>
   )
 }

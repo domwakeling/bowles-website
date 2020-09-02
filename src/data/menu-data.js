@@ -5,6 +5,7 @@ const menuData = [
     { text: "Gallery", path: "/gallery" },
     { text: "Membership", classes:"", path: "/membership" },
     { text: "Intro to Racing", path: "/start-racing" },
+    { text: "Book Training", path: "/booking" },
     { text: "About Us", path: "/about" }
 ];
 

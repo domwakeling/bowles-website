@@ -31,13 +31,16 @@ const BookingHeader = ({ mode, setMode }) => {
     <>
       <h2>{pageTitle()}</h2>
       {mode == modes.FRIDAY || mode == modes.TUESDAY ? (
-        <p>
-          Do you want to{" "}
-          <a href="#" onClick={changeDay}>
-            see {mode == modes.FRIDAY ? "Tuesday" : "Friday"} instead
-          </a>
-          ?
-        </p>
+        <>
+          <p>
+            Do you want to{" "}
+            <a href="#" onClick={changeDay}>
+              see {mode == modes.FRIDAY ? "Tuesday" : "Friday"} instead
+            </a>
+            ?
+          </p>
+          < hr/>
+        </>
       ) : (
         ""
       )}

@@ -1,0 +1,40 @@
+input {
+    border: 1px solid $color__project-complementary;
+    display: block;
+    min-width: 20rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0 0.5rem 0.2rem;
+    font-size: 1rem;
+}
+label.circle-label {
+    font-size: 1.2rem;
+    // display: inline-block;
+    background-color: $color__project-theme;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    text-align: center;
+    color: white;
+    margin-right: 0.75rem;
+    position: relative;
+    top: 0.3rem;
+    float: left;
+}
+
+@include for-tablet-down {
+    form.centred-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+p.form-text {
+    text-align: center;
+    margin-top: 0.5rem;
+
+    @include for-desktop-only {
+        text-align: left !important;
+    }
+}

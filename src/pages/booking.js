@@ -99,7 +99,6 @@ const BookingPage = ({ location }) => {
                 )}
             {user ? (
                 <>
-                    <hr />
                     {racers && racers.length > 0 ? (
                         <UserRacers
                             racers={racers}
@@ -108,14 +107,14 @@ const BookingPage = ({ location }) => {
                             changeToAddRacer={changeToAddRacer}
                         />
                     ) : (
-                            <p>
-                                Please{" "}
-                                <a href="#" onClick={changeToAddRacer}>
-                                    add a racer
-              </a>
-              .
-                            </p>
-                        )}
+                        <p>
+                            Please{" "}
+                            <a href="#" onClick={changeToAddRacer}>
+                                add a racer
+                            </a>
+                .
+                        </p>
+                    )}
                     {mode == modes.ADDING_RACER ? (
                         <AddRacer
                             user={user}
@@ -124,23 +123,22 @@ const BookingPage = ({ location }) => {
                             changeToSignedIn={changeToSignedIn}
                         />
                     ) : (
-                            ""
+                        ""
                         )}
                     {mode == modes.FRIDAY || mode == modes.TUESDAY ? (
                         <Bookings mode={mode} user={user} />
                     ) : (
-                            ""
-                        )}
+                        ""
+                    )}
                     <button onClick={handleLogout}>Log out</button>
                 </>
             ) : (
-                    ""
-                )}
-
+                ""
+            )}
             <hr />
             <p id="disclaimer">
                 This booking system uses cookies for user-account authentication
-      </p>
+            </p>
         </Layout>
     )
 };

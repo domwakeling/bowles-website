@@ -141,52 +141,34 @@ const SignInUp = ({
 
   return (
     <>
-      <style>
-        {`
-          input {
-              border: 1px solid #d79022;
-              min-width: 20rem;
-              margin-bottom: 0.75rem;
-              border-radius: 0.25rem;
-              padding: 0.5rem 0 0.5rem 0.2rem;
-              font-size: 1rem;
-            }
-            label, .circle {
-              font-size: 1.5rem;
-              display: inline-block;
-              background-color: #394c8f;
-              border-radius: 50%;
-              width: 2.1rem;
-              height: 2.1rem;
-              text-align: center;
-              color: white;
-              margin-right: 0.75rem;
-              position: relative;
-            }
-        `}
-      </style>
       <form>
-        <label htmlFor="email">e</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          onChange={handleEmail}
-          onKeyDown={keyDown}
-          value={email}
-        />
-        <label htmlFor="password">p</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          onChange={handlePassword}
-          onKeyDown={keyDown}
-          value={password}
-        />
+        <div className="input-row">
+          <label className="circle-label" htmlFor="email">e</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            onChange={handleEmail}
+            onKeyDown={keyDown}
+            value={email}
+            placeholder="email"
+          />
+        </div>
+        <div className="input-row">
+          <label className="circle-label" htmlFor="password">p</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            onChange={handlePassword}
+            onKeyDown={keyDown}
+            value={password}
+            placeholder="password"
+          />
+        </div>
         {mode == modes.SIGNING_UP ? (
-          <>
-            <label htmlFor="secret">s</label>
+          <div className="input-row">
+            <label className="circle-label" htmlFor="secret">s</label>
             <input
               type="secret"
               id="secret"
@@ -194,8 +176,9 @@ const SignInUp = ({
               onChange={handleSecret}
               onKeyDown={keyDown}
               value={secret}
+              placerholder="secret"
             />
-          </>
+          </div>
         ) : (
           ""
         )}

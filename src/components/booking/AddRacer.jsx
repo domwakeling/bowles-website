@@ -59,8 +59,8 @@ const AddRacer = ({ user, racers, setRacers, changeToSignedIn }) => {
 
   return (
     <>
-      <form>
-        <label htmlFor="name">n</label>
+      <form className="centred-form">
+        <label className="circle-label" htmlFor="name">n</label>
         <input
           type="text"
           id="name"
@@ -68,6 +68,7 @@ const AddRacer = ({ user, racers, setRacers, changeToSignedIn }) => {
           onChange={handleName}
           onKeyDown={keyDownName}
           value={racerName}
+          placeholder="name"
         />
       </form>
       <button onClick={handleAddRacer}>Add racer</button>

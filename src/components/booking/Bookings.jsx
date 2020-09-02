@@ -51,7 +51,10 @@ const Bookings = ({ mode, user }) => {
   return (
     <div>
       <h2>Bookings for {mode == modes.FRIDAY ? nextFri[1] : nextTue[1]}</h2>
-      <br />
+      <p>
+        Tap/click on a racer&apos;s name above to add or remove them from the
+        training list.
+      </p>
       <div className="racerlist">
         {idxs.map(i =>
           data && data.racers && data.racers[mode].length > i ? (

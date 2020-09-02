@@ -1,3 +1,7 @@
+body {
+    color: darken($color__project-theme, 30%)
+}
+
 h2 {
     color: $color__project-theme;
     display: inline-block;
