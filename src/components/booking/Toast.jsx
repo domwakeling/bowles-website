@@ -2,9 +2,9 @@
  * Modified from work by Ashwani Arya
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { render, unmountComponentAtNode } from "react-dom"
+import React from "react";
+import PropTypes from "prop-types";
+import { render, unmountComponentAtNode } from "react-dom";
 
 const config = {
   success: {
@@ -27,22 +27,22 @@ const config = {
     secondaryColor: "orange",
     label: "Warning notification!",
   },
-}
+};
 
 export const toast = {
   remove: id => {
-    let comId = id || "toast-container"
-    let doc = document.getElementById(comId)
-    if (doc) unmountComponentAtNode(doc)
+    let comId = id || "toast-container";
+    let doc = document.getElementById(comId);
+    if (doc) unmountComponentAtNode(doc);
   },
   notify: (message = "", options = null) => {
-    let duration = options && options.duration ? options.duration : 5
-    let type = options && options.type ? options.type : "info"
+    let duration = options && options.duration ? options.duration : 5;
+    let type = options && options.type ? options.type : "info";
     let targetId =
-      options && options.targetId ? options.targetId : "toast-container"
-    let title = options && options.title ? options.title : config[type].label
-    let onRemove = options && options.onRemove ? options.onRemove : () => {}
-    let transitionPercentage = 0.3 * (100 / duration)
+      options && options.targetId ? options.targetId : "toast-container";
+    let title = options && options.title ? options.title : config[type].label;
+    let onRemove = options && options.onRemove ? options.onRemove : () => {};
+    let transitionPercentage = 0.3 * (100 / duration);
     render(
       <ToastTop
         message={message}
@@ -55,30 +55,30 @@ export const toast = {
         duration={duration}
       />,
       document.getElementById(targetId)
-    )
+    );
   },
-}
+};
 
 class ToastTop extends React.Component {
   componentDidMount() {
     this.timeout = setTimeout(() => {
-      let tId = this.props.targetId
-      this.remove(tId)
-    }, this.props.duration * 1000)
+      let tId = this.props.targetId;
+      this.remove(tId);
+    }, this.props.duration * 1000);
   }
   componentWillUnmount() {
     if (this.timeout) {
-      clearTimeout(this.timeout)
+      clearTimeout(this.timeout);
     }
   }
   remove(id) {
-    unmountComponentAtNode(document.getElementById(id))
+    unmountComponentAtNode(document.getElementById(id));
     if (this.props.onRemove) {
-      this.props.onRemove()
+      this.props.onRemove();
     }
   }
   render() {
-    let props = this.props
+    let props = this.props;
     return (
       <div className="toast-message-container">
         <style>
@@ -136,12 +136,12 @@ class ToastTop extends React.Component {
           <div>{props.message}</div>
         </div>
       </div>
-    )
+    );
   }
 }
 
 export const ToastContainer = props => {
-  let id = props.id || "toast-container"
+  let id = props.id || "toast-container";
   return (
     <>
       <style>
@@ -157,10 +157,10 @@ export const ToastContainer = props => {
             top: 20px;
             height: 0px;
             align-items: ${(() => {
-              if (!props.align) return "flex-end"
-              if (props.align === "center") return "center"
-              if (props.align === "left") return "flex-start"
-              if (props.align === "right") return "flex-end"
+              if (!props.align) return "flex-end";
+              if (props.align === "center") return "center";
+              if (props.align === "left") return "flex-start";
+              if (props.align === "right") return "flex-end";
             })()};
             left: 0px;
           }
@@ -168,22 +168,22 @@ export const ToastContainer = props => {
       </style>
       <div id={id} className="toast-container"></div>
     </>
-  )
-}
+  );
+};
 
 ToastContainer.defaultProps = {
   align: "right",
   id: "toast-container",
-}
+};
 
 ToastContainer.propTypes = {
   align: PropTypes.string,
   id: PropTypes.string,
-}
+};
 
 ToastTop.defaultProps = {
   onRemove: () => {},
-}
+};
 
 ToastTop.propTypes = {
   duration: PropTypes.number.isRequired,
@@ -193,4 +193,4 @@ ToastTop.propTypes = {
   targetId: PropTypes.string.isRequired,
   transitionPercentage: PropTypes.number.isRequired,
   type: PropTypes.string.isRequired,
-}
+};

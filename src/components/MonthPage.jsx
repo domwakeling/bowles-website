@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import NewsItem from './NewsItem.jsx';
 import Layout from './Layout.jsx';
 
-const MonthPage = (props) => {
-    const{ data, title } = props;
+const MonthPage = ({ data, title, location }) => { 
     return (
-        <Layout location={props.location}>
+        <Layout location={location}>
             <h2>{title}</h2>
             {data.allMarkdownRemark.edges.map(({ node }, index) =>
                 <div key={index}>
@@ -20,13 +19,13 @@ const MonthPage = (props) => {
                 </div>
             )}
         </Layout>
-    )
+    );
 };
 
 MonthPage.propTypes= {
     data: PropTypes.shape(),
     title: PropTypes.string,
     location: PropTypes.object
-}
+};
 
 export default MonthPage;

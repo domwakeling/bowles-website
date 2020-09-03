@@ -5,8 +5,7 @@ import RaceSeries from './RaceSeries.jsx';
 
 import '../../styles/races.scss';
 
-const Races = (props) => {
-    const { data } = props;
+const Races = ({ data }) => { 
     return (
         <div>
             <h3 className="series-title">{data.title}</h3>
@@ -18,11 +17,11 @@ const Races = (props) => {
             }
             <hr />
         </div>
-    )
+    );
 };
 
 Races.propTypes = {
     data: PropTypes.shape(),
-}
+};
 
 export default Races;

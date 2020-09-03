@@ -10,10 +10,9 @@ import Race from './races/Race.jsx';
 import Races from './races/Races.jsx';
 import RaceYearPicker from './races/RaceYearPicker.jsx';
 
-const RacePage = (props) => {
-    const { data, title } = props;
+const RacePage = ({ location, data, title }) => {
     return (
-        <Layout location={props.location}>
+        <Layout location={location}>
             <div>
                 <h2 className="raceYearDisplay">{title}</h2>
                 <RaceYearPicker className="pickerWrapper" title={title.substr(0, 4)} />
@@ -80,13 +79,13 @@ const RacePage = (props) => {
                 ) : ''
             }
         </Layout>
-    )
+    );
 };
 
 RacePage.propTypes = {
     data: PropTypes.shape(),
     title: PropTypes.string,
     location: PropTypes.object
-}
+};
 
 export default RacePage;

@@ -6,7 +6,6 @@ import Layout from '../components/Layout.jsx';
 import '../styles/slick.scss';
 import '../styles/slick-theme.scss';
 
-// export default class GalleryPage extends React.Component {
 const GalleryPage = ({location, data}) => {
     const settings = {
         centerMode: true,
@@ -20,13 +19,16 @@ const GalleryPage = ({location, data}) => {
         slidesToScroll: 1,
         adaptiveHeight: true
     };
+
     const { images, alts, title, link } = data;
+
     const imageData = images.map((url, idx) => {
         return {
             url,
             alt: alts[idx]
-        }
+        };
     });
+
     return (
         <Layout location={location}>
             <h3>{title}</h3>
@@ -48,7 +50,7 @@ const GalleryPage = ({location, data}) => {
             <hr />
         </Layout>
     );
-}
+};
 
 export default GalleryPage;
 
@@ -60,4 +62,4 @@ GalleryPage.propTypes = {
         link: PropTypes.string
     }),
     location: PropTypes.object
-}
+};

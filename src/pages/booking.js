@@ -38,30 +38,30 @@ const BookingPage = ({ location }) => {
         e.preventDefault();
         setMode(modes.SIGNING_UP);
         setLoggingOut(false);
-    }
+    };
 
     const changeToLogIn = e => {
         e.preventDefault();
         setMode(modes.LOGGING_IN);
         setLoggingOut(false);
-    }
+    };
 
     const changeToAddRacer = e => {
         e.preventDefault();
         setMode(modes.ADDING_RACER);
-    }
+    };
 
     const changeToSignedIn = e => {
         e.preventDefault();
         setMode(modes.FRIDAY);
         setLoggingOut(false);
-    }
+    };
 
     const setSignedIn = (id, userracers) => {
-        setUser(id)
-        setMode(modes.FRIDAY)
-        setRacers(userracers)
-    }
+        setUser(id);
+        setMode(modes.FRIDAY);
+        setRacers(userracers);
+    };
 
     const handleLogout = async e => {
         e.preventDefault();
@@ -77,7 +77,7 @@ const BookingPage = ({ location }) => {
                 duration: 2,
             });
         }
-    }
+    };
 
     return (
         <Layout location={location}>
@@ -140,11 +140,11 @@ const BookingPage = ({ location }) => {
                 This booking system uses cookies for user-account authentication
             </p>
         </Layout>
-    )
+    );
 };
 
 BookingPage.propTypes = {
     location: PropTypes.object
-}
+};
 
 export default BookingPage;

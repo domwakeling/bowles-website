@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import RaceEvent from './RaceEvent.jsx';
 
-const Race = (props) => {
-    const { data } = props;
+const Race = ({ data }) => {
     return (
         <div className="race">
             <h4 className="race-title">{data.descriptor}</h4>
@@ -63,11 +62,11 @@ const Race = (props) => {
                 ) : ''
             }
         </div>
-    )
+    );
 };
 
 Race.propTypes = {
     data: PropTypes.shape(),
-}
+};
 
 export default Race;

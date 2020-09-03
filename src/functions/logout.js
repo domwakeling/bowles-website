@@ -6,5 +6,5 @@ export async function handler() {
             status: 200,
         }),
         headers: { "Set-Cookie": `userToken=null` },
-    }
+    };
 }

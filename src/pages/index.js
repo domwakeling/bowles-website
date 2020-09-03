@@ -50,7 +50,7 @@ const IndexPage = ({data, location}) => (
 IndexPage.propTypes = {
     data: PropTypes.shape(),
     location: PropTypes.object
-}
+};
 
 export default IndexPage;
 

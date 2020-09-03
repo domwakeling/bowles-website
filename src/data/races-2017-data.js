@@ -354,6 +354,6 @@ const raceData2017 = {
         ],
         link: 'http://www.ersa.co.uk/sites/default/files/racing/results/2017/2017_223_15.pdf'
     }
-}
+};
 
 export default raceData2017;

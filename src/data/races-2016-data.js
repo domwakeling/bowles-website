@@ -243,6 +243,6 @@ const raceData2016 = {
                 Shield competition`
         ]
     }
-}
+};
 
 export default raceData2016;

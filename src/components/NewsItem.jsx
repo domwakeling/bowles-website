@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-const NewsItem = (props) => {
-    const { path, title, date, html } = props;
+const NewsItem = ({ path, title, date, html }) => {
     return (
         <div>
             <Link to={path}>
@@ -21,6 +20,6 @@ NewsItem.propTypes = {
     title: PropTypes.string,
     date: PropTypes.string,
     html: PropTypes.string
-}
+};
 
 export default NewsItem;

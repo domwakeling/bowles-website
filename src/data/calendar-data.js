@@ -128,6 +128,6 @@ const calendarData = [
     // 2018 club fun races
     { year: 2018, month: 10, date: 5, label: 'Club Fun Race & AGM', type: 'race' },
     { year: 2018, month: 4, date: 20, label: 'Club Fun Race', type: 'race'}
-]
+];
 
 export default calendarData;

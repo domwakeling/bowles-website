@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import RaceEvent from './RaceEvent.jsx';
 
-const RaceSeries = (props) => {
-    const { data } = props;
+const RaceSeries = ({ data }) => {    
     return (
         <div className="race">
             <h4 className="race-title">Overall Season Results</h4>
@@ -28,15 +27,20 @@ const RaceSeries = (props) => {
             }
             {
                 data.link ? (
-                    <p><a href={data.link} target="_blank">Full results</a>.</p>
+                    <p>
+                        <a href={data.link} target="_blank" rel="noopener noreferrer">
+                            Full results
+                        </a>
+                        .
+                    </p>
                 ) : ''
             }
         </div>
-    )
+    );
 };
 
 RaceSeries.propTypes = {
     data: PropTypes.shape(),
-}
+};
 
 export default RaceSeries;

@@ -156,6 +156,6 @@ const raceData2014 = {
                 in the Shield competition. `
         ]
     }
-}
+};
 
 export default raceData2014;

@@ -1,12 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 const Racer = ({ name, status, clickhandler, userid, tabNum }) => {
   const handleClick = e => {
-    e.preventDefault()
-    e.target.blur()
-    clickhandler(userid, name)
-  }
+    e.preventDefault();
+    e.target.blur();
+    clickhandler(userid, name);
+  };
 
   return (
     <>
@@ -24,15 +24,15 @@ const Racer = ({ name, status, clickhandler, userid, tabNum }) => {
         <div className={`lozenge ${status}`}>{name}</div>
       )}
     </>
-  )
-}
+  );
+};
 
 Racer.defaultProps = {
   status: "normal",
   clickhandler: () => {},
   userid: "",
   tabNum: -1,
-}
+};
 
 Racer.propTypes = {
   name: PropTypes.string.isRequired,
@@ -40,6 +40,6 @@ Racer.propTypes = {
   clickhandler: PropTypes.func,
   userid: PropTypes.string,
   tabNum: PropTypes.number,
-}
+};
 
-export default Racer
+export default Racer;

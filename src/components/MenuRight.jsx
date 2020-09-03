@@ -8,16 +8,17 @@ import Calendar from './calendar/Calendar.jsx';
 
 import img01 from '../images/logos/bowles_colour_120.png';
 
-const MenuRight = (props) => {
-    const { location } = props;
+const MenuRight = ({ location }) => {
     const classForMenuPath = path => {
         if (path === '/') {
             return location.pathname === path ? 'highlighted' : 'not-highlighted';
         }
         const regEx = new RegExp(path);
         return regEx.test(location.pathname) ? 'highlighted' : 'not-highlighted';
-    }
+    };
+
     const today = new Date();
+
     return (
         <div id="right-nav">
             <img src={img01} style={{float: 'right', width: '120px'}} alt="Bowles SRC logo" />
@@ -44,11 +45,11 @@ const MenuRight = (props) => {
                 ) : ''
             }
         </div>
-    )
-}
+    );
+};
 
 MenuRight.propTypes = {
     location: PropTypes.object
-}
+};
 
 export default MenuRight;

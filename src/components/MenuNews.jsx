@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 
 import newsData from '../data/news-data';
 
-export default class MenuNews extends React.Component {
-    yearClickHandler(e) {
+const MenuNews = ({ location }) => {
+
+    const yearClickHandler = (e) => {
         e.preventDefault();
         const yearMatch = /\/(\d{4})/;
         const match = e.target.toString().match(yearMatch);
@@ -24,63 +25,61 @@ export default class MenuNews extends React.Component {
                 }
             }
         }
-    }
+    };
 
-    classForMenuPath(path, location)  {
+    const classForMenuPath = (path) => {
         if (path === '/') {
             return location.pathname === path ? 'highlighted' : 'not-highlighted';
         }
         const regEx = new RegExp(path);
         return regEx.test(location.pathname) ? 'highlighted' : 'not-highlighted';
-    }
+    };
 
-    render() {
-        const { location } = this.props;
+    const pathYear = () => {
         const splitLocation = location.pathname.split('/');
-        const pathYear = splitLocation.length > 2 ? splitLocation[2] : '';
-        this.yearClickHandler = this.yearClickHandler.bind(this);
-        this.classForMenuPath = this.classForMenuPath.bind(this);
-        return (
-            <div>
-                <h3 className="archive-header">News Archive</h3>
-                {newsData.map(year => {
-                    const classes = (year.year === pathYear) ? "year open" : "year";
-                    return (
-                        <div key={year.year} ref={year.year}>
-                            <h3 className="year-header">
-                                <Link
-                                    className="bold-link"
-                                    to={`/news/${year.year}`}
-                                    onClick={this.yearClickHandler}
-                                    ref={year.year}
-                                >
-                                    {year.year}
-                                </Link>
-                            </h3>
-                            <div className={classes} id={year.year}>
-                                {year.months.map(month => {
-                                    const path = `/news/${year.year}/${month}`;
-                                    return (
-                                        <div key={month} className="a-wrapper">
-                                            <Link
-                                                to={path}
-                                                className={this.classForMenuPath(path, location)}
-                                            >
-                                                {month}
-                                            </Link>
-                                        </div>
-                                    )}
-                                )}
-                            </div>
-                        </div>
-                    )}
-                )}
-            </div>
-        )
-    }
+        return splitLocation.length > 2 ? splitLocation[2] : '';
+    };
 
-}
+    return (
+        <div>
+            <h3 className="archive-header">News Archive</h3>
+            {newsData.map(year => {
+                const classes = (year.year === pathYear()) ? "year open" : "year";
+                return (
+                    <div key={year.year}>
+                        <h3 className="year-header">
+                            <Link
+                                className="bold-link"
+                                to={`/news/${year.year}`}
+                                onClick={yearClickHandler}
+                            >
+                                {year.year}
+                            </Link>
+                        </h3>
+                        <div className={classes} id={year.year}>
+                            {year.months.map(month => {
+                                const path = `/news/${year.year}/${month}`;
+                                return (
+                                    <div key={month} className="a-wrapper">
+                                        <Link
+                                            to={path}
+                                            className={classForMenuPath(path)}
+                                        >
+                                            {month}
+                                        </Link>
+                                    </div>
+                                );}
+                            )}
+                        </div>
+                    </div>
+                );}
+            )}
+        </div>
+    );
+};
 
 MenuNews.propTypes = {
     location: PropTypes.object
-}
+};
+
+export default MenuNews;

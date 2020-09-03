@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 const Welcome = ({ clickSignUp, clickLogin }) => {
   return (
@@ -66,12 +66,12 @@ const Welcome = ({ clickSignUp, clickLogin }) => {
         </li>
       </ol>
     </>
-  )
-}
+  );
+};
 
 Welcome.propTypes = {
   clickLogin: PropTypes.func.isRequired,
   clickSignUp: PropTypes.func.isRequired,
-}
+};
 
-export default Welcome
+export default Welcome;

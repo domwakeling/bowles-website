@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import calendarData from '../../data/calendar-data';
 
 const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, thisMonth}) => {
-    const [popupDisplay, setPopupDisplay] = useState('none')
-    const [dayOfMonth, setDayOfMonth] = useState(0)
-    const [classNames, setClassNames] = useState('')
-    const [cellInfo, setCellInfo] = useState({ labels: "", details: [], class: "circle" })
+    const [popupDisplay, setPopupDisplay] = useState('none');
+    const [dayOfMonth, setDayOfMonth] = useState(0);
+    const [classNames, setClassNames] = useState('');
+    const [cellInfo, setCellInfo] = useState({ labels: "", details: [], class: "circle" });
     
     // if we change the calendar, we know "month" will change, so trigger changes from that
     useEffect(() => {
@@ -16,8 +16,8 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
             cellDate = 0;
         } else if (cellDate >= firstDay + lastDate) {
             cellDate = -1;
-        } else cellDate = cellDate - firstDay + 1
-        setDayOfMonth(cellDate)
+        } else cellDate = cellDate - firstDay + 1;
+        setDayOfMonth(cellDate);
 
         // set class with formatting for cell, weekends and "today" highlighted
         let cellClass = "cell";
@@ -42,7 +42,7 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
             info.class = info.class + " race";
             races.forEach(race => {
                 info.details.push(race.label);
-            })
+            });
         }
         // STEP 3 - check if there's any calendar-based training and amend
         const training = calendarData.filter(e => (
@@ -53,7 +53,7 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
             info.class = /race/.test(info.class) ? "circle race-training" : "circle training";
             training.forEach(session => {
                 info.details.push(session.label);
-            })
+            });
         }
         // STEP 4 - cheeck if there's any tuesday/friday-based training and amend
         if (fridayTraining(cellDate) || tuesdayTraining(cellDate)) {
@@ -66,9 +66,9 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
         if (fridayTraining(cellDate)) info.details.push("Club training");
         if (tuesdayTraining(cellDate)) info.details.push("Club training (6-7)");
         // STEP 5 - set
-        setCellInfo(info)
+        setCellInfo(info);
 
-    }, [month])
+    }, [month]);
 
     const fridayTraining = (cellDate) => {
         // only Fridays
@@ -83,7 +83,7 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
         // ... through to 14 August
         if(month == 7 && year ==2020 && cellDate < 14) return false;
         return true;
-    }
+    };
 
     const tuesdayTraining = (cellDate) => {
         // only Tuesdays
@@ -95,15 +95,15 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
         if (year < 2020) return false;
         if (month < 8 && year == 2020) return false;
         return true;
-    }
+    };
 
     const mouseEnterHandler = () => {
         setPopupDisplay('inline');
-    }
+    };
 
     const mouseLeaveHandler = () => {
         setPopupDisplay('none');
-    }
+    };
 
     return (
         <div className="cell-wrapper">
@@ -142,8 +142,8 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
                 ) : ''
             }
         </div>
-    )
-}
+    );
+};
 
 CalendarCell.propTypes = {
     row: PropTypes.number,
@@ -154,6 +154,6 @@ CalendarCell.propTypes = {
     year: PropTypes.number,
     todayDate: PropTypes.number,
     thisMonth: PropTypes.bool
-}
+};
 
-export default CalendarCell
+export default CalendarCell;

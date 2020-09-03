@@ -38,4 +38,4 @@ export default IndexPage;
 
 IndexPage.propTypes = {
     location: PropTypes.object
-}
+};

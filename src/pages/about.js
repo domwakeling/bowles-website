@@ -37,4 +37,4 @@ export default AboutPage;
 
 AboutPage.propTypes = {
     location: PropTypes.object
-}
+};

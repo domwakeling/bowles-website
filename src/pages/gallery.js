@@ -29,10 +29,10 @@ const GalleryPage = ({ location }) => (
             ))
         }
     </Layout>
-)
+);
 
 export default GalleryPage;
 
 GalleryPage.propTypes = {
     location: PropTypes.object
-}
+};

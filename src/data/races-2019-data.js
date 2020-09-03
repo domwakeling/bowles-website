@@ -377,6 +377,6 @@ const raceData2019 = {
         ],
         link: 'https://skiresults.co.uk/events/1005#race-7252'
     },
-}
+};
 
 export default raceData2019;

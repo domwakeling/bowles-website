@@ -362,6 +362,6 @@ const raceData2018 = {
         ],
         link: 'https://skiresults.co.uk/events/900'
     }
-}
+};
 
 export default raceData2018;

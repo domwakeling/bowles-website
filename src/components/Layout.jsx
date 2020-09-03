@@ -61,4 +61,4 @@ Layout.propTypes = {
   location: PropTypes.object
 };
 
-export default Layout
+export default Layout;

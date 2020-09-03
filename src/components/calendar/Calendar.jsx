@@ -5,17 +5,17 @@ import CalendarCell from './CalendarCell.jsx';
 
 // export default class Calendar extends React.Component {
 const Calendar = ({ date }) => {
-    const [month, setMonth] = useState(date.getMonth())
-    const [year, setYear] = useState(date.getFullYear())
+    const [month, setMonth] = useState(date.getMonth());
+    const [year, setYear] = useState(date.getFullYear());
     
     const firstDay = () => {
         const firstDayNew = new Date(year, month, 1);
-        return firstDayNew.getDay() || 7
-    }
+        return firstDayNew.getDay() || 7;
+    };
 
     const lastDate = () => {
-        return new Date( new Date(year, month + 1, 1) -1).getDate()
-    }
+        return new Date( new Date(year, month + 1, 1) -1).getDate();
+    };
 
     const monthDown =(e) => {
         e.preventDefault();
@@ -23,12 +23,12 @@ const Calendar = ({ date }) => {
         const newMonth = month - 1;
         const currYear = year;
         if (newMonth >= 0) {
-            setMonth(newMonth)
+            setMonth(newMonth);
         } else {
-            setYear(currYear - 1)
-            setMonth(newMonth + 2)
+            setYear(currYear - 1);
+            setMonth(newMonth + 2);
         }
-    }
+    };
 
     const monthUp = (e) => {
         e.preventDefault();
@@ -36,12 +36,12 @@ const Calendar = ({ date }) => {
         const newMonth = month + 1;
         const currYear = year;
         if (newMonth <= 11) {
-            setMonth(newMonth)
+            setMonth(newMonth);
         } else {
-            setYear(currYear + 1)
-            setMonth(newMonth - 12)
+            setYear(currYear + 1);
+            setMonth(newMonth - 12);
         }
-    }
+    };
 
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
         'Nov', 'Dec'];
@@ -95,11 +95,11 @@ const Calendar = ({ date }) => {
                 ))
             }
         </div>
-    )
-}
+    );
+};
 
 Calendar.propTypes = {
     date: PropTypes.shape()
-}
+};
 
 export default Calendar;
