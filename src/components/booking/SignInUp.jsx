@@ -185,8 +185,8 @@ const SignInUp = ({
       </form>
       {mode == modes.LOGGING_IN ? (
         <>
-          <button onClick={submitLogin}>Log In</button>
-          <p>
+          <button className="bookingbutton" onClick={submitLogin}>Log In</button>
+          <p style={{ paddingTop: "1rem" }}>
             Or do you want to{" "}
             <a href="#" onClick={changeToSignUp}>
               create a new account?
@@ -195,8 +195,8 @@ const SignInUp = ({
         </>
       ) : (
         <>
-          <button onClick={submitSignUp}>Sign Up</button>
-          <p>
+          <button className="bookingbutton" onClick={submitSignUp}>Sign Up</button>
+          <p style={{paddingTop: "1rem"}}>
             Or do you want to{" "}
             <a href="#" onClick={changeToLogIn}>
               log in to an existing account?

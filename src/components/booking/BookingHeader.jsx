@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import modes from "../../lib/modes";
 
-const BookingHeader = ({ mode, setMode }) => {
+const BookingHeader = ({ mode, setMode, handleLogout }) => {
     const changeDay = e => {
         e.preventDefault();
         setMode(mode == modes.FRIDAY ? modes.TUESDAY : modes.FRIDAY);
@@ -27,9 +27,24 @@ const BookingHeader = ({ mode, setMode }) => {
         }
     };
 
+    const handleLogOutClick = (e) => {
+        e.preventDefault();
+        e.target.blur();
+        handleLogout(e);
+    };
+
     return (
         <>
             <h2>{pageTitle()}</h2>
+            {mode != modes.WELCOME ? (
+                <button
+                    className="bookingbutton"
+                    onClick={handleLogOutClick}
+                    style={{float: "right", marginTop: "0.25rem"}}
+                >
+                    Log out
+                </button>
+            ) : '' }
             {mode == modes.FRIDAY || mode == modes.TUESDAY ? (
                 <>
                     <p>
@@ -51,6 +66,7 @@ const BookingHeader = ({ mode, setMode }) => {
 BookingHeader.propTypes = {
     mode: PropTypes.number.isRequired,
     setMode: PropTypes.func.isRequired,
+    handleLogout: PropTypes.func.isRequired
 };
 
 export default BookingHeader;

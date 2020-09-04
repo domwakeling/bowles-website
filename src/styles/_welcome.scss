@@ -1,0 +1,50 @@
+ol.number-circle-list {
+    list-style: none;
+    counter-reset: circle-counter;
+}
+
+li.number-circle-list--list-item {
+    counter-increment: circle-counter;
+    margin-bottom: 0.25rem;
+
+    &:before {
+        content: counter(circle-counter);
+        background-color: gray;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+        text-align: center;
+        margin-right: 0.5rem;
+        position: relative;
+        top: -2px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.number-circle-list--primary-color > .number-circle-list--list-item:before {
+        background-color: $color__project-theme;
+        color: white;
+}
+
+p#disclaimer {
+    font-weight: 300;
+    font-style: italic;
+    color: #888;
+}
+
+button.bookingbutton {
+    background-color: $color__project-theme;
+    color: $color__project-inverse;
+    border: none;
+    padding: 0.35rem 1rem;
+    text-align: center;
+    min-width: 100px;
+    border-radius: 0.25rem;
+    margin-left: 2.5rem;
+}

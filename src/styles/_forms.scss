@@ -9,7 +9,6 @@ input {
 }
 label.circle-label {
     font-size: 1.2rem;
-    // display: inline-block;
     background-color: $color__project-theme;
     border-radius: 50%;
     width: 1.75rem;
@@ -26,6 +25,11 @@ label.circle-label {
     form.centred-form {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-small-screens {
+        display: flex;
         justify-content: center;
     }
 }

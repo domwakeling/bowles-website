@@ -81,7 +81,7 @@ const BookingPage = ({ location }) => {
 
     return (
         <Layout location={location}>
-            <BookingHeader mode={mode} setMode={setMode} />
+            <BookingHeader mode={mode} setMode={setMode} handleLogout={handleLogout} />
             {mode == modes.WELCOME ? (
                 <Welcome clickSignUp={changeToSignUp} clickLogin={changeToLogIn} />
             ) : (
@@ -129,8 +129,7 @@ const BookingPage = ({ location }) => {
                         <Bookings mode={mode} user={user} />
                     ) : (
                         ""
-                    )}
-                    <button onClick={handleLogout}>Log out</button>
+                    )} 
                 </>
             ) : (
                 ""
