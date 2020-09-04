@@ -42,3 +42,10 @@ p.form-text {
         text-align: left !important;
     }
 }
+
+p.alert-text {
+    border: 2px solid $color__project-theme;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: lighten($color__project-complementary, 40%);
+}

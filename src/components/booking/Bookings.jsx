@@ -30,54 +30,68 @@ const Bookings = ({ mode, user }) => {
         data,
         error,
     } = useSWR(
-      `/.netlify/functions/getbookings?fri=${nextFri[0]}&tue=${nextTue[0]}`,
-      fetcher,
-      { refreshInterval: 60 * 1000 }
+        `/.netlify/functions/getbookings?fri=${nextFri[0]}&tue=${nextTue[0]}`,
+        fetcher,
+        { refreshInterval: 60 * 1000 }
     );
     if (error) return <div>failed to load</div>;
 
     if (!data) {
-      return (
-        <div>
-          <h2>Bookings for {mode == modes.FRIDAY ? nextFri[1] : nextTue[1]}</h2>
-          <p>loading...</p>
-          <br />
-        </div>
-      );
+        return (
+            <div>
+                <h2>Bookings for {mode == modes.FRIDAY ? nextFri[1] : nextTue[1]}</h2>
+                <p>loading...</p>
+                <br />
+            </div>
+        );
     }
 
     const idxs = Array.from(Array(mode == modes.TUESDAY ? 6 : 15).keys());
 
     return (
-      <div>
-        <h2>Bookings for {mode == modes.FRIDAY ? nextFri[1] : nextTue[1]}</h2>
-        <p>
-          Tap/click on a racer&apos;s name above to add or remove them from the
-          training list.
-        </p>
-        <div className="racerlist">
-          {idxs.map(i =>
-            data && data.racers && data.racers[mode].length > i ? (
-              <Racer
-                key={i}
-                tabNum={i}
-                name={data.racers[mode][i].name}
-                status={
-                  data.racers[mode][i].userid == user ? "highlight" : "normal"
-                }
-              />
-            ) : (
-              <Racer key={i} name="free" status="unused" />
-            )
-          )}
+        <div>
+            <h2>Bookings for {mode == modes.FRIDAY ? nextFri[1] : nextTue[1]}</h2>
+            <p>
+                Tap/click on a racer&apos;s name above to add or remove them from the
+                training list.
+            </p>
+            {nextFri[0] == "18092020" ? (
+                <p className="alert-text">
+                    The club fun-race for 11s-&amp;-Under (anyone born between 2009-2014 inclusive)
+                    is being held this Friday, 18 September. Please only book in for racers in those
+                    age groups. If you wish to race but bookings are full, please contact Nigel.
+                </p>
+            ) : '' }
+            {nextFri[0] == "25092020" ? (
+                <p className="alert-text">
+                    The club fun-race for 14s-&amp;-Under or older (anyone born 2008 or earlier)
+                    is being held this Friday, 25 September. Please only book in for racers in those
+                    age groups. If you wish to race but bookings are full, please contact Nigel.
+                </p>
+            ) : ''}
+            <div className="racerlist">
+                {idxs.map(i =>
+                    data && data.racers && data.racers[mode].length > i ? (
+                        <Racer
+                            key={i}
+                            tabNum={i}
+                            name={data.racers[mode][i].name}
+                            status={
+                                data.racers[mode][i].userid == user ? "highlight" : "normal"
+                            }
+                        />
+                      ) : (
+                        <Racer key={i} name="free" status="unused" />
+                    )
+                )}
+            </div>
         </div>
-      </div>
     );
 };
 
 Bookings.propTypes = {
-  mode: PropTypes.number.isRequired,
-  user: PropTypes.string.isRequired,
+    mode: PropTypes.number.isRequired,
+    user: PropTypes.string.isRequired,
 };
 
 export default Bookings;

@@ -1,8 +1,7 @@
 import userToken from "../lib/token";
-import { MongoClient } from "mongodb";
+import newClient from "../lib/db";
 
-// eslint-disable-next-line no-unused-vars
-export async function handler(event, context) {
+export async function handler(event) {
     try {
         const token = event.headers.cookie.match(
             /userToken=?([a-zA-Z0-9\-_.]+).*/
@@ -10,10 +9,8 @@ export async function handler(event, context) {
         const id = await userToken.validateTokenId(token);
         if (id) {
             // we know there's a token and racer id, see whether there are any racers ...
-
-            const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017";
+            const client = newClient();
             const dbname = process.env.DB_NAME || "nextjsauth";
-            const client = new MongoClient(uri, { useUnifiedTopology: true });
             await client.connect();
 
             // look for user on the db to get their racers; we've already checked that id exists

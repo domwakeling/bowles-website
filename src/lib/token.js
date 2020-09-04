@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { MongoClient } from "mongodb";
+import newClient from "./db";
 
 const max_age = 24 * 60 * 60;
 const jwtsecret = process.env.JWT_SECRET || "a secret for local JWT testing";
@@ -16,11 +16,9 @@ const userToken = {
         try {
             const data = jwt.verify(token, jwtsecret);
             if (data.id) {
-                const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017";
                 const dbname = process.env.DB_NAME || "nextjsauth";
-                const client = new MongoClient(uri, { useUnifiedTopology: true });
+                const client = newClient();
                 await client.connect();
-
                 // look for item on the db
                 const db = client.db(dbname);
                 if (
@@ -33,6 +31,7 @@ const userToken = {
                     return null;
                 }
             } else {
+                // there was no data.id
                 return null;
             }
         } catch (err) {
@@ -41,13 +40,15 @@ const userToken = {
     },
 
     // verifyToken is only used to verify that the token is signed and in-date; returns id or null
-    verifyToken: async token => {
+    verifyToken: token => {
         try {
             const data = jwt.verify(token, jwtsecret);
             if (data.id) {
                 return data.id;
+            } else {
+                return null;
             }
-        } catch {
+        } catch (err) {
             return null;
         }
     },
