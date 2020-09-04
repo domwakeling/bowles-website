@@ -12,4 +12,4 @@ export default ThisPage;
 
 ThisPage.propTypes = {
     location: PropTypes.object
-}
+};

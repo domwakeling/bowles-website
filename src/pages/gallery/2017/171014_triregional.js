@@ -11,7 +11,7 @@ const alts = [
     '3rd place in Plate',
     '3rd place in Shield',
     'Bowles skiers'
-]
+];
 const title = 'Medallists from Tri-Regional at Welwyn on 14 October 2017';
 const link = '/news/2017/october/tri-region';
 
@@ -21,16 +21,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

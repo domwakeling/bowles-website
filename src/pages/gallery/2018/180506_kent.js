@@ -15,7 +15,7 @@ const alts = [
     'Secondary (Senior) Boys Team',
     'Secondary (Senior) Boys',
     `Skinners'`
-]
+];
 const title = 'Medallists from the Kent School Championships on 6th May 2018';
 const link = '/news/2018/may/kent';
 
@@ -25,16 +25,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

@@ -15,7 +15,7 @@ const alts = [
     'Mens Under-12s',
     'Mens Under-18s',
     'Mens Masters-2'
-]
+];
 const title = 'Medallists from LSERSA 1 at Chatham on 27th April 2019';
 const link = '/news/2019/may/LSERSA_1';
 
@@ -25,16 +25,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

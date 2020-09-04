@@ -76,7 +76,7 @@ exports.createPages = ({ actions, graphql}) => {
         let monthYears = [];
         // then push all date combos in
         result.data.allMarkdownRemark.edges.forEach(({ node}) => {
-            monthYears.push(node.frontmatter.date)
+            monthYears.push(node.frontmatter.date);
         });
         // then format them to month/year combos and get unique list
         monthYears = monthYears.map(d => d.match(/^\d+ (\w+ \d+)$/)[1]);
@@ -92,7 +92,7 @@ exports.createPages = ({ actions, graphql}) => {
                     date: d,
                     slug: `^/news/${splitMY[1]}/${splitMY[0].toLowerCase()}/`
                 }
-            })
-        })
+            });
+        });
     });
-}
+};

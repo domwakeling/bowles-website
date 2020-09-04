@@ -36,7 +36,7 @@ const alts = [
  'Scratch 1st=place',
  'Scratch 3rd-place',
  'Bowles_medalists'
-]
+];
 const title = 'Photos from LSERSA 1 at Bowles on 5th May 2013';
 const link = '/news/2013/may/LSERSA_1/';
 
@@ -46,16 +46,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

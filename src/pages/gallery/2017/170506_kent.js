@@ -31,7 +31,7 @@ const alts = [
     'Secondary Girls Individual', 
     'Secondary Boys Individual',
 
-]
+];
 const title = 'Medallists from Kent Schools at Brentwood on 6th May 2017';
 const link = '/news/2017/may/raks-2017';
 
@@ -41,16 +41,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

@@ -9,7 +9,7 @@ const images = [img01, img02];
 const alts = [
     'Mens Masters 2',
     'Fun Teams 1st-place'
-]
+];
 const title = 'Medallists from LSERSA 3 at Welwyn on 28th June 2015';
 const link = '/news/2015/june/LSERSA_3';
 
@@ -19,16 +19,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

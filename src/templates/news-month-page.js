@@ -12,8 +12,8 @@ const Page = ({ location, pageContext, data }) => {
 
     return (
         <MonthPage location={location} data={data} title={date} />
-    )
-}
+    );
+};
 
 Page.propTypes = {
     pageContext: PropTypes.shape({
@@ -21,7 +21,7 @@ Page.propTypes = {
     }),
     data: PropTypes.shape(),
     location: PropTypes.object
-}
+};
 
 export default Page;
 

@@ -32,7 +32,7 @@ const alts = [
     'Mixed Primary Overall Team',
     'Female Secondary Overall Team',
     'Primary Overall Male and Female'
-]
+];
 const title = 'Medallists from Kent Schools at Chatham on 12th May 2019';
 const link = '/news/2019/may/kent';
 
@@ -42,16 +42,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

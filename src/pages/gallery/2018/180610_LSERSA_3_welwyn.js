@@ -25,7 +25,7 @@ const alts = [
     'Cub Teams',
     'Bowles Club Team',
     'Bowles Medallists'
-]
+];
 const title = 'Medallists from LSERSA 3 at Welwyn on 10th June 2018';
 const link = '/news/2018/june/LSERSA_3';
 
@@ -35,16 +35,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

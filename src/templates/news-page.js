@@ -54,6 +54,6 @@ const NewsPageTemplate = ({ pageContext, location }) => {
 NewsPageTemplate.propTypes = {
     pageContext: PropTypes.shape(),
     location: PropTypes.object
-}
+};
 
 export default NewsPageTemplate;

@@ -17,7 +17,7 @@ const alts = [
     'Overall',
     'Handicap',
     'Coaches'
-]
+];
 const title = 'Medallists from the Handicap Fun Race on 16th May 2014';
 const link = '/news/2014/may/bowles-handicap/';
 
@@ -27,16 +27,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

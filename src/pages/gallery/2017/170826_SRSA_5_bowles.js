@@ -25,7 +25,7 @@ const alts = [
     'Fun Teams 3rd-place',
     'Fun Teams 2nd-place',
     'Fun Teams 1st-place'
-]
+];
 const title = 'Medallists from SRSA 5 at Bowles on 26th August 2017';
 const link = '/news/2017/august/SRSA_5';
 
@@ -35,16 +35,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

@@ -11,7 +11,7 @@ const alts = [
     'Female 15-16',
     'Male 50+',
     'Fun Teams'
-]
+];
 const title = 'Medallists from SRSA 4 at Southampton on 5th June 2015';
 const link = '/news/2015/june/SRSA_4/';
 
@@ -21,16 +21,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

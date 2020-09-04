@@ -9,7 +9,7 @@ const images = [img01, img02];
 const alts = [
     'Female 15-16',
     'Male 50+'
-]
+];
 const title = 'Medallists from SRSA 1 at Snowtrax on 25th April 2015';
 const link = '/news/2015/may/SRSA_Snowtrax/';
 
@@ -19,16 +19,16 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};

@@ -22,7 +22,7 @@ export default function Template ({ data, location }) {
 Template.propTypes = {
     data: PropTypes.shape(),
     location: PropTypes.shape()
-}
+};
 
 export const newsQuery = graphql`
     query newsPostByPath($path: String!) {
@@ -34,4 +34,4 @@ export const newsQuery = graphql`
             }
         }
     }
-`
+`;
