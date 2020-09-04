@@ -214,7 +214,7 @@ export default ThisPage;
 
 ThisPage.propTypes = {
     location: PropTypes.object
-}
+};
 ``` 
 To make a new year's results page, use this code and change the references to the appropriate year.
 You will also need to make sure that the equivalent [data file](#adding-a-new-race-results-data-file)
@@ -369,7 +369,7 @@ An example of a gallery page is:
 ```javascript
 import React from "react";
 import PropTypes from 'prop-types';
-import GalleryPage from '../../components/GalleryPage.jsx'
+import GalleryPage from '../../components/GalleryPage.jsx';
 
 import img01 from '../../images/gallery/2012/120928_handicap/Under_10_Sept12.jpg';
 import img02 from '../../images/gallery/2012/120928_handicap/Under_14_Sept12.jpg';
@@ -383,7 +383,7 @@ const alts = [
     // add text to describe each photo - this will be used to generate alt tags
     // NOTE: you need to ensure there are the same number of alt tags as images, and that they
     // are in the correct order
-]
+];
 const title = 'Pictures from the medal ceremony for the Handicap Fun Race on 11th May 2012';
 // the title will be rendered at the head of the page
 const link = '/news/2012/september/agm-race/';
@@ -395,19 +395,19 @@ const Fade = ({ location }) => {
         alts,
         title,
         link
-    }
+    };
     return (
         <div>
             <GalleryPage location={location} data={data} />
         </div>
     );
-}
+};
 
 export default Fade;
 
 Fade.propTypes = {
     location: PropTypes.object
-}
+};
 ```
 
 ### Updating the Galleries Page

@@ -57,16 +57,13 @@ which will install all the required dependencies.
 And finally run
 
 ```sh
-gatsby develop
-```
-
-or
-
-```sh
-npm run develop
+npm run start
 ```
 
 to start the Gatsby development server and get a copy of the site running in your browser.
+
+_The bookings system expects that a local MongoDB instance is available when running locally; the
+rest of the website is unaffected, but you will be unable to simulate a racer log-in._
 
 ### Contributing
 
