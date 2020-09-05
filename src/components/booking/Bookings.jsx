@@ -15,8 +15,13 @@ export const getNextDay = mode => {
         `0${date.getMonth() + 1}`.slice(-2) +
         date.getFullYear();
     let ds1 = date.toDateString().split(" ");
+    date.setDate(date.getDate() - 7);
+    const ds2 =
+        `0${date.getDate()}`.slice(-2) +
+        `0${date.getMonth() + 1}`.slice(-2) +
+        date.getFullYear();
     ds1 = `${ds1[2]} ${ds1[1]} ${ds1[3]}`;
-    return [ds0, ds1];
+    return [ds0, ds1, ds2];
 };
 
 const Bookings = ({ mode, user }) => {
@@ -55,14 +60,14 @@ const Bookings = ({ mode, user }) => {
                 Tap/click on a racer&apos;s name above to add or remove them from the
                 training list.
             </p>
-            {nextFri[0] == "18092020" ? (
+            {nextFri[0] == "18092020" && mode == modes.FRIDAY ? (
                 <p className="alert-text">
                     The club fun-race for 11s-&amp;-Under (anyone born between 2009-2014 inclusive)
                     is being held this Friday, 18 September. Please only book in for racers in those
                     age groups. If you wish to race but bookings are full, please contact Nigel.
                 </p>
             ) : '' }
-            {nextFri[0] == "25092020" ? (
+            {nextFri[0] == "25092020" && mode == modes.FRIDAY ? (
                 <p className="alert-text">
                     The club fun-race for 14s-&amp;-Under or older (anyone born 2008 or earlier)
                     is being held this Friday, 25 September. Please only book in for racers in those
