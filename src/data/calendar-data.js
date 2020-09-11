@@ -3,10 +3,10 @@
 const calendarData = [
 
     // 2020 tri-regional
-    { year: 2020, month: 10, date: 25, label: 'Tri-regional, Welwyn', type: 'race' },
+    { year: 2020, month: 10, date: 25, label: 'Tri-regional, Welwyn (TBC)', type: 'race' },
 
     // 2020 'other'
-    { year: 2020, month: 10, date: 17, label: 'Southern England Champs, Chatham', type: 'race' },
+    { year: 2020, month: 10, date: 17, label: 'Southern England Champs, Chatham (TBC)', type: 'race' },
 
     // 2020 school & ESSKIA races
     { year: 2020, month: 5, date: 3, label: 'Kent Schools CANCELLED', type: 'race' },
@@ -16,8 +16,8 @@ const calendarData = [
     { year: 2020, month: 7, date: 5, label: 'Club National, Bromley (@ Chatham)\nCANCELLED', type: 'race' },
 
     // 2020 LSERSA races
-    { year: 2020, month: 10, date: 11, label: 'LSERSA 5, Chatham', type: 'race' },
-    { year: 2020, month: 9, date: 26, label: 'LSERSA 4, Welwyn', type: 'race' },
+    { year: 2020, month: 10, date: 11, label: 'LSERSA 5, Chatham (TBC)', type: 'race' },
+    { year: 2020, month: 9, date: 26, label: 'LSERSA 4, Welwyn (TBC)', type: 'race' },
     { year: 2020, month: 9, date: 6, label: 'LSERSA 3 CANCELLED', type: 'race' },
     { year: 2020, month: 7, date: 18, label: 'LSERSA 2 CANCELLED', type: 'race' },
     { year: 2020, month: 5, date: 10, label: 'LSERSA 1 CANCELLED', type: 'race' },
@@ -41,6 +41,8 @@ const calendarData = [
     
     // 2020 club fun races
     //{ year: 2020, month: 3, date: 20, label: 'Club Fun Race', type: 'race' },
+    { year: 2020, month: 9, date: 18, label: 'Club Fun Race (11-and-under)', type: 'race' },
+    { year: 2020, month: 9, date: 25, label: 'Club Fun Race (12-and-over)', type: 'race' },
 
     // 2019 'other'
     { year: 2019, month: 10, date: 12, label: 'Southern England Champs, Chatham', typoe: 'race' },
