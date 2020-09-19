@@ -56,8 +56,20 @@ import img55 from '../images/gallery/2019/190512_kent/pri_o_ind.jpg';
 import img56 from '../images/gallery/2019/190720_LSERSA_3_brentwood/m_mas2.jpg';
 import img57 from '../images/gallery/2019/190817_SRSA_4_bowles/Bowles.jpg';
 import img58 from '../images/gallery/2019/190920_handicap/handicap.jpg';
+import img59 from '../images/gallery/2020/200918_fun_race_1/u11_handicap.jpeg';
 
 const galleryData = [
+    {
+        year: '2020',
+        galleries: [
+            {
+                img: img59,
+                title: "11-and-Under Fun Race",
+                date: "18 September 2020",
+                link: '/gallery/2020/200918_fun_race_1'
+            }
+        ]
+    },
     {
         year: '2019',
         galleries: [
