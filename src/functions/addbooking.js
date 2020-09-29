@@ -7,7 +7,7 @@ export async function handler(event, context) {
     // TODO: VALIDATE JWT?
 
     // retrieve info from body and validate
-    const { userid, name, day, mode } = JSON.parse(event.body);
+    const { userid, name, day, mode, prev } = JSON.parse(event.body);
     if (!/^\d{8}$/.test(day) || !userid || !name) {
         return {
             statusCode: 400,
@@ -18,9 +18,7 @@ export async function handler(event, context) {
     try {
         // connect to DB
         const client = newClient();
-        // const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017";
         const dbname = process.env.DB_NAME || "nextjsauth";
-        // const client = new MongoClient(uri, { useUnifiedTopology: true });
         await client.connect();
 
         // retrieve bookings information with error catching
@@ -60,6 +58,50 @@ export async function handler(event, context) {
 
         // space and racer wasn't found
         if (racersCount < maxRacers && !racerFound) {
+            // if Friday, check they didn't book last week (and its weekend now)
+            const today = new Date().getDay();
+            if((today == 0 || today == 6) && mode == modes.FRIDAY) {
+                // look for previous week's booking
+                const prevWeek = await db.collection("bookings").findOne({
+                    forWeek: prev,
+                });
+                // check there is an entry and find out if this racer was booked in
+                if (prevWeek &&
+                    prevWeek.racers.filter(r => r.userid == userid && r.name == name).length > 0) {
+                        client.close();
+                        return {
+                            statusCode: 409,
+                            body: JSON.stringify({
+                                message: `That racer trained last Friday. In order to ensure all
+                                    members get a chance to train, please wait until Monday before
+                                    booking them in to this Friday's session.`,
+                                status: 409
+                            })
+                        };
+                }
+            }
+            // if Tuesday, check they didn't book last week (and its Weds/Thurs now)
+            if ((today == 3 || today == 4) && mode == modes.TUESDAY) {
+                // look for previous week's booking
+                const prevWeek = await db.collection("bookings").findOne({
+                    forWeek: prev,
+                });
+                // check there is an entry and find out if this racer was booked in
+                if (prevWeek &&
+                    prevWeek.racers.filter(r => r.userid == userid && r.name == name).length > 0) {
+                    client.close();
+                    return {
+                        statusCode: 409,
+                        body: JSON.stringify({
+                            message: `That racer trained last Tuesday. In order to ensure all
+                                    members get a chance to train, please wait until Friday before
+                                    booking them in to this Tuesday's session.`,
+                            status: 409
+                        })
+                    };
+                }
+            }
+            // it's not friday/weekend, or not tuesday/midweek, or they didn't train previous session
             await db
                 .collection("bookings")
                 .updateOne({ forWeek: day }, { $addToSet: { racers: { userid, name } } });

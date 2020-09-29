@@ -22,9 +22,7 @@ export async function handler(event, context) {
     try {
         // connect to DB
         const client = newClient();
-        // const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017";
         const dbname = process.env.DB_NAME || "nextjsauth";
-        // const client = new MongoClient(uri, { useUnifiedTopology: true });
         await client.connect();
 
         // retrieve bookings information with error catching
@@ -44,7 +42,7 @@ export async function handler(event, context) {
                             if (element.forWeek == days.fri) {
                                 racers[0] = JSON.parse(JSON.stringify(element.racers));
                             } else if (element.forWeek == days.tue) {
-                                racers[1] = element.racers;
+                                racers[1] = JSON.parse(JSON.stringify(element.racers));
                             }
                         }
                     }

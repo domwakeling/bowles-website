@@ -14,6 +14,7 @@ const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
             );
             const body = {
                 day: bookingDay[0],
+                prev: bookingDay[2],
                 userid,
                 name,
                 mode,
@@ -38,6 +39,12 @@ const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
                 mutate(
                     `/.netlify/functions/getbookings?fri=${nextFri[0]}&tue=${nextTue[0]}`
                 );
+            } else if (status === 409) {
+                // not successful, notify using information from API
+                toast.notify(data.message, {
+                    type: "warn",
+                    title: "Warning",
+                });
             } else {
                 // not successful, notify using information from API
                 toast.notify(data.message, {
