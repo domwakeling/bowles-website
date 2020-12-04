@@ -86,7 +86,7 @@ const BookingPage = ({ location }) => {
                 <Welcome clickSignUp={changeToSignUp} clickLogin={changeToLogIn} />
             ) : (
                     ""
-                )}
+            )}
             {!user && mode != modes.WELCOME ? (
                 <SignInUp
                     mode={mode}
@@ -96,7 +96,7 @@ const BookingPage = ({ location }) => {
                 />
             ) : (
                     ""
-                )}
+            )}
             {user ? (
                 <>
                     {racers && racers.length > 0 ? (
@@ -112,7 +112,7 @@ const BookingPage = ({ location }) => {
                             <a href="#" onClick={changeToAddRacer}>
                                 add a racer
                             </a>
-                .
+                            .
                         </p>
                     )}
                     {mode == modes.ADDING_RACER ? (

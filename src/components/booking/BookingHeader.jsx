@@ -36,7 +36,7 @@ const BookingHeader = ({ mode, setMode, handleLogout }) => {
     return (
         <>
             <h2>{pageTitle()}</h2>
-            {mode != modes.WELCOME ? (
+            {mode != modes.WELCOME && mode != modes.LOGGING_IN && mode != modes.SIGNING_UP ? (
                 <button
                     className="bookingbutton"
                     onClick={handleLogOutClick}
