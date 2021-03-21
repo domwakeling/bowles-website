@@ -16,11 +16,11 @@ const raceData2020 = {
             },
             {
                 descriptor: 'Race 4 - Welwyn - 26th September 2020',
-                note: 'Awaiting confirmation'
+                note: 'CANCELLED'
             },
             {
                 descriptor: 'Race 5 - Chatham - 11th October 2020',
-                note: 'Awaiting confirmation'
+                note: 'CANCELLED'
             }
                 
         ]
@@ -75,7 +75,7 @@ const raceData2020 = {
     },
     TriRegion: {
         descriptor: 'Tri-Regional - Chatham - 18th October 2020',
-        note: 'Awaiting confirmation'
+        note: 'CANCELLED'
                 // tri_teams, link
     },
     SouthernChamps: {

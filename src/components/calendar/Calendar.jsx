@@ -26,7 +26,7 @@ const Calendar = ({ date }) => {
             setMonth(newMonth);
         } else {
             setYear(currYear - 1);
-            setMonth(newMonth + 2);
+            setMonth(newMonth + 12);
         }
     };
 

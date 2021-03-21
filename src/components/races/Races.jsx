@@ -10,6 +10,9 @@ const Races = ({ data }) => {
         <div>
             <h3 className="series-title">{data.title}</h3>
             {
+                data.message && <p className="race-message">{data.message}</p>
+            }
+            {
                 data.races.map(race => <Race key={race.descriptor} data={race} />)
             }
             {

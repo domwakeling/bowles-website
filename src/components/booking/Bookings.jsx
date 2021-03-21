@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import useSWR from "swr";
-// import Racer from "./Racer";
+import Racer from "./Racer";
 import modes from "../../lib/modes";
 
 const fetcher = url => fetch(url).then(r => r.json());
@@ -24,8 +24,7 @@ export const getNextDay = mode => {
     return [ds0, ds1, ds2];
 };
 
-// const Bookings = ({ mode, user }) => {
-const Bookings = ({ mode }) => {
+const Bookings = ({ mode, user }) => {
     const nextFri = getNextDay(modes.FRIDAY);
     const nextTue = getNextDay(modes.TUESDAY);
 
@@ -52,18 +51,17 @@ const Bookings = ({ mode }) => {
         );
     }
 
-    // const idxs = Array.from(Array(mode == modes.TUESDAY ? 6 : 15).keys());
+    const idxs = Array.from(Array(mode == modes.TUESDAY ? 6 : 15).keys());
 
     return (
         <div>
             <h2>Bookings for {mode == modes.FRIDAY ? nextFri[1] : nextTue[1]}</h2>
-            {/* <p>
-                Tap/click on a racer&apos;s name above to add or remove them from the
-                training list.
-            </p> */}
-            <p className="alert-text">
-                The centre is currently shut in accordance with Covid restrictions.
-            </p>
+            { (nextFri[0] == "26032021" && mode == modes.FRIDAY) || (nextTue[0] == "23032021" && mode == modes.TUESDAY) ? '' : (
+                <p>
+                    Tap/click on a racer&apos;s name above to add or remove them from the
+                    training list.
+                </p>
+            )}
             {nextFri[0] == "18092020" && mode == modes.FRIDAY ? (
                 <p className="alert-text">
                     The club fun-race for 11s-&amp;-Under (anyone born between 2009-2014 inclusive)
@@ -78,22 +76,31 @@ const Bookings = ({ mode }) => {
                     age groups. If you wish to race but bookings are full, please contact Nigel.
                 </p>
             ) : ''}
-            {/* <div className="racerlist">
-                {idxs.map(i =>
-                    data && data.racers && data.racers[mode].length > i ? (
-                        <Racer
-                            key={i}
-                            tabNum={i}
-                            name={data.racers[mode][i].name}
-                            status={
-                                data.racers[mode][i].userid == user ? "highlight" : "normal"
-                            }
-                        />
-                      ) : (
-                        <Racer key={i} name="free" status="unused" />
-                    )
-                )}
-            </div> */}
+
+            { (nextFri[0] == "26032021" && mode == modes.FRIDAY) || (nextTue[0] == "23032021" && mode == modes.TUESDAY) ? (
+                <p className="alert-text">
+                    The centre is currently shut in accordance with Covid restrictions. Bookings will
+                    re-open the {mode == modes.FRIDAY ? "Saturday" : "Wednesday"} before the first
+                    training session after lockdown ends.
+                </p>
+            ) : (
+                <div className="racerlist">
+                    {idxs.map(i =>
+                        data && data.racers && data.racers[mode].length > i ? (
+                            <Racer
+                                key={i}
+                                tabNum={i}
+                                name={data.racers[mode][i].name}
+                                status={
+                                    data.racers[mode][i].userid == user ? "highlight" : "normal"
+                                }
+                            />
+                        ) : (
+                            <Racer key={i} name="free" status="unused" />
+                        )
+                    )}
+                </div>
+            )}
         </div>
     );
 };

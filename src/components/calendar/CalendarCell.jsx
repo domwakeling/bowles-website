@@ -82,6 +82,10 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
         if(month >= 3 && month <= 6 && year == 2020) return false;
         // ... through to 14 August
         if(month == 7 && year ==2020 && cellDate < 14) return false;
+        // not during November 2020, or from xmas '20 through end Mar '21
+        if (month == 10 && year == 2020) return false;
+        if (month == 11 && cellDate >= 25 && year == 2020) return false;
+        if (year == 2021 && month < 3) return false;
         return true;
     };
 
@@ -94,6 +98,11 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
         // only starts (say) September '20
         if (year < 2020) return false;
         if (month < 8 && year == 2020) return false;
+        // not during November 2020, or from xmas '20 through 23 Mar '21
+        if (month == 10 && year == 2020) return false;
+        if (month == 11 && cellDate >=25 && year == 2020) return false;
+        if (year == 2021 && month <2) return false;
+        if (year == 2021 && month == 2 && cellDate < 30) return false;
         return true;
     };
 
