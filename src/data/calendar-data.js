@@ -2,11 +2,39 @@
 
 const calendarData = [
 
+    // 2021 tri-regional - TBC
+    // { year: 2021, month: 10, date: 25, label: 'Tri-regional, CANCELLED', type: 'race' },
+
+    // 2021 'other' - TBC
+    // { year: 2021, month: 10, date: 17, label: 'Southern England Champs, Chatham\nCANCELLED', type: 'race' },
+
+    // 2021 school & ESSKIA races
+    { year: 2021, month: 10, date: 3, label: 'Kent Schools', type: 'race' },
+
+    // 2021 CN & GBR races
+    { year: 2021, month: 5, date: 23, label: 'Club National, Chatham', type: 'race' },
+    { year: 2021, month: 5, date: 22, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
+
+    // 2021 LSERSA races
+    { year: 2021, month: 10, date: 1, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2021, month: 9, date: 18, label: 'LSERSA 4, TBC', type: 'race' },
+    { year: 2021, month: 9, date: 4, label: 'LSERSA 3, TBC', type: 'race' },
+    { year: 2021, month: 6, date: 19, label: 'LSERSA 2, TBC', type: 'race' },
+    { year: 2021, month: 5, date: 15, label: 'LSERSA 1, Chatham', type: 'race' },
+
+    // 2021 SRSA races
+    { year: 2021, month: 9, date: 25, label: 'SRSA 6, Snowtrax', type: 'race' },
+    { year: 2021, month: 9, date: 5, label: 'SRSA 5, Aldershot', type: 'race' },
+    { year: 2021, month: 8, date: 7, label: 'SRSA 4,  TBC', type: 'race' },
+    { year: 2021, month: 7, date: 17, label: 'SRSA 3, Chatham', type: 'race' },
+    { year: 2021, month: 6, date: 20, label: 'SRSA 2, Southampton', type: 'race' },
+    { year: 2021, month: 8, date: 21, label: 'SRSA 1, Southampton', type: 'race' },
+
     // 2020 tri-regional
-    { year: 2020, month: 10, date: 25, label: 'Tri-regional, Welwyn (TBC)', type: 'race' },
+    { year: 2020, month: 10, date: 25, label: 'Tri-regional, CANCELLED', type: 'race' },
 
     // 2020 'other'
-    { year: 2020, month: 10, date: 17, label: 'Southern England Champs, Chatham (TBC)', type: 'race' },
+    { year: 2020, month: 10, date: 17, label: 'Southern England Champs\nCANCELLED', type: 'race' },
 
     // 2020 school & ESSKIA races
     { year: 2020, month: 5, date: 3, label: 'Kent Schools CANCELLED', type: 'race' },
@@ -16,8 +44,8 @@ const calendarData = [
     { year: 2020, month: 7, date: 5, label: 'Club National, Bromley (@ Chatham)\nCANCELLED', type: 'race' },
 
     // 2020 LSERSA races
-    { year: 2020, month: 10, date: 11, label: 'LSERSA 5, Chatham (TBC)', type: 'race' },
-    { year: 2020, month: 9, date: 26, label: 'LSERSA 4, Welwyn (TBC)', type: 'race' },
+    { year: 2020, month: 10, date: 11, label: 'LSERSA 5 CANCELLED', type: 'race' },
+    { year: 2020, month: 9, date: 26, label: 'LSERSA 4 CANCELLED', type: 'race' },
     { year: 2020, month: 9, date: 6, label: 'LSERSA 3 CANCELLED', type: 'race' },
     { year: 2020, month: 7, date: 18, label: 'LSERSA 2 CANCELLED', type: 'race' },
     { year: 2020, month: 5, date: 10, label: 'LSERSA 1 CANCELLED', type: 'race' },

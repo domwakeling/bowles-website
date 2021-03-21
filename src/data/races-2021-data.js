@@ -60,7 +60,7 @@ const raceData2021 = {
         // title, races with {descriptor, individual, honorable, link }
     },
     Kent: {
-        descriptor: 'Kent Schools Ski Championship - Chatham - 2rd October 2021',
+        descriptor: 'Kent Schools Ski Championship - Chatham - 3rd October 2021',
         note: 'There is no race for the 2020/21 school year'
         // individual, primary_teams, secondary_teams, fun_teams, honorable, link
     },
