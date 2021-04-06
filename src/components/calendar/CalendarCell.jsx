@@ -63,8 +63,8 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
                 info.class = "circle race-training";
             }
         }
-        if (fridayTraining(cellDate)) info.details.push("Club training");
-        if (tuesdayTraining(cellDate)) info.details.push("Club training (6-7)");
+        if (fridayTraining(cellDate)) info.details.push("Club training (5:30-7:30)");
+        if (tuesdayTraining(cellDate)) info.details.push("Club training (6:30-7:30)");
         // STEP 5 - set
         setCellInfo(info);
 

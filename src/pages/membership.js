@@ -9,7 +9,7 @@ const IndexPage = ({location}) => (
         <h2>Membership Information</h2>
         <p>We hold training sessions at <a href="http://www.bowles.ac/" rel="noopener noreferrer" 
             target="_blank" >Bowles Outdoor Centre</a> every Friday evening from 5:30 to 7:30, and
-            Tuesday evenings (which are limited to six racers) from 6-7 (except for Christmas Day
+            Tuesday evenings (which are limited to six racers) from 6:30-7:30 (except for Christmas Day
             and New Year!).</p>
         <p>A typical session starts with a short period of warm-up exercises, and for this reason we
             ask everyone to arrive as early as possible. This is followed by progressive instruction
