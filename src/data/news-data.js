@@ -7,7 +7,7 @@
 const newsData = [
     {
         year: '2021',
-        months: ['march']
+        months: ['april', 'march']
     },
     {
         year: '2020',

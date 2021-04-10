@@ -51,7 +51,7 @@ const Bookings = ({ mode, user }) => {
         );
     }
 
-    const idxs = Array.from(Array(mode == modes.TUESDAY ? 6 : 15).keys());
+    const idxs = Array.from(Array(mode == modes.TUESDAY ? 6 : 25).keys());
 
     return (
         <div>

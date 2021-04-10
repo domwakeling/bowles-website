@@ -45,7 +45,7 @@ export async function handler(event, context) {
                 0;
         }
 
-        const maxRacers = mode == modes.FRIDAY ? 15 : 6;
+        const maxRacers = mode == modes.FRIDAY ? 25 : 6;
 
         // no space and racer wasn't found
         if (racersCount >= maxRacers && !racerFound) {
