@@ -12,8 +12,8 @@ const calendarData = [
     { year: 2021, month: 10, date: 3, label: 'Kent Schools', type: 'race' },
 
     // 2021 CN & GBR races
-    { year: 2021, month: 5, date: 23, label: 'Club National, Chatham', type: 'race' },
-    { year: 2021, month: 5, date: 22, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
+    // { year: 2021, month: 5, date: 23, label: 'Club National, Chatham', type: 'race' },
+    // { year: 2021, month: 5, date: 22, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
 
     // 2021 LSERSA races
     { year: 2021, month: 10, date: 9, label: 'LSERSA 5, Chatham', type: 'race' },
