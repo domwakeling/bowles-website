@@ -4,16 +4,16 @@ const raceData2021 = {
         message: 'All dates are provisional and subject to change or cancellation.',
         races: [
             {
-                descriptor: 'Race 1 - Chatham - 15th May 2021'
+                descriptor: 'Race 1 - Chatham - 22nd May 2021'
             },
             {
-                descriptor: 'Race 2 - TBC - 19th June 2021'
+                descriptor: 'Race 2 - Welwyn - 19th June 2021'
             },
             {
-                descriptor: 'Race 3 - TBC - 4th September 2021'
+                descriptor: 'Race 3 - Aldershot - 4th September 2021'
             },
             {
-                descriptor: 'Race 4 - TBC - 18th September 2021'
+                descriptor: 'Race 4 - Brentwood - 18th September 2021'
             },
             {
                 descriptor: 'Race 5 - Chatham - 9th October 2021'

@@ -17,10 +17,10 @@ const calendarData = [
 
     // 2021 LSERSA races
     { year: 2021, month: 10, date: 9, label: 'LSERSA 5, Chatham', type: 'race' },
-    { year: 2021, month: 9, date: 18, label: 'LSERSA 4, TBC', type: 'race' },
-    { year: 2021, month: 9, date: 4, label: 'LSERSA 3, TBC', type: 'race' },
-    { year: 2021, month: 6, date: 19, label: 'LSERSA 2, TBC', type: 'race' },
-    { year: 2021, month: 5, date: 15, label: 'LSERSA 1, Chatham', type: 'race' },
+    { year: 2021, month: 9, date: 18, label: 'LSERSA 4, Brentwood', type: 'race' },
+    { year: 2021, month: 9, date: 4, label: 'LSERSA 3, Aldershot', type: 'race' },
+    { year: 2021, month: 6, date: 19, label: 'LSERSA 2, Welwyn', type: 'race' },
+    { year: 2021, month: 5, date: 22, label: 'LSERSA 1, Chatham', type: 'race' },
 
     // 2021 SRSA races
     { year: 2021, month: 9, date: 25, label: 'SRSA 6, Snowtrax', type: 'race' },
