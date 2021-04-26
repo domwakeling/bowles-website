@@ -7,7 +7,7 @@ const raceData2021 = {
                 descriptor: 'Race 1 - Chatham - 22nd May 2021'
             },
             {
-                descriptor: 'Race 2 - Welwyn - 19th June 2021'
+                descriptor: 'Race 2 - Chatham - 19th June 2021'
             },
             {
                 descriptor: 'Race 3 - Aldershot - 4th September 2021'
