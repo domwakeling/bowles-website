@@ -51,7 +51,7 @@ const raceData2021 = {
         message: 'All dates are provisional and subject to change or cancellation.',
         races: [
             {
-                descriptor: 'Chatham - postponed, date tbc'
+                descriptor: 'Chatham - 18th July 2021'
             },
             {
                 descriptor: 'Bromley (@ Chatham) - postponed, date tbc'
