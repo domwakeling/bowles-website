@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import useSWR from "swr";
 import Racer from "./Racer";
 import modes from "../../lib/modes";
+import nums from "../../lib/racernums";
 
 const fetcher = url => fetch(url).then(r => r.json());
 
@@ -51,7 +52,9 @@ const Bookings = ({ mode, user }) => {
         );
     }
 
-    const idxs = Array.from(Array(mode == modes.TUESDAY ? 6 : 25).keys());
+    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '21052021' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
+
+    const idxs = Array.from(Array(maxRacers).keys());
 
     return (
         <div>

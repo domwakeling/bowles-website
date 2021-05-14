@@ -2,6 +2,9 @@
 
 const calendarData = [
 
+    // 2021 club fun races
+    { year: 2021, month: 5, date: 21, label: 'Club Fun Race', type: 'race' },
+    
     // 2021 tri-regional - TBC
     // { year: 2021, month: 10, date: 25, label: 'Tri-regional, CANCELLED', type: 'race' },
 

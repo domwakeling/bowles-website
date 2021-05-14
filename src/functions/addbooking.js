@@ -2,6 +2,7 @@
 
 import newClient from "../lib/db";
 import modes from "../lib/modes";
+import nums from "../lib/racernums";
 
 export async function handler(event, context) {
     // TODO: VALIDATE JWT?
@@ -45,7 +46,7 @@ export async function handler(event, context) {
                 0;
         }
 
-        const maxRacers = mode == modes.FRIDAY ? 25 : 6;
+        const maxRacers = mode == modes.FRIDAY ? (day == '21052021' ? nums.RACE : nums.FRIDAY ) : nums.TUESDAY;
 
         // no space and racer wasn't found
         if (racersCount >= maxRacers && !racerFound) {
