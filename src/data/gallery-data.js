@@ -57,8 +57,20 @@ import img56 from '../images/gallery/2019/190720_LSERSA_3_brentwood/m_mas2.jpg';
 import img57 from '../images/gallery/2019/190817_SRSA_4_bowles/Bowles.jpg';
 import img58 from '../images/gallery/2019/190920_handicap/handicap.jpg';
 import img59 from '../images/gallery/2020/200918_fun_race_1/u11_handicap.jpeg';
+import img61 from '../images/gallery/2021/210521_fun_race/tiger.jpg';
 
 const galleryData = [
+    {
+        year: '2021',
+        galleries: [
+            {
+                img: img61,
+                title: "Fun Race",
+                date: "21 May 2021",
+                link: '/gallery/2021/210521_fun_race'
+            }
+        ]
+    },
     {
         year: '2020',
         galleries: [
