@@ -23,7 +23,7 @@ const raceData2021 = {
                 ],
                 club_teams: [
                     `Bowles (Darcy Caheny, Mark Oliver, Ollie Turner-Moore, Seb Turner-Moore and Ben
-                        Wontner) were first in the club teams competition`
+                        Wontner) were third in the club teams competition`
                 ],
                 link: 'https://skiresults.co.uk/events/1134'
             },
