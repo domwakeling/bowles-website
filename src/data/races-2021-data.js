@@ -72,7 +72,29 @@ const raceData2021 = {
         message: 'All dates are provisional and subject to change or cancellation.',
         races: [
             {
-                descriptor: 'Chatham - 18th July 2021'
+                descriptor: 'Ambition (@ Chill Factore) - 29th May 2021',
+                individual: [
+                    'Rufus Wontner - 1st in U12 Boys',
+                ],
+                link: 'https://gbski.com/competition.php?ID=860'
+            },
+            {
+                descriptor: 'Excel (@ Chill Factore) - 30th May 2021',
+                individual: [
+                    'Rufus Wontner - 1st in U12 Boys',
+                    'Claudette Povey - 1st in Ladies Masters'
+                ],
+                link: 'https://gbski.com/competition.php?ID=861'
+            },
+            {
+                descriptor: 'Norfolk - 5th June 2021',
+                individual: [
+                    'Claudette Povey - 1st in Ladies Masters'
+                ],
+                link: 'https://gbski.com/competition.php?ID=866'
+            },
+            {
+                descriptor: 'Chatham - 18th July 2021',
             },
             {
                 descriptor: 'Bromley (@ Chatham) - postponed, date tbc'
