@@ -30,7 +30,7 @@ const calendarData = [
     { year: 2021, month: 9, date: 5, label: 'SRSA 5, Aldershot', type: 'race' },
     { year: 2021, month: 8, date: 7, label: 'SRSA 4,  TBC', type: 'race' },
     { year: 2021, month: 7, date: 17, label: 'SRSA 3, Chatham', type: 'race' },
-    { year: 2021, month: 6, date: 20, label: 'SRSA 2, Southampton', type: 'race' },
+    { year: 2021, month: 6, date: 20, label: 'SRSA 2, Aldershot', type: 'race' },
     { year: 2021, month: 8, date: 21, label: 'SRSA 1, Southampton', type: 'race' },
 
     // 2020 tri-regional

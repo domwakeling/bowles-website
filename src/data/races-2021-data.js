@@ -28,7 +28,26 @@ const raceData2021 = {
                 link: 'https://skiresults.co.uk/events/1134'
             },
             {
-                descriptor: 'Race 2 - Chatham - 19th June 2021'
+                descriptor: 'Race 2 - Chatham - 19th June 2021',
+                individual: [
+                    'Charlotte Currie - 2nd in Ladies U10',
+                    'Rufus Wontner - 2nd in Mens U12',
+                    'Stella Pople - 3rd in Ladies U14',
+                    'Ben Wontner - 2nd in Mens U14',
+                    'Darcy Caheny - 2nd in Ladies U16',
+                    'Seb Turner-Moore - 2nd in Mens U21',
+                    'Nigel Hilliard - 2nd in Mens Masters 2',
+                    'Anthony Forte - 3rd in Mens Masters 2',
+                ],
+                honorable: [
+                    'Ollie Turner-Moore - 4th in Mens U18',
+                    'Bill Dunnet - 4th in Mens Masters 2'
+                ],
+                club_teams: [
+                    `Bowles (Gus Caheny, Charlotte Currie and Rufus Wontner) were third in the
+                        junior club teams competition`
+                ],
+                link: 'https://skiresults.co.uk/events/1135'
             },
             {
                 descriptor: 'Race 3 - Aldershot - 4th September 2021'
@@ -47,7 +66,14 @@ const raceData2021 = {
         message: 'All dates are provisional and subject to change or cancellation.',
         races: [
             {
-                descriptor: 'Race 2 - Southampton - 20th June 2021'
+                descriptor: 'Race 2 - Aldershot - 20th June 2021',
+                individual: [
+                    'Rufus Wontner - 2nd in Mens U12',
+                    'Ben Wontner - 1st in Mens U14',
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/1129'
             },
             {
                 descriptor: 'Race 3 - Chatham - 17th July 2021'
