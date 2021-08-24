@@ -76,13 +76,38 @@ const raceData2021 = {
                 link: 'https://skiresults.co.uk/events/1129'
             },
             {
-                descriptor: 'Race 3 - Chatham - 17th July 2021'
+                descriptor: 'Race 3 - Chatham - 17th July 2021',
+                individual: [
+                    'Luke Forte - 3rd in Mens U18',
+                    'Mark Oliver - 2nd in Mens Masters 2',
+                    'Nigel Hilliard - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Charlotte Currie - 4th in Ladies U10',
+                    'Darcy Caheny - 4th in Ladies U16',
+                    'Bill Dunnet - 4th in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/1130'
             },
             {
-                descriptor: 'Race 4 - TBC - 7th August 2021'
+                descriptor: 'Race 4 - Southampton - 8th August 2021',
+                individual: [
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Luke Forte - 4th in Mens U18'
+                ],
+                link: 'https://skiresults.co.uk/events/1131'
             },
             {
                 descriptor: 'Race 1 - Southampton - 21st August 2021',
+                individual: [
+                    'Luke Forte - 3rd in Mens U18',
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/1128',
                 note: '(rescheduled)'
             },
             {
@@ -121,6 +146,29 @@ const raceData2021 = {
             },
             {
                 descriptor: 'Chatham - 18th July 2021',
+                individual: [
+                    'Nigel Hilliard - 3rd in Mens Masters'
+                ],
+                honorable: [
+                    'Darcy Caheny - 4th in Ladies U16'
+                ],
+                link: 'https://gbski.com/competition.php?ID=862'
+            },
+            {
+                descriptor: 'Pendle - 21st August 2021',
+                individual: [
+                    'Rufus Wontner - 2nd in U12 Boys',
+                    'Ben Wontner - 1st in Mens U14'
+                ],
+                link: 'https://gbski.com/competition.php?ID=869'
+            },
+            {
+                descriptor: 'Rossendale - 22nd August 2021',
+                individual: [
+                    'Rufus Wontner - 2nd in U12 Boys',
+                    'Ben Wontner - 1st in Mens U14'
+                ],
+                link: 'https://gbski.com/competition.php?ID=869'
             },
             {
                 descriptor: 'Bromley (@ Chatham) - postponed, date tbc'
