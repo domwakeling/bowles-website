@@ -50,10 +50,10 @@ const raceData2021 = {
                 link: 'https://skiresults.co.uk/events/1135'
             },
             {
-                descriptor: 'Race 3 - Aldershot - 4th September 2021'
+                descriptor: 'Race 3 - Chatham - 4th September 2021'
             },
             {
-                descriptor: 'Race 4 - Brentwood - 18th September 2021'
+                descriptor: 'Race 4 - Chatham - 18th September 2021'
             },
             {
                 descriptor: 'Race 5 - Chatham - 9th October 2021'

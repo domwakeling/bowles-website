@@ -13,6 +13,7 @@ const calendarData = [
 
     // 2021 school & ESSKIA races
     { year: 2021, month: 10, date: 3, label: 'Kent Schools', type: 'race' },
+    { year: 2021, month: 11, date: 14, label: 'Surrey Schools', type: 'race' },
 
     // 2021 CN & GBR races
     { year: 2021, month: 7, date: 18, label: 'Club National, Chatham', type: 'race' },
@@ -20,8 +21,8 @@ const calendarData = [
 
     // 2021 LSERSA races
     { year: 2021, month: 10, date: 9, label: 'LSERSA 5, Chatham', type: 'race' },
-    { year: 2021, month: 9, date: 18, label: 'LSERSA 4, Brentwood', type: 'race' },
-    { year: 2021, month: 9, date: 4, label: 'LSERSA 3, Aldershot', type: 'race' },
+    { year: 2021, month: 9, date: 18, label: 'LSERSA 4, Chatham', type: 'race' },
+    { year: 2021, month: 9, date: 4, label: 'LSERSA 3, Chatham', type: 'race' },
     { year: 2021, month: 6, date: 19, label: 'LSERSA 2, Chatham', type: 'race' },
     { year: 2021, month: 5, date: 22, label: 'LSERSA 1, Chatham', type: 'race' },
 
