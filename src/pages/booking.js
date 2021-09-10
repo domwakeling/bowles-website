@@ -81,65 +81,72 @@ const BookingPage = ({ location }) => {
 
     return (
         <Layout location={location}>
-            <BookingHeader mode={mode} setMode={setMode} handleLogout={handleLogout} />
-            {mode == modes.WELCOME ? (
-                <Welcome clickSignUp={changeToSignUp} clickLogin={changeToLogIn} />
-            ) : (
-                    ""
-            )}
-            {!user && mode != modes.WELCOME ? (
-                <SignInUp
-                    mode={mode}
-                    changeToLogIn={changeToLogIn}
-                    changeToSignUp={changeToSignUp}
-                    setSignedIn={setSignedIn}
-                />
-            ) : (
-                    ""
-            )}
-            {user ? (
-                <>
-                    {racers && racers.length > 0 ? (
-                        <UserRacers
-                            racers={racers}
-                            mode={mode}
-                            user={user}
-                            changeToAddRacer={changeToAddRacer}
-                        />
-                    ) : (
-                        <p>
-                            Please{" "}
-                            <a href="#" onClick={changeToAddRacer}>
-                                add a racer
-                            </a>
-                            .
-                        </p>
-                    )}
-                    {mode == modes.ADDING_RACER ? (
-                        <AddRacer
-                            user={user}
-                            racers={racers}
-                            setRacers={setRacers}
-                            changeToSignedIn={changeToSignedIn}
-                        />
-                    ) : (
-                        ""
-                        )}
-                    {mode == modes.FRIDAY || mode == modes.TUESDAY ? (
-                        <Bookings mode={mode} user={user} />
-                    ) : (
-                        ""
-                    )} 
-                </>
-            ) : (
-                ""
-            )}
-            <hr />
-            <p id="disclaimer">
-                This booking system uses cookies for user-account authentication
-            </p>
+            <h2>Training Booking System</h2>
+            <h4>The booking system is down for maintenance.</h4>
         </Layout>
-    );
+    )
+
+    // return (
+    //     <Layout location={location}>
+    //         <BookingHeader mode={mode} setMode={setMode} handleLogout={handleLogout} />
+    //         {mode == modes.WELCOME ? (
+    //             <Welcome clickSignUp={changeToSignUp} clickLogin={changeToLogIn} />
+    //         ) : (
+    //                 ""
+    //         )}
+    //         {!user && mode != modes.WELCOME ? (
+    //             <SignInUp
+    //                 mode={mode}
+    //                 changeToLogIn={changeToLogIn}
+    //                 changeToSignUp={changeToSignUp}
+    //                 setSignedIn={setSignedIn}
+    //             />
+    //         ) : (
+    //                 ""
+    //         )}
+    //         {user ? (
+    //             <>
+    //                 {racers && racers.length > 0 ? (
+    //                     <UserRacers
+    //                         racers={racers}
+    //                         mode={mode}
+    //                         user={user}
+    //                         changeToAddRacer={changeToAddRacer}
+    //                     />
+    //                 ) : (
+    //                     <p>
+    //                         Please{" "}
+    //                         <a href="#" onClick={changeToAddRacer}>
+    //                             add a racer
+    //                         </a>
+    //                         .
+    //                     </p>
+    //                 )}
+    //                 {mode == modes.ADDING_RACER ? (
+    //                     <AddRacer
+    //                         user={user}
+    //                         racers={racers}
+    //                         setRacers={setRacers}
+    //                         changeToSignedIn={changeToSignedIn}
+    //                     />
+    //                 ) : (
+    //                     ""
+    //                     )}
+    //                 {mode == modes.FRIDAY || mode == modes.TUESDAY ? (
+    //                     <Bookings mode={mode} user={user} />
+    //                 ) : (
+    //                     ""
+    //                 )} 
+    //             </>
+    //         ) : (
+    //             ""
+    //         )}
+    //         <hr />
+    //         <p id="disclaimer">
+    //             This booking system uses cookies for user-account authentication
+    //         </p>
+    //     </Layout>
+    // );
 };
 
 BookingPage.propTypes = {

@@ -50,7 +50,29 @@ const raceData2021 = {
                 link: 'https://skiresults.co.uk/events/1135'
             },
             {
-                descriptor: 'Race 3 - Chatham - 4th September 2021'
+                descriptor: 'Race 3 - Chatham - 4th September 2021',
+                individual: [
+                    'Athena Makonnen - 2nd in Ladies U8',
+                    'Charlotte Currie - 1st in Ladies U10',
+                    'Rufus Wontner - 2nd in Mens U12',
+                    'Darcy Caheny - 2nd in Ladies U16',
+                    'Seb Turner-Moore - 2nd in Mens U21',
+                    'Yasemin Isozu - 2nd in Ladies Seniors',
+                    'Mark Oliver - 1st in Mens Masters 2',
+                    'Nigel Hilliard - 3rd in Mens Masters 2',
+                ],
+                honorable: [
+                    'Anthony Forte - 4th in Mens Masters 2'
+                ],
+                club_teams: [
+                    `Bowles (Gus Caheny, Charlotte Currie and Rufus Wontner) were third in the
+                        junior club teams competition`
+                ],
+                fun_teams: [
+                    'Bill Dunnet and Athena Makonnen were members of the second-placed team',
+                    'Gabriel Currie was a member of the third-placed team'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1163'
             },
             {
                 descriptor: 'Race 4 - Chatham - 18th September 2021'
@@ -111,7 +133,15 @@ const raceData2021 = {
                 note: '(rescheduled)'
             },
             {
-                descriptor: 'Race 5 - Aldershot - 5th September 2021'
+                descriptor: 'Race 5 - Aldershot - 5th September 2021',
+                individual: [
+                    'Anthony Forte - 1st in Mens Masters 2',
+                    'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
+                fun_teams: [
+                    'Anthony Forte was a member of the second-placed team Bravo'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1132'
             },
             {
                 descriptor: 'Race 6 - Snowtrax - 25th September 2021'
