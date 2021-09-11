@@ -30,7 +30,7 @@ export async function handler(event) {
         const db = client.db(dbname);
         const res = await db
             .collection("users")
-            .updateOne({ _id: id }, { $addToSet: { racers: name } });
+            .updateOne({ _id: id }, { $addToSet: { racers: { name: name, club: "Bowles" } } });
         client.close();
         if (res.result.ok == 1) {
             return {

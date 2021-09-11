@@ -8,8 +8,8 @@ export async function handler(event, context) {
     // TODO: VALIDATE JWT?
 
     // retrieve info from body and validate
-    const { userid, name, day, mode, prev } = JSON.parse(event.body);
-    if (!/^\d{8}$/.test(day) || !userid || !name) {
+    const { userid, name, day, mode, prev, club } = JSON.parse(event.body);
+    if (!/^\d{8}$/.test(day) || !userid || !name || !club) {
         return {
             statusCode: 400,
             body: JSON.stringify({ message: "incorrect request format" }),
@@ -59,29 +59,22 @@ export async function handler(event, context) {
 
         // space and racer wasn't found
         if (racersCount < maxRacers && !racerFound) {
-            // if Friday, check they didn't book last week (and its weekend now)
+            // if Friday, check whether they are a Bowles racer or not
             const today = new Date().getDay();
             if((today == 0 || today == 6) && mode == modes.FRIDAY) {
-                // look for previous week's booking
-                const prevWeek = await db.collection("bookings").findOne({
-                    forWeek: prev,
-                });
-                // check there is an entry and find out if this racer was booked in
-                if (prevWeek &&
-                    prevWeek.racers.filter(r => r.userid == userid && r.name == name).length > 0) {
-                        client.close();
-                        return {
-                            statusCode: 409,
-                            body: JSON.stringify({
-                                message: `That racer trained last Friday. In order to ensure all
-                                    members get a chance to train, please wait until Monday before
-                                    booking them in to this Friday's session.`,
-                                status: 409
-                            })
-                        };
+                if (club !== 'Bowles') {
+                    client.close();
+                    return {
+                        statusCode: 409,
+                        body: JSON.stringify({
+                            message: `That racer represents another club at races. Please wait until
+                                Monday before booking them in to this Friday's session.`,
+                            status: 409
+                        })
+                    };
                 }
             }
-            // if Tuesday, check they didn't book last week (and its Weds/Thurs now)
+            // if Tuesday, check they didn't book last week/aren't Bowles (and its Weds/Thurs now)
             if ((today == 3 || today == 4) && mode == modes.TUESDAY) {
                 // look for previous week's booking
                 const prevWeek = await db.collection("bookings").findOne({
@@ -97,6 +90,18 @@ export async function handler(event, context) {
                             message: `That racer trained last Tuesday. In order to ensure all
                                     members get a chance to train, please wait until Friday before
                                     booking them in to this Tuesday's session.`,
+                            status: 409
+                        })
+                    };
+                }
+                // check they're a Bowles racer
+                if (club !== 'Bowles') {
+                    client.close();
+                    return {
+                        statusCode: 409,
+                        body: JSON.stringify({
+                            message: `That racer represents another club at races. Please wait until
+                                Friday before booking them in to this Tuesday's session.`,
                             status: 409
                         })
                     };

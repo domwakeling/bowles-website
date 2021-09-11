@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Racer = ({ name, status, clickhandler, userid, tabNum }) => {
+const Racer = ({ name, status, clickhandler, userid, tabNum, club }) => {
     const handleClick = e => {
         e.preventDefault();
         e.target.blur();
-        clickhandler(userid, name);
+        clickhandler(userid, name, club);
     };
 
     return (
@@ -32,6 +32,7 @@ Racer.defaultProps = {
     clickhandler: () => {},
     userid: "",
     tabNum: -1,
+    club: "Bowles"
 };
 
 Racer.propTypes = {
@@ -40,6 +41,7 @@ Racer.propTypes = {
     clickhandler: PropTypes.func,
     userid: PropTypes.string,
     tabNum: PropTypes.number,
+    club: PropTypes.string
 };
 
 export default Racer;

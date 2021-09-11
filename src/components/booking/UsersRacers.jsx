@@ -7,7 +7,7 @@ import { toast } from "./Toast";
 import { mutate } from "swr";
 
 const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
-    const handleRacerClick = async (userid, name) => {
+    const handleRacerClick = async (userid, name, club) => {
         if (mode == modes.FRIDAY || mode == modes.TUESDAY) {
             const bookingDay = getNextDay(
                 mode == modes.FRIDAY ? modes.FRIDAY : modes.TUESDAY
@@ -18,6 +18,7 @@ const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
                 userid,
                 name,
                 mode,
+                club
             };
             const res = await fetch("/.netlify/functions/addbooking", {
                 method: "POST",
@@ -67,10 +68,11 @@ const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
                         // eslint-disable-next-line react/no-array-index-key
                         key={idx}
                         tabNum={idx}
-                        name={racer}
+                        name={racer.name}
                         status="normal"
                         clickhandler={handleRacerClick}
                         userid={user}
+                        club={racer.club}
                     />
                 ))}
             </div>
