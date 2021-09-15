@@ -59,9 +59,11 @@ export async function handler(event, context) {
 
         // space and racer wasn't found
         if (racersCount < maxRacers && !racerFound) {
-            // if Friday, check whether they are a Bowles racer or not
-            const today = new Date().getDay();
-            if((today == 0 || today == 6) && mode == modes.FRIDAY) {
+            // if Friday, check whether they are a Bowles racer or not and its Friday night through Saturday
+            const today = new Date();
+            const weekday = today.getDay();
+            const hour = today.getHours();
+            if ((weekday == 0 || weekday == 6 || (weekday == 5 && hour > 17)) && mode == modes.FRIDAY) {
                 if (club !== 'Bowles') {
                     client.close();
                     return {
@@ -74,8 +76,8 @@ export async function handler(event, context) {
                     };
                 }
             }
-            // if Tuesday, check they didn't book last week/aren't Bowles (and its Weds/Thurs now)
-            if ((today == 3 || today == 4) && mode == modes.TUESDAY) {
+            // if Tuesday, check they didn't book last week/aren't Bowles (and its Tues night through Thursday now)
+            if ((weekday == 3 || weekday == 4 || ( weekday == 2 && hour > 15)) && mode == modes.TUESDAY) {
                 // look for previous week's booking
                 const prevWeek = await db.collection("bookings").findOne({
                     forWeek: prev,
