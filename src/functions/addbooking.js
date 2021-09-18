@@ -46,7 +46,8 @@ export async function handler(event, context) {
                 0;
         }
 
-        const maxRacers = mode == modes.FRIDAY ? (day == '21052021' ? nums.RACE : nums.FRIDAY ) : nums.TUESDAY;
+        const nextRace = "01102021";
+        const maxRacers = mode == modes.FRIDAY ? (day == nextRace ? nums.RACE : nums.FRIDAY ) : nums.TUESDAY;
 
         // no space and racer wasn't found
         if (racersCount >= maxRacers && !racerFound) {
@@ -59,10 +60,22 @@ export async function handler(event, context) {
 
         // space and racer wasn't found
         if (racersCount < maxRacers && !racerFound) {
-            // if Friday, check whether they are a Bowles racer or not and its Friday night through Saturday
-            const today = new Date();
+            const today = newDate();
             const weekday = today.getDay();
             const hour = today.getHours();
+            // if it's a fun-race and they're not a Bowles racer, not allowed
+            if (day == nextRace && club !='Bowles') {
+                client.close();
+                return {
+                    statusCode: 409,
+                    body: JSON.stringify({
+                        message: `That racer represents another club at races. Unfortunately
+                            they cannot take part in this week's fun race.`,
+                        status: 409
+                    })
+                };
+            }
+            // if Friday, check whether they are a Bowles racer or not and its Friday night through Saturday
             if ((weekday == 0 || weekday == 6 || (weekday == 5 && hour > 17)) && mode == modes.FRIDAY) {
                 if (club !== 'Bowles') {
                     client.close();
