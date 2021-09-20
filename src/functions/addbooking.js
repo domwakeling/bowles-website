@@ -60,7 +60,7 @@ export async function handler(event, context) {
 
         // space and racer wasn't found
         if (racersCount < maxRacers && !racerFound) {
-            const today = newDate();
+            const today = new Date();
             const weekday = today.getDay();
             const hour = today.getHours();
             // if it's a fun-race and they're not a Bowles racer, not allowed
