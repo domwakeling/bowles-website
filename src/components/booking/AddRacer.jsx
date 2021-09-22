@@ -33,7 +33,11 @@ const AddRacer = ({ user, racers, setRacers, changeToSignedIn }) => {
             let currRacers = await racers;
             if (currRacers.indexOf(racerName) < 0) {
                 // confirm doesn't already exist => already protected in API
-                currRacers = [...currRacers, racerName];
+                const newRacerObj = {
+                    name: racerName,
+                    club: 'Bowles'
+                };
+                currRacers = [...currRacers, newRacerObj];
                 toast.notify("Racer added", {
                     type: "success",
                     title: "Success",
