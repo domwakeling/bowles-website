@@ -75,7 +75,26 @@ const raceData2021 = {
                 link: 'https://www.skiresults.co.uk/events/1163'
             },
             {
-                descriptor: 'Race 4 - Chatham - 18th September 2021'
+                descriptor: 'Race 4 - Chatham - 18th September 2021',
+                individual: [
+                    'Charlotte Currie - 3rd in Ladies U10',
+                    'Stella Pople - 3rd in Ladies U14',
+                    'Darcy Caheny - 2nd in Ladies U16',
+                    'Yasemin Isozu - 1st in Ladies Seniors',
+                    'Alex Makonnen - 1st in Mens Masters 1',
+                    'Nigel Hilliard - 2nd in Mens Masters 2',
+                    'Bill Dunnet - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Athena Makonnen - 4th in Ladies U8',
+                    'Elara Makonnen was a member of the fourth-placed fun team'
+                ],
+                fun_teams: [
+                    'Gas Caheny was a member of the winning team',
+                    'Stella Pople was a member of the second-placed team',
+                    'Yasemin Isozu and Amelie Watts were members of the third-placed team'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1165'
             },
             {
                 descriptor: 'Race 5 - Chatham - 9th October 2021'
