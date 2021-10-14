@@ -1,5 +1,5 @@
 const nums = {
-    TUESDAY: 6,
+    TUESDAY: 8,
     FRIDAY: 25,
     RACE: 40,
 };
