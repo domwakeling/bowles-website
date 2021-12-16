@@ -80,11 +80,10 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            { (nextFri[0] == "26032021" && mode == modes.FRIDAY) || (nextTue[0] == "23032021" && mode == modes.TUESDAY) ? (
+            {(nextFri[0] == "24122021" && mode == modes.FRIDAY) || (nextFri[0] == "31122021" && mode == modes.FRIDAY) || (nextTue[0] == "28122021" && mode == modes.TUESDAY) ? (
                 <p className="alert-text">
-                    The centre is currently shut in accordance with Covid restrictions. Bookings will
-                    re-open the {mode == modes.FRIDAY ? "Saturday" : "Wednesday"} before the first
-                    training session after lockdown ends.
+                    There is no race club from Friday 24th &amp; Friday 31st December (inclusive).
+                    Training will resume in January!
                 </p>
             ) : (
                 <div className="racerlist">

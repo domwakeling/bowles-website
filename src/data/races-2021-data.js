@@ -97,10 +97,38 @@ const raceData2021 = {
                 link: 'https://www.skiresults.co.uk/events/1165'
             },
             {
-                descriptor: 'Race 5 - Chatham - 9th October 2021'
+                descriptor: 'Race 5 - Chatham - 9th October 2021',
+                individual: [
+                    'Athena Makonnen - 3rd in Ladies U8',
+                    'Charlotte Currie - 1st in ladies U10',
+                    'Stella Pople - 3rd in Ladies U14',
+                    'Seb Turner-Moore - 2nd in Mens U21',
+                    'Yasemin Isozu - 2nd in Ladies Seniors',
+                    'Alexander Makonnen - 1st in Mens Masters 1',
+                    'Mark Oliver - 1st in Mens Masters 2',
+                    'Bill Dunnet - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Nigel Hilliard - 4th in Mens Masters 2'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1164'
             }
-
-        ]
+        ],
+        season: {
+            individual: [
+                'Charlotte Currie - 2nd in Ladies U10',
+                'Stella Pople - 3rd in Ladies U14',
+                'Darcy Caheny - 2nd in Ladies U16',
+                'Seb Turner-Moore - 2nd in Mens U21',
+                'Yasemin Isozu - 1st in Ladies Seniors',
+                'Mark Oliver - 2nd in Male Masters 2',
+                'Nigel Hilliard - 3rd in Male Masters 2'
+            ],
+            honorable: [
+                'Rufus Wontner - 4th in Mens U12',
+                'Anthony Forte - 4th in Male Masters 2'
+            ]
+        }
     },
     SRSA: {
         title: 'SRSA 2021 Summer Race Series',
@@ -163,7 +191,12 @@ const raceData2021 = {
                 link: 'https://www.skiresults.co.uk/events/1132'
             },
             {
-                descriptor: 'Race 6 - Snowtrax - 25th September 2021'
+                descriptor: 'Race 6 - Snowtrax - 25th September 2021',
+                individual: [
+                    'Luke Forte - 3rd in Mens U18',
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ]
             }
         ]
     },
