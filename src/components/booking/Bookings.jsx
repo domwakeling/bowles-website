@@ -80,10 +80,10 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {(nextFri[0] == "24122021" && mode == modes.FRIDAY) || (nextFri[0] == "31122021" && mode == modes.FRIDAY) || (nextTue[0] == "28122021" && mode == modes.TUESDAY) ? (
+            {((nextFri[0] == "21012022" && mode == modes.FRIDAY) || (nextFri[0] == "28012022" && mode == modes.FRIDAY) || (nextFri[0] == "04022022" && mode == modes.FRIDAY) || (nextTue[0] == "01022022" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    There is no race club from Friday 24th &amp; Friday 31st December (inclusive).
-                    Training will resume in January!
+                    Unfortunately there is no race club at the moment.
+                    Please keep an eye on Facebook or the WhatsApp chat for updates.
                 </p>
             ) : (
                 <div className="racerlist">
