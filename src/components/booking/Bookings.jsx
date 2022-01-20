@@ -80,7 +80,7 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "21012022" && mode == modes.FRIDAY) || (nextFri[0] == "28012022" && mode == modes.FRIDAY) || (nextFri[0] == "04022022" && mode == modes.FRIDAY) || (nextTue[0] == "01022022" && mode == modes.TUESDAY)) ? (
+            {((nextFri[0] == "21012022" && mode == modes.FRIDAY) || (nextFri[0] == "28012022" && mode == modes.FRIDAY) || (nextFri[0] == "04022022" && mode == modes.FRIDAY) || (nextTue[0] == "25012022" && mode == modes.TUESDAY) || (nextTue[0] == "01022022" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
                     Unfortunately there is no race club at the moment.
                     Please keep an eye on Facebook or the WhatsApp chat for updates.
