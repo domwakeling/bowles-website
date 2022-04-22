@@ -1,5 +1,6 @@
 const raceData = [
-    { title: '2021', link: '/races/' },
+    { title: '2022', link: '/races/' }, 
+    { title: '2021', link: '/races/2021' },
     { title: '2020', link: '/races/2020' },
     { title: '2019', link: '/races/2019' },
     { title: '2018', link: '/races/2018' },

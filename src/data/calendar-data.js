@@ -2,6 +2,37 @@
 
 const calendarData = [
 
+    // 2022 club fun races
+    { year: 2022, month: 4, date: 29, label: 'Club Fun Race', type: 'race' },
+
+    // 2022 LSERSA races
+    { year: 2022, month: 10, date: 15, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2022, month: 9, date: 4, label: 'LSERSA 4, Aldershot', type: 'race' },
+    { year: 2022, month: 7, date: 16, label: 'LSERSA 3, Brentwood', type: 'race' },
+    { year: 2022, month: 6, date: 11, label: 'LSERSA 2, Welwyn', type: 'race' },
+    { year: 2022, month: 5, date: 28, label: 'LSERSA 1, Chatham', type: 'race' },
+
+    // 2022 SRSA races
+    { year: 2022, month: 9, date: 24, label: 'SRSA 6, Aldershot', type: 'race' },
+    { year: 2022, month: 9, date: 3, label: 'SRSA 5, Snowtrax', type: 'race' },
+    { year: 2022, month: 7, date: 23, label: 'SRSA 4,  Bowles', type: 'race' },
+    { year: 2022, month: 7, date: 10, label: 'SRSA 3, Chatham', type: 'race' },
+    { year: 2022, month: 6, date: 19, label: 'SRSA 2, Southampton', type: 'race' },
+    { year: 2022, month: 4, date: 23, label: 'SRSA 1, Snowtrax', type: 'race' },
+
+    // 2022 school & ESSKIA races
+    { year: 2022, month: 5, date: 8, label: 'Kent Schools', type: 'race' },
+    { year: 2022, month: 11, date: 13, label: 'Surrey Schools', type: 'race' },
+
+    // 2022 CN & GBR races
+    { year: 2022, month: 7, date: 22, label: 'Club National, Chatham', type: 'race' },
+    { year: 2022, month: 8, date: 28, label: 'All-England Champs, Chatham', type: 'race' },
+    { year: 2022, month: 8, date: 27, label: 'All-England Inter-Club, Chatham', type: 'race' },
+    // { year: 2022, month: 5, date: 22, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
+
+    // 2022 'other'
+    { year: 2022, month: 10, date: 15, label: 'Night Race, Chatham', type: 'race' },
+
     // 2021 club fun races
     { year: 2021, month: 5, date: 21, label: 'Club Fun Race', type: 'race' },
     

@@ -46,7 +46,7 @@ export async function handler(event, context) {
                 0;
         }
 
-        const nextRace = "01102021";
+        const nextRace = "29042022";
         const maxRacers = mode == modes.FRIDAY ? (day == nextRace ? nums.RACE : nums.FRIDAY ) : nums.TUESDAY;
 
         // no space and racer wasn't found
