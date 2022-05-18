@@ -3,7 +3,7 @@ const raceData2022 = {
         title: 'LSERSA 2022 Summer Race Series',
         races: [
             {
-                descriptor: 'Race 1 - Chatham - 5th May 2022',
+                descriptor: 'Race 1 - Chatham - 28th May 2022',
                 // link: 'https://skiresults.co.uk/events/1184'
             },
             {
@@ -64,7 +64,7 @@ const raceData2022 = {
         // title, races with {descriptor, individual, honorable, link }
     },
     Kent: {
-        descriptor: 'Kent Schools Ski Championship - Chatham - 8th  2022',
+        descriptor: 'Kent Schools Ski Championship - Chatham - 8th May 2022',
         // individual, primary_teams, secondary_teams, fun_teams, honorable, link
     },
     TriRegion: {
