@@ -25,7 +25,7 @@ const calendarData = [
     { year: 2022, month: 11, date: 13, label: 'Surrey Schools', type: 'race' },
 
     // 2022 CN & GBR races
-    { year: 2022, month: 7, date: 22, label: 'Club National, Chatham', type: 'race' },
+    { year: 2022, month: 7, date: 9, label: 'Club National, Chatham', type: 'race' },
     { year: 2022, month: 8, date: 28, label: 'All-England Champs, Chatham', type: 'race' },
     { year: 2022, month: 8, date: 27, label: 'All-England Inter-Club, Chatham', type: 'race' },
     // { year: 2022, month: 5, date: 22, label: 'Club National, Bromley (@ Chatham)', type: 'race' },

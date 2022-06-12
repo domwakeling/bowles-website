@@ -4,11 +4,34 @@ const raceData2022 = {
         races: [
             {
                 descriptor: 'Race 1 - Chatham - 28th May 2022',
-                // link: 'https://skiresults.co.uk/events/1184'
+                individual: [
+                    'Gabriel Currie - 1st in Mens U8',
+                    'Oscar Harris - 3rd in Mens U8',
+                    'Charlotte Currie - 2nd in Ladies U12',
+                    'Stella Pople - 3rd in Ladies U14',
+                    'Rufus Wontner - 2nd in Mens U14',
+                    'Yasmin Isozu - 2nd in Ladies Seniors',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Lorraine Deschamps-Smith - 4th in Ladies U12',
+                    'Ben Wontner - 4th in Mens U16'
+                ],
+                link: 'https://skiresults.co.uk/events/1184'
             },
             {
                 descriptor: 'Race 2 - Welwyn - 11th June 2022',
-                // link: 'https://skiresults.co.uk/events/1182'
+                individual: [
+                    'Gabriel Currie - 1st in Mens U8',
+                    'Amelie Watts - 1st in Ladies U10',
+                    'Charlotte Currie - 2nd in Ladies U12',
+                    'Anthony Forte - 3rd in Mens Masters 2'
+                ],
+                club_teams: [
+                    `Bowles (Gabriel Currie, Charlotte Currie and Amelie Watts) were third in the
+                        junior club teams competition`
+                ],
+                link: 'https://skiresults.co.uk/events/1182'
             },
             {
                 descriptor: 'Race 3 - Brentwood - 16th July 2022',
@@ -57,7 +80,7 @@ const raceData2022 = {
         title: 'SSE Club National Series 2022',
         races: [
             {
-                descriptor: 'Chatham - 22nd July 2022',
+                descriptor: 'Chatham - 9th July 2022',
                 // link: 'https://gbski.com/competition.php?ID=1023'
             }
         ]
