@@ -35,7 +35,21 @@ const raceData2022 = {
             },
             {
                 descriptor: 'Race 3 - Brentwood - 16th July 2022',
-                // link: 'https://www.skiresults.co.uk/events/1190'
+                individual: [
+                    'Amelie Watts - 1st in Ladies U10',
+                    'Antonia Wilson - 3rd in Ladies U12',
+                    'Lucy Wilson - 2nd is Ladies U14',
+                    'Yasemin Isozu - 1st in Ladies Seniors',
+                    'Mark Oliver - 1st in Mens Masters 2',
+                    'Anthony Forte - 3rd in Mens Masters 2'
+                ],
+                fun_teams: [
+                    'Amelie Watts was a member of the winning Team A'
+                ],
+                honorable: [
+                    'Stella Pople - 4th in Ladies U14'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1190'
             },
             {
                 descriptor: 'Race 4 - Aldershot - 4th September 2022',
@@ -81,7 +95,13 @@ const raceData2022 = {
         races: [
             {
                 descriptor: 'Chatham - 9th July 2022',
-                // link: 'https://gbski.com/competition.php?ID=1023'
+                individual: [
+                    'Amelie Watts - 2nd in Ladies U10'
+                ],
+                honorable: [
+                    'Darcy Caheny - 4th in Ladies U18'
+                ],
+                link: 'https://gbski.com/competition.php?ID=1023'
             }
         ]
         // title, races with {descriptor, individual, honorable, link }
