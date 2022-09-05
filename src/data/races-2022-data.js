@@ -53,7 +53,15 @@ const raceData2022 = {
             },
             {
                 descriptor: 'Race 4 - Aldershot - 4th September 2022',
-                // link: 'https://www.skiresults.co.uk/events/1183'
+                individual: [
+                    'Amelie Watts - 1st in Ladies U10',
+                    'Charlotte Currie - 2nd in Ladies U12',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Gabriel Currie - 4th in Mens U8'  
+                ],
+                link: 'https://www.skiresults.co.uk/events/1183'
             },
             {
                 descriptor: 'Race 5 - Chatham - 15th October 2022',
@@ -70,23 +78,78 @@ const raceData2022 = {
             },
             {
                 descriptor: 'Race 2 - Southampton - 19th June 2022',
-                // link: 'https://skiresults.co.uk/events/1175'
+                individual: [
+                    'Gabriel Currie - 1st in Mens U8',
+                    'Charlotte Currie - 3rd in Ladies U12'
+                ],
+                link: 'https://skiresults.co.uk/events/1175'
             },
             {
                 descriptor: 'Race 3 - Chatham - 10th July 2022',
-                // link: 'https://skiresults.co.uk/events/1176'
+                individual: [
+                    'Phoebe Harris - 3rd in Ladies U8',
+                    'Gabriel Currie - 1st in Mens U8',
+                    'Amelie Watts - 1st in Ladies U10',
+                    'Charlotte Currie - 3rd in Ladies U12',
+                    'Yasemin Isozu - 1st in Ladies Seniors',
+                    'Mark Oliver - 1st in Mens Masters 2',
+                    'Anthony Forte - 2nd in Mens Masters 2',
+                    'Simon Everitt - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Erin Swindlehurst - 4th in Ladies U10'
+                ],
+                link: 'https://skiresults.co.uk/events/1176'
             },
             {
                 descriptor: 'Race 4 - Bowles - 23rd July 2022',
-                // link: 'https://skiresults.co.uk/events/1127'
+                individual: [
+                    'Phoebe Harris - 3rd in Mens U8',
+                    'Amelie Watts - 1st in Ladies U10',
+                    'Lorraine Deschamps-Smith - 2nd in Ladies U12',
+                    'Stella Pople - 3rd in Ladies U14',
+                    'Darcy Caheny - 2nd in Ladies U18',
+                    'Toby Pople - 3rd in Mens U18',
+                    'Yasemin Isozu - 2sti n Ladies Seniors',
+                    'Mark Oliver - 1st in Mens Masters 2',
+                    'Nigel Hilliard - 2nd in Mens Masters 2',
+                    'Fergus Caheny - 3rd in Mens Masters 2'
+                ],
+                club_teams: [
+                    `Bowles (Darcy Caheny, Gus Caheny, Stella Pople, Toby Pople) were third in the
+                        U16 club teams competition`
+                ],
+                honorable: [
+                    'Oscar Harris - 4th in Mens U10',
+                    'Emila Drennan - 4th in Ladies U12',
+                    'Bowles were 4th in the open club teams competiion',
+                    'Nigel Hilliard was a member of the 4th-placed fun team'
+                ],
+                link: 'https://skiresults.co.uk/events/1127'
             },
             {
                 descriptor: 'Race 5 - Snowtrax - 3rd September 2022',
-                // link: 'https://www.skiresults.co.uk/events/1178'
+                individual: [
+                    'Gabriel Currie - 3rd in Mens U8',
+                    'Amelie Watts - 3rd in Ladies U10',
+                    'Charlotte Currie - 3nd in Ladies U12',
+                    'Rebecca Forte - 2nd in Ladies U21',
+                    'Mark Oliver - 1st in Mens Masters 2',
+                    'Nigel Hilliard - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Anthony Forte - 4th in Mens Masters 2',
+                    'Gabriel Currie was a member of the 4th-placed fun team'
+                ],
+                fun_teams: [
+                    'Charlotte Currie was a member of the 2nd-placed Team Alpha',
+                    'Amelie Watts was a member of the 3rd-placed Team Echo'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1178'
             },
             {
                 descriptor: 'Race 6 - Aldershot - 24th September 2022',
-                // link: 'https://www.skiresults.co.uk/events/1179'
+                link: 'https://www.skiresults.co.uk/events/1179'
             }
         ]
     },
