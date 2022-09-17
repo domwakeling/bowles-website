@@ -1,7 +1,7 @@
 const nums = {
     TUESDAY: 8,
     FRIDAY: 25,
-    RACE: 40,
+    RACE: 45,
 };
 
 export default nums;

@@ -52,7 +52,7 @@ const Bookings = ({ mode, user }) => {
         );
     }
 
-    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '29042022' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
+    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '07102022' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
 
     const idxs = Array.from(Array(maxRacers).keys());
 
