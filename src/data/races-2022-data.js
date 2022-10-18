@@ -65,9 +65,35 @@ const raceData2022 = {
             },
             {
                 descriptor: 'Race 5 - Chatham - 15th October 2022',
-                // link: 'https://www.skiresults.co.uk/events/1186'
+                individual: [
+                    'Phoebe Harris - 3rd in Ladies U8',
+                    'Gabriel Currie - 3rd in Mens U8',
+                    'Amelie Watts - 1st in Ladies U10',
+                    'Mark Oliver - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Erin Swindlehurst - 4th in Ladies U10',
+                    'Charlotte Currie - 4th in Ladies U12',
+                    'Anthony Forte - 4th in Mens Masters 2'
+                ],
+                fun_teams: [
+                    'Phoebe Harris and Erin Swindlehurst were members of the 2nd - placed team '
+                ],
+                link: 'https://www.skiresults.co.uk/events/1186'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Gabriel Currie - 2nd in Mens U8',
+                'Amelie Watts - 1st in Ladies U10',
+                'Charlotte Currie - 2nd in Ladies U12',
+                'Yasemin Isozu - 2nd in Ladies Seniors',
+                'Anthony Forte - 2nd in Mens Masters 2'
+            ],
+            honorable: [
+                'Stella Pople - 4th in Ladies U14'
+            ]
+        }
     },
     SRSA: {
         title: 'SRSA 2022 Summer Race Series',
@@ -149,9 +175,21 @@ const raceData2022 = {
             },
             {
                 descriptor: 'Race 6 - Aldershot - 24th September 2022',
+                individual: [
+                    'Yasemin Isozu - 1st in Lades Seniors',
+                    'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
                 link: 'https://www.skiresults.co.uk/events/1179'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Gabriel Currie - 3rd in Mens U8',
+                'Charlotte Currie - 3rd in Ladies U12',
+                'Yasemin Isozu - 1st in Ladies Seniors',
+                'Mark Oliver - 1st in Mens Masters 2'
+            ]
+        }
     },
     ClubNational: {
         title: 'SSE Club National Series 2022',

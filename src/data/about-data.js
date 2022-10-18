@@ -46,12 +46,12 @@ const adboutData = [
     },
     {
         idx: 5,
-        name: 'Marna Wakeling - Club Welfare Officer',
+        name: 'Jenni Watts - Club Welfare Officer',
         email: 'cwo@bowlesskiracingclub.org.uk',
-        blurb: `I started skiing in my mid-30s and have two children at the club who are much better
-                than me! The club is very welcoming to new members, whether they want to go on to
-                race or not. Please contact me if you have any concerns over welfare or safeguarding
-                issues.`
+        blurb: `My eldest daughter is a member of race club. Alongside excellent coaching and racing
+                opportunities, it is a lovely community to be a part of. As a paediatric physio by
+                profession, I have a high level of safeguarding training and knowledge. Please do
+                not hesitate to contact me if you have any queries/concerns regarding child welfare.`
     },
     {
         idx: 6,

@@ -184,6 +184,15 @@ const SignInUp = ({
                             create a new account?
                         </a>
                     </p>
+                    <p style={{ paddingTop: "1rem" }}>
+                        <a href="https://bowles-friday-training.vercel.app/forget-password">
+                            Forgotten password?
+                        </a>
+                        &nbsp;
+                        <span style={{ fontStyle: "italic", color: "gray" }}>
+                            (This will take you to another website to reset your password)
+                        </span>
+                    </p>
                 </>
             ) : (
                 <>
