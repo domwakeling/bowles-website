@@ -54,6 +54,8 @@ const Bookings = ({ mode, user }) => {
 
     const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '07102022' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
 
+    const firstTues = parseInt(nextTue[0].substring(0,2)) <= 7 ? true : false;
+
     const idxs = Array.from(Array(maxRacers).keys());
 
     return (
@@ -80,26 +82,34 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "09092022" && mode == modes.FRIDAY) || (nextTue[0] == "23082022" && mode == modes.TUESDAY) || (nextTue[0] == "31082022" && mode == modes.TUESDAY)) ? (
+            {((nextFri[0] == "09092022" && mode == modes.FRIDAY) || (nextTue[0] == "23082022" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    Unfortunately there will be no training session on Friday 9th September.
+                    *CHANGE MESSAGE HERE TO ADVISE NO SKIING*
                 </p>
             ) : (
-                <div className="racerlist">
-                    {idxs.map(i =>
-                        data && data.racers && data.racers[mode].length > i ? (
-                            <Racer
-                                key={i}
-                                tabNum={i}
-                                name={data.racers[mode][i].name}
-                                status={
-                                    data.racers[mode][i].userid == user ? "highlight" : "normal"
-                                }
-                            />
-                        ) : (
-                            <Racer key={i} name="free" status="unused" />
-                        )
-                    )}
+                <div>
+                    {(mode == modes.TUESDAY && firstTues) ? (
+                        <p className="alert-text">
+                            The first Tuesday training each month is an Over The Hill session,
+                            reserved for over-18s
+                        </p>
+                    ) : '' }
+                    <div className="racerlist">
+                        {idxs.map(i =>
+                            data && data.racers && data.racers[mode].length > i ? (
+                                <Racer
+                                    key={i}
+                                    tabNum={i}
+                                    name={data.racers[mode][i].name}
+                                    status={
+                                        data.racers[mode][i].userid == user ? "highlight" : "normal"
+                                    }
+                                />
+                            ) : (
+                                <Racer key={i} name="free" status="unused" />
+                            )
+                        )}
+                    </div>
                 </div>
             )}
         </div>

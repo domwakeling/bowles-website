@@ -32,7 +32,7 @@ const calendarData = [
     // { year: 2022, month: 5, date: 22, label: 'Club National, Bromley (@ Chatham)', type: 'race' },
 
     // 2022 'other'
-    { year: 2022, month: 10, date: 15, label: 'Night Race, Chatham', type: 'race' },
+    { year: 2022, month: 11, date: 5, label: 'Night Race, Chatham', type: 'race' },
 
     // 2021 club fun races
     { year: 2021, month: 5, date: 21, label: 'Club Fun Race', type: 'race' },

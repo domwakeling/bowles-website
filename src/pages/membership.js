@@ -9,8 +9,8 @@ const IndexPage = ({location}) => (
         <h2>Membership Information</h2>
         <p>We hold training sessions at <a href="http://www.bowles.ac/" rel="noopener noreferrer" 
             target="_blank" >Bowles Outdoor Centre</a> every Friday evening from 5:30 to 7:30, and
-            Tuesday evenings (which are limited to six racers) from 6:30-7:30 (except for Christmas Day
-            and New Year!).</p>
+            Tuesday evenings (which are limited to six racers) from 6:30-7:30 (except for Christmas
+            Day and New Year!).</p>
         <p>A typical session starts with a short period of warm-up exercises, and for this reason we
             ask everyone to arrive as early as possible. This is followed by progressive instruction
             and we normally end with evening with informal slalom or dual slalom. We also hold timed
@@ -29,7 +29,7 @@ const IndexPage = ({location}) => (
             to="/about">get in touch</Link>, we look forward to meeting you.</p>
         <hr />
         <p>Annual membership charges are &pound;35 for an individual, with a reduced charge of
-            &pound;16 for extra family members. There is also a charge of &pound;10 per person for
+            &pound;16 for extra family members. There is also a charge of &pound;11 per person for
             each training session.</p>
         <hr />
     </Layout>
