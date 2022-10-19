@@ -207,10 +207,10 @@ const raceData2022 = {
         ]
         // title, races with {descriptor, individual, honorable, link }
     },
-    Kent: {
-        descriptor: 'Kent Schools Ski Championship - Chatham - 8th May 2022',
-        // individual, primary_teams, secondary_teams, fun_teams, honorable, link
-    },
+    // Kent: {
+    //     descriptor: 'Kent Schools Ski Championship - Chatham - 8th May 2022',
+    //     // individual, primary_teams, secondary_teams, fun_teams, honorable, link
+    // },
     TriRegion: {
         descriptor: 'Tri-Regional - TBC'
         // tri_teams, link

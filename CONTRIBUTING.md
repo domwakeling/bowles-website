@@ -287,34 +287,37 @@ const raceData{year} = {
                 ],
                 honorable: [
                     // any honorable mentions as array of strings
-                ]
+                ],
                 link: 'http://www.xyz.org' // link to the results
             },
-                // ... add another object in the races array for each race
+            // ... add another object in the races array for each race
         ],
-        season: [
-                // available key are: individual, special, link
-        ]
+        season: {
+            // available key are: individual, special, link
+        }
     },
     SRSA: {
         title: 'SRSA {year] Summer Race Series',
         races: [
-                // all as for LSERSA
+            // all as for LSERSA
         ],
-        season: [
-
+        season: {
+            // as for LSERSA
+        }
+    },
+    ClubNational: {    
+        title: 'SSE Club National Series {Year}',
+        races: [
+            // races with {descriptor, individual, honorable, link}
         ]
     },
-    ClubNational: {
-                // title, races with {descriptor, individual, honorable, link }
-    }
     Kent: {
         descriptor: 'Kent Schools Ski Championship - {Location} - {Date}',
-                // individual, primary_teams, secondary_teams, fun_teams, honorable, link
+        // individual, primary_teams, secondary_teams, fun_teams, honorable, link
     },
     TriRegion: {
         descriptor: 'Tri-Regional - {Location} - {Date}',
-                // tri_teams, link
+        // tri_teams, link
     }
 };
 
