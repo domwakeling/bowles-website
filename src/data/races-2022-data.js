@@ -212,7 +212,11 @@ const raceData2022 = {
     //     // individual, primary_teams, secondary_teams, fun_teams, honorable, link
     // },
     TriRegion: {
-        descriptor: 'Tri-Regional - TBC'
+        descriptor: 'Tri-Regional - Welwyn - 2nd October 2022',
+        tri_teams: [
+            'Charlotte Currie was a member of the second-placed team in the Cup competition',
+            'Anthony Forte was a member of the third-placed team in the Cup competition',
+        ]
         // tri_teams, link
     },
     // SouthernChamps: {

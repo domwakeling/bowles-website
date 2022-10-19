@@ -263,10 +263,10 @@ const raceData2021 = {
         note: 'There is no race for the 2020/21 school year'
         // individual, primary_teams, secondary_teams, fun_teams, honorable, link
     },
-    TriRegion: {
-        descriptor: 'Tri-Regional - TBC'
-        // tri_teams, link
-    },
+    // TriRegion: {
+    //     descriptor: 'Tri-Regional - TBC'
+    //     // tri_teams, link
+    // },
     // SouthernChamps: {
     //     descriptor: 'Southern England Championships - Welwyn - 17th October 2021',
     //     note: 'CANCELLED'
