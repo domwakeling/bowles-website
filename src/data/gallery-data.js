@@ -59,6 +59,8 @@ import img58 from '../images/gallery/2019/190920_handicap/handicap.jpg';
 import img59 from '../images/gallery/2020/200918_fun_race_1/u11_handicap.jpeg';
 import img61 from '../images/gallery/2021/210521_fun_race/tiger.jpg';
 import img62 from '../images/gallery/2022/221007_fun_race/mens.jpg';
+import img63 from '../images/gallery/2022/220611_lsersa_2/mas2_m.jpg';
+import img64 from '../images/gallery/2022/220716_lsersa_3/sen_l.jpg';
 
 const galleryData = [
     {
@@ -69,6 +71,18 @@ const galleryData = [
                 title: "Fun Race",
                 date: "7 October 2022",
                 link: '/gallery/2022/221007_fun_race'
+            },
+            {
+                img: img64,
+                title: "LSERSA 3, Brentwood",
+                date: "16 July 2022",
+                link: '/gallery/2022/220716_lsersa_3'
+            },
+            {
+                img: img63,
+                title: "LSERSA 2, Welwyn",
+                date: "11 June 2022",
+                link: '/gallery/2022/220611_lsersa_2'
             }
         ]
     },
