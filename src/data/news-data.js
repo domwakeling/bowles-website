@@ -7,7 +7,7 @@
 const newsData = [
     {
         year: '2022',
-        months: ['october', 'september', 'august']
+        months: ['october', 'september', 'august', 'april']
     },
     {
         year: '2021',
