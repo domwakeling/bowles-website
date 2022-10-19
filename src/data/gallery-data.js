@@ -58,8 +58,20 @@ import img57 from '../images/gallery/2019/190817_SRSA_4_bowles/Bowles.jpg';
 import img58 from '../images/gallery/2019/190920_handicap/handicap.jpg';
 import img59 from '../images/gallery/2020/200918_fun_race_1/u11_handicap.jpeg';
 import img61 from '../images/gallery/2021/210521_fun_race/tiger.jpg';
+import img62 from '../images/gallery/2022/221007_fun_race/mens.jpg';
 
 const galleryData = [
+    {
+        year: '2022',
+        galleries: [
+            {
+                img: img62,
+                title: "Fun Race",
+                date: "7 October 2022",
+                link: '/gallery/2022/221007_fun_race'
+            }
+        ]
+    },
     {
         year: '2021',
         galleries: [
