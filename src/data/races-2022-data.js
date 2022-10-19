@@ -176,8 +176,16 @@ const raceData2022 = {
             {
                 descriptor: 'Race 6 - Aldershot - 24th September 2022',
                 individual: [
+                    'Gabriel Currie - 2nd in Mens U8',
+                    'Amelie Watts - 1st in Ladies U10',
                     'Yasemin Isozu - 1st in Lades Seniors',
                     'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
+                fun_teams: [
+                    'Charlotte Currie was a member of the 3rd-placed fun team'
+                ],
+                honorable: [
+                    'Charlotte Currie - 4th in Ladies U12'
                 ],
                 link: 'https://www.skiresults.co.uk/events/1179'
             }
@@ -185,9 +193,14 @@ const raceData2022 = {
         season: {
             individual: [
                 'Gabriel Currie - 3rd in Mens U8',
+                'Amelie Watts - 2nd in Ladies U10',
                 'Charlotte Currie - 3rd in Ladies U12',
                 'Yasemin Isozu - 1st in Ladies Seniors',
-                'Mark Oliver - 1st in Mens Masters 2'
+                'Mark Oliver - 1st in Mens Masters 2',
+                'Nigel Hilliard - 2nd in Mens Masters 2'
+            ],
+            honorable: [
+                'Anthony Forte - 4th in Mens Masters 2'
             ]
         }
     },
