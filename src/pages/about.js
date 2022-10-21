@@ -7,11 +7,11 @@ import Layout from '../components/Layout.jsx';
 
 import img0 from '../images/about/John_M.jpg';
 import img1 from '../images/about/Tom.jpg';
-import img2 from '../images/about/Ben.jpg';
+import img2 from '../images/about/placeholder.jpg';
 import img3 from '../images/about/Nigel.jpg';
 import img4 from '../images/about/Simon.jpg';
 import img5 from '../images/about/placeholder.jpg';
-import img6 from '../images/about/Joshua.jpg';
+import img6 from '../images/about/Stella.jpg';
 
 const images = [img0, img1, img2, img3, img4, img5, img6];
 

@@ -18,13 +18,9 @@ const adboutData = [
     },
     {
         idx: 2,
-        name: 'Ben Turner-Moore - Secretary',
+        name: 'James Currie - Secretary',
         email: 'secretary@bowlesskiracingclub.org.uk',
-        blurb: `I learnt to ski on a local dry slope in my early 20s and it kick-started my love for
-                skiing. Now I support my two sons who train and race with Bowles Ski Racing Club. I
-                can clearly see the benefits that training on a dry slope brings to their technique
-                when we all ski together in the mountains. Bowles is a relaxed and friendly club and
-                I'd encourage you to come along and see what we're all about.`
+        blurb: ``
     },
     {
         idx: 3,
@@ -55,12 +51,13 @@ const adboutData = [
     },
     {
         idx: 6,
-        name: 'Joshua Wakeling - Athletes Rep',
+        name: 'Stella Pople - Athletes Rep',
         email: 'athleterep@bowlesskiracingclub.org.uk',
-        blurb: `I started skiing at the age of 5 and have been racing at Bowles since I was 9. I
-                have trained with English Schools (ESSKiA) ski squad and raced in LSERSA, Snowsports
-                South and Club National races, and have also represented my schools at many school
-                competitions.`
+        blurb: `I started skiing on snow at the age of 3, then lived and skied in Calgary, Canada
+                (near the Rockies) aged 4-6. When we came back to the UK, I joined Bowles race club
+                aged 6 and started racing the following year . I have raced in LSERSA, Snowsports
+                South and Club National races, I have taken part in National competitions in the
+                Alps and have also represented my schools at Kent Schools Skiing championships.`
     }
 ];
 
