@@ -61,16 +61,30 @@ import img61 from '../images/gallery/2021/210521_fun_race/tiger.jpg';
 import img62 from '../images/gallery/2022/221007_fun_race/mens.jpg';
 import img63 from '../images/gallery/2022/220611_lsersa_2/mas2_m.jpg';
 import img64 from '../images/gallery/2022/220716_lsersa_3/sen_l.jpg';
+import img65 from '../images/gallery/2022/220904_lsersa_4/u10_l.jpg';
+import img66 from '../images/gallery/2022/221015_lsersa_5/funs.jpg';
 
 const galleryData = [
     {
         year: '2022',
         galleries: [
             {
+                img: img66,
+                title: "LSERSA 5, Chatham",
+                date: "15 October 2022",
+                link: '/gallery/2022/221015_lsersa_5'
+            }, 
+            {
                 img: img62,
                 title: "Fun Race",
                 date: "7 October 2022",
                 link: '/gallery/2022/221007_fun_race'
+            },
+            {
+                img: img65,
+                title: "LSERSA 4, Aldershot",
+                date: "4 September 2022",
+                link: '/gallery/2022/220904_lsersa_4'
             },
             {
                 img: img64,

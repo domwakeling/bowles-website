@@ -92,6 +92,10 @@ const raceData2022 = {
             ],
             honorable: [
                 'Stella Pople - 4th in Ladies U14'
+            ],
+            special: [
+                'Gabriel Currie - Chairmans Cup',
+                'Dominic Wakeling - Matthew Owens award'
             ]
         }
     },
