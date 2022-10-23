@@ -58,10 +58,10 @@ import img57 from '../images/gallery/2019/190817_SRSA_4_bowles/Bowles.jpg';
 import img58 from '../images/gallery/2019/190920_handicap/handicap.jpg';
 import img59 from '../images/gallery/2020/200918_fun_race_1/u11_handicap.jpeg';
 import img61 from '../images/gallery/2021/210521_fun_race/tiger.jpg';
-import img62 from '../images/gallery/2022/221007_fun_race/mens.jpg';
-import img63 from '../images/gallery/2022/220611_lsersa_2/mas2_m.jpg';
-import img64 from '../images/gallery/2022/220716_lsersa_3/sen_l.jpg';
-import img65 from '../images/gallery/2022/220904_lsersa_4/u10_l.jpg';
+import img62 from '../images/gallery/2022/220611_lsersa_2/mas2_m.jpg';
+import img63 from '../images/gallery/2022/220716_lsersa_3/sen_l.jpg';
+import img64 from '../images/gallery/2022/220904_lsersa_4/u10_l.jpg';
+import img65 from '../images/gallery/2022/221007_fun_race/mens.jpg';
 import img66 from '../images/gallery/2022/221015_lsersa_5/funs.jpg';
 
 const galleryData = [
@@ -75,25 +75,25 @@ const galleryData = [
                 link: '/gallery/2022/221015_lsersa_5'
             }, 
             {
-                img: img62,
+                img: img65,
                 title: "Fun Race",
                 date: "7 October 2022",
                 link: '/gallery/2022/221007_fun_race'
             },
             {
-                img: img65,
+                img: img64,
                 title: "LSERSA 4, Aldershot",
                 date: "4 September 2022",
                 link: '/gallery/2022/220904_lsersa_4'
             },
             {
-                img: img64,
+                img: img63,
                 title: "LSERSA 3, Brentwood",
                 date: "16 July 2022",
                 link: '/gallery/2022/220716_lsersa_3'
             },
             {
-                img: img63,
+                img: img62,
                 title: "LSERSA 2, Welwyn",
                 date: "11 June 2022",
                 link: '/gallery/2022/220611_lsersa_2'
