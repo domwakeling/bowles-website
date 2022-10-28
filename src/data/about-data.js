@@ -20,7 +20,9 @@ const adboutData = [
         idx: 2,
         name: 'James Currie - Secretary',
         email: 'secretary@bowlesskiracingclub.org.uk',
-        blurb: ``
+        blurb: `I started skiing in my early 20s and have enjoyed recreational skiing ever since. 
+                Our 2 children joined Bowles at the earliest age that they could and enjoy competing
+                at races.`
     },
     {
         idx: 3,
