@@ -32,7 +32,8 @@ export async function handler(event) {
             .collection("users")
             .updateOne({ _id: id }, { $addToSet: { racers: { name: name, club: "Bowles" } } });
         client.close();
-        if (res.result.ok == 1) {
+        
+        if (res.modifiedCount == 1) {
             return {
                 statusCode: 200,
                 body: JSON.stringify({
