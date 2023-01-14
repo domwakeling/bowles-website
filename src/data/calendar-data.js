@@ -2,6 +2,38 @@
 
 const calendarData = [
 
+    // 2023 club fun races
+    // { year: 2023, month: 10, date: 7, label: 'Club Fun Race', type: 'race' },
+    // { year: 2023, month: 4, date: 29, label: 'Club Fun Race', type: 'race' },
+
+    // 2023 LSERSA races
+    { year: 2023, month: 10, date: 7, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2023, month: 9, date: 24, label: 'LSERSA 4, Aldershot', type: 'race' },
+    { year: 2023, month: 9, date: 2, label: 'LSERSA 3, Bowles', type: 'race' },
+    { year: 2023, month: 6, date: 17, label: 'LSERSA 2, Brentwood', type: 'race' },
+    { year: 2023, month: 5, date: 27, label: 'LSERSA 1, Chatham', type: 'race' },
+
+    // 2023 SRSA races
+    // { year: 2023, month: 9, date: 24, label: 'SRSA 6, Aldershot', type: 'race' },
+    // { year: 2023, month: 9, date: 3, label: 'SRSA 5, Snowtrax', type: 'race' },
+    // { year: 2023, month: 7, date: 23, label: 'SRSA 4,  Bowles', type: 'race' },
+    // { year: 2023, month: 7, date: 10, label: 'SRSA 3, Chatham', type: 'race' },
+    // { year: 2023, month: 6, date: 19, label: 'SRSA 2, Southampton', type: 'race' },
+    // { year: 2023, month: 4, date: 23, label: 'SRSA 1, Snowtrax', type: 'race' },
+
+    // 2023 school & ESSKIA races
+    { year: 2023, month: 5, date: 7, label: 'Kent Schools', type: 'race' },
+    { year: 2023, month: 11, date: 12, label: 'Surrey Schools', type: 'race' },
+
+    // 2023 CN & GBR races
+    { year: 2023, month: 7, date: 1, label: 'GBR 5, Chatham', type: 'race' },
+    { year: 2023, month: 7, date: 2, label: 'GBR 4, Chatham', type: 'race' },
+    { year: 2023, month: 6, date: 10, label: 'Club National, Chatham', type: 'race' },
+    { year: 2023, month: 6, date: 11, label: 'Club National, Precise (@ Chatham)', type: 'race' },
+
+    // 2023 'other'
+    { year: 2023, month: 11, date: 4, label: 'Night Race, Chatham', type: 'race' },
+
     // 2022 club fun races
     { year: 2022, month: 10, date: 7, label: 'Club Fun Race', type: 'race' }, 
     { year: 2022, month: 4, date: 29, label: 'Club Fun Race', type: 'race' },
