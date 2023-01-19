@@ -82,9 +82,9 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "09092022" && mode == modes.FRIDAY) || (nextTue[0] == "13122022" && mode == modes.TUESDAY)) ? (
+            {((nextFri[0] == "09092022" && mode == modes.FRIDAY) || (nextTue[0] == "124012023" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    There will be no training on Tuesday 13th December
+                    There will be no training on Tuesday 24th January
                 </p>
             ) : (
                 <div>
