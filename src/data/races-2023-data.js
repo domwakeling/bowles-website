@@ -26,10 +26,22 @@ const raceData2023 = {
         title: 'SRSA 2023 Summer Race Series',
         races: [
             {
-                descriptor: 'To be announced',
+                descriptor: 'Race 1 - Aldershot - 23rd April 2023',
             },
             {
-                descriptor: ''
+                descriptor: 'Race 2 - Southampton - 7th May 2023'
+            },
+            {
+                descriptor: 'Race 3 - Southampton - 18th June 2023'
+            },
+            {
+                descriptor: 'Race 4 - Bowles - 5th August 2023'
+            },
+            {
+                descriptor: 'Race 5 - Chatham - 3rd September 2023'
+            },
+            {
+                descriptor: 'Race 6 - Aldershot - 23rd September 2023'
             }
         ]
     },
