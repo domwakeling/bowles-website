@@ -8,6 +8,20 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-catch-links',
         {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/pages`,
+                name: 'pages'
+            }
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/news`,
+                name: 'news'
+            }
+        },
+        {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
@@ -29,20 +43,6 @@ module.exports = {
             resolve: 'gatsby-plugin-typography',
             options: {
                 pathToConfigModule: 'src/utils/typography'
-            }
-        },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                path: `${__dirname}/src/pages`,
-                name: 'pages'
-            }
-        },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                path: `${__dirname}/src/news`,
-                name: 'news'
             }
         }
     ],
