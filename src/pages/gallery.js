@@ -16,7 +16,7 @@ const GalleryPage = ({ location }) => (
                             year.galleries.map(gallery => (
                                 <div key={gallery.date} className="gallery-item">
                                     <Link to={gallery.link}>
-                                        <img src={gallery.img} alt={gallery.title} />
+                                        <img src={gallery.img} alt={gallery.title} width="600" height="350"/>
                                         <p>{gallery.title}</p>
                                         <p>{gallery.date}</p>
                                     </Link>

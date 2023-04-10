@@ -25,7 +25,12 @@ module.exports = {
         },
         'gatsby-plugin-sass',
         'gatsby-plugin-sharp',
-        'gatsby-plugin-netlify',
+        {
+            resolve: `gatsby-plugin-netlify`,
+            options: {
+                mergeSecurityHeaders: false, // required for YouTube embeds to work?
+            },
+        },
         {
             resolve: 'gatsby-plugin-typography',
             options: {
