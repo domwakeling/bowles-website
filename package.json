@@ -38,10 +38,10 @@
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
-    "build": "gatsby build && netlify-lambda build src/functions",
+    "//build": "gatsby build && netlify-lambda build src/functions",
     "build:app": "gatsby build",
     "build:lambda": "netlify lambda-build src/functions",
-    "//build": "netlify build",
+    "build": "gatsby build",
     "start" : "netlify dev"
   },
   "devDependencies": {
