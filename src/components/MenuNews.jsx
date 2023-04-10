@@ -65,7 +65,7 @@ const MenuNews = ({ location }) => {
                                             to={path}
                                             className={classForMenuPath(path)}
                                         >
-                                            {month}
+                                            - {month}
                                         </Link>
                                     </div>
                                 );}
