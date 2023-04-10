@@ -24,24 +24,22 @@ exports.createPages = ({ actions, graphql}) => {
     const newsPostTemplate = path.resolve('src/templates/news-post.js');
 
     return graphql(`{
-        allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-        ) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    html
-                    frontmatter {
-                        contentType
-                        title
-                        date(formatString: "D MMMM YYYY")
-                    }
-                }
-            }
+  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    edges {
+      node {
+        fields {
+          slug
         }
-    }`).then(result => {
+        html
+        frontmatter {
+          contentType
+          title
+          date(formatString: "D MMMM YYYY")
+        }
+      }
+    }
+  }
+}`).then(result => {
         // deal with errors
         if (result.errors) {
             return Promise.reject(result.errors);

@@ -25,25 +25,23 @@ Page.propTypes = {
 
 export default Page;
 
-export const query = graphql`
-    query ($slug: String) {
-        allMarkdownRemark (
-            filter: { fields: { slug: { regex: $slug} } }
-            sort: { order: DESC, fields: [frontmatter___date] }
-        ) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        title
-                        contentType
-                        date(formatString: "D MMMM YYYY")
-                    }
-                    html
-                }
-            }
+export const query = graphql`query ($slug: String) {
+  allMarkdownRemark(
+    filter: {fields: {slug: {regex: $slug}}}
+    sort: {frontmatter: {date: DESC}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
+        frontmatter {
+          title
+          contentType
+          date(formatString: "D MMMM YYYY")
+        }
+        html
+      }
     }
-`;
+  }
+}`;
