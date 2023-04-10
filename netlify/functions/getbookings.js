@@ -1,10 +1,14 @@
 /*  eslint-disable no-unused-vars */
+const{ MongoClient } = require('mongodb');
 
-import newClient from "../lib/db";
+const newClient = () => {
+    const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017";
+    return new MongoClient(uri, { useUnifiedTopology: true });
+};
 
 // TODO: validate JWT?
 
-export async function handler(event, context) {
+exports.handler = async function (event, context) {
     // get required days from path and verify 8-digits, return error if not found or verified
     const days = event.queryStringParameters;
     if (
@@ -75,4 +79,4 @@ export async function handler(event, context) {
             status: 500,
         };
     }
-}
+};

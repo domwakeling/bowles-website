@@ -1,4 +1,4 @@
-export async function handler() {
+exports.handler = async function () {
     return {
         statusCode: 200,
         body: JSON.stringify({
@@ -7,4 +7,4 @@ export async function handler() {
         }),
         headers: { "Set-Cookie": `userToken=null` },
     };
-}
+};

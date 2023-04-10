@@ -1,10 +1,27 @@
 /*  eslint-disable no-unused-vars */
+const { MongoClient } = require('mongodb');
 
-import newClient from "../lib/db";
-import modes from "../lib/modes";
-import nums from "../lib/racernums";
+const newClient = () => {
+    const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017";
+    return new MongoClient(uri, { useUnifiedTopology: true });
+};
 
-export async function handler(event, context) {
+const modes = {
+    FRIDAY: 0,
+    TUESDAY: 1,
+    WELCOME: 2,
+    LOGGING_IN: 3,
+    SIGNING_UP: 4,
+    ADDING_RACER: 5,
+};
+
+const nums = {
+    TUESDAY: 8,
+    FRIDAY: 25,
+    RACE: 45,
+};
+
+exports.handler = async function (event, context) {
     // TODO: VALIDATE JWT?
 
     // retrieve info from body and validate
@@ -151,4 +168,4 @@ export async function handler(event, context) {
             status: 500,
         };
     }
-}
+};
