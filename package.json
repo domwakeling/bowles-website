@@ -15,7 +15,7 @@
     "gatsby-remark-images": "^7.8.0",
     "gatsby-source-filesystem": "^5.8.0",
     "gatsby-transformer-remark": "^6.8.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongodb": "^4.1.4",
     "mongodb-client-encryption": "^2.1.0",
     "nanoid": "^3.1.30",
