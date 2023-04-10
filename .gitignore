@@ -15,3 +15,5 @@ _not_for_git
 /functions
 .env
 .env.development
+# Local Netlify folder
+.netlify
