@@ -52,7 +52,7 @@ const NewsPageTemplate = ({ pageContext, location }) => {
 };
 
 NavLink.propTypes = {
-    test: PropTypes.shape(),
+    test: PropTypes.any,
     text: PropTypes.string,
     url: PropTypes.string
 };
