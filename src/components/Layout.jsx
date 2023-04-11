@@ -31,6 +31,9 @@ const Layout = ({children, location}) => (
                         { name: 'keywords', content: 'bowles, ski, skiing, racing' },
                         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover'}
                     ]}
+                    htmlAttributes={{
+                        lang: 'en',
+                    }}
                 >
                     <link rel="icon" href={fav} sizes="32x32" type="image/png" />
                     <script 
