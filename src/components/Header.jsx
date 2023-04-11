@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => {
                     <div className="icon-bar" />
                 </button>
                 <Link className="brand" to="/" >
-                    <img alt="Bowles logo" src={img01} />&nbsp;<h3>{siteTitle}</h3>
+                    <img alt="Bowles logo" src={img01} width="64" height="60" style={{ width: "32px", height: "auto" }}/>&nbsp;<h3>{siteTitle}</h3>
                 </Link>
                 <div id="menu-responsive" className={menuOpen ? "menu-show" : ""}>
                     {
