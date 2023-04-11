@@ -8,7 +8,7 @@ const GalleryPage = ({ location }) => (
     <Layout location={location}>
         <h2>Gallery</h2>
         {
-            galleryData.map(year => (
+            galleryData.map((year, idxYear) => (
                 <div key={year.year}>
                     <h3>{year.year}</h3>
                     <div className="gallery-container">
@@ -16,7 +16,13 @@ const GalleryPage = ({ location }) => (
                             year.galleries.map(gallery => (
                                 <div key={gallery.date} className="gallery-item">
                                     <Link to={gallery.link}>
-                                        <img src={gallery.img} alt={gallery.title} width="600" height="350"/>
+                                        <img
+                                            src={gallery.img}
+                                            alt={gallery.title}
+                                            width="600"
+                                            height="350"
+                                            loading={idxYear < 3 ? "eager" : "lazy"}
+                                        />
                                         <p>{gallery.title}</p>
                                         <p>{gallery.date}</p>
                                     </Link>
