@@ -13,9 +13,10 @@ const IndexPage = ({data, location}) => (
         </Helmet>
         <div className="videoWrapper">
             <lite-youtube
-              videotitle="Bowles Ski Race Club 2016"
-              videoid="fApQcD9yu4w"
-              posterquality="maxresdefault"
+                videotitle="Bowles Ski Race Club 2016"
+                videoid="fApQcD9yu4w"
+                posterquality="maxresdefault"
+                posterloading="eager"
             ></lite-youtube>
             {/* <iframe
                 title="Introductory video"
