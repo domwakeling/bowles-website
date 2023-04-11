@@ -4,18 +4,27 @@ import { Link } from 'gatsby';
 import { graphql } from 'gatsby';
 import NewsItem from '../components/NewsItem.jsx';
 import Layout from '../components/Layout.jsx';
+import { Helmet } from 'react-helmet';
 
 const IndexPage = ({data, location}) => (
     <Layout location={location}>
+        <Helmet>
+          <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+        </Helmet>
         <div className="videoWrapper">
-            <iframe
+            <lite-youtube
+              videotitle="Bowles Ski Race Club 2016"
+              videoid="fApQcD9yu4w"
+              posterquality="maxresdefault"
+            ></lite-youtube>
+            {/* <iframe
                 title="Introductory video"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/fApQcD9yu4w"
                 frameBorder="0"
                 allowFullScreen
-            />
+            /> */}
         </div>
         <br />
         <p>Welcome to Bowles Ski Racing Club&apos;s website, the home of Bowles Ski Team. Please
