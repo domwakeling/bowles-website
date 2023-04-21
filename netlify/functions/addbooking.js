@@ -18,7 +18,7 @@ const modes = {
 const nums = {
     TUESDAY: 8,
     FRIDAY: 25,
-    RACE: 45,
+    RACE: 50,
 };
 
 exports.handler = async function (event, context) {
@@ -63,7 +63,7 @@ exports.handler = async function (event, context) {
                 0;
         }
 
-        const nextRace = "07102022";
+        const nextRace = "28042023";
         const maxRacers = mode == modes.FRIDAY ? (day == nextRace ? nums.RACE : nums.FRIDAY ) : nums.TUESDAY;
 
         // no space and racer wasn't found

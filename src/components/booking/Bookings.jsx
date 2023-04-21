@@ -52,7 +52,7 @@ const Bookings = ({ mode, user }) => {
         );
     }
 
-    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '07102022' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
+    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '28042023' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
 
     const firstTues = parseInt(nextTue[0].substring(0,2)) <= 7 ? true : false;
 
