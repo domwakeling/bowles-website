@@ -10,7 +10,6 @@ const raceData2023 = {
             },
             {
                 descriptor: 'Race 3 - Bowles - 2nd September 2023',
-                link: 'https://www.skiresults.co.uk/events/1190'
             },
             {
                 descriptor: 'Race 4 - Aldershot - 24th September 2023',
@@ -27,6 +26,10 @@ const raceData2023 = {
         races: [
             {
                 descriptor: 'Race 1 - Aldershot - 23rd April 2023',
+                individual: [
+                    'Nigel Hilliard - 1st in Mens Masters 2'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1289'
             },
             {
                 descriptor: 'Race 2 - Southampton - 7th May 2023'
