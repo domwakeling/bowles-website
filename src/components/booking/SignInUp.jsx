@@ -168,7 +168,7 @@ const SignInUp = ({
                             onChange={handleSecret}
                             onKeyDown={keyDown}
                             value={secret}
-                            placerholder="secret"
+                            placeholder="secret"
                         />
                     </div>
                 ) : (
