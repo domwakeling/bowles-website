@@ -18,14 +18,6 @@ const IndexPage = ({data, location}) => (
                 posterquality="maxresdefault"
                 posterloading="eager"
             ></lite-youtube>
-            {/* <iframe
-                title="Introductory video"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/fApQcD9yu4w"
-                frameBorder="0"
-                allowFullScreen
-            /> */}
         </div>
         <br />
         <p>Welcome to Bowles Ski Racing Club&apos;s website, the home of Bowles Ski Team. Please
@@ -33,7 +25,7 @@ const IndexPage = ({data, location}) => (
         <h2>Bowles Ski Racing Club</h2>
         <p>The club is based at Bowles Residential Outdoor Centre in Eridge Green, Kent, and meets
             every Friday evening for two hours of slalom ski race training starting at 5:30pm.</p>
-        <p>We are affiliated to the London &amp; South East Regional Snowsports Assocation (LSERSA)
+        <p>We are affiliated to the London &amp; South East Regional Snowsports Association (LSERSA)
             and Snowsports South (SRSA), and members of the club compete regularly in the summer
             race series of both organisations.</p>
         <p>Our club is open to racers of all ages, but not all members compete. The most important

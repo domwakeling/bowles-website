@@ -63,8 +63,20 @@ import img63 from '../images/gallery/2022/220716_lsersa_3/sen_l.jpg';
 import img64 from '../images/gallery/2022/220904_lsersa_4/u10_l.jpg';
 import img65 from '../images/gallery/2022/221007_fun_race/mens.jpg';
 import img66 from '../images/gallery/2022/221015_lsersa_5/funs.jpg';
+import img67 from '../images/gallery/2023/230527_lsersa_1/l_mas.png';
 
 const galleryData = [
+    {
+        year: '2023',
+        galleries: [
+            {
+                img: img67,
+                title: "LSERSA 1, Chatham",
+                date: "27 May 2023",
+                link: "/gallery/2023/230527_lsersa_1"
+            }
+        ]
+    },
     {
         year: '2022',
         galleries: [

@@ -31,7 +31,7 @@ Full results are available on the [Precise Racing website](https://preciseracing
   Secondary Junior
 * TOGS, including Stella Pople and Charlotte Smith - 2nd in Female Secondary Junior
 * Bennet Memorial (Leo and Sebastian Tavener, Rory and Theo White) - 2nd in Male Secondary Junior
-* TWGGS 3 (Lila Ayton, Ameile and Maisie Lagden and Bess McKibbins) - 1st in Female Seconary Senior
+* TWGGS 3 (Lila Ayton, Ameile and Maisie Lagden and Bess McKibbins) - 1st in Female Secondary Senior
   and fastest overall secondary girls
   
 ##### Honorable Mentions

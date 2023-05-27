@@ -4,6 +4,20 @@ const raceData2023 = {
         races: [
             {
                 descriptor: 'Race 1 - Chatham - 27th May 2023',
+                individual: [
+                    'Charlotte Currie - 3rd in Ladies U12',
+                    'Lucy Wilson - 4rd in Ladies U16',
+                    'Joshua Wakeling - 3rd in Mens Seniors',
+                    'Katharine Wilson - 1st in Ladies Masters',
+                    'James Currie - 3rd in Mens Masters',
+                    'Anthony Forte - 2nd in Mens Masters 2',
+                    'Nigel Hilliard - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Antonia Wilson - 4th in Ladies U12',
+                    'Bowles - 4th in Clubs Minis'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1315'
             },
             {
                 descriptor: 'Race 2 - Brentwood - 17th June 2023',
@@ -92,7 +106,7 @@ const raceData2023 = {
             `Bennet Memorial (Leo and Sebastian Tavener, Rory and Theo White) - 2nd in Male
                 Secondary Junior`,
             `TWGGS 3 (Lila Ayton, Ameile and Maisie Lagden and Bess McKibbins) - 1st in Female
-                Seconary Senior and fastest overall secondary girls`
+                Secondary Senior and fastest overall secondary girls`
         ],
         honorable: [
             'Gabriel Currie - 4th in Primary Junior Male',

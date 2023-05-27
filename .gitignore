@@ -17,3 +17,4 @@ _not_for_git
 .env.development
 # Local Netlify folder
 .netlify
+.vscode
