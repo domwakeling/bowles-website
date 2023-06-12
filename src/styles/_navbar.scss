@@ -217,8 +217,7 @@
                     padding-left: 2px;
 
                     &.today {
-                        background-color: $color__project-complementary;
-                        color: lighten($color__project-complementary, 45%);
+                        background-color: lighten($color__project-complementary, 10%);
                         font-weight: bold;
                     }
 
