@@ -74,9 +74,18 @@ const raceData2023 = {
         races: [
             {
                 descriptor: 'Chatham - 10th June 2023',
+                individual: [
+                    'Charlotte Currie - 2nd in U12 Girls',
+                    'Anthony Forte - 2nd in Mens Masters'
+                ],
+                link: 'https://gbski.com/competition.php?ID=1249'
             },
             {
                 descriptor: 'Precise - 11th June 2023',
+                individual: [
+                    'Charlotte Currie - 2nd in U12 Girls'
+                ],
+                link: 'https://gbski.com/competition.php?ID=1250'
             }
         ]
         // title, races with {descriptor, individual, honorable, link }

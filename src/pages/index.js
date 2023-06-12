@@ -57,23 +57,23 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 export const query = graphql`query IndexPageQuery {
-  allMarkdownRemark(
-    filter: {frontmatter: {contentType: {eq: "news"}}}
-    sort: {frontmatter: {date: DESC}}
-    limit: 1
-  ) {
-    edges {
-      node {
-        fields {
-          slug
+    allMarkdownRemark(
+        filter: {frontmatter: {contentType: {eq: "news"}}}
+        sort: {frontmatter: {date: DESC}}
+        limit: 1
+    ) {
+        edges {
+            node {
+                fields {
+                    slug
+                }
+                frontmatter {
+                    title
+                    contentType
+                    date(formatString: "D MMMM YYYY")
+                }
+                html
+            }
         }
-        frontmatter {
-          title
-          contentType
-          date(formatString: "D MMMM YYYY")
-        }
-        html
-      }
     }
-  }
 }`;
