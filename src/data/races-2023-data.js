@@ -21,6 +21,22 @@ const raceData2023 = {
             },
             {
                 descriptor: 'Race 2 - Brentwood - 17th June 2023',
+                individual: [
+                    'Charlotte Currie - 3rd in Ladies U12',
+                    'Lucy Wilson - 2nd in Ladies U16',
+                    'Joshua Wakeling - 1st in Mens Seniors',
+                    'Katharine Wilson - 1st in Ladies Masters',
+                    'Anthony Forte - 2nd in Mens Masters 2',
+                    'Nigel Hilliard - 3rd in Mens Masters 2'
+                ],
+                club_teams: [
+                    `Bowles (Charlotte Currie, Amelie Watts and Antonia Wilson) were third in the
+                        junior club teams competition`
+                ],
+                honorable: [
+                    'James Currie - 4th in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/1316'
             },
             {
                 descriptor: 'Race 3 - Bowles - 2nd September 2023',
