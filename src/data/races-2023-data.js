@@ -42,7 +42,7 @@ const raceData2023 = {
                 descriptor: 'Race 3 - Bowles - 2nd September 2023',
             },
             {
-                descriptor: 'Race 4 - Aldershot - 24th September 2023',
+                descriptor: 'Race 4 - Chatham - 23rd September 2023',
             },
             {
                 descriptor: 'Race 5 - Chatham - 7th October 2023',

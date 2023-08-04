@@ -4,11 +4,11 @@ const calendarData = [
 
     // 2023 club fun races
     // { year: 2023, month: 10, date: 7, label: 'Club Fun Race', type: 'race' },
-    // { year: 2023, month: 4, date: 29, label: 'Club Fun Race', type: 'race' },
+    { year: 2023, month: 4, date: 28, label: 'Club Fun Race', type: 'race' },
 
     // 2023 LSERSA races
     { year: 2023, month: 10, date: 7, label: 'LSERSA 5, Chatham', type: 'race' },
-    { year: 2023, month: 9, date: 24, label: 'LSERSA 4, Aldershot', type: 'race' },
+    { year: 2023, month: 9, date: 23, label: 'LSERSA 4, Chatham', type: 'race' },
     { year: 2023, month: 9, date: 2, label: 'LSERSA 3, Bowles', type: 'race' },
     { year: 2023, month: 6, date: 17, label: 'LSERSA 2, Brentwood', type: 'race' },
     { year: 2023, month: 5, date: 27, label: 'LSERSA 1, Chatham', type: 'race' },
@@ -141,7 +141,7 @@ const calendarData = [
     { year: 2020, month: 9, date: 25, label: 'Club Fun Race (12-and-over)', type: 'race' },
 
     // 2019 'other'
-    { year: 2019, month: 10, date: 12, label: 'Southern England Champs, Chatham', typoe: 'race' },
+    { year: 2019, month: 10, date: 12, label: 'Southern England Champs, Chatham', type: 'race' },
 
     // 2019 tri-regional
     { year: 2019, month: 10, date: 13, label: 'Tri-regional, Chatham', type: 'race' },
