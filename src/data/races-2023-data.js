@@ -75,7 +75,24 @@ const raceData2023 = {
                 descriptor: 'Race 3 - Southampton - 18th June 2023'
             },
             {
-                descriptor: 'Race 4 - Bowles - 5th August 2023'
+                descriptor: 'Race 4 - Bowles - 5th August 2023',
+                individual: [
+                    'Charlotte Currie - 3nd in Ladies U12',
+                    'Lorraine Deschamps-Smith - 3nd in Ladies U14',
+                    'Lottie Beart - 2nd in Ladies U16',
+                    'Flora Hay - 3rd in Ladies U16',
+                    'James Currie - 3rd in Mens Masters 1',
+                    'Nigel Hilliard - 2nd in Mans Masters 2'
+                ],
+                fun_teams: [
+                    'Flora Hay and Tobias Manning were members of the second-placed team',
+                    'James Currie was a member of the third-placed team'
+                ],
+                honorable: [
+                    'Tobias Manning - 4th in Mens U8',
+                    'Bowles were 4th in the club teams'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1292'
             },
             {
                 descriptor: 'Race 5 - Chatham - 3rd September 2023'
