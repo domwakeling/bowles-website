@@ -66,9 +66,9 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
         if (fridayTraining(cellDate)) info.details.push("Club training (5:30-7:30)");
         if (tuesdayTraining(cellDate)) {
             if (cellDate <= 7 && (year > 2022 || (year == 2022 && month >= 10))) {
-                info.details.push("Over The Hill training (6:30-7:30)");
+                info.details.push("Over The Hill training (6-7)");
             } else {
-                info.details.push("Club training (6:30-7:30)");
+                info.details.push("Club training (6-7)");
             }
         }
         // STEP 5 - set

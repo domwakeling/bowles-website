@@ -84,7 +84,7 @@ const Bookings = ({ mode, user }) => {
 
             {((nextFri[0] == "09092022" && mode == modes.FRIDAY) || (nextTue[0] == "22082023" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    There will be on training on Tuesday 22nd August due to slope maintenance.
+                    There will be no training on Tuesday 22nd August due to slope maintenance.
                 </p>
             ) : (
                 <div>
@@ -94,6 +94,12 @@ const Bookings = ({ mode, user }) => {
                             reserved for over-18s
                         </p>
                     ) : '' }
+                    {(mode == modes.TUESDAY && (nextTue[0] == '05092023' || nextTue[0] == '12092023')) ? (
+                        <p className="alert-text">
+                            Please note that from the start of September, Tuesday training will be
+                            from 6-7pm
+                        </p>
+                    ) : ''}
                     <div className="racerlist">
                         {idxs.map(i =>
                             data && data.racers && data.racers[mode].length > i ? (
