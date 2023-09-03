@@ -55,7 +55,7 @@ const CalendarCell = ({ row, col, firstDay, lastDate, month, year, todayDate, th
                 info.details.push(session.label);
             });
         }
-        // STEP 4 - cheeck if there's any tuesday/friday-based training and amend
+        // STEP 4 - check if there's any tuesday/friday-based training and amend
         if (fridayTraining(cellDate) || tuesdayTraining(cellDate)) {
             if (!/T/.test(info.labels)) info.labels = info.labels + "T";
             if (!/training/.test(info.class)) info.class = info.class + " training";

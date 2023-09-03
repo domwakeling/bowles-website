@@ -32,6 +32,7 @@ const calendarData = [
     { year: 2023, month: 6, date: 11, label: 'Club National, Precise (@ Chatham)', type: 'race' },
 
     // 2023 'other'
+    { year: 2023, month: 10, date: 14, label: 'Tri-Regional, Chatham', type: 'race' },
     { year: 2023, month: 11, date: 4, label: 'Night Race, Chatham', type: 'race' },
 
     // 2022 club fun races
