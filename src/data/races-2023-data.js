@@ -72,6 +72,18 @@ const raceData2023 = {
             },
             {
                 descriptor: 'Race 4 - Chatham - 23rd September 2023',
+                individual: [
+                    'Charlotte Currie - 2nd in Ladies U12',
+                    'Lucy Wilson - 2nd in Ladies U16',
+                    'Joshua Wakeling - 2nd in Mens Seniors',
+                    'Katy Wilson - 1st in Ladies Masters 1',
+                    'Nigel Hilliard - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Tobias Manning - 4th in Mens U8',
+                    'James Currie - 4th in Mens Masters 1'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1318'
             },
             {
                 descriptor: 'Race 5 - Chatham - 7th October 2023',
@@ -131,9 +143,19 @@ const raceData2023 = {
                 link: 'https://www.skiresults.co.uk/events/1293'
             },
             {
-                descriptor: 'Race 6 - Aldershot - 23rd September 2023'
+                descriptor: 'Race 6 - Aldershot - 23rd September 2023',
+                individual: [
+                    'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
+                link: 'https://www.skiresults.co.uk/events/1294'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Nigel Hilliard - 1st in Mens Masters 2'
+            ]
+        }
+
     },
     ClubNational: {
         title: 'SSE Club National Series 2023',

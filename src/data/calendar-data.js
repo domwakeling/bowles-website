@@ -3,7 +3,7 @@
 const calendarData = [
 
     // 2023 club fun races
-    // { year: 2023, month: 10, date: 7, label: 'Club Fun Race', type: 'race' },
+    { year: 2023, month: 10, date: 6, label: 'Club Fun Race', type: 'race' },
     { year: 2023, month: 4, date: 28, label: 'Club Fun Race', type: 'race' },
 
     // 2023 LSERSA races
@@ -14,7 +14,7 @@ const calendarData = [
     { year: 2023, month: 5, date: 27, label: 'LSERSA 1, Chatham', type: 'race' },
 
     // 2023 SRSA races
-    { year: 2023, month: 9, date: 23, label: 'SRSA 6, Aldershot', type: 'race' },
+    { year: 2023, month: 9, date: 24, label: 'SRSA 6, Welwyn', type: 'race' },
     { year: 2023, month: 9, date: 3, label: 'SRSA 5, Chatham', type: 'race' },
     { year: 2023, month: 8, date: 5, label: 'SRSA 4,  Bowles', type: 'race' },
     { year: 2023, month: 6, date: 18, label: 'SRSA 3, Southampton', type: 'race' },
