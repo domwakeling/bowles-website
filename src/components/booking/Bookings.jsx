@@ -52,7 +52,7 @@ const Bookings = ({ mode, user }) => {
         );
     }
 
-    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '28042023' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
+    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '06102023' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
 
     const firstTues = parseInt(nextTue[0].substring(0,2)) <= 7 ? true : false;
 
@@ -67,11 +67,9 @@ const Bookings = ({ mode, user }) => {
                     training list.
                 </p>
             )}
-            {nextFri[0] == "18092020" && mode == modes.FRIDAY ? (
+            {nextFri[0] == "06102023" && mode == modes.FRIDAY ? (
                 <p className="alert-text">
-                    The club fun-race for 11s-&amp;-Under (anyone born between 2009-2014 inclusive)
-                    is being held this Friday, 18 September. Please only book in for racers in those
-                    age groups. If you wish to race but bookings are full, please contact Nigel.
+                    The club fun-race is being held this Friday, 6 October.
                 </p>
             ) : '' }
             {nextFri[0] == "25092020" && mode == modes.FRIDAY ? (
