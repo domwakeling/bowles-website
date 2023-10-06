@@ -52,6 +52,7 @@ const Bookings = ({ mode, user }) => {
         );
     }
 
+    // also change in /netlify/functions/addbooking.js
     const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '06102023' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
 
     const firstTues = parseInt(nextTue[0].substring(0,2)) <= 7 ? true : false;
