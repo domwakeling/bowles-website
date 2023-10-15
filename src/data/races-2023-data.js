@@ -87,10 +87,46 @@ const raceData2023 = {
             },
             {
                 descriptor: 'Race 5 - Chatham - 7th October 2023',
+                individual: [
+                    'Charlotte Currie - 2nd in Ladies U12',
+                    'Lucy Wilson - 2nd in Ladies U16',
+                    'Joshua Wakeling - 1st in Mens Seniors',
+                    'Katy Wilson - 1st in Ladies Masters 1',
+                    'James Currie - 3rd in Mens Masters 1',
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'John Makonnen - 3rd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Tobias Manning - 4th in Mens U8',
+                    'Gabe Currie - 4th in Mens U10',
+                    'Steve Nelson - 4th in Mens Masters 1',
+                ],
+                club_teams: [
+                    `Bowles A (Gabe Currie, Charlotte Currie and Antonia Wilson) were third in the
+                        junior club teams competition`
+                ],
+                link: 'https://www.skiresults.co.uk/events/1319'
             }
         ],
-        // season: {
-        // }
+        season: {
+            individual: [
+                'Charlotte Currie - 2nd in Ladies U12',
+                'Lucy Wilson - 2nd in Ladies U16',
+                'Joshua Wakeling - 1st in Mens Seniors',
+                'Katy Wilson - 1st in Ladies Masters 1',
+                'James Currie - 3rd in Mens Masters 1',
+                'Nigel Hilliard - 1st in Mens Masters 2'
+            ],
+            honorable: [
+                'Tobias Manning - 4th in Mens U8',
+                'Antonia Wilson - 4th in Ladies U12'
+            ],
+            special: [
+                'Ski Shack Award - Tobias Manning',
+                'Most Improved Male - Gabe Currie',
+                'Good Effort Female - Antonia Wilson'
+            ]
+        }
     },
     SRSA: {
         title: 'SRSA 2023 Summer Race Series',
@@ -213,16 +249,12 @@ const raceData2023 = {
     },
     TriRegion: {
         descriptor: 'Tri-Regional - TBC',
-        // tri_teams: [
-        //     'Charlotte Currie was a member of the second-placed team in the Cup competition',
-        //     'Anthony Forte was a member of the third-placed team in the Cup competition',
-        // ]
-        // tri_teams, link
-    },
-    // SouthernChamps: {
-    //     descriptor: 'Southern England Championships - Welwyn - 17th October 2023',
-    //     note: 'CANCELLED'
-    // }
+        tri_teams: [
+            'Charlotte and James Currie were member of the third-placed team in the Shield competition',
+            'Gabe Currie was a member of the third-placed team in the Shield competition',
+        ],
+        link: 'https://www.skiresults.co.uk/events/900'
+    }
 };
 
 export default raceData2023;

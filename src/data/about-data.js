@@ -1,4 +1,4 @@
-const adboutData = [
+const aboutData = [
     {
         idx: 0,
         name: 'John Makonnen - President',
@@ -63,4 +63,4 @@ const adboutData = [
     }
 ];
 
-export default adboutData;
+export default aboutData;
