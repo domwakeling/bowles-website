@@ -248,7 +248,7 @@ const raceData2023 = {
         link: 'https://preciseracing.co.uk/kent-schools-championship/'
     },
     TriRegion: {
-        descriptor: 'Tri-Regional - TBC',
+        descriptor: 'Tri-Regional - Chatham - 14th October 2023',
         tri_teams: [
             'Charlotte and James Currie were member of the third-placed team in the Shield competition',
             'Gabe Currie was a member of the third-placed team in the Shield competition',
