@@ -18,6 +18,11 @@ const DocumentsPage = ({ location }) => (
             <li><a href="/meetings/agm_2023.pdf" target="_other">2023 AGM</a></li>
             <li><a href="/meetings/agm_2022.pdf" target="_other">2022 AGM</a></li>
         </ul>
+
+        <h4>Latest accounts</h4>
+        <ul>
+            <li><a href="/accounts/accounts_2022-23.pdf" target="_other">Year-end accounts 2022-23</a></li>
+        </ul>
         <hr />
     </Layout>
 );
