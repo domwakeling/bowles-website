@@ -13,7 +13,6 @@ export default function Template ({ data, location }) {
                 <h2>{post.frontmatter.title}</h2>
                 <h5>{post.frontmatter.date}</h5>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                <hr />
             </div>
         </Layout>
     );

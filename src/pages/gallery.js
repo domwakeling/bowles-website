@@ -30,7 +30,6 @@ const GalleryPage = ({ location }) => (
                             ))
                         }
                     </div>
-                    <hr />
                 </div>
             ))
         }

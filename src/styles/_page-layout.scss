@@ -41,3 +41,24 @@ html {
         padding-left: 5px;
     }
 }
+
+.footer {
+    clear: both;
+
+    .dolwen {
+        
+        @include for-phone-only {
+                display: none;
+            }
+
+        float: right;
+        font-weight: 400;
+        font-size: 0.8rem;
+
+        img {
+            float: right;
+            position: relative;
+            bottom: 0.3rem;
+        }
+    }
+}

@@ -53,7 +53,7 @@ const Bookings = ({ mode, user }) => {
     }
 
     // also change in /netlify/functions/addbooking.js
-    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '06102023' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
+    const maxRacers = mode == modes.FRIDAY ? (nextFri[0] == '19042024' ? nums.RACE : nums.FRIDAY) : nums.TUESDAY;
 
     const firstTues = parseInt(nextTue[0].substring(0,2)) <= 7 ? true : false;
 
@@ -68,9 +68,9 @@ const Bookings = ({ mode, user }) => {
                     training list.
                 </p>
             )}
-            {nextFri[0] == "06102023" && mode == modes.FRIDAY ? (
+            {nextFri[0] == "19042024" && mode == modes.FRIDAY ? (
                 <p className="alert-text">
-                    The club fun-race is being held this Friday, 6 October.
+                    The club fun-race is being held this Friday, 19 April.
                 </p>
             ) : '' }
             {nextFri[0] == "25092020" && mode == modes.FRIDAY ? (

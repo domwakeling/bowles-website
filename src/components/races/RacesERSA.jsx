@@ -7,6 +7,7 @@ import Races from './Races.jsx';
 const RacesERSA = ({ data }) => {    
     return (
         <div style={{ clear: 'both' }}>
+            <hr />
             <img src={logoERSA} style={{ float: 'right' }} alt="ERSA logo" />
             <Races data={data} />
         </div>

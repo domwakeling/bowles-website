@@ -18,7 +18,6 @@ const Races = ({ data }) => {
             {
                 data.season ? <RaceSeries data={data.season} /> : ''
             }
-            <hr />
         </div>
     );
 };

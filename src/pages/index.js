@@ -43,7 +43,6 @@ const IndexPage = ({data, location}) => (
                     date={node.frontmatter.date}
                     html={node.html}
                 />
-                <hr />
             </div>
         )}
     </Layout>

@@ -19,7 +19,7 @@ const RacePage = ({ location, data, title }) => {
             </div>
             {
                 data.LSERSA ? (
-                    <RacesLSERSA data={data.LSERSA} />
+                    <RacesLSERSA data={data.LSERSA}/>
                 ) : ''
             }
             {
@@ -39,36 +39,40 @@ const RacePage = ({ location, data, title }) => {
             }
             {
                 data.Kent ? (
-                    <div>
-                        <Race data={data.Kent} />
+                    <div style={{ clear: "both" }}>
                         <hr />
+                        <Race data={data.Kent} />
                     </div>
                 ) : ''
             }
             {
                 data.ESSKIA ? (
-                    <Races data={data.ESSKIA} />
+                    <div>
+                        <hr />
+                        <Races data={data.ESSKIA} />
+                    </div>
                 ) : ''
             }
             {
                 data.SPS ? (
                     <div>
-                        <Race data={data.SPS} />
                         <hr />
+                        <Race data={data.SPS} />
                     </div>
                 ) : ''
             }
             {
                 data.TriRegion ? (
-                    <div>
-                        <Race data={data.TriRegion} />
+                    <div style={{ clear: "both"}}>
                         <hr />
+                        <Race data={data.TriRegion} />
                     </div>
                 ) : ''
             }
             {
                 data.Season ? (
                     <div>
+                        <h3 />
                         <h3>Season Results</h3>
                         {
                             data.Season.image ? (

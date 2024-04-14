@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './Header.jsx';
-import Copyright from './Copyright.jsx';
+import Footer from './Footer.jsx';
 import MenuRight from './MenuRight.jsx';
 import { ToastContainer } from './booking/Toast.jsx';
 import '../styles/layout.scss';
@@ -47,11 +47,11 @@ const Layout = ({children, location}) => {
             <div className="container">
                 <div id="content">
                     {children}
-                    <Copyright who="Bowles Ski Racing Club" />
                 </div>
                 <div id="right-column">
                     <MenuRight location={location} />
                 </div>
+                <Footer who="Bowles Ski Racing Club" />
             </div>
         </div>
     );

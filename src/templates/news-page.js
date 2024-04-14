@@ -46,7 +46,6 @@ const NewsPageTemplate = ({ pageContext, location }) => {
             </div>
             <div style={{clear: "both"}} />
             <br />
-            <hr />
         </Layout>
     );
 };

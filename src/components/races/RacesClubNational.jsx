@@ -7,6 +7,7 @@ import Races from './Races.jsx';
 const RacesClubNational = ({ data }) => {
     return (
         <div style={{ clear: 'both' }}>
+            <hr />
             <img src={logoSSE} style={{ float: 'right' }} alt="Snowsport England logo" />
             <Races data={data} />
         </div>

@@ -2,6 +2,34 @@
 
 const calendarData = [
 
+    // 2024 club fun races
+    // { year: 2024, month: 10, date: 6, label: 'Club Fun Race', type: 'race' },
+    { year: 2024, month: 4, date: 19, label: 'Club Fun Race', type: 'race' },
+
+    // 2024 LSERSA races
+    { year: 2024, month: 10, date: 5, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2024, month: 8, date: 31, label: 'LSERSA 4, Brentwood', type: 'race' },
+    { year: 2024, month: 7, date: 13, label: 'LSERSA 3, Bowles', type: 'race' },
+    { year: 2024, month: 6, date: 9, label: 'LSERSA 2, Chatham', type: 'race' },
+    { year: 2024, month: 5, date: 4, label: 'LSERSA 1, Chatham', type: 'race' },
+
+    // 2024 SRSA races
+    { year: 2024, month: 9, date: 14, label: 'SRSA 5, Aldershot', type: 'race' },
+    { year: 2024, month: 8, date: 3, label: 'SRSA 4,  Chatham', type: 'race' },
+    { year: 2024, month: 6, date: 15, label: 'SRSA 3, Welwyn', type: 'race' },
+    { year: 2024, month: 5, date: 25, label: 'SRSA 2, Southampton', type: 'race' },
+    { year: 2024, month: 4, date: 13, label: 'SRSA 1, Snowtrax', type: 'race' },
+
+    // 2024 school & ESSKIA races
+    { year: 2024, month: 5, date: 12, label: 'Kent Schools', type: 'race' },
+    // { year: 2024, month: 11, date: 12, label: 'Surrey Schools', type: 'race' },
+
+    // 2024 CN & GBR races
+    { year: 2024, month: 6, date: 8, label: 'Club National, Chatham', type: 'race' },
+
+    // 2024 'other'
+    { year: 2024, month: 9, date: 28, label: 'Tri-Regional, Chatham', type: 'race' },
+
     // 2023 club fun races
     { year: 2023, month: 10, date: 6, label: 'Club Fun Race', type: 'race' },
     { year: 2023, month: 4, date: 28, label: 'Club Fun Race', type: 'race' },

@@ -28,7 +28,6 @@ const SafeguardingPage = ({ location }) => {
             </ul>
             <p>See <a href="https://www.snowsportengland.org.uk/safeguarding/">SnowSport
                 England&apos;s website</a> for more safeguarding info.</p>
-            <hr />
         </Layout>
     );
 };

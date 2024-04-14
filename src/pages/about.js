@@ -29,7 +29,6 @@ const AboutPage = ({location}) => (
                 blurb={person.blurb}
             />
         ))}
-        <hr />
     </Layout>
 );
 

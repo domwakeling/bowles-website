@@ -52,7 +52,6 @@ const IndexPage = ({location}) => (
             GBski.com, but the regional races with LSERSA and Snowsport South are an easy and gentle
             introduction and hopefully not too far to drive!</p>
         <p><em>With thanks to Tom Wontner</em></p>
-        <hr />
     </Layout>
 );
 

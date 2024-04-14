@@ -23,7 +23,6 @@ const DocumentsPage = ({ location }) => (
         <ul>
             <li><a href="/accounts/accounts_2022-23.pdf" target="_other">Year-end accounts 2022-23</a></li>
         </ul>
-        <hr />
     </Layout>
 );
 

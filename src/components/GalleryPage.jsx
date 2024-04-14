@@ -47,7 +47,6 @@ const GalleryPage = ({location, data}) => {
             <br />
             <br />
             <p>See <Link to={link}>the news</Link> for full details.</p>
-            <hr />
         </Layout>
     );
 };

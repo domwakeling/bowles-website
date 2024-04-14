@@ -7,6 +7,7 @@ import Races from './Races.jsx';
 const RacesLSERSA = ({ data }) => {
     return (
         <div style={{ clear: 'both' }}>
+            <hr />
             <img src={logoSRSA} style={{ float: 'right' }} alt="Snowsport South logo" />
             <Races data={data} />
         </div>
