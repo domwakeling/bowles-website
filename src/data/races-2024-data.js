@@ -48,7 +48,11 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1486'
             },
             {
-                descriptor: 'Race 2 - Southampton - 25th May 2024'
+                descriptor: 'Race 2 - Southampton - 25th May 2024',
+                individual: [
+                    'Amelie Watts - 3rd in Ladies U12'
+                ],
+                link: 'https://skiresults.co.uk/events/1487'
             },
             {
                 descriptor: 'Race 3 - Welwyn - 15th June 2024'
