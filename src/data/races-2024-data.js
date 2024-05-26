@@ -69,6 +69,20 @@ const raceData2024 = {
         title: 'SSE Club National Series 2024',
         races: [
             {
+                descriptor: 'Ambition (1) - 25th May 2024',
+                individual: [
+                    'Gabe Currie - 3rd in Mens U10'
+                ],
+                link: 'https://www.gbski.com/competition.php?ID=1406' 
+            },
+            {
+                descriptor: 'Ambition (2) - 26th May 2024',
+                individual: [
+                    'Gabe Currie - 1st in Mens U10'
+                ],
+                link: 'https://www.gbski.com/competition.php?ID=1406'
+            },
+            {
                 descriptor: 'Chatham - 8th June 2024'
             }
         ]
