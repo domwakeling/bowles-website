@@ -83,6 +83,22 @@ const raceData2024 = {
                 link: 'https://www.gbski.com/competition.php?ID=1406'
             },
             {
+                descriptor: 'Norfolk - 1st June 2024',
+                individual: [
+                    'Gabe Currie - 1st in Mens U10',
+                    'Charlotte Currie - 3rd in Ladies U14'
+                ],
+                link: 'https://www.gbski.com/competition.php?ID=1407'
+            },
+            {
+                descriptor: 'Vikings - 2nd June 2024',
+                individual: [
+                    'Gabe Currie - 2nd in Mens U10',
+                    'Charlotte Currie - 2nd in Ladies U14'
+                ],
+                link: 'https://www.gbski.com/competition.php?ID=1408'
+            },
+            {
                 descriptor: 'Chatham - 8th June 2024'
             }
         ]
