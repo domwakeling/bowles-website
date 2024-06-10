@@ -24,7 +24,23 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1471'
             },
             {
-                descriptor: 'Race 2 - Chatham - 9th June 2024'
+                descriptor: 'Race 2 - Chatham - 9th June 2024',
+                individual: [
+                    'Gabe Currie - 3rd in Mens U10',
+                    'Amelie Watts - 3nd in Ladies U12',
+                    'Charlotte Currie - 2nd in Ladies U14',
+                    'Lucy Wilson - 2nd in Ladies U16',
+                    'Lottie Beart - 3rd in Ladies U18',
+                    'Katharine Wilson - 2nd in Ladies Masters 1',
+                    'Steven Nelson - 3rd in Mens Masters 1',
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'Anthony Forte - 2nd in Mens Masters 2',
+                    'John Makonnen - 3rd in Mens Masters 3'
+                ],
+                clubs_teams: [
+                    'Bowles were 3rd in the club teams competition'
+                ],
+                link: 'https://skiresults.co.uk/events/1472'
             },
             {
                 descriptor: 'Race 3 - Bowles - 13th July 2024'
@@ -99,7 +115,12 @@ const raceData2024 = {
                 link: 'https://www.gbski.com/competition.php?ID=1408'
             },
             {
-                descriptor: 'Chatham - 8th June 2024'
+                descriptor: 'Chatham - 8th June 2024',
+                individual: [
+                    'Gabe Currie - 2nd in Mens U10',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ],
+                link: 'https://www.gbski.com/competition.php?ID=1527'
             }
         ]
         // title, races with {descriptor, individual, honorable, link }
