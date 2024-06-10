@@ -37,8 +37,14 @@ const raceData2024 = {
                     'Anthony Forte - 2nd in Mens Masters 2',
                     'John Makonnen - 3rd in Mens Masters 3'
                 ],
-                club_teams: [
-                    'Bowles were 3rd in the club teams competition'
+                club_teams: [ 
+                    `Bowles (Lottie Beart, Charlotte Currie, Nigel Hilliard,
+                        Stella Pople and Lucy Wilson) were 3rd in the club
+                        teams competition`
+                ],
+                honorable: [
+                    `Bowles (Gabe Currie, Orla Fox and Amelie Watts) were 4th
+                        in the junior club teams competition`
                 ],
                 link: 'https://skiresults.co.uk/events/1472'
             },
