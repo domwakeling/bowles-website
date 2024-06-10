@@ -37,7 +37,7 @@ const raceData2024 = {
                     'Anthony Forte - 2nd in Mens Masters 2',
                     'John Makonnen - 3rd in Mens Masters 3'
                 ],
-                clubs_teams: [
+                club_teams: [
                     'Bowles were 3rd in the club teams competition'
                 ],
                 link: 'https://skiresults.co.uk/events/1472'
