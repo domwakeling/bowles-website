@@ -49,7 +49,28 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1472'
             },
             {
-                descriptor: 'Race 3 - Bowles - 13th July 2024'
+                descriptor: 'Race 3 - Bowles - 13th July 2024',
+                individual: [
+                    'Wren Burrows - 3rd in Ladies U8',
+                    'Oscar Filipovas - 2nd in Mens U8',
+                    'Gabe Currie - 1st in Mens U10',
+                    'Amelie Watts - 2rd in Ladies U12',
+                    'Charlotte Currie - 2nd in Ladies U14',
+                    'Lucy Wilson - 1st in Lades U16',
+                    'Katharine Wilson - 2nd in Ladies Masters 1',
+                    'Steven Nelson - 3rd in Mens Masters 1',
+                    'Anthony Forte - 1st in Mens Masters 2',
+                    'John Makonnen - 3rd in Mens Masters 2'
+                ],
+                fun_teams: [
+                    'India Fox and Tobias Manning were members of the winning team',
+                    'Oscar Filipovas and Jasmine Watts were members of the 2nd-placed team'
+                ],
+                honorable: [
+                    'Antonia Wilson - 4th in Ladies U14',
+                    'Wren Burrows and Liam Filipovas were members of the 4th-placed fun team'
+                ],
+                link: 'https://skiresults.co.uk/events/1473'
             },
             {
                 descriptor: 'Race 4 - Brentwood - 31st August 2024'
@@ -77,7 +98,14 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1487'
             },
             {
-                descriptor: 'Race 3 - Welwyn - 15th June 2024'
+                descriptor: 'Race 3 - Welwyn - 15th June 2024',
+                individual: [
+                    'Amelie Watts - 3rd in Ladies U12'
+                ],
+                honorable: [
+                    'Amelie Watts was a member of the 4th-placed fun team'
+                ],
+                link: 'https://skiresults.co.uk/events/1488'
             },
             {
                 descriptor: 'Race 4 - Chatham - 3rd August 2024'
@@ -135,13 +163,13 @@ const raceData2024 = {
         descriptor: 'Kent Schools Ski Championship - Chatham - 12th May 2024',
         individual: [
             'Gabriel Currie - 3rd in Primary Junior Male',
-            'Ameilie Watts - 2nd in Primary Senior Female',
+            'Amelie Watts - 2nd in Primary Senior Female',
             'Charlotte Currie - 1st in Secondary Junior Female',
             'Lorraine Deschamps-Smith - 3rd in Secondary Junior Female',
             'Lucy Wilson - 2nd in Secondary Senior Female'
         ],
         primary_teams: [
-            `Phoneix Kenyon-Holt, Jack Coulson and Clemmie Cunningham (St Ronans) - 2nd
+            `Phoenix Kenyon-Holt, Jack Coulson and Clemmie Cunningham (St Ronans) - 2nd
                 in Primary Junior Mixed`,
             `Oscar and Liam Filipovas (Stocks Green) - 3rd in Primary Junior Mixed`,
             `India and Orla Fox (Speldhurst) - 2nd in Primary Senior Female`,
@@ -155,7 +183,7 @@ const raceData2024 = {
         ],
         honorable: [
             'Sebastian Nelson - 4th in Primary Junior Male',
-            'Antionia Wilson - 4th in Secondary Junior Female',
+            'Antonia Wilson - 4th in Secondary Junior Female',
             'Stella Pople - 4th in Secondary Senior Female'
         ],
         link: 'https://preciseracing.co.uk/kent-schools-championship/'
