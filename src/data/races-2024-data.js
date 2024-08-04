@@ -108,7 +108,17 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1488'
             },
             {
-                descriptor: 'Race 4 - Chatham - 3rd August 2024'
+                descriptor: 'Race 4 - Chatham - 3rd August 2024',
+                individual: [
+                    'Amelie Watts - 3rd in Ladies U12',
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'Anthony Forte - 2nd in Mens Masters 2'
+                ],
+                honorable: [
+                    'India Fox - 4th in Ladies U10',
+                    'Bowles (India Fox, Tobias Mannings and Amelie Watts) were 4th in the Club Minis'
+                ],
+                link: 'https://skiresults.co.uk/events/1489'
             },
             {
                 descriptor: 'Race 5 - Aldershot - 14th September 2024'
