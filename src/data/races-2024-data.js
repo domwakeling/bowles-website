@@ -73,7 +73,26 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1473'
             },
             {
-                descriptor: 'Race 4 - Brentwood - 31st August 2024'
+                descriptor: 'Race 4 - Brentwood - 31st August 2024',
+                individual: [
+                    'Oscar Filipovas - 2nd in Mens U8',
+                    'Amelie Watts - 2nd in Ladies U12',
+                    'Lucy Wilson - 2nd in Ladies U16',
+                    'Katharine Wilson - 2nd in Ladies Masters 1',
+                    'Steven Nelson - 3rd in Mens Masters 1',
+                    'Nigel Hilliard - 1st in Mens Masters 2',
+                    'John Makonnen - 3rd in Mens Masters 2'
+                ],
+                club_teams: [
+                    'Bowles were 3rd in the club competition'
+                ],
+                fun_teams: [
+                    'Steven Nelson was a member of the winning team'
+                ],
+                honorable: [
+                    'Sebastian Nelson - 4th in Mens U10'
+                ],
+                link: 'https://skiresults.co.uk/events/1474'
             },
             {
                 descriptor: 'Race 5 - Chatham - 5th October 2024'
