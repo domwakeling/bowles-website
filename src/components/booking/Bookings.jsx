@@ -81,11 +81,11 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "23082024" && mode == modes.FRIDAY) || (nextTue[0] == "20082024" && mode == modes.TUESDAY) ||
-                (nextFri[0] == "30082024" && mode == modes.FRIDAY) || (nextTue[0] == "27082024" && mode == modes.TUESDAY)) ? (
+            {((nextFri[0] == "23082024" && mode == modes.FRIDAY) || (nextTue[0] == "24122024" && mode == modes.TUESDAY) ||
+                (nextFri[0] == "30082024" && mode == modes.FRIDAY) || (nextTue[0] == "31122024" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    There slope is closed for maintenance from Monday 19th to Friday 30th August.
-                    Training will resume as normal in September
+                    There will be no Tuesday training sessions on 24th or 31st December.
+                    Training will resume as normal in January.
                 </p>
             ) : (
                 <div>

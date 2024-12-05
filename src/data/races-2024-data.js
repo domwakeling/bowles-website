@@ -95,9 +95,43 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1474'
             },
             {
-                descriptor: 'Race 5 - Chatham - 5th October 2024'
+                descriptor: 'Race 5 - Chatham - 5th October 2024',
+                individual: [
+                    'Gabriel Currie - 3rd in Mens U10',
+                    'Amelie Watts - 2nd in Ladies U12',
+                    'Charlotte Currie - 2nd in Ladies U14',
+                    'Lucy Wilson - 2nd in Ladies U16',
+                    'Heidi Bryant - 3rd in Ladies U18',
+                    'Katharine Wilson - 2nd in Ladies Masters 1',
+                    'Steven Nelson - 2nd in Mens Masters 1',
+                    'Anthony Forte - 1st in Mens Masters 2',
+                    'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Sebastian Nelson - 4th in Mens U10',
+                    'Antonia Wilson - 4th in Ladies U14',
+                    'Stella Pople - 4th in Ladies U16',
+                    'John Makonnen - 4th in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/events/1475'
             }
         ],
+        season: {
+            individual: [
+                'Gabriel Currie - 3rd in Mens U10',
+                'Amelie Watts - 2nd in Ladies U12',
+                'Charlotte Currie - 2nd in Ladies U14',
+                'Lucy Wilson - 2nd in Ladies U16',
+                'Katharine Wilson - 2nd in Ladies Masters 1',
+                'Steven Nelson - 3rd in Mens Masters 1',
+                'Nigel Hilliard - 1st in Mens Masters 2',
+                'Anthony Forte - 2nd in Mens Masters 2'
+            ],
+            honorable: [
+                'Heidi Bryant - 4th in Ladies U18',
+                'John Makonnen - 4th in Mens Masters 2'
+            ]
+        }
     },
     SRSA: {
         title: 'SRSA 2024 Summer Race Series',
@@ -140,9 +174,15 @@ const raceData2024 = {
                 link: 'https://skiresults.co.uk/events/1489'
             },
             {
-                descriptor: 'Race 5 - Aldershot - 14th September 2024'
+                descriptor: 'Race 5 - Aldershot - 14th September 2024',
+                link: 'https://skiresults.co.uk/events/1490'
             }
-        ]
+        ],
+        season: {
+            individual: [
+                'Amelie Watts - 3rd in Ladies U12'
+            ]
+        }
     },
     ClubNational: {
         title: 'SSE Club National Series 2024',
