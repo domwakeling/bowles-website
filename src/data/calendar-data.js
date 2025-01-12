@@ -2,6 +2,32 @@
 
 const calendarData = [
 
+    // 2025 LSERSA races
+    { year: 2025, month: 9, date: 27, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2025, month: 9, date: 6, label: 'LSERSA 4, Brentwood', type: 'race' },
+    { year: 2025, month: 7, date: 19, label: 'LSERSA 3, Chatham', type: 'race' },
+    { year: 2025, month: 7, date: 5, label: 'LSERSA 2, Bowles', type: 'race' },
+    { year: 2025, month: 5, date: 3, label: 'LSERSA 1, Chatham', type: 'race' },
+
+    // 2025 SRSA races
+    { year: 2025, month: 10, date: 18, label: 'SRSA 6, Snowtrax', type: 'race' },
+    { year: 2025, month: 9, date: 7, label: 'SRSA 5, Aldershot', type: 'race' },
+    { year: 2025, month: 8, date: 23, label: 'SRSA 4,  Southampton', type: 'race' },
+    { year: 2025, month: 6, date: 21, label: 'SRSA 3, Aldershot', type: 'race' },
+    { year: 2025, month: 5, date: 24, label: 'SRSA 2, Snowtrax', type: 'race' },
+    { year: 2025, month: 4, date: 26, label: 'SRSA 1, Southampton', type: 'race' },
+
+    // 2025 school & ESSKIA races
+    { year: 2025, month: 5, date: 11, label: 'Kent Schools', type: 'race' },
+    // { year: 2025, month: 11, date: 12, label: 'Surrey Schools', type: 'race' },
+
+    // 2025 CN & GBR races
+    { year: 2025, month: 6, date: 14, label: 'Club National, Chatham', type: 'race' },
+
+    // 2025 'other'
+    { year: 2025, month: 8, date: 24, label: 'All-England, Chatham', type: 'race' },
+    { year: 2025, month: 8, date: 23, label: 'All-England, Chatham', type: 'race' },
+
     // 2024 club fun races
     { year: 2024, month: 10, date: 11, label: 'Club Fun Race', type: 'race' },
     { year: 2024, month: 4, date: 19, label: 'Club Fun Race', type: 'race' },
