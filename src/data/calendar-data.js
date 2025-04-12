@@ -2,6 +2,9 @@
 
 const calendarData = [
 
+    // 2025 club fun races
+    { year: 2025, month: 4, date: 18, label: 'Club Fun Race', type: 'race' },
+
     // 2025 LSERSA races
     { year: 2025, month: 9, date: 27, label: 'LSERSA 5, Chatham', type: 'race' },
     { year: 2025, month: 9, date: 6, label: 'LSERSA 4, Brentwood', type: 'race' },
@@ -25,6 +28,7 @@ const calendarData = [
     { year: 2025, month: 6, date: 14, label: 'Club National, Chatham', type: 'race' },
 
     // 2025 'other'
+    { year: 2025, month: 6, date: 15, label: 'Alpine 100, Chatham', type: 'race' },
     { year: 2025, month: 8, date: 24, label: 'All-England, Chatham', type: 'race' },
     { year: 2025, month: 8, date: 23, label: 'All-England, Chatham', type: 'race' },
 

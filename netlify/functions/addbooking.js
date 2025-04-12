@@ -64,7 +64,7 @@ exports.handler = async function (event, context) {
         }
 
         // also change in /src/components/booking/Bookings.jsx
-        const nextRace = "11102024";
+        const nextRace = "18042025";
         const maxRacers = mode == modes.FRIDAY ? (day == nextRace ? nums.RACE : nums.FRIDAY ) : nums.TUESDAY;
 
         // no space and racer wasn't found
