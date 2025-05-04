@@ -4,6 +4,22 @@ const raceData2025 = {
         races: [
             {
                 descriptor: 'Race 1 - Chatham - 3rd May 2025',
+                individual: [
+                    'Charlotte Currie - 1st in Ladies U14',
+                    'Amelie Watts - 3rd in Ladies U14',
+                    'James Currie - 1st in Mens Masters 1',
+                    'Steven Nelson - 2nd in Mens Masters 1',
+                    'Colin Cooke - 3rd in Mens Masters 1',
+                    'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Flora Hay - 4th in Ladies U18'
+                ],
+                club_teams: [
+                    `Bowles A (Charlotte Currie, Lorraine Deschamps-Smith, Flora Hay, Nigel Hilliard
+                        and Amelie Watts) were 1st in the club teams competition`
+                ],
+                link: 'https://skiresults.co.uk/events/1608'
             },
             {
                 descriptor: 'Race 2 - Bowles - 5th July 2025',
