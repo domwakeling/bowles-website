@@ -19,7 +19,7 @@ Particular congratulations to James, Steven and Colin for locking out the Mens M
                 
 ##### Club Teams Results
 * Bowles A (Charlotte Currie, Lorraine Deschamps-Smith, Flora Hay, Nigel Hilliard and Amelie Watts)
-  were 1st in the club teams competition
+  were 3rd in the club teams competition
 
 ##### Honorable Mention
 * Flora Hay - 4th in Ladies U18
