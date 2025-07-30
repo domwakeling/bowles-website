@@ -81,11 +81,12 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "23082024" && mode == modes.FRIDAY) || (nextTue[0] == "24122024" && mode == modes.TUESDAY) ||
-                (nextFri[0] == "30082024" && mode == modes.FRIDAY) || (nextTue[0] == "31122024" && mode == modes.TUESDAY)) ? (
+            {((nextFri[0] == "22082025" && mode == modes.FRIDAY) || (nextTue[0] == "19082025" && mode == modes.TUESDAY) ||
+                (nextFri[0] == "15082025" && mode == modes.FRIDAY) || (nextTue[0] == "12082025" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    There will be no Tuesday training sessions on 24th or 31st December.
-                    Training will resume as normal in January.
+                    The main slope at Bowles will be closed for maintenance from Monday 11th August to
+                    Friday 22nd August. Therefore no Race Club on Tuesday 12th, Friday 15th, Tuesday 19th
+                    and Friday 22nd.
                 </p>
             ) : (
                 <div>
