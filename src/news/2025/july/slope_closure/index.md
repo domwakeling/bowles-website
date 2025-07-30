@@ -1,7 +1,7 @@
 ---
 title: "Slope closure in August"
 contentType: news
-date: "2025-07-30T60:30"
+date: "2025-07-30T18:30"
 ---
 
 The main slope at Bowles will be closed for maintenance from Monday 11th August to
