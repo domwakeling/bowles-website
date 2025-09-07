@@ -49,10 +49,35 @@ const raceData2025 = {
             },
             {
                 descriptor: 'Race 3 - Chatham - 19th July 2025',
+                individual: [
+                    'Tobias Manning - 3rd in Mens U10',
+                    'Gabe Currie - 3rd in Mens U12',
+                    'Charlotte Currie - 2nd in Ladies U14',
+                    'Amelie Watts - 3rd in Ladies U14',
+                    'Flora Hay - 3rd in Ladies U18',
+                    'Steven Nelson - 1st in Mens Masters 1',
+                    'James Currie - 2nd in Mens Masters 1',
+                    'Colin Cooke - 3rd in Mens Masters 1',
+                    'Anthony Forte - 1st in Mens Masters 2',
+                    'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
+                link: 'https://skiresults.co.uk/event/1610'
             },
             {
                 descriptor: 'Race 4 - Brentwood - 6th September 2025',
-                
+                individual: [
+                    'Charlotte Currie - 1st in Lades U14',
+                    'Adam Waterhouse - 3rd in Mens U18',
+                    'James Currie - 1st in Mens Masters 1',
+                    'Colin Cooke - 2nd in Mens Masters 1',
+                    'Anthony Forte - 1st in Mens Masters 2',
+                    'Nigel Hilliard - 2nd in Mens Masters 2'
+                ],
+                honorable: [
+                    'Gabe Currie - 4th in Mens U12',
+                    'Amelie Watts - 4th in Ladies U14'
+                ],
+                link: 'https://skiresults.co.uk/events/1611'
             },
             {
                 descriptor: 'Race 5 - Chatham - 27th September 2025',

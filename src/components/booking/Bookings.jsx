@@ -81,12 +81,11 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "22082025" && mode == modes.FRIDAY) || (nextTue[0] == "19082025" && mode == modes.TUESDAY) ||
+            {((nextFri[0] == "22082025" && mode == modes.FRIDAY) || (nextTue[0] == "09092025" && mode == modes.TUESDAY) ||
                 (nextFri[0] == "15082025" && mode == modes.FRIDAY) || (nextTue[0] == "12082025" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    The main slope at Bowles will be closed for maintenance from Monday 11th August to
-                    Friday 22nd August. Therefore no Race Club on Tuesday 12th, Friday 15th, Tuesday 19th
-                    and Friday 22nd.
+                    Training is cancelled for Tuesday 9th September, unfortunately none of the
+                    coaches are available
                 </p>
             ) : (
                 <div>
