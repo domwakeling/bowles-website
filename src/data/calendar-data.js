@@ -3,6 +3,7 @@
 const calendarData = [
 
     // 2025 club fun races
+    { year: 2025, month: 10, date: 10, label: 'Club Fun Race', type: 'race' },
     { year: 2025, month: 4, date: 18, label: 'Club Fun Race', type: 'race' },
 
     // 2025 LSERSA races
