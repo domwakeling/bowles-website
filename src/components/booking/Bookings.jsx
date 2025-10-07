@@ -70,7 +70,7 @@ const Bookings = ({ mode, user }) => {
             )}
             {nextFri[0] == "10102025" && mode == modes.FRIDAY ? (
                 <p className="alert-text">
-                    The club fun-race is being held this Friday, 18 April.
+                    The club fun-race is being held this Friday, 10 October.
                 </p>
             ) : '' }
             {nextFri[0] == "25092020" && mode == modes.FRIDAY ? (
