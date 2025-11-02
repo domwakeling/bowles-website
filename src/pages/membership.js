@@ -28,9 +28,18 @@ const IndexPage = ({location}) => (
         <p>If you are interested we{"'"}d love to hear from you &mdash; please <Link
             to="/about">get in touch</Link>, we look forward to meeting you.</p>
         <hr />
-        <p>Annual membership charges are &pound;35 for an individual, with a reduced charge of
-            &pound;16 for extra family members. There is also a charge of &pound;11 per person for
-            each training session.</p>
+        <p>Annual membership charges are &pound;20 for an individual, with a reduced charge of
+            &pound;16 for extra family members. Individual sessions are then paid for as attended,
+            directly to Bowles Outdoor Centre, at a cost of &pound;15 per person for Friday sessions
+            and &pound;13 per person for Tuesday sessions.</p>
+        <p>Bowles Ski Racing Club is affiliated with Snowsport England, which requires members of
+            clubs to also be individual members of Snowsport England. All racers taking part in
+            training need to have at least a Blue membership &mdash; you can find more information
+            <a href="https://www.snowsportengland.org.uk/membership-details/" target="sse">here</a>.
+            Under Snowsport England guidance, potential new members are allowed a maximum of three
+            {"'"}taster{"'"} sessions before having to sign up to SSE membership.
+        </p>
+        
     </Layout>
 );
 
