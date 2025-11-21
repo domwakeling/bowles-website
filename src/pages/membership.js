@@ -35,6 +35,7 @@ const IndexPage = ({location}) => (
         <p>Bowles Ski Racing Club is affiliated with Snowsport England, which requires members of
             clubs to also be individual members of Snowsport England. All racers taking part in
             training need to have at least a Blue membership &mdash; you can find more information
+            {" "}
             <a href="https://www.snowsportengland.org.uk/membership-details/" target="sse">here</a>.
             Under Snowsport England guidance, potential new members are allowed a maximum of three
             {"'"}taster{"'"} sessions before having to sign up to SSE membership.

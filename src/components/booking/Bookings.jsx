@@ -85,11 +85,10 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "22082025" && mode == modes.FRIDAY) || (nextTue[0] == "09092025" && mode == modes.TUESDAY) ||
+            {((nextFri[0] == "28112025" && mode == modes.FRIDAY) || (nextTue[0] == "09092025" && mode == modes.TUESDAY) ||
                 (nextFri[0] == "15082025" && mode == modes.FRIDAY) || (nextTue[0] == "12082025" && mode == modes.TUESDAY)) ? (
                 <p className="alert-text">
-                    Training is cancelled for Tuesday 9th September, unfortunately none of the
-                    coaches are available
+                    There will be no Race Club on Friday 28th November.
                 </p>
             ) : (
                 <div>
