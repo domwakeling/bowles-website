@@ -85,11 +85,25 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "28112025" && mode == modes.FRIDAY) || (nextTue[0] == "09092025" && mode == modes.TUESDAY) ||
-                (nextFri[0] == "15082025" && mode == modes.FRIDAY) || (nextTue[0] == "12082025" && mode == modes.TUESDAY)) ? (
-                <p className="alert-text">
-                    There will be no Race Club on Friday 28th November.
-                </p>
+            {((nextFri[0] == "26122025" && mode == modes.FRIDAY) || (nextTue[0] == "09122025" && mode == modes.TUESDAY) ||
+                (nextFri[0] == "15082025" && mode == modes.FRIDAY) || (nextTue[0] == "23122025" && mode == modes.TUESDAY)) ? (
+                    (nextFri[0] == "26122025" && mode == modes.FRIDAY) ? (
+                        <p className="alert-text">
+                            There will be no Race Club on Friday 26th December.
+                        </p>
+                    ) : (
+                        (nextTue[0] == "09122025" && mode == modes.TUESDAY) ? (
+                            <p className="alert-text">
+                                There will be no Race Club on Tuesday 9th December.
+                            </p>
+                        ) : (
+                            <p className="alert-text">
+                                There will be no Race Club on Tuesday 23rd December.
+                            </p>
+                        )
+                    )
+                    
+                
             ) : (
                 <div>
                     {(mode == modes.TUESDAY && firstTues) ? (
