@@ -2,6 +2,13 @@
 
 const calendarData = [
 
+    // 2026 LSERSA races
+    { year: 2026, month: 10, date: 3, label: 'LSERSA 5, Chatham', type: 'race' },
+    { year: 2026, month: 8, date: 29, label: 'LSERSA 4, Brentwood', type: 'race' },
+    { year: 2026, month: 6, date: 13, label: 'LSERSA 3, Chatham', type: 'race' },
+    { year: 2026, month: 5, date: 23, label: 'LSERSA 2, Bowles', type: 'race' },
+    { year: 2026, month: 5, date: 2, label: 'LSERSA 1, Chatham', type: 'race' },
+
     // 2025 club fun races
     { year: 2025, month: 10, date: 10, label: 'Club Fun Race', type: 'race' },
     { year: 2025, month: 4, date: 18, label: 'Club Fun Race', type: 'race' },
