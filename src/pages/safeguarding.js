@@ -22,8 +22,8 @@ const SafeguardingPage = ({ location }) => {
             <ul>
                 <li><a href="/bsrc-anti-bullying-policy.pdf">Club Anti-Bullying Policy</a></li>
                 <li><a href="/bsrc-social-media-policy.pdf">Club Social Media Policy</a></li>
-                <li><a href="/snowsafe-adults-policy.pdf">Snowsafe Adults Policy</a></li>
-                <li><a href="/snowsafe-children-policy.pdf">Snowsafe Children Policy</a></li>
+                <li><a href="/snowsafe-adults-policy-2407.pdf">Snowsafe Adults Policy</a></li>
+                <li><a href="/snowsafe-children-policy-2407.pdf">Snowsafe Children Policy</a></li>
                 <li><a href="/bsrc-safeguarding-poster.pdf">Safeguarding Poster</a></li>
             </ul>
             <p>See <a href="https://www.snowsportengland.org.uk/safeguarding/">SnowSport
