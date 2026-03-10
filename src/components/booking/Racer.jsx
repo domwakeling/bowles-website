@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Racer = ({ name, status, clickhandler, userid, tabNum, club }) => {
+const Racer = ({ name, status, clickHandler, userid, tabNum, club }) => {
     const handleClick = e => {
         e.preventDefault();
         e.target.blur();
-        clickhandler(userid, name, club);
+        clickHandler(userid, name, club);
     };
 
     return (
@@ -16,7 +16,7 @@ const Racer = ({ name, status, clickhandler, userid, tabNum, club }) => {
                     role="menuitem"
                     tabIndex={tabNum}
                     onClick={handleClick}
-                    status={status}
+                    // status={status}
                 >
                     {name}
                 </div>
@@ -29,7 +29,7 @@ const Racer = ({ name, status, clickhandler, userid, tabNum, club }) => {
 
 Racer.defaultProps = {
     status: "normal",
-    clickhandler: () => {},
+    clickHandler: () => {},
     userid: "",
     tabNum: -1,
     club: "Bowles"
@@ -38,7 +38,7 @@ Racer.defaultProps = {
 Racer.propTypes = {
     name: PropTypes.string.isRequired,
     status: PropTypes.string,
-    clickhandler: PropTypes.func,
+    clickHandler: PropTypes.func,
     userid: PropTypes.string,
     tabNum: PropTypes.number,
     club: PropTypes.string

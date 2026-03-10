@@ -140,6 +140,27 @@ exports.handler = async function (event, context) {
                     };
                 }
             }
+            // if Friday, check they didn't book last week/aren't Bowles (and its Fri night through Monday now)
+            if (mode == modes.FRIDAY && ((weekday == 5 && hour > 15) || weekday >= 6 || weekday <= 2 )) {
+                // look for previous week's booking
+                const prevWeek = await db.collection("bookings").findOne({
+                    forWeek: prev,
+                });
+                // check there is an entry and find out if this racer was booked in
+                if (prevWeek &&
+                    prevWeek.racers.filter(r => r.userid == userid && r.name == name).length > 0) {
+                    client.close();
+                    return {
+                        statusCode: 409,
+                        body: JSON.stringify({
+                            message: `That racer trained last Friday. In order to ensure all
+                                    members get a chance to train, please wait until Wednesday before
+                                    booking them in to this Friday's session.`,
+                            status: 409
+                        })
+                    };
+                }
+            }
             // it's not friday/weekend, or not tuesday/midweek, or they didn't train previous session
             await db
                 .collection("bookings")

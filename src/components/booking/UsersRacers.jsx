@@ -27,7 +27,7 @@ const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
             });
             const status = res.status;
             const data = await res.json();
-            // if successfui ...
+            // if successful ...
             if (status === 200) {
                 toast.notify(data.message, {
                     type: "success",
@@ -70,7 +70,7 @@ const UserRacers = ({ racers, mode, user, changeToAddRacer }) => {
                         tabNum={idx}
                         name={racer.name}
                         status="normal"
-                        clickhandler={handleRacerClick}
+                        clickHandler={handleRacerClick}
                         userid={user}
                         club={racer.club}
                     />
