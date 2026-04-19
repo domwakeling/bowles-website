@@ -141,7 +141,10 @@ exports.handler = async function (event, context) {
                 }
             }
             // if Friday, check they didn't book last week/aren't Bowles (and its Fri night through Monday now)
-            if (mode == modes.FRIDAY && ((weekday == 5 && hour > 15) || weekday >= 6 || weekday <= 2 )) {
+            if (mode == modes.FRIDAY
+                && ((weekday == 5 && hour > 15) || weekday >= 6 || weekday <= 2 )
+                && day != nextRace
+            ) {
                 // look for previous week's booking
                 const prevWeek = await db.collection("bookings").findOne({
                     forWeek: prev,
