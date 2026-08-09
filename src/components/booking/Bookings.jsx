@@ -86,16 +86,16 @@ const Bookings = ({ mode, user }) => {
                 </p>
             ) : ''}
 
-            {((nextFri[0] == "22052026" && mode == modes.FRIDAY) || (nextTue[0] == "26052026" && mode == modes.TUESDAY) ||
+            {((nextFri[0] == "21082026" && mode == modes.FRIDAY) || (nextTue[0] == "18082026" && mode == modes.TUESDAY) ||
                 (nextFri[0] == "15082025" && mode == modes.FRIDAY) || (nextTue[0] == "13012026" && mode == modes.TUESDAY)) ? (
-                    (nextFri[0] == "22052026" && mode == modes.FRIDAY) ? (
+                    (nextFri[0] == "21082026" && mode == modes.FRIDAY) ? (
                         <p className="alert-text">
-                            There will be no Race Club on Friday 22nd May.
+                            There will be no Race Club on Friday 21st June.
                         </p>
                     ) : (
-                        (nextTue[0] == "26052026" && mode == modes.TUESDAY) ? (
+                        (nextTue[0] == "18082026" && mode == modes.TUESDAY) ? (
                             <p className="alert-text">
-                                There will be no Race Club on Tuesday 26th May due to slope maintenance.
+                                There will be no Race Club on Tuesday 18th August.
                             </p>
                         ) : (
                             <p className="alert-text">
