@@ -18,7 +18,7 @@ const modes = {
 const nums = {
     TUESDAY: 8,
     FRIDAY: 25,
-    RACE: 50,
+    RACE: 60,
 };
 
 exports.handler = async function (event, context) {
