@@ -2,6 +2,14 @@
 
 const calendarData = [
 
+    // 2026 club fun races
+    { year: 2026, month: 10, date: 16, label: 'Club Fun Race', type: 'race' },
+    { year: 2026, month: 4, date: 24, label: 'Club Fun Race', type: 'race' },
+
+    // 2026 CN & GBR races
+    { year: 2026, month: 6, date: 27, label: 'Club National, Chatham', type: 'race' },
+    { year: 2026, month: 6, date: 28, label: 'Club National, Alpine 100 (@ Chatham)', type: 'race' },
+    
     // 2026 LSERSA races
     { year: 2026, month: 10, date: 3, label: 'LSERSA 5, Chatham', type: 'race' },
     { year: 2026, month: 8, date: 29, label: 'LSERSA 4, Brentwood', type: 'race' },

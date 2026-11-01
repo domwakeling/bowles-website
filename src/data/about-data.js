@@ -52,7 +52,9 @@ const aboutData = [
         idx: 6,
         name: 'Charlotte Currie - Athletes Rep',
         email: 'athleterep@bowlesskiracingclub.org.uk',
-        blurb: `tk ...`
+        blurb: `I have been ski racing at Bowles since the age of 6, being a regular on the local
+                circuit. I also race on snow, taking part in the annual British and English Alpine
+                Championships. I enjoy helping younger skiers as they start racing.`
     }
 ];
 

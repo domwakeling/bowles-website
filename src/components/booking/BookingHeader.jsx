@@ -47,6 +47,10 @@ const BookingHeader = ({ mode, setMode, handleLogout }) => {
             ) : '' }
             {mode == modes.FRIDAY || mode == modes.TUESDAY ? (
                 <>
+                    <p className="alert-text">
+                        From the start of December {"'"}26, training booking will be via ClubPal.
+                        Please continue to book here for sessions in November.
+                    </p>
                     <p>
                         Do you want to{" "}
                         <a href="#" onClick={changeDay}>

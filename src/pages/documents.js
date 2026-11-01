@@ -15,6 +15,8 @@ const DocumentsPage = ({ location }) => (
 
         <h4>Meeting minutes</h4>
         <ul>
+            <li><a href="/meetings/agm_2025.pdf" target="_other">2025 AGM</a></li>
+            <li><a href="/meetings/agm_2024.pdf" target="_other">2024 AGM</a></li>
             <li><a href="/meetings/agm_2023.pdf" target="_other">2023 AGM</a></li>
             <li><a href="/meetings/agm_2022.pdf" target="_other">2022 AGM</a></li>
         </ul>

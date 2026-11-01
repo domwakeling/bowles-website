@@ -27,6 +27,28 @@ const IndexPage = ({location}) => (
             and have motivation to improve.</p>
         <p>If you are interested we{"'"}d love to hear from you &mdash; please <Link
             to="/about">get in touch</Link>, we look forward to meeting you.</p>
+        
+        <hr />
+        <p>For 2026/7 membership, we are using ClubPal as our membership system. Please{" "}
+            <a href="https://bowles-ski-racing.clubpal.app/" target="_club_pal" >use this link </a>.
+            You should initially  set up an account in the name of the parent/guardian, which will
+            give you access to manage your children, or if you are an adult ski racer, yourself.</p>
+
+        <p>Then you will need to add the details of additional people you will be managing. Go to
+            the top right and click on your profile, and then click add profile. You should use your
+            e-mail address, but put your children{"'"}s details in.</p>
+
+        <p>You can then switch between membership profile. In order to pay for membership, go to
+            profile who you want to pay membership for, click on the membership menu. Select the
+            annual membership and continue to make payment, either by card or by Google or Apple
+            Pay. If you have a second family member, then proceed to make payment for them, but add
+            in the discount code “Family4” to get the &pound;16 membership. Membership will then be
+            approved by an administrator.</p>
+
+        <p>There is also an app which you can download from the store (search for ClubPal, download
+            and then select Bowles). For training sessions in December 2026 and onwards, booking for
+            training sessions will be via this system.</p>
+
         <hr />
         <p>Annual membership charges are &pound;20 for an individual, with a reduced charge of
             &pound;16 for extra family members. Individual sessions are then paid for as attended,

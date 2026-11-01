@@ -10,8 +10,8 @@ import img1 from '../images/about/placeholder.jpg';
 import img2 from '../images/about/Steve_N.jpg';
 import img3 from '../images/about/Nigel.jpg';
 import img4 from '../images/about/Simon.jpg';
-import img5 from '../images/about/placeholder.jpg';
-import img6 from '../images/about/placeholder.jpg';
+import img5 from '../images/about/james.jpg';
+import img6 from '../images/about/lottie.jpg';
 
 const images = [img0, img1, img2, img3, img4, img5, img6];
 
